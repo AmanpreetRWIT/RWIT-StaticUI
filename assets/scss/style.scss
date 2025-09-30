@@ -1,0 +1,87 @@
+/**************************************
+    Default Styles
+***************************************/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/extend';
+@import 'default/animations';
+@import 'default/animation-text';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import 'default/common';
+@import 'default/forms';
+
+/**************************************
+	Template Styles
+***************************************/
+@import 'template/banner';
+@import 'template/breadcrumb';
+@import 'template/featured';
+@import 'template/aboutUs';
+@import 'template/contact';
+@import 'template/single-service';
+@import 'template/team-details';
+@import 'template/commingsoon';
+@import 'template/single-case-study';
+@import 'template/blog-sidebar';
+@import 'template/blog-details';
+@import 'template/error';
+@import 'template/privacy-policy';
+@import 'template/preview';
+@import 'template/compare';
+@import 'template/partners';
+@import 'template/career-page';
+
+/**************************************
+	Elements Styles
+***************************************/
+
+@import 'elements/blogSearch';
+@import 'elements/button';
+@import 'elements/section-title';
+@import 'elements/dividers';
+@import 'elements/social-icon';
+@import 'elements/service';
+@import 'elements/contact';
+@import 'elements/portfolio';
+@import 'elements/counterup';
+@import 'elements/testimonial';
+@import 'elements/brand';
+@import 'elements/blog';
+@import 'elements/blog-list';
+@import 'elements/call-to-action';
+@import 'elements/case-study';
+@import 'elements/axil-slick';
+@import 'elements/team';
+@import 'elements/pricingtable';
+@import 'elements/video';
+@import 'elements/cuntdown';
+@import 'elements/accordion';
+@import 'elements/switcher';
+@import 'elements/pagination';
+@import 'elements/brand-with-bg';
+@import 'elements/technologies';
+@import 'elements/notice';
+@import 'elements/client-and-partner';
+@import 'elements/case-study-page';
+@import 'elements/job-listing';
+@import 'elements/apply-popup';
+
+/**************************************
+	Header Styles
+***************************************/
+@import 'header/header';
+@import 'header/nav';
+@import 'header/sidebar';
+@import 'header/search';
+@import 'header/scrollnavigation';
+@import 'header/menubar';
+
+/**************************************
+	Footer Styles
+***************************************/
+@import 'footer/footer';
+@import 'footer/light';
+@import 'footer/dark';

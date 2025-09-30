@@ -1,0 +1,362 @@
+/*-----------------------
+Axil Case Study 
+-------------------------*/
+
+.axil-case-study {
+  margin-top: 60px;
+  position: relative;
+  box-shadow: 0 0 1px transparent;
+
+  @media #{$sm-layout} {
+    background: #ffffff;
+    margin-top: 30px;
+  }
+
+  &.theme-gradient-5 {
+    background: -webkit-linear-gradient(315.26deg, #d6fffc 0%, #fae7e4 100%);
+    background: -o-linear-gradient(315.26deg, #d6fffc 0%, #fae7e4 100%);
+    background: linear-gradient(134.74deg, #d6fffc 0%, #fae7e4 100%);
+  }
+
+  .thumbnail {
+    a {
+      display: block;
+
+      img {
+        width: 100%;
+
+        @media #{$sm-layout} {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    width: 64%;
+
+    @media #{$lg-layout} {
+      padding: 20px;
+      width: 80%;
+    }
+
+    @media #{$md-layout} {
+      padding: 20px;
+      width: 100%;
+    }
+
+    @media #{$sm-layout} {
+      position: static;
+      padding: 20px 10px;
+      width: 100%;
+    }
+
+    .inner {
+      span {
+        &.category {
+          color: #737387;
+          font-size: 20px;
+          line-height: 32px;
+          display: inline-block;
+          margin-bottom: 10px;
+
+          @media #{$lg-layout} {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 5px;
+          }
+
+          @media #{$md-layout} {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 5px;
+          }
+
+          @media #{$sm-layout} {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      h4 {
+        &.title {
+          @media #{$sm-layout} {
+            margin-bottom: 0;
+          }
+
+          a {
+            text-decoration: none;
+            @extend %transition;
+          }
+        }
+      }
+    }
+  }
+
+  &.with-mokup-images {
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+    @media #{$large-mobile} {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .content {
+      position: static;
+      padding-bottom: 0;
+
+      .inner {
+        width: 60%;
+
+        @media #{$large-mobile} {
+          width: 100%;
+        }
+
+        h4 {
+          &.title {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 46px;
+
+            @media #{$sm-layout} {
+              font-size: 26px;
+              line-height: 37px;
+            }
+          }
+        }
+      }
+    }
+
+    .mockup {
+      position: absolute;
+      right: 0;
+      top: -23%;
+
+      @media #{$lg-layout} {
+        top: -14%;
+        width: 48%;
+      }
+
+      @media #{$md-layout} {
+        top: 8%;
+        width: 50%;
+      }
+
+      @media #{$sm-layout} {
+        top: 8%;
+        width: 50%;
+      }
+
+      @media #{$large-mobile} {
+        display: none;
+      }
+
+      img {
+        @media #{$lg-layout} {
+          width: 100%;
+        }
+
+        @media #{$md-layout} {
+          width: 100%;
+        }
+
+        @media #{$sm-layout} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.will-change-area {
+  position: relative;
+
+  .image-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+//New Keen Slider for Case Study
+
+#slider-container {
+  &-wrapper {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 10px;
+
+    .slider-dot {
+      border: none;
+      width: 10px;
+      height: 10px;
+      background: rgba(0, 2, 72, 0.1);
+      border-radius: 50%;
+      padding: 7px;
+      cursor: pointer;
+    }
+
+    .slider-dot:focus {
+      outline: none;
+    }
+
+    .slider-dot.active {
+      background: $darkest-color;
+    }
+  }
+
+  .thumbnail {
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+#CaseStudySlider {
+  @media #{$small-mobile} {
+    .casestudy_btn {
+      margin-block: 1.25rem 0;
+      width: 100%;
+    }
+
+    .container {
+      .container {
+        padding-inline: 0;
+
+        .row--0 {
+          [class*='col'] {
+            padding-inline: 0;
+            margin-top: auto;
+          }
+        }
+      }
+    }
+
+    .case-study {
+      &__title {
+        margin-bottom: 1.25rem !important;
+      }
+
+      &__desc {
+        margin-top: 1.25rem !important;
+
+        .sub-title {
+          padding-inline: 0.75rem !important;
+        }
+      }
+    }
+  }
+}
+
+.keen-slider__slide {
+  min-width: calc(100% + 0px);
+  max-width: calc(100% + 0px);
+  transform: translate3d(0, 0, 0);
+}
+
+
+// CaseStudySlides
+
+.caseStudySlides {
+  padding-top: 80px;
+  padding-bottom: 82px;
+
+  &__tag {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    h2 {
+      margin-bottom: 18px;
+    }
+  }
+
+  .layer2 {
+    p {
+      font-size: 24px;
+      line-height: 38px;
+      margin-bottom: 18px;
+      max-width: 850px;
+      margin-inline: auto;
+    }
+  }
+
+  .clients {
+    background: transparent;
+    padding: 25px 0;
+    width: 100%;
+    padding-block: 18px;
+
+    &__carousel {
+      width: 100%;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: fit-content;
+
+      img {
+        width: 100%;
+        min-height: 100px;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+
+  @media #{ $lg-layout} {
+    padding-block: 50px;
+
+    .clients {
+      &__img img {
+        max-height: 250px;
+      }
+    }
+  }
+
+  @media #{$md-layout} {
+    padding: 50px 0;
+
+    .clients {
+      &__img img {
+        object-fit: contain;
+        max-height: 250px;
+      }
+    }
+  }
+
+  @media #{$sm-layout} {
+    padding: 50px 0;
+
+    .layer2 {
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .clients {
+      padding-block: 10px;
+
+      &__img img {
+        object-fit: contain;
+        max-height: 200px;
+      }
+    }
+  }
+}

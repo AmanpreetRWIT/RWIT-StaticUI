@@ -1,0 +1,216 @@
+/*---------------------
+Partners Styles
+------------------------*/
+.partners {
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-section {
+        padding-inline: 1rem;
+
+        @media #{$sm-layout} {
+            padding: 30px 20px;
+        }
+    }
+
+    @media #{$md-layout} {
+        gap: 20px;
+        padding: 30px;
+    }
+
+    @media #{$sm-layout} {
+        gap: 20px;
+        padding: 0px;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    &__cards {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 10px;
+
+        @media #{$lg-layout} {
+            gap: 15px 10px;
+        }
+
+        @media #{$md-layout} {
+            gap: 15px 5px;
+        }
+
+        @media #{$sm-layout} {
+            flex-wrap: nowrap;
+            gap: 0;
+        }
+    }
+
+    &__card {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        a {
+            width: fit-content;
+        }
+
+        @media #{$lg-layout} {
+            gap: 25px;
+        }
+
+        @media #{$md-layout} {
+            padding: 12px;
+            gap: 12px;
+        }
+
+        @media #{$sm-layout} {
+            padding: 30px;
+            flex: 0 0 auto;
+            gap: 30px;
+        }
+
+    }
+
+    &__image {
+        height: 50px;
+
+        img {
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__desc {
+        p {
+            line-height: 28px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: inherit;
+
+        &__icon {
+            margin-left: 5px;
+        }
+    }
+
+    &__shown {
+        height: max-content;
+    }
+}
+
+.benefits {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    background: $white-color;
+    padding-inline: 0;
+    color: $darkest-color;
+
+    &__dropdown {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        padding-block: 11px;
+        cursor: pointer;
+
+        @media #{$sm-layout} {
+            padding-block: 6px;
+            font-size: 14px;
+        }
+    }
+
+    &__lists {
+        border-top: 1px solid #00024833;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 10px;
+        overflow: hidden;
+        max-height: 0px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+
+        @media #{$lg-layout} {
+            gap: 15px 10px;
+        }
+
+        @media #{$md-layout} {
+            gap: 15px 5px;
+        }
+
+        @media #{$sm-layout} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px 5px;
+        }
+    }
+
+    &__wrap {
+        padding-inline: 24px 0px;
+        box-sizing: border-box;
+
+        @media #{$lg-layout} {
+            padding: 12px;
+        }
+
+        @media #{$md-layout} {
+            padding: 12px;
+        }
+
+        @media #{$sm-layout} {
+            padding-inline: 20px 0;
+        }
+    }
+
+    &__list {
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 30px 24px;
+        color: $darkest-color;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+
+
+        @media #{$lg-layout} {
+            padding: 16px;
+            padding-inline-end: 0px;
+        }
+
+        @media #{$md-layout} {
+            padding: 16px;
+            padding-inline-end: 0px;
+        }
+
+        @media #{$sm-layout} {
+            padding: 1.25rem;
+            padding-inline-start: 25px;
+            padding-block-end: 30px;
+        }
+    }
+
+    &__items {
+        &:hover {
+            color: $darkest-color;
+        }
+    }
+}
+
+
+.shown {
+    max-height: 3000px !important;
+    opacity: 1;
+}

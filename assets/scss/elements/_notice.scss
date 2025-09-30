@@ -1,0 +1,82 @@
+.notice {
+  background-color: $primary-color2;
+  border-radius: 5px;
+  color: inherit;
+  font-weight: 700;
+  line-height: 1;
+  padding: 5px 10px;
+  font-size: 1rem;
+
+  p {
+    color: inherit;
+  }
+
+  &__container {
+    background-color: $primary-color;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrap {
+    gap: 20px;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+
+    @media #{$small-mobile} {
+      padding: 6px 0;
+    }
+  }
+
+  &__content {
+    font-size: 1rem;
+    color: inherit;
+
+    p,
+    span {
+      font-size: inherit;
+      color: inherit;
+
+      @media #{$small-mobile} {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 16px;
+      height: 3px;
+      background: #fff;
+      transform-origin: 50% 50%;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transform: rotate(45deg);
+      position: absolute;
+    }
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 3px;
+      background: #fff;
+      transform-origin: 50% 50%;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      position: absolute;
+      transform: rotate(-45deg);
+    }
+  }
+}

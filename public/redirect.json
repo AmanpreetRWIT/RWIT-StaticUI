@@ -1,0 +1,1287 @@
+[
+  {
+    "source": "/all-blogs",
+    "destination": "/blog-by-category",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/top-wordpress-design-trends-in-2022",
+    "destination": "/blog/top-wordpress-design-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-wordpress-design-trends-in-2022",
+    "destination": "/top-wordpress-design-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/top-5-php-frameworks-for-modern-web-development-in-2022",
+    "destination": "/blog/top-5-php-frameworks-for-modern-web-development-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/digital-marketing-trends-in-2022",
+    "destination": "/blog/digital-marketing-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-much-does-your-website-cost-in-australia-in-2022",
+    "destination": "/how-much-does-your-website-cost-in-australia-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-content-marketing-build-your-business-faster",
+    "destination": "/blog/how-content-marketing-build-your-business-faster",
+    "statusCode": 301
+  },
+  {
+    "source": "/contact-us",
+    "destination": "/contact",
+    "statusCode": 301
+  },
+  {
+    "source": "/mobile-applications-a-launchpad-for-your-e-commerce-business",
+    "destination": "/blog/mobile-applications-a-launchpad-for-your-e-commerce-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-to-boost-sales-by-image-optimization/",
+    "destination": "/blog/mobile-seo-stacking-guide-to-pace-up-with-mobile-first-indexing",
+    "statusCode": 301
+  },
+  {
+    "source": "/hazardous-black-hat-seo-approaches",
+    "destination": "/blog/hazardous-black-hat-seo-approaches",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-to-boost-sales-by-image-optimization",
+    "destination": "/blog/tips-to-boost-sales-by-image-optimization",
+    "statusCode": 301
+  },
+  {
+    "source": "/categories/storyblok",
+    "destination": "/category/storyblok",
+    "statusCode": 301
+  },
+  {
+    "source": "/categories/sanity",
+    "destination": "/category/sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/social-media-marketing-a-win-win-strategy/",
+    "destination": "/blog/social-media-marketing-a-win-win-strategy",
+    "statusCode": 301
+  },
+  {
+    "source": "/quick-guide-for-all-your-payment-gateway-related-troubles/",
+    "destination": "/blog/quick-guide-for-all-your-payment-gateway-related-troubles",
+    "statusCode": 301
+  },
+  {
+    "source": "/categories/react-js",
+    "destination": "/category/react-js",
+    "statusCode": 301
+  },
+  {
+    "source": "/categories/prismic",
+    "destination": "/category/prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/custom-cms-development/",
+    "destination": "/blog/custom-cms-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/opan/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/hazardous-black-hat-seo-approaches/",
+    "destination": "/blog/hazardous-black-hat-seo-approaches/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/rush-order-tees/",
+    "destination": "/case-study/rushordertees",
+    "statusCode": 301
+  },
+  {
+    "source": "/website-speed-optimization/",
+    "destination": "/blog/website-speed-optimization",
+    "statusCode": 301
+  },
+  {
+    "source": "/rwit-proud-to-be-named-a-top-indian-developer-by-clutch/",
+    "destination": "/blog/rwit-proud-to-be-named-a-top-indian-developer-by-clutch/",
+    "statusCode": 301
+  },
+  {
+    "source": "/best-digital-marketing-agency-in-austrailia/",
+    "destination": "/blog/best-digital-marketing-agency-in-austrailia/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/era/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/case-study",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/quick-guide-for-all-your-payment-gateway-related-troubles/page/3/",
+    "destination": "/blog/quick-guide-for-all-your-payment-gateway-related-troubles",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/yogavastu/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/call-the-damn-leads/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/enhance-user-experience/",
+    "destination": "/blog/enhance-user-experience",
+    "statusCode": 301
+  },
+  {
+    "source": "/8-blunders-that-might-hurt-your-business/",
+    "destination": "/blog/8-blunders-that-might-hurt-your-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/digital-marketing-trends-in-2022/",
+    "destination": "/blog/digital-marketing-trends-in-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/drakes/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/online-marketing-plan/",
+    "destination": "/blog/online-marketing-plan",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-mobile-apps-development-company-in-australia/",
+    "destination": "/blog/top-mobile-apps-development-company-in-australia/",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-ascendible-ways-of-considering-content-marketing-and-seo-together/",
+    "destination": "/blog/the-ascendible-ways-of-considering-content-marketing-and-seo-together/",
+    "statusCode": 301
+  },
+  {
+    "source": "/enhance-user-experience",
+    "destination": "/blog/enhance-user-experience",
+    "statusCode": 301
+  },
+  {
+    "source": "/website-design-the-backbone-of-any-online-business/page/3/",
+    "destination": "/blog/website-design-the-backbone-of-any-online-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/search",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-first-page-google/",
+    "destination": "/blog/get-first-page-google",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-more-qualified-leads-to-your-website-with-5-tips",
+    "destination": "/blog/get-more-qualified-leads-to-your-website-with-5-tips",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-more-qualified-leads-to-your-website-with-5-tips/",
+    "destination": "/blog/get-more-qualified-leads-to-your-website-with-5-tips/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/national-hockey-mom-day/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/most-efficient-and-ought-to-have-wordpress-plugins/page/2/",
+    "destination": "/blog/most-efficient-and-ought-to-have-wordpress-plugins",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-ascendible-ways-of-considering-content-marketing-and-seo-together/page/2/",
+    "destination": "/blog/the-ascendible-ways-of-considering-content-marketing-and-seo-together",
+    "statusCode": 301
+  },
+  {
+    "source": "/most-efficient-and-ought-to-have-wordpress-plugins",
+    "destination": "/blog/most-efficient-and-ought-to-have-wordpress-plugins",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-benefits-of-headless-ecommerce-for-retailers/",
+    "destination": "/blog/the-benefits-of-headless-ecommerce-for-retailers",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/lightning-roulette/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/universal-whisky-experience/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/jobs/junior-frontend-developer/",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/which-social-media-platform-suits-your-business-best/",
+    "destination": "/blog/which-social-media-platform-suits-your-business-best",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-use-social-media-to-build-your-personal-brand/page/5/",
+    "destination": "/blog/how-to-use-social-media-to-build-your-personal-brand",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-use-social-media-to-build-your-personal-brand/",
+    "destination": "/blog/how-to-use-social-media-to-build-your-personal-brand",
+    "statusCode": 301
+  },
+  {
+    "source": "/case-study/casestudies",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/case-study/services",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-wordpress-design-trends-in-2022/",
+    "destination": "/blog/top-wordpress-design-trends-in-2022",
+    "statusCode": 301
+  },
+  {
+    "source": "/local-guides-by-google-win-free-google-drive-space/",
+    "destination": "/blog/local-guides-by-google-win-free-google-drive-space",
+    "statusCode": 301
+  },
+  {
+    "source": "/most-efficient-and-ought-to-have-wordpress-plugins/",
+    "destination": "/blog/most-efficient-and-ought-to-have-wordpress-plugins",
+    "statusCode": 301
+  },
+  {
+    "source": "/visiting-clients-to-your-website-feel-at-home/",
+    "destination": "/blog/visiting-clients-to-your-website-feel-at-home",
+    "statusCode": 301
+  },
+  {
+    "source": "/use-php-language-web-development/",
+    "destination": "/blog/use-php-language-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-fight-with-bad-reviews-of-your-business-online/page/4/",
+    "destination": "/blog/how-to-fight-with-bad-reviews-of-your-business-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-fight-with-bad-reviews-of-your-business-online/",
+    "destination": "/blog/how-to-fight-with-bad-reviews-of-your-business-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/penalty-box-foundation/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/dog-mom-tees/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-brief-on-popular-javascript-frameworks/",
+    "destination": "/blog/a-brief-on-popular-javascript-frameworks",
+    "statusCode": 301
+  },
+  {
+    "source": "/why-headless-cms-is-the-future-of-content-management/",
+    "destination": "/blog/why-headless-cms-is-the-future-of-content-management",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-shopping-online/",
+    "destination": "/blog/tips-shopping-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/benefits-website-small-business-owners/page/6/",
+    "destination": "/blog/benefits-website-small-business-owners",
+    "statusCode": 301
+  },
+  {
+    "source": "/benefits-website-small-business-owners/",
+    "destination": "/blog/benefits-website-small-business-owners",
+    "statusCode": 301
+  },
+  {
+    "source": "/email-marketing/",
+    "destination": "/blog/email-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/info-graphic-a-stepping-stone-in-seo/",
+    "destination": "/blog/info-graphic-a-stepping-stone-in-seo",
+    "statusCode": 301
+  },
+  {
+    "source": "/achieve-good-roi-in-e-mail-marketing-by-considering-these-essential-tips/",
+    "destination": "/blog/achieve-good-roi-in-e-mail-marketing-by-considering-these-essential-tips",
+    "statusCode": 301
+  },
+  {
+    "source": "/redefine-webs-a-prominent-name-in-web-development/",
+    "destination": "/blog/redefine-webs-a-prominent-name-in-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-to-boost-sales-by-image-optimization/",
+    "destination": "/blog/tips-to-boost-sales-by-image-optimization/",
+    "statusCode": 301
+  },
+  {
+    "source": "/redefine-webs-a-prominent-name-in-web-development/page/9/",
+    "destination": "/blog/redefine-webs-a-prominent-name-in-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-page-page-seo/",
+    "destination": "/blog/difference-page-page-seo",
+    "statusCode": 301
+  },
+  {
+    "source": "/headless-vs-traditional-cms-which-is-right-for-your-business/",
+    "destination": "/blog/headless-vs-traditional-cms-which-is-right-for-your-business/",
+    "statusCode": 301
+  },
+  {
+    "source": "/jobs/junior-backend-developer/",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/blogs/",
+    "destination": "/blog",
+    "statusCode": 301
+  },
+  {
+    "source": "/effective-delegation-of-seo-work-what-you-need-to-know/",
+    "destination": "/blog/effective-delegation-of-seo-work-what-you-need-to-know",
+    "statusCode": 301
+  },
+  {
+    "source": "/study-reveals-that-users-follow-the-f-shaped-pattern-while-reading-web-content/",
+    "destination": "/blog/study-reveals-that-users-follow-the-f-shaped-pattern-while-reading-web-content",
+    "statusCode": 301
+  },
+  {
+    "source": "/tag/social-media-marketing-services-india/",
+    "destination": "/blog/social-media-marketing-a-win-win-strategy",
+    "statusCode": 301
+  },
+  {
+    "source": "/tag/effect-of-negative-reviews/",
+    "destination": "/blog/how-to-identify-and-recover-from-the-impact-of-negetive-seo",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-mobile-app-development-company-in-australia/",
+    "destination": "/blog/top-mobile-app-development-company-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/elker/",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/native-application-or-hybrid-application-which-is-the-right-choice/",
+    "destination": "/blog/native-application-or-hybrid-application-which-is-the-right-choice",
+    "statusCode": 301
+  },
+  {
+    "source": "/mobile-applications-a-launchpad-for-your-e-commerce-business/",
+    "destination": "/blog/mobile-applications-a-launchpad-for-your-e-commerce-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-web-application-website/",
+    "destination": "/blog/difference-web-application-website",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-web-application-website/page/6/",
+    "destination": "/blog/difference-web-application-website",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-listed-google-yahoo-bing/",
+    "destination": "/blog/get-listed-google-yahoo-bing",
+    "statusCode": 301
+  },
+  {
+    "source": "/blogs//page/6",
+    "destination": "/blog",
+    "statusCode": 301
+  },
+  {
+    "source": "/web-development-services//1000",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/tag/web-development-company-india/",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/web-development",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/best-digital-marketing-agency-in-australia",
+    "destination": "/blog/best-digital-marketing-agency-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-much-does-your-website-cost-in-australia-in-2022",
+    "destination": "/blog/how-much-does-your-website-cost-in-australia-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-much-does-your-website-cost-in-australia-in-2025",
+    "destination": "/blog/how-much-does-your-website-cost-in-australia-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-wordpress-design-trends-in-2022",
+    "destination": "/blog/top-wordpress-design-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-wordpress-design-trends-in-2025",
+    "destination": "/blog/top-wordpress-design-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/clients/rush-order-tees",
+    "destination": "/case-study/rushordertees",
+    "statusCode": 301
+  },
+  {
+    "source": "/achieve-good-roi-in-e-mail-marketing-by-considering-these-essential-tips",
+    "destination": "/blog/achieve-good-roi-in-e-mail-marketing-by-considering-these-essential-tips",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-first-page-google",
+    "destination": "/blog/get-first-page-google",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-10-best-cybersecurity-tips-to-protect-your-business",
+    "destination": "/blog/10-best-cybersecurity-tips-to-protect-your-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/comparison/builder-vs-strapi,",
+    "destination": "/comparison/builder-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/visiting-clients-to-your-website-feel-at-home",
+    "destination": "/blog/visiting-clients-to-your-website-feel-at-home",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-ascendible-ways-of-considering-content-marketing-and-seo-together",
+    "destination": "/blog/the-ascendible-ways-of-considering-content-marketing-and-seo-together",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-use-social-media-to-build-your-personal-brand/page/5/",
+    "destination": "/blog/how-to-use-social-media-to-build-your-personal-brand",
+    "statusCode": 301
+  },
+  {
+    "source": "/seo-important",
+    "destination": "/blog/seo-important",
+    "statusCode": 301
+  },
+  {
+    "source": "/categories/strapi",
+    "destination": "/category/strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/page/6",
+    "destination": "/blog/page/6",
+    "statusCode": 301
+  },
+  {
+    "source": "/a-brief-on-popular-javascript-frameworks",
+    "destination": "/blog/a-brief-on-popular-javascript-frameworks",
+    "statusCode": 301
+  },
+  {
+    "source": "/local-guides-by-google-win-free-google-drive-space",
+    "destination": "/blog/local-guides-by-google-win-free-google-drive-space",
+    "statusCode": 301
+  },
+  {
+    "source": "/native-application-or-hybrid-application-which-is-the-right-choice",
+    "destination": "/blog/native-application-or-hybrid-application-which-is-the-right-choice",
+    "statusCode": 301
+  },
+  {
+    "source": "/why-headless-cms-is-the-future-of-content-management",
+    "destination": "/blog/why-headless-cms-is-the-future-of-content-management",
+    "statusCode": 301
+  },
+  {
+    "source": "/8-blunders-that-might-hurt-your-business",
+    "destination": "/blog/8-blunders-that-might-hurt-your-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/benefits-website-small-business-owners",
+    "destination": "/blog/benefits-website-small-business-owners",
+    "statusCode": 301
+  },
+  {
+    "source": "/benefits-website-small-business-owners/page/6/",
+    "destination": "/blog/benefits-website-small-business-owners",
+    "statusCode": 301
+  },
+  {
+    "source": "/local-guides-by-google-win-free-google-drive-space",
+    "destination": "/blog/local-guides-by-google-win-free-google-drive-space",
+    "statusCode": 301
+  },
+  {
+    "source": "/blogs",
+    "destination": "/blog",
+    "statusCode": 301
+  },
+  {
+    "source": "/blogs/page/6",
+    "destination": "/blog/page/6",
+    "statusCode": 301
+  },
+  {
+    "source": "/custom-cms-development",
+    "destination": "/blog/custom-cms-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-page-page-seo",
+    "destination": "/blog/difference-page-page-seo",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-web-application-website",
+    "destination": "/blog/difference-web-application-website",
+    "statusCode": 301
+  },
+  {
+    "source": "/difference-web-application-website/page/6",
+    "destination": "/blog/difference-web-application-website",
+    "statusCode": 301
+  },
+  {
+    "source": "/digital-marketing-trends-in-2022",
+    "destination": "/blog/digital-marketing-trends-in-2025",
+    "statusCode": 301
+  },
+  {
+    "source": "/effective-delegation-of-seo-work-what-you-need-to-know",
+    "destination": "/blog/effective-delegation-of-seo-work-what-you-need-to-know",
+    "statusCode": 301
+  },
+  {
+    "source": "/email-marketing",
+    "destination": "/blog/email-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/get-listed-google-yahoo-bing",
+    "destination": "/blog/get-listed-google-yahoo-bing",
+    "statusCode": 301
+  },
+  {
+    "source": "/headless-vs-traditional-cms-which-is-right-for-your-business",
+    "destination": "/blog/headless-vs-traditional-cms-which-is-right-for-your-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-fight-with-bad-reviews-of-your-business-online",
+    "destination": "/blog/how-to-fight-with-bad-reviews-of-your-business-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-fight-with-bad-reviews-of-your-business-online/page/4/",
+    "destination": "/blog/how-to-fight-with-bad-reviews-of-your-business-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-use-social-media-to-build-your-personal-brand",
+    "destination": "/blog/how-to-use-social-media-to-build-your-personal-brand",
+    "statusCode": 301
+  },
+  {
+    "source": "/info-graphic-a-stepping-stone-in-seo",
+    "destination": "/blog/info-graphic-a-stepping-stone-in-seo",
+    "statusCode": 301
+  },
+  {
+    "source": "/most-efficient-and-ought-to-have-wordpress-plugins/",
+    "destination": "/blog/most-efficient-and-ought-to-have-wordpress-plugins",
+    "statusCode": 301
+  },
+  {
+    "source": "/most-efficient-and-ought-to-have-wordpress-plugins/page/2",
+    "destination": "/blog/most-efficient-and-ought-to-have-wordpress-plugins",
+    "statusCode": 301
+  },
+  {
+    "source": "/online-marketing-plan",
+    "destination": "/blog/online-marketing-plan",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/call-the-damn-leads",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/dog-mom-tees",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/drakes",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/elker",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/era",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/lightning-roulette",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/national-hockey-mom-day",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/opan",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/penalty-box-foundation",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/rush-order-tees",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/universal-whisky-experience",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/portfolio/yogavastu",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/quick-guide-for-all-your-payment-gateway-related-troubles",
+    "destination": "/blog/quick-guide-for-all-your-payment-gateway-related-troubles",
+    "statusCode": 301
+  },
+  {
+    "source": "/quick-guide-for-all-your-payment-gateway-related-troubles/page/3",
+    "destination": "/blog/quick-guide-for-all-your-payment-gateway-related-troubles",
+    "statusCode": 301
+  },
+  {
+    "source": "/redefine-webs-a-prominent-name-in-web-development",
+    "destination": "/blog/redefine-webs-a-prominent-name-in-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/redefine-webs-a-prominent-name-in-web-development/page/9",
+    "destination": "/blog/redefine-webs-a-prominent-name-in-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/rwit-proud-to-be-named-a-top-indian-developer-by-clutch",
+    "destination": "/blog/rwit-proud-to-be-named-a-top-indian-developer-by-clutch",
+    "statusCode": 301
+  },
+  {
+    "source": "/social-media-marketing-a-win-win-strategy",
+    "destination": "/blog/social-media-marketing-a-win-win-strategy",
+    "statusCode": 301
+  },
+  {
+    "source": "/study-reveals-that-users-follow-the-f-shaped-pattern-while-reading-web-content",
+    "destination": "/blog/study-reveals-that-users-follow-the-f-shaped-pattern-while-reading-web-content",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-ascendible-ways-of-considering-content-marketing-and-seo-together/page/2",
+    "destination": "/blog/the-ascendible-ways-of-considering-content-marketing-and-seo-together",
+    "statusCode": 301
+  },
+  {
+    "source": "/the-benefits-of-headless-ecommerce-for-retailers",
+    "destination": "/blog/the-benefits-of-headless-ecommerce-for-retailers",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-shopping-online",
+    "destination": "/blog/tips-shopping-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/tips-to-boost-sales-by-image-optimization",
+    "destination": "/blog/tips-to-boost-sales-by-image-optimization",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-mobile-app-development-company-in-australia",
+    "destination": "/blog/top-mobile-app-development-company-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-mobile-apps-development-company-in-australia",
+    "destination": "/blog/top-mobile-app-development-company-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/use-php-language-web-development",
+    "destination": "/blog/use-php-language-web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/web-development-services/1000",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/website-design-the-backbone-of-any-online-business/page/3",
+    "destination": "/blog/website-design-the-backbone-of-any-online-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/website-speed-optimization",
+    "destination": "/blog/website-speed-optimization",
+    "statusCode": 301
+  },
+  {
+    "source": "/which-social-media-platform-suits-your-business-best",
+    "destination": "/blog/which-social-media-platform-suits-your-business-best",
+    "statusCode": 301
+  },
+  {
+    "source": "/jobs/junior-backend-developer",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/jobs/junior-frontend-developer/",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-use-social-media-to-build-your-personal-brand/page/5",
+    "destination": "/blog/how-to-use-social-media-to-build-your-personal-brand",
+    "statusCode": 301
+  },
+  {
+    "source": "/benefits-website-small-business-owners/page/6",
+    "destination": "/blog/benefits-website-small-business-owners",
+    "statusCode": 301
+  },
+  {
+    "source": "/how-to-fight-with-bad-reviews-of-your-business-online/page/4",
+    "destination": "/blog/how-to-fight-with-bad-reviews-of-your-business-online",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/web-development-services/1000",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/jobs/junior-frontend-developer",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/job/junior-frontend-developer",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/:path*",
+    "destination": "/:path*",
+    "statusCode": 301
+  },
+  {
+    "source": "/au",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/airdna/",
+    "destination": "/en/case-study/airdna/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/airdna/",
+    "destination": "/case-study/airdna",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/airdna",
+    "destination": "/case-study/airdna",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/medely",
+    "destination": "/case-study/medely",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/planq",
+    "destination": "/case-study/planq",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/term-of-use",
+    "destination": "/term-of-use",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/wordpress-to-headless-cms-migration",
+    "destination": "/service/wordpress-to-headless-cms-migration",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/recruitment-platform/",
+    "destination": "/case-study/recruitment-platform/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/privacy-policy",
+    "destination": "/privacy-policy",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/ssd-nodes-digital-marketing",
+    "destination": "/case-study/ssd-nodes-digital-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/digital-marketing",
+    "destination": "/service/digital-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/headless-seo/",
+    "destination": "/service/headless-seo/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/headless-website-maintenance",
+    "destination": "/service/headless-website-maintenance",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/redsbaby",
+    "destination": "/case-study/redsbaby",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/tilyo",
+    "destination": "/case-study/tilyo",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/mountain-tactical",
+    "destination": "/case-study/mountain-tactical",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/hohme",
+    "destination": "/case-study/hohme",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/rushordertees",
+    "destination": "/case-study/rushordertees",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/carbmee",
+    "destination": "/case-study/carbmee",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/headless-commerce",
+    "destination": "/service/headless-commerce",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/casestudies",
+    "destination": "/casestudies",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/case-study/ssd-nodes",
+    "destination": "/case-study/ssd-nodes",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/generative-ai-development",
+    "destination": "/service/generative-ai-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/ai-agent-development/",
+    "destination": "/service/ai-agent-development/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/vue-js",
+    "destination": "/technologies/vue-js",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/web-application-development",
+    "destination": "/service/web-application-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/shopify-plus",
+    "destination": "/technologies/shopify-plus",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/n8n-automation",
+    "destination": "/service/n8n-automation",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/directus",
+    "destination": "/technologies/directus",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/growth-marketing",
+    "destination": "/service/growth-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/nuxt-js",
+    "destination": "/technologies/nuxt-js",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/wordpress-development",
+    "destination": "/service/wordpress-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/typescript",
+    "destination": "/technologies/typescript",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/next-js",
+    "destination": "/technologies/next-js",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/bigcommerce",
+    "destination": "/technologies/bigcommerce",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/builder-io",
+    "destination": "/technologies/builder-io",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/strapi",
+    "destination": "/technologies/strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/sanity",
+    "destination": "/technologies/sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/prismic",
+    "destination": "/technologies/prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/storyblok",
+    "destination": "/technologies/storyblok",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/technologies/react",
+    "destination": "/technologies/react",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/about",
+    "destination": "/about",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/whmcs-development",
+    "destination": "/service/whmcs-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/contact",
+    "destination": "/contact",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/consulting/",
+    "destination": "/service/consulting/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/rest-api-development",
+    "destination": "/service/rest-api-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/mobile-development",
+    "destination": "/service/mobile-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/web-development",
+    "destination": "/service/web-development",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/career",
+    "destination": "/career",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/builder-vs-dotcms",
+    "destination": "/comparison/builder-vs-dotcms",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/sanity-vs-dotcms",
+    "destination": "/comparison/sanity-vs-dotcms",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/strapi-vs-sanity",
+    "destination": "/comparison/strapi-vs-sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/dotcms-vs-prismic",
+    "destination": "/comparison/dotcms-vs-prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/dotcms-vs-strapi",
+    "destination": "/comparison/dotcms-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/bigcommerce-vs-strapi",
+    "destination": "/comparison/bigcommerce-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/bigcommerce-vs-builder",
+    "destination": "/comparison/bigcommerce-vs-builder",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/bigcommerce-vs-sanity",
+    "destination": "/comparison/bigcommerce-vs-sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/bigcommerce-vs-prismic",
+    "destination": "/comparison/bigcommerce-vs-prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/builder-vs-strapi",
+    "destination": "/comparison/builder-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/builder-vs-prismic",
+    "destination": "/comparison/builder-vs-prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/builder-vs-sanity",
+    "destination": "/comparison/builder-vs-sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-builder/",
+    "destination": "/comparison/storyblok-vs-builder/",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-sanity",
+    "destination": "/comparison/storyblok-vs-sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-prismic",
+    "destination": "/comparison/storyblok-vs-prismic",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-bigcommerce",
+    "destination": "/comparison/storyblok-vs-bigcommerce",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-dotcms",
+    "destination": "/comparison/storyblok-vs-dotcms",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/prismic-vs-sanity",
+    "destination": "/comparison/prismic-vs-sanity",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/prismic-vs-strapi",
+    "destination": "/comparison/prismic-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/comparison/storyblok-vs-strapi",
+    "destination": "/comparison/storyblok-vs-strapi",
+    "statusCode": 301
+  },
+  {
+    "source": "/au/service/digital-marketing",
+    "destination": "/service/digital-marketing",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/page/1",
+    "destination": "/blog",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/page/1",
+    "destination": "/blog",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/best-digital-marketing-agency-in-austrailia",
+    "destination": "/blog/best-digital-marketing-agency-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/blog/top-mobile-apps-development-company-in-australia",
+    "destination": "/blog/top-mobile-app-development-company-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/technologies/builder-io",
+    "destination": "/technologies/builder",
+    "statusCode": 301
+  },
+  {
+    "source": "/home",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/top-web-development-company-in-australia",
+    "destination": "/blog/best-web-development-company-in-australia",
+    "statusCode": 301
+  },
+  {
+    "source": "/best-digital-marketing-agency-in-austrailia",
+    "destination": "/blog/best-digital-marketing-agency-in-australia",
+    "statusCode": 301
+  }
+]

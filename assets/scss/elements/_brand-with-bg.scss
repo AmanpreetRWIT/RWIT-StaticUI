@@ -1,0 +1,98 @@
+.clients {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  padding: 25px 8px 25px 25px;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-end;
+
+  &__title {
+    // min-width: max-content;
+    // flex: 0 0 auto;
+    // width: 18%;
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    padding-right: 1rem;
+  }
+
+  &__carousel {
+    align-items: center;
+    cursor: grab;
+    position: relative;
+    flex: 0 0 auto;
+    width: 78%;
+    max-width: 100%;
+
+    &:after,
+    &:before {
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 32px;
+      z-index: 1;
+    }
+
+    &:before {
+      // background: linear-gradient(90deg, #f8f8f8, hsla(0, 0%, 97%, 0));
+      left: 0;
+    }
+
+    &:after {
+      // background: linear-gradient(270deg, #f8f8f8, hsla(0, 0%, 97%, 0));
+      right: 0;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    .slick-dots {
+      bottom: -35px;
+    }
+  }
+
+  &__image {
+    a {
+      display: block;
+      img {
+        object-fit: contain;
+        max-height: 100px !important;
+      }
+    }
+    img {
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 10px;
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__carousel {
+      width: 100%;
+    }
+  }
+
+  @media #{$small-mobile} {
+    gap: 24px;
+    padding: 36px 10px;
+    &__image {
+      img {
+        height: 26px;
+      }
+    }
+  }
+}
