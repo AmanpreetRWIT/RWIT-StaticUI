@@ -314,7 +314,7 @@ const HeroSection = ({
           )}
 
           {/* SCROLL ICON */}
-          {!hideScrollToBottomIcon && (
+          {hideScrollToBottomIcon && (
             <div className="scroll-down_btn">
               <div
                 id="scrollDown"

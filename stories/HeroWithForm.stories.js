@@ -38,7 +38,6 @@ Default.args = {
           formTitle: 'Request callback',
           formType: 'default-form',
           submitButton: 'Submit',
-          //submitButtonClass: 'btn-large',
           fields: [
             { Name: 'name', Label: 'Name', Type: 'text', Required: true },
             { Name: 'email', Label: 'Email', Type: 'email', Required: true },
