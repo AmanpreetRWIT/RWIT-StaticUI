@@ -14,7 +14,7 @@ const HeroWithForm = ({
   removeExtraPadding,
   contactForms,
 }) => {
-  console.log("contactForms", contactForms);
+  
   const [toggleForm, setToggleForm] = useState(true);
   const isMobile = useMobile();
   const path = usePathname();

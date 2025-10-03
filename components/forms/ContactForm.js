@@ -5,7 +5,6 @@ import { isValidEmail } from '../../helpers/utilities';
 import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
 import careerData from '../../public/careerData.json';
-import "../../assets/scss/style.scss";
 
 const ContactForm = ({
   formName = 'Contact-form',
@@ -17,7 +16,6 @@ const ContactForm = ({
   setIsActive,
   caseStudyPopup,
 }) => {
-  console.log('inputs', inputs)
   const [isDisabled, setIsDisabled] = useState(false);
   const [errors, setErrors] = useState({});
   const form = useRef();
