@@ -13,6 +13,7 @@ const SectionTitle = ({
   animation = true,
   descriptionColor,
   isBlogPage,
+  showTags = true,
 }) => {
   const [textAlignment, setTextAlignment] = useState('text-center');
   useEffect(() => {
@@ -25,7 +26,7 @@ const SectionTitle = ({
       className={`section-title ${textAlignment} ${styleClass}`}
       style={color ? { color: color } : {}}
     >
-      {subtitle &&
+      { showTags && subtitle &&
         <span class="sub-title extra11-color" style={{color:"#2690D4" ,border:"1px solid #2690D4",background:"#D4E9F6"}}>{subtitle}</span>
         }
 
