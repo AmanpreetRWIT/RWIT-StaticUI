@@ -1,0 +1,20 @@
+{
+    "Default": {
+      "title": "Hire Top 1% Talent",
+      "titleColor": "#1b90dc",
+      "heading": "Web Development Agency in Dubai",
+      "headingColor": "#000248",
+      "description": "We help startups and growing businesses in Dubai build fast, scalable, and modern websites. From custom development to headless CMS solutions, we deliver clean code and seamless user experiences that drive growth.",
+      "descriptionColor": "#757589",
+      "fontSize": "medium",
+      "gradientStyle": "theme-gradient-7",
+      "removeExtraPadding": false,
+      "hideScrollToBottomIcon": false,
+      "showButtons": false,
+      "buttons": [
+        { "label": "Get Started", "href": "#" },
+        { "label": "Learn More", "href": "#" }
+      ]
+    }
+  }
+  

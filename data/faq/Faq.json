@@ -1,0 +1,106 @@
+{
+  "Title": "Frequently Asked Questions",
+  "Tags": "Faq's",
+  "Description": "Find answers to the most common questions about Next.js to build reliable and scalable applications",
+  "BGColor": {
+    "color": "#ffffff"
+  },
+  "TitleColor": {
+    "color": "#000248"
+  },
+  "DescriptionColor": {
+    "color": "#757589"
+  },
+  "FaqCardTitleColor": {
+    "color": "#000248"
+  },
+  "FaqDescriptionColor": {
+    "color": "#757589"
+  },
+  "FaqCard": [
+    {
+      "Heading": "What services do you offer?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "We offer a comprehensive range of web development services including frontend development, backend development, full-stack solutions, and custom web applications tailored to your business needs."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Heading": "How long does a typical project take?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "Project timelines vary depending on complexity and requirements. Simple websites typically take 2-4 weeks, while complex web applications can take 2-6 months. We provide detailed timelines during the planning phase."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Heading": "Do you provide ongoing support and maintenance?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "Yes, we offer comprehensive support and maintenance packages to ensure your website or application continues to run smoothly. Our support includes regular updates, security patches, performance monitoring, and technical assistance."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Heading": "What technologies do you work with?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "We work with modern technologies including React, Next.js, Node.js, Python, PHP, MySQL, MongoDB, and various cloud platforms. We stay updated with the latest trends and best practices in web development."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Heading": "Can you help with SEO optimization?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "Absolutely! We integrate SEO best practices into our development process, including optimized code structure, meta tags, schema markup, fast loading times, and mobile responsiveness to improve your search engine rankings."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Heading": "What is your pricing structure?",
+      "Description": {
+        "content": [
+          {
+            "content": [
+              {
+                "text": "Our pricing is project-based and depends on the scope, complexity, and requirements. We provide detailed quotes after understanding your needs. Contact us for a personalized quote that fits your budget."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

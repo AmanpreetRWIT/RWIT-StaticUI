@@ -1,103 +1,112 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from "react";
 
 const FormInputs = ({
-  type = 'text',
+  type = "text",
   name,
   label,
-  required,
+  required = false,
+  Required = false,
+  CssClass = "",
+  options = [],
+  uniqueArr = [],
   onChange,
-  uniqueArr,
-  Required,
-  options,
-  CssClass = '',
 }) => {
   const [isFocused, setIsFocused] = useState(false);
-  const inputElement = useRef(null);
+  const inputRef = useRef(null);
 
-  const onFocus = () => {
-    setIsFocused(true);
-  };
-
-  const onBlur = (e) => {
+  const handleFocus = () => setIsFocused(true);
+  const handleBlur = (e) => {
     if (!e.target.value) setIsFocused(false);
   };
 
-  const handleKeyPress = (event, name) => {
-    // Optionally, you can prevent the default action for digits
-    if (/\d/.test(event.key) && name === 'firstname') {
-      event.preventDefault(); // Prevent the digit from being entered
+  // Prevent digits in firstname field
+  const handleKeyPress = (event) => {
+    if (/\d/.test(event.key) && name === "firstname") {
+      event.preventDefault();
     }
   };
 
+  // Handle select options (supports both array & comma-separated string)
   const selectOptions = Array.isArray(options)
     ? options
-    : options?.split(',').map((option) => ({ Value: option }));
+    : options?.split(",").map((opt) => ({ Value: opt }));
 
   return (
     <>
-      <div className={`form-group ${(isFocused || selectOptions?.some(item => item?.Default)) ? 'focused' : ''} `}>
-        {type == 'text' && (
+      <div
+        className={`form-group ${
+          isFocused || selectOptions?.some((item) => item?.Default)
+            ? "focused"
+            : ""
+        }`}
+      >
+        {/* TEXT INPUT */}
+        {type === "text" && (
           <input
-            ref={inputElement}
-            type={type}
+            ref={inputRef}
+            type="text"
             name={name}
-            onChange={onChange}
-            onKeyDown={(e) => {
-              handleKeyPress(e, name);
-            }}
-            onKeyUp={(e) => {
-              handleKeyPress(e, name);
-            }}
-            onFocus={onFocus}
-            onBlur={onBlur}
-            required={required ? 'required' : ''}
+            required={required}
             className={CssClass}
+            onChange={onChange}
+            onKeyDown={handleKeyPress}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
           />
         )}
-        {type == 'email' && (
+
+        {/* EMAIL INPUT */}
+        {type === "email" && (
           <input
-            ref={inputElement}
-            type={type}
+            ref={inputRef}
+            type="email"
             name={name}
-            onChange={onChange}
-            onFocus={onFocus}
-            onBlur={onBlur}
-            required={required ? 'required' : ''}
+            required={required}
             className={CssClass}
+            onChange={onChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
           />
         )}
-        {type == 'tel' && (
+
+        {/* PHONE INPUT */}
+        {type === "tel" && (
           <input
-            ref={inputElement}
-            type={type}
+            ref={inputRef}
+            type="tel"
             name={name}
-            onChange={onChange}
-            onFocus={onFocus}
-            onBlur={onBlur}
+            required={required}
             pattern="^[0-9]{10}$"
-            required={required ? 'required' : ''}
             className={CssClass}
+            onChange={onChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
           />
         )}
-        {type === 'textarea' && (
+
+        {/* TEXTAREA */}
+        {type === "textarea" && (
           <textarea
-            ref={inputElement}
+            ref={inputRef}
             name={name}
-            required={required ? 'required' : ''}
-            onChange={onChange}
-            onFocus={onFocus}
-            onBlur={onBlur}
+            required={required}
             className={CssClass}
+            onChange={onChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
           ></textarea>
         )}
-        {type === 'select' && (
+
+        {/* SELECT DROPDOWN */}
+        {type === "select" && (
           <select
-            ref={inputElement}
+            ref={inputRef}
             name={name}
-            required={required ? '' : ''}
+            required={required}
+            className={CssClass}
             onChange={onChange}
-            onFocus={onFocus}
-            onBlur={onBlur}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
           >
             {selectOptions?.map((option, index) => (
               <option
@@ -110,31 +119,36 @@ const FormInputs = ({
             ))}
           </select>
         )}
-        {type === 'file' && (
+
+        {/* FILE INPUT */}
+        {type === "file" && (
           <>
             <p className="file-label">Only PDF files are allowed</p>
             <input
-              ref={inputElement}
+              ref={inputRef}
               type="file"
               name={name}
-              required={required ? 'required' : ''}
-              onChange={onChange}
-              onBlur={onBlur}
+              required={required}
+              className={CssClass}
               accept=".pdf"
               id={`file-${name}`}
+              onChange={onChange}
+              onBlur={handleBlur}
             />
           </>
         )}
+
+        {/* LABEL */}
         <label>
-          {label} {Required ? <span className="red">*</span> : ''}
+          {label} {Required && <span className="red">*</span>}
         </label>
+
         <span className="focus-border" />
       </div>
+
+      {/* ERROR MESSAGE (IF ANY) */}
       <p className="field-err">
-        {uniqueArr &&
-          uniqueArr?.find((item) => {
-            return item?.includes(label?.toLowerCase());
-          })}
+        {uniqueArr?.find((item) => item?.includes(label?.toLowerCase()))}
       </p>
     </>
   );

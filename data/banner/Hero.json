@@ -1,0 +1,92 @@
+{
+  "title": "Tailor-made. Business-focused. Agile",
+  "titleColor": "#1b90dc",
+  "heading": "We create scalable solutions designed to empower growth",
+  "headingColor": "#000248",
+  "useH2Heading": false,
+  "description": "A Dubai-based digital agency with a global footprint, specializing in custom web development and headless application solutions.",
+  "descriptionColor": "#555555",
+  "gradientStyle": "theme-gradient-7",
+  "bgColor": "",
+  "removeExtraPadding": false,
+  "textAlignment": "centre",
+  "buttons": {
+    "label": "Get in touch",
+    "href": "/get-started"
+  },
+  "showBadges": false,
+  "logos": [
+    {
+      "src": "/images/logo1.png",
+      "alt": "Logo 1"
+    },
+    {
+      "src": "/images/logo2.png",
+      "alt": "Logo 2"
+    },
+    {
+      "src": "/images/logo3.png",
+      "alt": "Logo 3"
+    }
+  ],
+  "showbannerImage": false,
+  "bannerImage": {
+    "src": "/images/hero-banner.png",
+    "alt": "Hero Banner"
+  },
+  "gridImages": [
+    {
+      "src": "/images/grid1.png",
+      "alt": "Grid Image 1"
+    },
+    {
+      "src": "/images/grid2.png",
+      "alt": "Grid Image 2"
+    },
+    {
+      "src": "/images/grid3.png",
+      "alt": "Grid Image 3"
+    },
+    {
+      "src": "/images/grid4.png",
+      "alt": "Grid Image 4"
+    }
+  ],
+  "flatColors": [
+    { "color": "#FF6F61" },
+    { "color": "#6B5B95" },
+    { "color": "#88B04B" },
+    { "color": "#F7CAC9" }
+  ],
+  "showGridImages": false,
+  "showFlatColors": false,
+  "partnersLogo": [
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg",
+      "alt": "Partner 1",
+      "href": ""
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg",
+      "alt": "Partner 2",
+      "href": ""
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/145x39/64e87eb0ba/prismic-dark-svg.svg",
+      "alt": "Partner 3",
+      "href": ""
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/145x43/ae3a011b6b/storyblok_logo-dark-svg.svg",
+      "alt": "Partner 4",
+      "href": ""
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/290x86/0114bd034a/bigcommerce.png",
+      "alt": "Partner 5",
+      "href": ""
+    }
+  ],
+  "partnerTitle": "Certified Agency Partners of",
+  "hideScrollToBottomIcon": false
+}

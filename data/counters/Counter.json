@@ -1,0 +1,20 @@
+{
+    "SecondRow": false,
+    "BgColor": { "color": "#ffffff" },
+    "Heading": "Our Achievements",
+    "Tags": "Numbers That Matter",
+    "Description": "Here are some impressive statistics from our company.",
+    "DescriptionColor": { "color": "#757589" },
+    "TitleColor": { "color": "#000248" },
+    "HeadingColor": { "color": "#222222" },
+    "CounterTextColor": { "color": "#ff0000" },
+    "CounterItem": [
+      { "Number": 1200, "Text": "Projects Completed" },
+      { "Number": 500, "Text": "Happy Clients" }
+    ],
+    "CounterItemTwo": [
+      { "Number": 20, "Text": "Years of Experience" },
+      { "Number": 10, "Text": "Global Offices" }
+    ]
+  }
+  

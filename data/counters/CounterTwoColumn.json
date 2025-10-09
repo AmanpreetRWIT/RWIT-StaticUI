@@ -1,0 +1,37 @@
+{
+    "SecondLayout": false,
+    "InvertColumns": true,
+    "BgColor": { "color": "#f7f7f7" },
+    "Heading": "We are proud of what we do",
+    "Tags": "Our story",
+    "Description": "We began with a mission to deliver high quality web applications, crafted to match your unique vision and business goals",
+    "TitleColor": { "color": "#000248" },
+    "DescriptionColor": { "color": "#757589" },
+    "CounterTextColor": { "color": "#000248" },
+    "CounterItem": [
+      {
+        "Number": 1200,
+        "Description": "Projects Completed",
+        "Icon": { "type": "", "icon": "" },
+        "IconColor": { "color": "#000248" },
+        "BgColor": { "color": "#000248" }
+      },
+      {
+        "Number": 800,
+        "Description": "Happy Clients",
+        "Icon": { "type": "", "icon": "" },
+        "IconColor": { "color": "#000248" },
+        "BgColor": { "color": "#e0e0e0" }
+      },
+      {
+        "Number": 800,
+        "Description": "Happy Clients",
+        "Icon": { "type": "", "icon": "" },
+        "IconColor": { "color": "#000248" },
+        "BgColor": { "color": "#e0e0e0" }
+      }
+    ],
+    "Buttons": 
+      { "label": "Learn More", "onClick": "() => alert('Learn More clicked')" }
+  }
+  

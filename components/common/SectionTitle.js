@@ -13,6 +13,8 @@ const SectionTitle = ({
   animation = true,
   descriptionColor,
   isBlogPage,
+  showTags=true,
+  showTitle,
 }) => {
   const [textAlignment, setTextAlignment] = useState('text-center');
   useEffect(() => {
@@ -21,15 +23,15 @@ const SectionTitle = ({
     else setTextAlignment('text-start');
   }, [alignment, setTextAlignment]);
   return (
-    <div
+    <div 
       className={`section-title ${textAlignment} ${styleClass}`}
       style={color ? { color: color } : {}}
     >
-      {subtitle &&
+      {showTags && subtitle &&
         <span class="sub-title extra11-color" style={{color:"#2690D4" ,border:"1px solid #2690D4",background:"#D4E9F6"}}>{subtitle}</span>
         }
 
-      {title && (
+      {showTitle && title && (
         <>
           {isBlogPage ? (
             <h3

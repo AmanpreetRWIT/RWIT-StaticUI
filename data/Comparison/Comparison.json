@@ -1,0 +1,19 @@
+{
+    "isSlim": false,
+    "Title": "Compare Top Headless CMS Solutions Now",
+    "Tags": "Find Your Perfect CMS",
+    "Description": "Unsure which Headless CMS to choose? Our comparison breaks down the best platforms to help you decide.",
+    "HeadingColor": "#000248",
+    "DescriptionColor": "#757589",
+    "BGColor": "#f5f5f5",
+    "LabelText": "Headless CMS",
+    "ButtonText": "Compare Now",
+    "DropDownOne": [
+      "strapi",
+      "prismic",
+      "contentful",
+      "sanity",
+      "wordpress"
+    ]
+  }
+  

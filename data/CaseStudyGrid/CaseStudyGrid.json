@@ -1,0 +1,95 @@
+{
+    "caseStudies": [
+      {
+        "Title": "E-commerce Website Redesign",
+        "Description": "A complete redesign of a large-scale e-commerce platform leading to a 35% increase in conversions.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/921x750/0697f74056/rush-order-tees-cover.png",
+        "full_slug": "/case-studies/ecommerce-redesign",
+        "published_at": "2024-08-01T00:00:00Z",
+        "Label": "Read Case Study",
+        "CaseStudyLabels": ["E-commerce", "Design", "Marketing"]
+      },
+      {
+        "Title": "Fintech Dashboard Modernization",
+        "Description": "We helped a fintech client rebuild their outdated analytics dashboard using React and D3.js.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1000x750/0a4597a558/redsbaby-cover.png",
+        "full_slug": "/case-studies/fintech-dashboard",
+        "published_at": "2024-06-10T00:00:00Z",
+        "Label": "View Project",
+        "CaseStudyLabels": ["Fintech", "React", "Data Visualization"]
+      },
+      {
+        "Title": "Healthcare Mobile App",
+        "Description": "A patient engagement app that improved daily active users by 40% and boosted satisfaction ratings.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/4000x3000/26f515ca67/ori-thumbnail.png",
+        "full_slug": "/case-studies/healthcare-app",
+        "published_at": "2024-04-15T00:00:00Z",
+        "Label": "Explore",
+        "CaseStudyLabels": ["Healthcare", "Mobile App", "UX"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1000x810/bc2e89f054/mountaintactical-cs.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1000x810/17e102f431/airdna-cs.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/921x750/e26b35718c/medely-cover.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1000x750/0adb359731/cart-image-planq.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1500x1215/4a7166ca61/ssdnodes-cover.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1000x750/0adb359731/cart-image-planq.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      },
+      {
+        "Title": "SaaS Growth Optimization",
+        "Description": "Increased subscription conversion by 50% through data-driven onboarding experiments.",
+        "CoverImage": "https://a-us.storyblok.com/f/1016184/1500x1215/4a7166ca61/ssdnodes-cover.png",
+        "full_slug": "/case-studies/saas-optimization",
+        "published_at": "2023-12-05T00:00:00Z",
+        "Label": "See Results",
+        "CaseStudyLabels": ["SaaS", "Optimization", "Analytics"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,93 @@
+{
+    "stories": [
+      {
+        "full_slug": "/case-study/tech-innovation",
+        "first_published_at": "2024-05-10",
+        "content": {
+          "body": [
+            {
+              "component": "CaseStudyDetails",
+              "Title": "AirDNA",
+              "Description": "We helped AirDNA overcome slow load times, outdated technology, and limited multilingual support by upgrading to Prismic Slice Machine and optimizing Next.js/MUI. With streamlined API calls via GraphQL and a cleaned-up codebase, we enhanced site performance and user experience. Adding French language support expanded global reach, while speed ...",
+              "Label": "Read Case Study",
+              "Image": {
+                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/16ea06a624/airdna-thumbnail.png",
+                "alt": "Tech Innovation"
+              },
+              "Logo": {
+                "filename": "https://a-us.storyblok.com/f/1016184/135x110/527f1d319f/airdna-logo.png",
+                "alt": "Tech Company Logo"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "full_slug": "/case-study/retail-growth",
+        "first_published_at": "2024-03-15",
+        "content": {
+          "body": [
+            {
+              "component": "CaseStudyDetails",
+              "Title": "SSD Nodes Digital Marketing",
+              "Description": "SSD Nodes approached us to enhance their online presence and improve their search rankings. They faced challenges with outdated content and technical SEO issues. We revamped their website structure, optimized for search engines, and launched targeted Google Ads campaigns. These improvements helped SSD Nodes attract more traffic and generate be...",
+              "Label": "Read Case Study",
+              "Image": {
+                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/f9f2e9f62b/ssdnodesdm-thumbnail.png",
+                "alt": "Retail Growth"
+              },
+              "Logo": {
+                "filename": "https://a-us.storyblok.com/f/1016184/135x110/3a28ae087b/ssdnodes-logo.png",
+                "alt": "Retail Company Logo"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "full_slug": "/case-study/retail-growth",
+        "first_published_at": "2024-03-15",
+        "content": {
+          "body": [
+            {
+              "component": "CaseStudyDetails",
+              "Title": "Tilyo",
+              "Description": "Tilyo approached us to enhance their website built on Prismic and Next.js, seeking improvements and expansions for their existing platform. Faced with challenges in scaling their website, we collaborated on developing multiple new components and pages to address their specific needs. Our efforts were directed towards refining the user experien...",
+              "Label": "Read Case Study",
+              "Image": {
+                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/171e349fe2/tilyo-cs.png",
+                "alt": "Retail Growth"
+              },
+              "Logo": {
+                "filename": "https://a-us.storyblok.com/f/1016184/135x110/3b32210908/tilyo-logo.png",
+                "alt": "Retail Company Logo"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "full_slug": "/case-study/retail-growth",
+        "first_published_at": "2024-03-15",
+        "content": {
+          "body": [
+            {
+              "component": "CaseStudyDetails",
+              "Title": "Redsbaby",
+              "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuit...",
+              "Label": "Read Case Study",
+              "Image": {
+                "filename": "https://a-us.storyblok.com/f/1016184/1000x750/df6164a4f6/redsbaby-cs.png",
+                "alt": "Retail Growth"
+              },
+              "Logo": {
+                "filename": "https://a-us.storyblok.com/f/1016184/135x110/b106f325c9/redsbaby-logo.png",
+                "alt": "Retail Company Logo"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

@@ -12,7 +12,6 @@ const HeroWithVerticalImage = ({
   buttons,
   bgColor,
   showButtons,
-  showbannerImage,
   gradientStyle = "theme-gradient-3",
   imageOnTop = false,
   bannerImage,
@@ -78,7 +77,7 @@ const HeroWithVerticalImage = ({
               </div>
             </div>
             {/* Right Image */}
-            {showbannerImage && bannerImage?.src && (
+            {bannerImage?.src && (
               <div className="col-lg-12 col-12 order-2 order-lg-1 mt_md--40 mt_sm--30">
                 <div className="d-flex col-12">
                   <div className="image col-12 mw-100 w-100 d-flex align-center justify-content-center align-items-center">

@@ -16,11 +16,12 @@ const HeroSection = ({
   gradientStyle = "theme-gradient-7",
   bgColor,
   removeExtraPadding = false,
-  textAlignment = "left",
+  textAlignment = "centre",
   buttons,
   showBadges = false,
   logos = [],
   bannerImage,
+  showbannerImage,
   gridImages = [],
   flatColors = [],
   showGridImages = false,
@@ -80,8 +81,8 @@ const HeroSection = ({
       id="hero"
       className={`test axil-slider-area axil-slide-activation ${
         !showFlatColors && !showGridImages && !bannerImage?.src
-          ? `hero-${textAlignment}`
-          : ""
+          ? ""
+          : `hero-${textAlignment}`
       }`}
     >
       <div
@@ -202,7 +203,7 @@ const HeroSection = ({
             </div>
 
             {/* RIGHT SIDE BANNER IMAGE */}
-            {bannerImage?.src && (!showGridImages || !showFlatColors) && (
+            {showbannerImage && bannerImage?.src && (!showGridImages || !showFlatColors) && (
               <div className="col-lg-4 order-1 order-lg-2 mt_md--50 mt_sm--50 flex-grow-1">
                 <div className="d-flex">
                   <div className="images">

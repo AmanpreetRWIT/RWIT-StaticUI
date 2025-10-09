@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 
 const HeroWithForm = ({
-  title,
+  title ,
   heading,
   description,
   bgColor,
@@ -14,7 +14,6 @@ const HeroWithForm = ({
   removeExtraPadding,
   contactForms,
 }) => {
-  console.log("contactForms", contactForms);
   const [toggleForm, setToggleForm] = useState(true);
   const isMobile = useMobile();
   const path = usePathname();

@@ -4,8 +4,7 @@ import Router from 'next/router';
 import { isValidEmail } from '../../helpers/utilities';
 import { useRouter } from 'next/router';
 import { usePathname } from 'next/navigation';
-import careerData from '../../public/careerData.json';
-import "../../assets/scss/style.scss";
+//import careerData from '../../public/careerData.json';
 
 const ContactForm = ({
   formName = 'Contact-form',
@@ -17,7 +16,6 @@ const ContactForm = ({
   setIsActive,
   caseStudyPopup,
 }) => {
-  console.log('inputs', inputs)
   const [isDisabled, setIsDisabled] = useState(false);
   const [errors, setErrors] = useState({});
   const form = useRef();
@@ -247,12 +245,12 @@ const ContactForm = ({
           {inputs.map((data, index) => (
             <div key={index}>
               <FormInputs
-                name={data?.Name}
-                label={data?.Label}
-                type={data?.Type}
+                name={data?.name}
+                label={data?.label}
+                type={data?.type}
                 onChange={handleChange}
                 uniqueArr={uniqueArr}
-                Required={data?.Required}
+                Required={data?.required}
                 options={data?.Select}
                 CssClass={data?.CssClass}
               />

@@ -1,0 +1,47 @@
+[
+    {
+      "slug": "how-to-build-a-react-app",
+      "Title": "How Can Headless Website Maintenance Prevent Website Failures",
+      "Excerpt": "Headless websites offer flexibility and performance but come with complex maintenance needs. Proactive headless website maintenance helps prevent failures, secure APIs, optimize performance, and ensure scalability keeping your digital presence robust and future-ready.",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/fef9522b52/how-can-headless-website-maintenance-prevent-website-failures.webp",
+        "alt": "React App"
+      },
+      "Author": "/images/author1.jpg",
+      "published_at": "2025-10-08T10:00:00Z"
+    },
+    {
+      "slug": "css-grid-vs-flexbox",
+      "Title": "CSS Grid vs Flexbox",
+      "Excerpt": "Understanding the differences between CSS Grid and Flexbox.",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/85e2c18115/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know.webp",
+        "alt": "CSS Layouts"
+      },
+      "Author": "/images/author2.jpg",
+      "published_at": "2025-09-25T09:30:00Z"
+    },
+    {
+        "slug": "how-to-build-a-react-app",
+        "Title": "How to Build a React App",
+        "Excerpt": "A step-by-step guide on creating a React application from scratch.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/fef9522b52/how-can-headless-website-maintenance-prevent-website-failures.webp",
+          "alt": "React App"
+        },
+        "Author": "/images/author1.jpg",
+        "published_at": "2025-10-08T10:00:00Z"
+      },
+      {
+        "slug": "css-grid-vs-flexbox",
+        "Title": "CSS Grid vs Flexbox",
+        "Excerpt": "Understanding the differences between CSS Grid and Flexbox.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/85e2c18115/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know.webp",
+          "alt": "CSS Layouts"
+        },
+        "Author": "/images/author2.jpg",
+        "published_at": "2025-09-25T09:30:00Z"
+      }
+  ]
+  

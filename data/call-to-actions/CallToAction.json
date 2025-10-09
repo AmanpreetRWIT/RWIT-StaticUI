@@ -1,0 +1,28 @@
+{
+  "heading": "Let's work together",
+  "description": "We collaborate with clients to build custom web solutions and headless CMS applications tailored to their unique business needs.",
+  "tags": "Have a question in mind?",
+  "titleColor": "#000248",
+  "descriptionColor": "#757589",
+  "bgColor": "#f0f8ff",
+  "backgroundImage": "/images/cta-bg.jpg",
+  "minHeight": 400,
+  "buttons": {
+    "label": "Schedule a call",
+    "href": "https://calendly.com/jimmynarula/introductory-meeting"
+  },
+  "showPhone":true,
+  "phone": [
+    {
+      "label": "+1 234 567 890",
+      "href": "tel:+1234567890"
+    },
+    {
+      "label": "+91 98765 43210",
+      "href": "tel:+919876543210"
+    }
+  ],
+  "showTags": true,
+  "disableBgShape": false,
+  "Sectiontitle": true
+}

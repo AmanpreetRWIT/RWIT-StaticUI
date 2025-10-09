@@ -1,0 +1,97 @@
+{
+    "Title": "We value deep relationships.",
+    "Tags": "Technologies & Partners",
+    "Description": "We believe in the power of collaboration and have established partnerships with industry-leading technology providers. These alliances not only enhance our service offerings but also keep us at the forefront of emerging tech trends. Our partners include headless CMS providers like Prismic, Storyblok, and Strapi etc ensuring that our solutions are powered by reliable and scalable infrastructures.",
+    "BgColor": { "color": "#ffffff" },
+    "TitleColor": { "color": "#000248" },
+    "DescriptionColor": { "color": "#757589" },
+    "InfoTextColor": { "color": "#333333" },
+    "HideBorder": false,
+    "ClientAndPartnerInfo": [
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg", "alt": "Client 1" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "alt": "Client 2" },
+        "Grayscale": true,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg", "alt": "Client 3" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg", "alt": "Client 1" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg", "alt": "Client 2" },
+        "Grayscale": true,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x51/35eca9641f/nuxtjs_ar21_a7bca76d34-cropped-dark.svg", "alt": "Client 3" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/300x51/35eca9641f/nuxtjs_ar21_a7bca76d34-cropped-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg", "alt": "Client 1" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "alt": "Client 2" },
+        "Grayscale": true,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg", "alt": "Client 3" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg", "alt": "Client 1" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg", "alt": "Client 2" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg", "target": "_blank" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x51/35eca9641f/nuxtjs_ar21_a7bca76d34-cropped-dark.svg", "alt": "Client 3" },
+        "Grayscale": false,
+        "LinkText": "Partner",
+        "LinkTextClass": "",
+        "Link": { "url": "https://a-us.storyblok.com/f/1016184/300x51/35eca9641f/nuxtjs_ar21_a7bca76d34-cropped-dark.svg", "target": "_blank" }
+      }
+    ]
+  }
+  
