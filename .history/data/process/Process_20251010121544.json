@@ -1,0 +1,13 @@
+{
+  "BGColor": { "color": "#f0f4f8" },
+  "Title": "Our Process",
+  "Tags": "How We Work",
+  "Description": "A step-by-step approach to success.",
+  "TitleColor": { "color": "#222" },
+  "DescriptionColor": { "color": "#555" },
+  "ProcessCard": [
+    { "Heading": "Discovery", "Description": "<p>Understanding your needs.</p>", "Index": 1 },
+    { "Heading": "Planning", "Description": "<p>Strategizing for results.</p>", "Index": 2 },
+    { "Heading": "Execution", "Description": "<p>Delivering solutions.</p>", "Index": 3 }
+  ]
+}

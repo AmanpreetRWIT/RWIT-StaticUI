@@ -1,0 +1,30 @@
+{
+    "MegaMenu": [
+      {
+        "Title": "Web Services",
+        "Description": "We provide web development services.",
+        "ChildMenusTitle": "Frontend",
+        "ChildMenus": [
+          { "MenuLabel": "React", "MenuLink": { "url": "/services/react" } },
+          { "MenuLabel": "Next.js", "MenuLink": { "url": "/services/nextjs" } }
+        ],
+        "ChildMenus2Title": "Backend",
+        "ChildMenus2": [
+          { "MenuLabel": "Node.js", "MenuLink": { "url": "/services/node" } },
+          { "MenuLabel": "Express", "MenuLink": { "url": "/services/express" } }
+        ],
+        "ChildMenus3Title": "Databases",
+        "ChildMenus3": [
+          { "MenuLabel": "MongoDB", "MenuLink": { "url": "/services/mongodb" } },
+          { "MenuLabel": "MySQL", "MenuLink": { "url": "/services/mysql" } }
+        ],
+        "ChildMenus4Title": "Other Services",
+        "ChildMenus4": [
+          { "MenuLabel": "SEO", "MenuLink": { "url": "/services/seo" } }
+        ],
+        "LinkText": "View All Services",
+        "Link": { "url": "/services" }
+      }
+    ]
+  }
+  

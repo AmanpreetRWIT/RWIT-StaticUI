@@ -32,6 +32,17 @@ import CounterCardOne from '../components/counters/CounterCardOne';
 import CounterTwo from '../components/counters/CounterTwoColumn';
 import Faq from '../components/faq/Faq';
 import OurGallery from '../components/gallery/OurGallery';
+import JobListing from '../components/joblisting/JobListing';
+import CaseStudySlide from '../components/MultiImageSlider/CaseStudySlide';
+import NewsletterModal from '../components/newsletter/NewsletterModal';
+import Newsletter from '../components/newsletter/Newsletter';
+import Notice from '../components/notice/Notice';
+import OurOffice from '../components/ouroffice/OurOffice';
+import OurValues from '../components/ourvalues/OurValues';
+import OurPartners from '../components/partners/Partners';
+import Process from '../components/process/Process';
+import ServiceCard from '../components/Services/ServiceCard';
+import ServicesWithStickyCards from '../components/Services/ServicesWithStickyCards';
 const components={
   Hero,
   HeroWithForm,
@@ -61,7 +72,18 @@ const components={
    CounterCardOne,
    CounterTwo,
    Faq,
-   OurGallery
+   OurGallery,
+   JobListing,
+   CaseStudySlide,
+   NewsletterModal,
+   Newsletter,
+   Notice,
+   OurOffice,
+   OurValues,
+   OurPartners,
+   Process,
+   ServiceCard,
+   ServicesWithStickyCards
   }
 
 export default function App({ Component, pageProps }) {

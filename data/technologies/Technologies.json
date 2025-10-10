@@ -1,0 +1,9 @@
+{
+  "BGColor": { "color": "#fff" },
+  "Title": "Technologies We Use",
+  "TitleColor": { "color": "#222" },
+  "Technologies": [
+    { "RowHeading": "Frontend", "RowImage": [ { "Image": { "filename": "/images/react.png", "title": "React" } } ] },
+    { "RowHeading": "Backend", "RowImage": [ { "Image": { "filename": "/images/node.png", "title": "Node.js" } } ] }
+  ]
+}

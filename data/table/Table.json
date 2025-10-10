@@ -1,0 +1,12 @@
+{
+  "TitleColor": "#333333",
+  "Table": {
+    "thead": ["Name", "Age", "Department", "Role"],
+    "tbody": [
+      ["John Doe", "28", "Engineering", "Frontend Developer"],
+      ["Jane Smith", "32", "Marketing", "Content Manager"],
+      ["Michael Johnson", "45", "Sales", "Sales Head"],
+      ["Emily Davis", "26", "Design", "UI/UX Designer"]
+    ]
+  }
+}

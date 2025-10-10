@@ -1,0 +1,25 @@
+{
+    "style": "two",
+    "Logo": "https://a-us.storyblok.com/f/1016184/300x157/4d7b1ba280/rwit-logo.svg",
+    "LogoAlt": "Company Logo",
+    "CompanyName": "My Company",
+    "Tagline": "We deliver excellence",
+    "headerMenus": {
+      "Menus": [
+        { "Label": "Home", "Link": "/" },
+        { "Label": "About", "Link": "/about" },
+        { "Label": "Contact", "Link": "/contact" }
+      ],
+      "Buttons": [
+        { "Label": "Sign Up", "Link": "/signup", "className": "btn btn-primary" },
+        { "Label": "Login", "Link": "/login", "className": "btn btn-outline" }
+      ]
+    },
+    "NavTitle": "Choose Region",
+    "NavSubTitle": "Select your country",
+    "NavMenu": [
+      { "text": "Global", "image": "/images/Global.svg" },
+      { "text": "USA", "image": "/images/USA.svg" }
+    ]
+  }
+  

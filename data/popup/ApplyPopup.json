@@ -1,0 +1,47 @@
+{
+    "PopupTitle": "Apply Now",
+    "PopupDescription": "",
+    "PopupHeadingColor": { "color": "#000248" },
+    "PopupDescriptionColor": { "color": "#555555" },
+    "ModalBgColor": { "color": "#EEF0FA" },
+    "Form": [
+      {
+        "FormName": "Career form",
+        "FormType": "apply-form",
+        "FormTitle": "",
+        "SubmitButton": "Apply",
+        "SubmitButtonClass": "",
+        "Inputs": [
+          {
+            "Name": "Full Name",
+            "Type": "text",
+            "Label": "Full Name",
+            "Placeholder": "Full Name",
+            "Required": true
+          },
+          {
+            "Name": "Email",
+            "Type": "email",
+            "Label": "Email",
+            "Placeholder": "Email",
+            "Required": true
+          },
+          {
+            "Name": "Phone Number",
+            "Type": "tel",
+            "Label": "Phone Number",
+            "Placeholder": "Phone Number",
+            "Required": true
+          },
+          {
+            "Name": "Resume",
+            "Type": "file",
+            "Label": "Resume",
+            "Placeholder": "Upload PDF File",
+            "Required": true
+          }
+        ]
+      }
+    ]
+  }
+  

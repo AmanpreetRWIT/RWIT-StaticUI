@@ -2,7 +2,6 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
 const CounterCardOne = ({ column, counterClass, data, TitleColor }) => {
-  console.log('counterClass', counterClass)
   const [ref, inView] = useInView({
     threshold: 0.3,
     triggerOnce: true,

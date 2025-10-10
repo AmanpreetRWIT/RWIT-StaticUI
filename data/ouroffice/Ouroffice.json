@@ -1,0 +1,35 @@
+{
+  "Title": "Where to find us",
+  "Tags": "Keen to chat?",
+  "TitleColor": "#000248",
+  "BGColor": "#ffffff",
+  "OfficeCard": [
+    {
+      "Heading": "India",
+      "Description": "First Floor, Plot No. D-186/B, Phase 8B, Mohali, India",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/876x525/b27705c53a/india-contact-page.webp",
+        "alt": "India contact page"
+      },
+      "Button": []
+    },
+    {
+      "Heading": "USA",
+      "Description": "Suite 402, 123 Silicon Street, San Francisco, CA 94103, USA",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/876x525/1819e03d7c/usa-contact-page.webp",
+        "alt": "USA Contact page"
+      },
+      "Button": []
+    },
+    {
+      "Heading": "Dubai",
+      "Description": "Office 210, Business Bay, Dubai, United Arab Emirates",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/876x525/6902c86945/dubai-contact-page.webp",
+        "alt": "Dubai contact page"
+      },
+      "Button": []
+    }
+  ]
+}

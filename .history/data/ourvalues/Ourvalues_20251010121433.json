@@ -1,0 +1,14 @@
+{
+  "BGColor": { "color": "#f5f5f5" },
+  "Title": "Our Values",
+  "Tags": "Core Principles",
+  "Description": "What drives us every day.",
+  "TitleColor": { "color": "#222" },
+  "DescriptionColor": { "color": "#555" },
+  "OurValueCardTextColor": { "color": "#333" },
+  "OurValueCard": [
+    { "Heading": "Integrity", "Description": "<p>We do the right thing.</p>" },
+    { "Heading": "Innovation", "Description": "<p>We embrace change.</p>" },
+    { "Heading": "Teamwork", "Description": "<p>We work together.</p>" }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+    {
+      "MenuLabel": "Home",
+      "MenuLink": { "url": "/" },
+      "MegaMenu": []
+    },
+    {
+      "MenuLabel": "Services",
+      "MenuLink": { "url": "/services" },
+      "MegaMenu": [
+        {
+          "SubLabel": "Web Development",
+          "SubLink": { "url": "/services/web-development" }
+        },
+        {
+          "SubLabel": "Mobile Apps",
+          "SubLink": { "url": "/services/mobile-apps" }
+        }
+      ]
+    },
+    {
+      "MenuLabel": "About Us",
+      "MenuLink": { "url": "/about" },
+      "MegaMenu": []
+    },
+    {
+      "MenuLabel": "Contact",
+      "MenuLink": { "url": "/contact" },
+      "MegaMenu": []
+    }
+  ]
+  

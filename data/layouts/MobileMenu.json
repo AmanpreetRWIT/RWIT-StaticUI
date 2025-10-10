@@ -1,0 +1,38 @@
+{
+    "menus": [
+      {
+        "MenuLabel": "Home",
+        "MenuLink": { "url": "/" },
+        "MegaMenu": []
+      },
+      {
+        "MenuLabel": "Services",
+        "MenuLink": { "url": "/services" },
+        "MegaMenu": [
+          {
+            "Title": "Web Development",
+            "Description": "Professional web development services.",
+            "ChildMenusTitle": "Frontend",
+            "ChildMenus": [
+              { "MenuLabel": "React", "MenuLink": { "url": "/services/react" } },
+              { "MenuLabel": "Next.js", "MenuLink": { "url": "/services/nextjs" } }
+            ],
+            "ChildMenus2Title": "Backend",
+            "ChildMenus2": [
+              { "MenuLabel": "Node.js", "MenuLink": { "url": "/services/node" } }
+            ]
+          }
+        ]
+      }
+    ],
+    "buttons": [
+      { "label": "Contact Us", "url": "/contact", "type": "solid" },
+      { "label": "Get Quote", "url": "/quote", "type": "transparent" }
+    ],
+    "siteSettings": {
+      "Logo": { "filename": "/images/logo.png" },
+      "CompanyName": "MyCompany",
+      "Tagline": "Excellence in Service"
+    }
+  }
+  

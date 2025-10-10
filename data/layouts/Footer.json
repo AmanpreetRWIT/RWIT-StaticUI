@@ -1,0 +1,65 @@
+{
+    "TextColor": "text-white",
+    "BGColor": "#101010",
+    "StickyFooter": true,
+    "FooterLayout": "footerLayout1",
+    "AddressHeading": "Our Offices",
+    "Address": [
+      {
+        "AddressHeading": "USA",
+        "FullAddress": "123 Main Street, New York, NY",
+        "PhoneNumber": [
+          { "Label": "+1 234 567 8900", "Link": "tel:+12345678900" }
+        ],
+        "FlagImage": { "filename": "/images/flags/us.png", "alt": "USA Flag" }
+      },
+      {
+        "AddressHeading": "UK",
+        "FullAddress": "456 King Road, London, UK",
+        "PhoneNumber": [
+          { "Label": "+44 123 456 7890", "Link": "tel:+441234567890" }
+        ],
+        "FlagImage": { "filename": "/images/flags/uk.png", "alt": "UK Flag" }
+      }
+    ],
+    "MoreAddressLink": [
+      { "Label": "More Offices", "Link": "/locations" }
+    ],
+    "FooterCloumn": [
+      {
+        "ColumnHeading": "Company",
+        "Menu": [
+          { "Label": "About Us", "Link": "/about" },
+          { "Label": "Careers", "Link": "/careers" }
+        ]
+      },
+      {
+        "ColumnHeading": "Services",
+        "Menu": [
+          { "Label": "Web Development", "Link": "/services/web" },
+          { "Label": "App Development", "Link": "/services/app" }
+        ]
+      }
+    ],
+    "PartnerLabel": "Our Partners",
+    "Images": [
+      {
+        "Image": { "filename": "/images/logo1.png", "alt": "Logo 1" },
+        "ImageLink": "/partner1"
+      },
+      {
+        "Image": { "filename": "/images/logo2.png", "alt": "Logo 2" },
+        "ImageLink": "/partner2"
+      }
+    ],
+    "SocialIcons": [
+      { "Image": { "filename": "/images/facebook.png", "alt": "Facebook" }, "ImageLink": "https://facebook.com" },
+      { "Image": { "filename": "/images/twitter.png", "alt": "Twitter" }, "ImageLink": "https://twitter.com" }
+    ],
+    "CopyrightText": "All rights reserved.",
+    "CopyrightLinks": [
+      { "Label": "Privacy Policy", "Link": "/privacy", "Target": "_blank" },
+      { "Label": "Terms of Service", "Link": "/terms", "Target": "_blank" }
+    ]
+  }
+  

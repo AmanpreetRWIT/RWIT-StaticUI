@@ -1,0 +1,8 @@
+{
+  "Title": "Subscribe to our Newsletter",
+  "TitleColor": "#1b90dc",
+  "BgColor": "#f7f9fc",
+  "BorderColor": "#1b90dc",
+  "ButtonName": "Subscribe",
+  "SuccessMessage": "Thanks for subscribing to our newsletter!"
+}
