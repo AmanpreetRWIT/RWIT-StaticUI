@@ -4,7 +4,6 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
 const CounterTwo = ({ blok }) => {
-  console.log('blok', blok)
   const counterClass = (i) => {
     if (i === 0) return 'counter-1';
     else if (i === 1) return 'color-style-two mt--60 mt_mobile--40';

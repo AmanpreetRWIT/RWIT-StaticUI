@@ -149,7 +149,7 @@ const Faq = ({ Title,FaqDescriptionColor, Tags, Description, BGColor, TitleColor
         </div>
       </div>
     </>
-  );
+  )
 };
 
 export default Faq;

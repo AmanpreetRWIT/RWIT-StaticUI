@@ -1,0 +1,33 @@
+{
+  "heading": "Meet Our Expert Team",
+  "tags": "Creative Minds",
+  "description": "Our dedicated professionals bring innovation, expertise, and passion to every project.",
+  "headingColor": "#1A1A1A",
+  "descriptionColor": "#555555",
+  "bgColor": "#F9F9F9",
+  "showImageOnRight": false,
+  "disableBgShape": false,
+  "grayscale": false,
+  "image": "/images/team-photo.jpg",
+  "alt": "Our Team",
+  "teamNumbers": [
+    {
+      "number": "10+",
+      "text": "Years Experience",
+      "link": "#",
+      "target": "_self"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Join Our Team",
+      "link": "/careers",
+      "type": "primary"
+    },
+    {
+      "text": "Learn More",
+      "link": "/about",
+      "type": "secondary"
+    }
+  ]
+}

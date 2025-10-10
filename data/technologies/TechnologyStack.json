@@ -1,0 +1,36 @@
+{
+  "title": "Our Technology Partners",
+  "tags": "Clients & Partners",
+  "description": "We work with top technology partners to deliver exceptional services.",
+  "bgColor": "#f9f9f9",
+  "titleColor": "#24190F",
+  "descriptionColor": "#555555",
+  "hideBorder": false,
+  "clients": [
+    {
+      "name": "Client One",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/client-one.png",
+      "grayscale": false,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Client Two",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/client-two.png",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/client-three.png",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    }
+  ]
+}

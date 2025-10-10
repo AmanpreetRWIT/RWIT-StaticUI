@@ -1,0 +1,34 @@
+{
+  "BGColor": "#F8F9FA",
+  "Heading": "Our Happy Clients",
+  "HeadingColor": "#222222",
+  "Description": "Clients feedback and experiences.",
+  "DescriptionColor": "#555555",
+  "Tags": ["Trusted", "Professional"],
+  "TestimonialCardTextColor": "#333333",
+  "TestimonialCard": [
+    {
+      "Name": "John Doe",
+      "Designation": "CEO, Example Co",
+      "ProfileImage": "/images/client1.jpg",
+      "Description": "Excellent service and attention to detail.",
+      "SelectStars": 5
+    },
+    {
+      "Name": "Jane Smith",
+      "Designation": "Marketing Head, BrandX",
+      "ProfileImage": "/images/client2.jpg",
+      "Description": "Professional and timely delivery.",
+      "SelectStars": 4
+    }
+  ],
+  "SelectClients": [
+    {
+      "FirstName": "Alice Brown",
+      "ContactPosition": "Project Manager, Startup Y",
+      "ClientImage": "/images/client3.jpg",
+      "Testimonial": "Great collaboration and quality work.",
+      "SelectRatingStars": 5
+    }
+  ]
+}

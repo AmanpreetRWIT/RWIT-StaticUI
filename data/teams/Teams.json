@@ -1,0 +1,55 @@
+{
+  "BGColor": { "color": "#f8f9fa" },
+  "centeredTitle": true,
+  "Tag": [
+    {
+      "TagName": "Our Team",
+      "Link": "#",
+      "style": "primary"
+    }
+  ],
+  "Title": "Meet Our Experts",
+  "TitleColor": { "color": "#0a0a0a" },
+  "Description": "Our talented team of designers, developers, and strategists are here to help you grow.",
+  "DescriptionColor": { "color": "#555555" },
+  "TeamCardTextColor": { "color": "#1d1d1d" },
+  "RemoveCardBorder": false,
+  "RemoveCardAnimation": false,
+  "Team": [
+    {
+      "name": "Jane Smith",
+      "role": "Creative Director",
+      "image": "/images/team/jane.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/jane-smith",
+        "twitter": "https://twitter.com/janesmith"
+      }
+    },
+    {
+      "name": "John Doe",
+      "role": "Lead Developer",
+      "image": "/images/team/john.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/john-doe",
+        "github": "https://github.com/johndoe"
+      }
+    },
+    {
+      "name": "Emily Davis",
+      "role": "Project Manager",
+      "image": "/images/team/emily.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/emily-davis"
+      }
+    },
+    {
+      "name": "Michael Lee",
+      "role": "UI/UX Designer",
+      "image": "/images/team/michael.jpg",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/michael-lee",
+        "dribbble": "https://dribbble.com/michaellee"
+      }
+    }
+  ]
+}

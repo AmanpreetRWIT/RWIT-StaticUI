@@ -1,0 +1,37 @@
+{
+  "TableStyle": "table2",
+  "Alignment": "center",
+  "HeadingBgColor": "#FFDD57",
+  "HeadingColor": "#333",
+  "isBlogPage": false,
+  "Table": {
+    "thead": [
+      { "value": "Name" },
+      { "value": "Role" },
+      { "value": "Department" }
+    ],
+    "tbody": [
+      {
+        "body": [
+          { "value": "Alice Johnson" },
+          { "value": "Developer" },
+          { "value": "Engineering" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Bob Smith" },
+          { "value": "Designer" },
+          { "value": "UI/UX" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Charlie Lee" },
+          { "value": "Project Manager" },
+          { "value": "Operations" }
+        ]
+      }
+    ]
+  }
+}

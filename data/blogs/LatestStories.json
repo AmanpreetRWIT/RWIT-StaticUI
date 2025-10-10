@@ -1,0 +1,42 @@
+{
+  "BGColor": "#f8f9fa",
+  "Title": "Latest Stories",
+  "Tags": ["News", "Updates"],
+  "Description": "Catch up on our latest blog posts and updates.",
+  "TitleColor": "#0a0a0a",
+  "DescriptionColor": "#555555",
+  "ShowDynamicData": true,
+  "ShowSearchField": true,
+  "ShowCategory": true,
+  "Layout": "col-3",
+  "LoaderImage": "/images/loader.gif",
+  "LatestBlogs": [
+    {
+      "slug": "how-to-grow-your-business",
+      "Title": "How to Grow Your Business",
+      "Excerpt": "Learn the best strategies to scale your business effectively.",
+      "FeaturedImage": "/images/blog1.jpg",
+      "ThumbnailImage": "/images/blog1-thumb.jpg",
+      "PublishedAt": "2025-10-10",
+      "Category": "Business"
+    },
+    {
+      "slug": "uiux-design-trends",
+      "Title": "UI/UX Design Trends",
+      "Excerpt": "Explore the latest trends in UI/UX for 2025.",
+      "FeaturedImage": "/images/blog2.jpg",
+      "ThumbnailImage": "/images/blog2-thumb.jpg",
+      "PublishedAt": "2025-10-08",
+      "Category": "Design"
+    },
+    {
+      "slug": "productivity-hacks",
+      "Title": "Productivity Hacks",
+      "Excerpt": "Boost your productivity with these simple hacks.",
+      "FeaturedImage": "/images/blog3.jpg",
+      "ThumbnailImage": "/images/blog3-thumb.jpg",
+      "PublishedAt": "2025-10-05",
+      "Category": "Lifestyle"
+    }
+  ]
+}
