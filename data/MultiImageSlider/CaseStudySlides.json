@@ -1,0 +1,59 @@
+{
+  "Tag": "",
+  "TagColor": { "color": "#000248" },
+  "Heading": "Scalable UI Components",
+  "HeadingColor": { "color": "#000248" },
+  "Description": "We designed and optimized multiple components for AirDNA, ensuring they were reusable, fully responsive, and ready for deployment. Here's a quick overview of a few key components we delivered.",
+  "DescriptionColor": { "color": "#757589" },
+  "SliderSpeed": 5000,
+  "slides": [
+    {
+      "images": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png",
+            "alt": "Case Study 1"
+          }
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png",
+            "alt": "Case Study 2"
+          }
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/e1f746cc0b/7.png",
+            "alt": "Case Study 3"
+          }
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/e1f746cc0b/7.png",
+            "alt": "Case Study 4"
+          }
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png",
+            "alt": "Case Study 1"
+          }
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png",
+            "alt": "Case Study 2"
+          }
+        }
+      ]
+    }
+  ]
+}

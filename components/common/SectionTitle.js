@@ -14,7 +14,7 @@ const SectionTitle = ({
   descriptionColor,
   isBlogPage,
   showTags=true,
-  showTitle,
+  showTitle=true,
 }) => {
   const [textAlignment, setTextAlignment] = useState('text-center');
   useEffect(() => {

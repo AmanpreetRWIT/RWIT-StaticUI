@@ -9,6 +9,7 @@ const MainMenu = ({ menus }) => {
   const handleDropdownToggle = (index) => {
     setSelectedIndex(selectedIndex === index ? null : index);
   };
+
   useEffect(() => {
     const links = document.querySelectorAll('.has-dropdown');
     links?.forEach((link) => {
@@ -29,30 +30,16 @@ const MainMenu = ({ menus }) => {
           <li
             className={
               menu?.MegaMenu?.length > 0
-                ? `has-dropdown ${
-                    menuIndex === selectedIndex ? 'active-menu' : ''
-                  }`
+                ? `has-dropdown ${menuIndex === selectedIndex ? 'active-menu' : ''}`
                 : ''
             }
             key={`menu-item-${menuIndex}`}
             onClick={() => handleDropdownToggle(menuIndex)}
           >
-            {menu?.MenuLink?.story?.url || menu?.MenuLink?.url ? (
-              <Link
-                href={
-                  menu?.MenuLink?.story?.url !== undefined
-                    ? '/' + menu?.MenuLink?.story?.url
-                    : menu?.MenuLink?.url
-                }
-                prefetch={false}
-                className="menulink"
-              >
+            {menu?.MenuLink?.url ? (
+              <Link href={menu.MenuLink.url} prefetch={false} className="menulink">
                 {menu?.MenuLabel}
-                {menu?.MegaMenu?.length > 0 && (
-                  <>
-                    <MenuIcon />
-                  </>
-                )}
+                {menu?.MegaMenu?.length > 0 && <MenuIcon />}
               </Link>
             ) : (
               <span
@@ -64,11 +51,7 @@ const MainMenu = ({ menus }) => {
               </span>
             )}
             {menu?.MegaMenu?.length > 0 && (
-              <MegaMenu
-                menu={menu}
-                activeMenu={selectedIndex}
-                index={menuIndex}
-              />
+              <MegaMenu menu={menu} activeMenu={selectedIndex} index={menuIndex} />
             )}
           </li>
         );

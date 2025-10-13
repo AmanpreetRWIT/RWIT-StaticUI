@@ -1,0 +1,25 @@
+{
+  "Title": "Our Partners",
+  "Tags": "Trusted by",
+  "Description": "We collaborate with industry leaders.",
+  "TitleColor": { "color": "#222" },
+  "DescriptionColor": { "color": "#555" },
+  "BgColor": { "color": "#f3f3f3" },
+  "PartnershipCards": [
+    {
+      "Image": { "filename": "/images/partner1.jpg" },
+      "Description": "Leading tech company.",
+      "LinkText": "Visit Partner",
+      "Link": { "url": "https://partner1.com" },
+      "benefits": [ { "title": "Exclusive access" } ]
+    },
+    {
+      "Image": { "filename": "/images/partner2.jpg" },
+      "Description": "Global solutions provider.",
+      "LinkText": "Learn More",
+      "Link": { "url": "https://partner2.com" },
+      "benefits": [ { "title": "Priority support" } ]
+    }
+  ],
+  "BenefitsTitle": "Partner Benefits"
+}

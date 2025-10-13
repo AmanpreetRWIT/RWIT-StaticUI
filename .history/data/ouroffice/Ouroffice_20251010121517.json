@@ -1,0 +1,18 @@
+{
+  "BGColor": { "color": "#f5f5f5" },
+  "Title": "Our Offices",
+  "Tags": "Locations",
+  "TitleColor": { "color": "#222" },
+  "OfficeCard": [
+    {
+      "Image": { "filename": "/images/office1.jpg", "alt": "Office 1" },
+      "Heading": "New York",
+      "Description": "<p>123 Main St, New York, NY</p>"
+    },
+    {
+      "Image": { "filename": "/images/office2.jpg", "alt": "Office 2" },
+      "Heading": "London",
+      "Description": "<p>456 Queen St, London, UK</p>"
+    }
+  ]
+}

@@ -7,12 +7,10 @@ import { getShortCode } from '../../helpers/utilities';
 import MainMenu from './MainMenu';
 import MobileMenu from './MobileMenu';
 import Logo from '../common/Logo';
-import Buttons from '../buttons/Button';
 
 const Header = ({
   headerSetting = {},
   siteSettings,
-  noticeBlok,
   noticeData,
 }) => {
   const [headerSettings, setHeaderSettings] = useState({});
@@ -28,7 +26,7 @@ const Header = ({
 
   const [sessionValue, setSessionValue] = useState('Global');
   const [activeIcon, setActiveIcon] = useState(
-    siteSettings?.NavMenu[0].image?.filename || '/images/Global.svg'
+     'https://a-us.storyblok.com/f/1016184/64x64/149a6e176c/global.svg'
   );
 
   useEffect(() => {
@@ -119,14 +117,12 @@ const Header = ({
   }, []);
 
   useEffect(() => {
-    // Only run if there's no locale in sessionStorage (first visit in new session)
     if (!sessionStorage.getItem('locale')) {
       const getLocaleFromPath = () => {
         const path = window.location.pathname;
         const localeMatch = path.match(/\/([a-z]{2})(\/|$)/);
         if (localeMatch && localeMatch[1]) {
           let locale = localeMatch[1];
-          // Only allow 'en' or 'us' locales, default to 'en' for others
           if (!['en', 'us'].includes(locale)) {
             locale = 'en';
           }
@@ -149,22 +145,19 @@ const Header = ({
     }
 
     let newLocale;
-
     switch (Tab?.text) {
-        case 'USA':
-          newLocale = 'us';
-          break;
+      case 'USA':
+        newLocale = 'us';
+        break;
       default:
         newLocale = 'en';
     }
 
     const newSessionValue = newLocale === 'en' ? 'Global' : Tab?.text;
 
-    // Save all values to sessionStorage
     sessionStorage.setItem('locale', newLocale);
     sessionStorage.setItem('sessionValue', newSessionValue);
 
-    // Update the route and refresh the page
     router.replace(router.asPath, router.asPath, { locale: newLocale });
 
     setSessionValue(newSessionValue);
@@ -177,9 +170,7 @@ const Header = ({
     const headerLinks = document.querySelectorAll('header a');
     headerLinks?.forEach((link) => {
       if (link?.href && link?.href?.includes('blog')) {
-        const newLink = locale
-          ? link?.href?.replace(`/${locale}`, '')
-          : link?.href;
+        const newLink = locale ? link?.href?.replace(`/${locale}`, '') : link?.href;
         link.href = newLink;
       }
     });
@@ -211,17 +202,13 @@ const Header = ({
 
   return (
     <>
-      {!noticeBlok?.HideNavigationNotice && (
-        <div
-          className={`${!noticeBlok?.HideNavigationNotice && 'active-banner'}`}
-        >
-          <Notice noticeBlok={noticeBlok} noticeData={noticeData} />
+      {noticeData && (
+        <div className={`active-banner`}>
+          <Notice noticeData={noticeData} />
         </div>
       )}
 
-      <header
-        className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`}
-      >
+      <header className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`} style={{backgroundColor:"white"}}>
         <div className="header-wrapper">
           <div className={headerContainerClass()}>
             <div className="row align-items-center">
@@ -230,14 +217,15 @@ const Header = ({
                   <Link href="/" prefetch={false}>
                     <Logo
                       variant={headerSettings.style === 'four' ? 'two' : 'one'}
-                      logoImage={siteSettings?.Logo?.filename || ''}
-                      companyName={siteSettings?.CompanyName || ''}
-                      tagline={siteSettings?.Tagline || ''}
-                      alt={siteSettings?.Logo?.alt || ''}
+                      logoImage={headerSetting?.Logo || siteSettings?.Logo || ''}
+                      companyName={headerSetting?.CompanyName || siteSettings?.CompanyName || ''}
+                      tagline={headerSetting?.Tagline || siteSettings?.Tagline || ''}
+                      alt={headerSetting?.LogoAlt || siteSettings?.LogoAlt || ''}
                     />
                   </Link>
                 </div>
               </div>
+
               {headerSetting.headerMenus?.Menus &&
                 headerSettings.style === 'two' && (
                   <div className="col-lg-7 col-xl-6 d-none d-lg-block">
@@ -248,14 +236,10 @@ const Header = ({
                     </div>
                   </div>
                 )}
+
               <div className="col-lg-9 col-md-6 col-sm-6 col-4 header-right">
-                <div
-                  className={`mainmenu-wrapepr ${
-                    headerSettings.style === 'two' ? 'justify-content-end' : ''
-                  }`}
-                >
-                  {(headerSettings.style === 'one' ||
-                    headerSettings.style === 'four') &&
+                <div className={`mainmenu-wrapepr ${headerSettings.style === 'two' ? 'justify-content-end' : ''}`}>
+                  {(headerSettings.style === 'one' || headerSettings.style === 'four') &&
                     headerSetting.headerMenus?.Menus && (
                       <nav className="mainmenu-nav d-none d-lg-block">
                         <MainMenu menus={headerSetting.headerMenus?.Menus} />
@@ -266,70 +250,37 @@ const Header = ({
                     {headerSettings.style === 'three' && (
                       <div className="d-none d-md-block">
                         <ul className="axil-social-icons d-flex liststyle align-items-center">
-                          <li>
-                            <Link href="#" prefetch={false}>
-                              <i className="fab fa-facebook-f" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#" prefetch={false}>
-                              <i className="fab fa-twitter" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#" prefetch={false}>
-                              <i className="fab fa-pinterest-p" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#" prefetch={false}>
-                              <i className="fab fa-linkedin-in" />
-                            </Link>
-                          </li>
+                          <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                          <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                          <li><Link href="#"><i className="fab fa-pinterest-p" /></Link></li>
+                          <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
                         </ul>
                       </div>
                     )}
 
                     {headerSettings.style === 'four' && (
                       <div className="ax-header-button  ml_lg--10  header-btn">
-                        {headerSetting.headerMenus?.Buttons?.map(
-                          (headerBtn, headerBtnIndex) => (
-                            <Buttons
-                              blok={headerBtn}
-                              key={'block' + headerBtnIndex}
-                            />
-                          )
-                        )}
+                        {headerSetting.headerMenus?.Buttons?.map((headerBtn, headerBtnIndex) => (
+                          <a key={headerBtnIndex} class={"hoverable axil-button contactbtn axil-button btn-solid btn-solid btn-medium"} target={""} href={headerBtn.Link}>
+                            <span class={"button-text hoverable px-0"}>{headerBtn.Label}</span></a>
+                        ))}
                       </div>
                     )}
 
-                    {/* localization switch button */}
-
                     {activeIcon && (
                       <div className="sidenav-toggle" onClick={handleSidenav}>
-                        <Image
-                          src={activeIcon}
-                          alt="regionIcon"
-                          width={32}
-                          height={32}
-                        />{' '}
+                        <Image src={activeIcon} alt="regionIcon" width={32} height={32} />
                         <span>{getShortCode(sessionValue)}</span>
                       </div>
                     )}
 
-                    <div
-                      className={`${
-                        headerSettings.style === 'three'
-                          ? 'ax-hamburger bg-theme-color ml--40'
-                          : 'ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20'
+                    <div className={`${headerSettings.style === 'three'
+                        ? 'ax-hamburger bg-theme-color ml--40'
+                        : 'ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20'
                       }`}
                     >
                       <div
-                        className={`${
-                          headerSettings.style === 'three'
-                            ? 'axil-menuToggle popup-navigation-activation'
-                            : ''
-                        }`}
+                        className={`${headerSettings.style === 'three' ? 'axil-menuToggle popup-navigation-activation' : ''}`}
                         onClick={toggleMobileMenu}
                       >
                         {headerSettings.style === 'three' ? (
@@ -349,63 +300,34 @@ const Header = ({
             </div>
           </div>
         </div>
-        {/* sidenav menu */}
+
         <div className="sidenav">
-          <div
-            className="sidenav-wrapper"
-            onClick={() => {
-              handleSidenav();
-            }}
-          ></div>
+          <div className="sidenav-wrapper" onClick={handleSidenav}></div>
           <div className="sidenav-content">
             <div className="sidenav-close" onClick={handleSidenav}>
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 52 52"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 13L39 39M13 39L39 13"
-                  stroke="#000248"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+              <svg width="28" height="28" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 13L39 39M13 39L39 13" stroke="#000248" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
             <div className="sidenav-background">
               <div className="sidenav-heading">
-                {siteSettings?.NavTitle && <h2>{siteSettings?.NavTitle}</h2>}
-                {siteSettings?.NavSubTitle && (
-                  <p>{siteSettings?.NavSubTitle}</p>
-                )}
+                {headerSettings?.NavTitle && <h2>{headerSettings.NavTitle}</h2>}
+                {headerSettings?.NavSubTitle && <p>{headerSettings.NavSubTitle}</p>}
               </div>
-
               <div className="sidenav-switch">
-                {siteSettings?.NavMenu &&
-                  siteSettings?.NavMenu.length > 0 &&
-                  siteSettings?.NavMenu.map((Tab, index) => (
-                    <button
-                      className={`sidenav-tab ${
-                        sessionValue === Tab?.text ? 'sidenav-active' : ''
-                      }`}
-                      key={index}
-                      onClick={(e) => switchLanguage(Tab, e)}
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <span>
-                        <Image
-                          src={Tab?.image?.filename}
-                          alt=""
-                          width={48}
-                          height={48}
-                        />
-                        {Tab?.text}
-                      </span>
-                    </button>
-                  ))}
+                {headerSettings?.NavMenu?.map((Tab, index) => (
+                  <button
+                    className={`sidenav-tab ${sessionValue === Tab?.text ? 'sidenav-active' : ''}`}
+                    key={index}
+                    onClick={(e) => switchLanguage(Tab, e)}
+                    style={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <span>
+                      <Image src={Tab?.image || '/images/Global.svg'} alt="" width={48} height={48} />
+                      {Tab?.text}
+                    </span>
+                  </button>
+                ))}
               </div>
             </div>
           </div>

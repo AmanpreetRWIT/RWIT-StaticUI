@@ -1,0 +1,23 @@
+{
+    "BGColor": { "color": "#ffffff" },
+    "Title": "About Us",
+    "TitleColor": { "color": "#000248" },
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "DescriptionColor": { "color": "#757589" },
+    "Tags": ["About us"],
+    "DisableBgShape": true,
+    "Form": [
+      {
+        "FormTitle": "About us form",
+        "FormName": "Demo About us form",
+        "SubmitButton": "Submit",
+        "PhoneNumber": "",
+        "fields": [
+          { "Name": "Name", "Type": "text", "Label": "Name", "Placeholder": "Name", "Required": true },
+          { "Name": "Email", "Type": "email", "Label": "Email", "Placeholder": "Email", "Required": true },
+          { "Name": "Message", "Type": "textarea", "Label": "Message", "Placeholder": "Message", "Required": true }
+        ]
+      }
+    ]
+  }
+  

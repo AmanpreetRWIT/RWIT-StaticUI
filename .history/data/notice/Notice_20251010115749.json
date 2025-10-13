@@ -1,0 +1,11 @@
+{
+  "ShowNoticeSection": true,
+  "HideNavigationNotice": false,
+  "SectionBgColor": { "color": "#fffbe6" },
+  "SectionTextColor": { "color": "#222" },
+  "ShowBadge": true,
+  "BadgeText": "New",
+  "BadgeBgColor": { "color": "#ffecb3" },
+  "Content": "<p>Welcome to our new website! Enjoy exploring our features.</p>",
+  "ShowCloseButton": true
+}

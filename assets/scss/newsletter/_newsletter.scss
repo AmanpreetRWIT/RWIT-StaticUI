@@ -1,0 +1,336 @@
+.newsletter {
+  padding: 3rem 1rem;
+  overflow: hidden;
+
+  &__cont {
+    padding: 3.75rem 3.125rem;
+    margin-inline: auto;
+    position: relative;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__title {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.625rem;
+      font-weight: 700;
+      max-width: 30rem;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 33.75rem;
+    background: #fff;
+    height: 4rem;
+    input::placeholder {
+      color: #757589;
+    }
+    input[type='email'] {
+      padding: 10px;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+      border: 1px solid #fff;
+      font-family: 'DM Sans', sans-serif;
+      border-right: none;
+      outline: none;
+      width: 100%;
+      color: #000000;
+    }
+  }
+
+  &__btn {
+    min-width: 11.25rem;
+    margin-right: 5px;
+    button {
+      height: 100%;
+      min-height: 54px;
+      font-family: 'DM Sans', sans-serif;
+    }
+  }
+
+  .error-message {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: red;
+  }
+  .success-message {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: green;
+  }
+
+  @media #{$lg-layout} {
+    &__wrapper {
+      gap: 2rem;
+    }
+    &__form {
+      max-width: 27.5rem;
+    }
+    &__btn {
+      min-width: 9.375rem;
+      max-width: 100%;
+    }
+  }
+
+  @media #{$md-layout} {
+    &__cont {
+      padding: 1.5rem 1rem;
+    }
+    &__wrapper {
+      gap: 2rem;
+      flex-direction: column;
+    }
+
+    &__title {
+      h2 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+      }
+    }
+
+    .error-message {
+      bottom: 0px;
+    }
+    .success-message {
+      bottom: 0px;
+    }
+  }
+
+  @media #{$sm-layout} {
+    &__cont {
+      padding: 1.5rem 1rem;
+    }
+    &__wrapper {
+      gap: 2rem;
+      flex-direction: column;
+    }
+    &__input {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      h2 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+      }
+    }
+    &__form {
+      max-width: 100%;
+      flex-direction: column;
+      height: max-content;
+      background: transparent;
+      gap: 1rem;
+      input {
+        background: #fff;
+      }
+    }
+    &__btn {
+      min-width: 100%;
+    }
+    .error-message {
+      bottom: -25px;
+    }
+    .success-message {
+      bottom: -25px;
+    }
+  }
+  @media #{$sm-layout} {
+    padding-block: 1.875rem;
+  }
+
+  @media #{$small-mobile} {
+    &__form {
+      padding: 0;
+    }
+  }
+}
+.newsletterModal {
+  width: 100%;
+  max-width: 54rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    position: absolute;
+    right: -2.688rem;
+    cursor: pointer;
+    top: -2.688rem;
+  }
+  &__cont {
+    padding: 4.625rem 6.25rem;
+    margin-inline: auto;
+    height: 100%;
+    position: relative;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+  }
+  &__title {
+    h2 {
+      font-size: 3.125rem;
+      line-height: 4.25rem;
+      font-weight: 700;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__subtitle {
+    padding: 0 2rem;
+    p {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  #modalForm {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 29.625rem;
+    height: 100%;
+    background-color: transparent;
+    input::placeholder {
+      color: #757589;
+    }
+    input[type='email'] {
+      padding: 14px 20px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      border: 1px solid #fff;
+      border-right: none;
+      background-color: #fff;
+      outline: none;
+      height: 4rem;
+      font-family: 'DM Sans', sans-serif;
+      color: #000000;
+    }
+  }
+
+  &__btn {
+    min-width: 100%;
+    width: 100%;
+    margin-right: 5px;
+
+    button {
+      font-size: 1rem;
+      height: 100%;
+      min-height: 54px;
+      font-family: 'DM Sans', sans-serif;
+    }
+  }
+
+  .error-message {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: red;
+  }
+  .success-message {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: green;
+  }
+
+  @media #{$md-layout} {
+    &__cont {
+      padding: 3.125rem;
+    }
+    &__title {
+      h2 {
+        font-size: 2.625rem;
+        line-height: 3.25rem;
+      }
+    }
+  }
+
+  @media #{$sm-layout} {
+    padding: 1rem;
+    svg {
+      right: -1.25rem;
+      top: -3.75rem;
+      height: 1.875rem;
+    }
+    &__cont {
+      padding: 4.5rem 1.25rem;
+    }
+    &__wrapper {
+      gap: 0;
+      flex-direction: column;
+    }
+    &__title {
+      h2 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+      }
+    }
+    &__subtitle {
+      padding: 0;
+      p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        margin-bottom: 1.875rem;
+      }
+    }
+    &__form {
+      max-width: 100%;
+      flex-direction: column;
+      background: transparent;
+      gap: 1rem;
+      input {
+        background: #fff;
+      }
+    }
+    &__btn {
+      min-width: 100%;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+}
+.modal-hide {
+  display: none;
+}

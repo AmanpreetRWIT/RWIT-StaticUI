@@ -1,0 +1,36 @@
+[
+    {
+      "Heading": "Web Development",
+      "Description": "We provide modern and responsive web development services.",
+      "Image": "/images/services/web-dev.png",
+      "AltText": "Web Development Icon",
+      "IconBgColor": "#E0F7FA",
+      "GradientStyle": "gradient-blue",
+      "Link": "/services/web-development",
+      "HideBG": false,
+      "HideBorder": false
+    },
+    {
+      "Heading": "UI/UX Design",
+      "Description": "Our team creates engaging and intuitive UI/UX designs.",
+      "Image": "/images/services/ui-ux.png",
+      "AltText": "UI/UX Icon",
+      "IconBgColor": "#FFF3E0",
+      "GradientStyle": "gradient-orange",
+      "Link": "/services/ui-ux-design",
+      "HideBG": false,
+      "HideBorder": false
+    },
+    {
+      "Heading": "Digital Marketing",
+      "Description": "Boost your business with our digital marketing strategies.",
+      "Image": "/images/services/digital-marketing.png",
+      "AltText": "Digital Marketing Icon",
+      "IconBgColor": "#F3E5F5",
+      "GradientStyle": "gradient-purple",
+      "Link": "/services/digital-marketing",
+      "HideBG": false,
+      "HideBorder": false
+    }
+  ]
+  

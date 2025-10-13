@@ -10,7 +10,7 @@ import Head from 'next/head';
 const Footer = dynamic(() => import('./Footer'), { loading: <></> });
 
 const Layout = ({
-  layoutSettings = { header: '', footer: '', settings: '', notice: '' },
+  layoutSettings = { header: {}, footer: {}, settings: {}, notice: {} },
   children,
   showFooter = true,
 }) => {
@@ -33,7 +33,6 @@ const Layout = ({
   };
 
   useEffect(() => {
-    // from settings  notice data
     const NoticeFromSetting = {
       BadgeText: layoutSettings?.settings?.BadgeText || '',
       Content: layoutSettings?.settings?.Content || '',
@@ -45,16 +44,13 @@ const Layout = ({
       ShowCloseButton: layoutSettings?.settings?.ShowCloseButton || '',
     };
     setNotice(NoticeFromSetting);
-  }, []);
+  }, [layoutSettings?.settings]);
 
   useEffect(() => {
     const currentDomain = window?.location?.hostname;
-    if (currentDomain == 'www.rwit.io') {
-      setShowGtm(true);
-    } else {
-      setShowGtm(false);
-    }
+    setShowGtm(currentDomain === 'www.rwit.io');
   }, [router]);
+
   useEffect(() => {
     const mainWrapper = document?.querySelector('#__next');
     layoutSettings?.settings?.BackLinkModal?.forEach((modal, index) => {
@@ -66,7 +62,7 @@ const Layout = ({
         mainWrapper?.appendChild(ctaPopup);
       }
     });
-  }, []);
+  }, [layoutSettings?.settings]);
 
   useEffect(() => {
     const allLinks = document.querySelectorAll('a');
@@ -85,15 +81,14 @@ const Layout = ({
           }
         });
       });
+
       const backlink = arr?.some((link) => {
         const url = link?.getAttribute('href');
-        return layoutSettings?.settings?.BackLinkModal?.some((modal) => {
-          return url === `/${modal?.BackLink}`;
-        });
+        return layoutSettings?.settings?.BackLinkModal?.some((modal) => url === `/${modal?.BackLink}`);
       });
       setHasBacklink(backlink);
     }
-  }, [router]);
+  }, [router, layoutSettings?.settings]);
 
   return (
     <>
@@ -108,30 +103,27 @@ const Layout = ({
         <Header
           headerSetting={layoutSettings.header}
           siteSettings={layoutSettings.settings}
-          noticeBlok={layoutSettings?.notice}
           noticeData={isNotice}
         />
         <main>
-        {children}
+          {children}
         </main>
         {showFooter && <Footer footerSetting={layoutSettings.footer} />}
         {hasBacklink && (
           <div id="global-popup">
-            {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => {
-              return (
-                <BacklinkPopup
-                  key={index}
-                  index={index}
-                  blok={modal}
-                  isActive={isActive}
-                  activeModalIndex={activeModalIndex === index}
-                  setIsActive={setIsActive}
-                  isPopupVisible={isPopupVisible}
-                  setIsPopupVisible={setIsPopupVisible}
-                  handleClose={handleClose}
-                />
-              );
-            })}
+            {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => (
+              <BacklinkPopup
+                key={index}
+                index={index}
+                modal={modal}
+                isActive={isActive}
+                activeModalIndex={activeModalIndex === index}
+                setIsActive={setIsActive}
+                isPopupVisible={isPopupVisible}
+                setIsPopupVisible={setIsPopupVisible}
+                handleClose={handleClose}
+              />
+            ))}
           </div>
         )}
       </div>

@@ -1,0 +1,80 @@
+{
+  "Heading": "We create experiences that adds value in your business",
+  "Description": "Our expertise is in developing cutting-edge technology solutions. We utilize modern technology and focus on the details of each project to achieve outstanding outcomes.",
+  "Tags": "What we do",
+  "TextAlign": "center",
+  "BGColor": "#ffffff",
+  "TitleColor": "",
+  "DescriptionColor": "",
+  "RemoveAnimations": false,
+  "RemoveBorders": false,
+  "ServiceCardTextColor": "",
+  "ServiceCard": [
+    {
+      "Heading": "Consulting",
+      "Description": "Discover the latest technologies and how they can benefit your business, or learn how to enhance your existing solutions.",
+      "Image": "https://a-us.storyblok.com/f/1016184/62x62/535d016a62/consulting-icon.svg",
+      "AltText": "prismic developer",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "",
+      "Link": "/service/consulting",
+      "HideBG": true,
+      "HideBorder": false
+    },
+    {
+      "Heading": "Custom Web Development",
+      "Description": "We create custom solutions tailored to your unique needs, including planning and system architecture.",
+      "Image": "https://a-us.storyblok.com/f/1016184/62x62/bec9d09e01/custom-web-development-icon.svg",
+      "AltText": "Headless CMS Services",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "gradient-color-02",
+      "Link": "/service/web-development",
+      "HideBG": true,
+      "HideBorder": false
+    },
+    {
+      "Heading": "Headless Commerce",
+      "Description": "Modernize your tech stack with our cutting-edge headless solutions, to ensure cross-platform experiences, faster load times, and a future-proof digital landscape.",
+      "Image": "https://a-us.storyblok.com/f/1016184/62x62/f0c465b7c1/headless-commerce-icon.svg",
+      "AltText": "headless e commerce",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "gradient-color-02",
+      "Link": "/service/headless-commerce",
+      "HideBG": true,
+      "HideBorder": false
+    },
+    {
+      "Heading": "AI Agents Development",
+      "Description": "We create smart AI agents that can handle tasks, answer questions, and improve your customer interactions, making your business more efficient and responsive.",
+      "Image": "https://a-us.storyblok.com/f/1016184/512x512/128313db6f/ai-agents-development.svg",
+      "AltText": "AI Agents Development",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "gradient-color-02",
+      "Link": "/service/ai-agent-development",
+      "HideBG": true,
+      "HideBorder": false
+    },
+    {
+      "Heading": "Generative AI Development",
+      "Description": "We build advanced AI systems that can generate creative content like text, images, and videos, helping your business stand out with innovative solutions.",
+      "Image": "https://a-us.storyblok.com/f/1016184/512x512/519835178d/generative-ai-development.svg",
+      "AltText": "Generative AI Development",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "gradient-color-02",
+      "Link": "/service/generative-ai-development",
+      "HideBG": true,
+      "HideBorder": false
+    },
+    {
+      "Heading": "Digital Marketing",
+      "Description": "We help you reach more customers by using online strategies like social media, search engine optimization (SEO), and ads to grow your brand and increase sales.",
+      "Image": "https://a-us.storyblok.com/f/1016184/512x512/a4c7cd3862/digital-marketing.svg",
+      "AltText": "Digital Marketing",
+      "IconBgColor": "#f3f3f3",
+      "GradientStyle": "gradient-color-02",
+      "Link": "/service/digital-marketing",
+      "HideBG": true,
+      "HideBorder": false
+    }
+  ]
+}

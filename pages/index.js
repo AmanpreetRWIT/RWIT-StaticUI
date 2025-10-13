@@ -1,6 +1,7 @@
+
 // pages/index.js
 //import Head from 'next/head';
-//import Layout from '../components/layouts/Layout';
+import Layout from '../components/layouts/Layout';
 //components
 import HeroSection from "../components/banner/Hero";
 import HeroWithForm from "../components/banner/HeroWithForm";
@@ -28,18 +29,25 @@ import CounterCardOne from "../components/counters/CounterCardOne";
 import CounterTwo from "../components/counters/CounterTwoColumn";
 import Faq from "../components/faq/Faq";
 import OurGallery from "../components/gallery/OurGallery";
-import ContentWithMedia from "../components/ContentWithMedia";
-import TestimonalSlider from "../components/testimonials/TestimonalSlider";
-import Testimonial from "@/components/testimonials/Testimonial";
-import TestimonialsV2 from "@/components/testimonials/TestimonialsV2";
-import Technologies from "@/components/technologies/Technologies";
-import TechnologyStack from "@/components/technologies/TechnologyStack";
-import Team from "@/components/teams/Team";
-import Teams from "@/components/teams/Teams";
-import BlogTable from "@/components/blogs/singlePageBlok/BlogTable";
-import CodeView from '@/components/blogs/singlePageBlok/CodeView';
-import LatestStories from "@/components/blogs/LatestStories";
-
+import JobListing from "../components/joblisting/JobListing";
+import CaseStudySlide from "../components/MultiImageSlider/CaseStudySlide";
+import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
+import Newsletter from "../components/newsletter/Newsletter";
+import NewsletterModal from "../components/newsletter/NewsletterModal";
+import Notice from "../components/notice/Notice";
+import OurOffice from '../components/ouroffice/OurOffice';
+import OurValues from '../components/ourvalues/OurValues';
+import OurPartners from '../components/partners/Partners';
+import ApplyPopup from '../components/popup/ApplyPopup';
+import Process from "../components/process/Process";
+import ServiceCard from "../components/Services/ServiceCard";
+import Services from "../components/Services/Services";
+import ServicesWithLeftTitle from "../components/Services/ServicesWithLeftTitle";
+import ServicesWithStickyCards from "../components/Services/ServicesWithStickyCards";
+import Pricing from '../components/pricings/Pricing';
+import PricingPlan from '../components/pricings/PricingPlan';
+import Table from '../components/table/Table';
+import AboutUs from '../components/abouts/AboutUs';
 
 //json
 import heroData from "../data/banner/Hero.json";
@@ -65,43 +73,58 @@ import imageComparisonSlider from "../data/Comparison/ImageComparisonSlider.json
 import contact from "../data/contact/Contact.json";
 import counterOne from "../data/counters/Counter.json";
 import counterCardOne from "../data/counters/CounterCardOne";
-import counterTwo from "../data/counters/CounterTwoColumn";
+import counterTwo from "../data/counters/CounterTwoColumn.json";
 import faqData from "../data/faq/Faq.json";
 import ourGallery from "../data/OurGallery/OurGallery.json";
-import contentWithMedia from "../data/contentWithMedia/contentWithMedia.json";
-import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
-import testimonial from "../data/testimonials/Testimonial.json";
-import testimonialsV2 from "../data/testimonials/TestimonialsV2.json";
-import technologies from "../data/technologies/Technologies.json";
-import technologyStack from "../data/technologies/TechnologyStack.json";
-import team from "../data/teams/Team.json";
-import teams from "../data/teams/Teams.json";
-import blogTable from "../data/blogs/singlePageBlok/BlogTable.json";
-import codeView from '../data/blogs/singlePageBlok/CodeView.json';
-import latestStories from '../data/blogs/LatestStories.json';
-
+import caseStudySlidesData from "../data/MultiImageSlider/CaseStudySlides.json";
+import jobListing from "../data/joblisting/JobListing.json";
+import newsletter from "../data/newsletter/Newsletter.json";
+import newsletterModal from "../data/newsletter/NewsletterModal.json";
+import notice from "../data/notice/Notice.json";
+import ourOffice from '../data/ouroffice/OurOffice.json';
+import ourValues from '../data/ourvalues/OurValues.json';
+import ourPartners from '../data/partners/Partners.json';
+import applyPopup from '../data/popup/ApplyPopup';
+import process from "../data/process/Process.json";
+import serviceCard from "../data/Services/ServiceCard.json";
+import services from "../data/Services/Services.json";
+import servicesWithLeftTitle from "../data/Services/ServicesWithLeftTitle.json";
+import servicesWithStickyCards from "../data/Services/ServicesWithStickyCard.json";
+import footer from "../data/layouts/Footer.json";
+import header from '../data/layouts/Header.json';
+import mainMenu from '../data/layouts/MainMenu.json';
+import HeaderData from '../data/layouts/Header.json';
+import FooterData from '../data/layouts/Footer.json';
+import LayoutData from '../data/layouts/Layout.json';
+import pricing from '../data/pricings/Pricing.json';
+import pricingPlan from '../data/pricings/PricingPlan.json';
+import table from '../data/table/Table';
+import aboutUs from '../data/abouts/AboutUs';
 //const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
 export default function HomePage() {
-  // Debug: Log the data being passed to the component
 
-  // const layoutSettings = {
-  //   header: {
-  //     style: 'four',
-  //     leftColumn: 'col-lg-4 col-md-6 col-sm-6 col-8 header-left',
-  //     rightColumn: 'col-lg-8 col-md-6 col-sm-6 col-4 header-right',
-  //     headerMenus: [], // Empty for demo
-  //   },
-  //   footer: {
-  //     style: 'three',
-  //     footerData: [], // Empty for demo
-  //     StickyFooter: false,
-  //   },
-  //   settings: {},
-  // };
-
+  const layoutSettings = {
+    header: {
+      style: 'four',
+      leftColumn: 'col-lg-4 col-md-6 col-sm-6 col-8 header-left',
+      rightColumn: 'col-lg-8 col-md-6 col-sm-6 col-4 header-right',
+      ...HeaderData, // Empty for demo
+    },
+    footer: {
+      style: 'three',
+      ...FooterData, // Empty for demo
+      StickyFooter: true,
+    },
+    settings: {},
+  };  
   return (
     <>
+    
+    <Layout layoutSettings={layoutSettings} >
+      
+      
+
       <HeroSection {...heroData} />
       <HeroWithForm {...heroWithForm} />
       <HeroWithoutImage {...heroWithoutImage.Default} />
@@ -125,30 +148,30 @@ export default function HomePage() {
       <Contact {...contact} />
       <CounterOne {...counterOne} />
       <CounterCardOne {...counterCardOne} />
-      <CounterTwo blok={counterTwo} />
+      <CounterTwo {...counterTwo} />
       <Faq {...faqData} />
-      <ContentWithMedia {...contentWithMedia} />
-      <TestimonalSlider data={testimonalSlider} />
-      <Testimonial data={testimonial} />
-      <TestimonialsV2 data={testimonialsV2} />
-      <Technologies data={technologies} />
-      <TechnologyStack data={technologyStack} />
-      <Team data={team} />
-      <Teams {...teams} />
-      <BlogTable {...blogTable} />
-      <CodeView {...codeView} />;
-      <LatestStories {...latestStories} />;
+      <OurGallery blok={ourGallery} />
+      <JobListing {...jobListing} />
+      <CaseStudySlides {...caseStudySlidesData} />
+      <Newsletter {...newsletter} />
+      <NewsletterModal data={newsletterModal}/>
+      <Notice {...notice}/>
+      <OurOffice {...ourOffice}/>
+      <OurValues {...ourValues}  />
+      <OurPartners blok={ourPartners}/>
+      {/* <ApplyPopup {...applyPopup}/> */}
+      <Process blok={process}/>
 
-      {/* <Layout layoutSettings={layoutSettings}>
-        <Head>
-          <title>Home | Demo</title>
-          <meta name="description" content="Demo homepage using Hero JSON" />
-          <link rel="icon" href="/favicon.png" />
-          <link rel="canonical" href={site_url} />
-        </Head>
-
-        {/* Render Hero Section using JSON data */}
-      {/* </Layout> */}
+      <ServiceCard {...serviceCard}/>
+      <Services blok={services}/>
+      <ServicesWithLeftTitle blok={servicesWithLeftTitle}/> 
+      <ServicesWithStickyCards blok={servicesWithStickyCards}/>
+      <Pricing data={pricing}/>
+      <PricingPlan data={pricingPlan}/>
+      <Table  data={table}/>
+      <AboutUs data={aboutUs}/>
+      </Layout>
+      
     </>
   );
 }

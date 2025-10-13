@@ -1,0 +1,10 @@
+{
+  "TitleColor": { "color": "#222" },
+  "Table": {
+    "thead": [ { "value": "Name" }, { "value": "Role" } ],
+    "tbody": [
+      { "body": [ { "value": "Alice" }, { "value": "Developer" } ] },
+      { "body": [ { "value": "Bob" }, { "value": "Designer" } ] }
+    ]
+  }
+}

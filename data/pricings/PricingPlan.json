@@ -1,0 +1,39 @@
+
+{
+    "BGColor": { "color": "#f8f9fa" },
+    "Heading": "Our Pricing Plans",
+    "Tags": "Choose the plan that fits you best",
+    "Description": "Flexible pricing options for individuals and businesses.",
+    "HeadingColor": { "color": "#111111" },
+    "DescriptionColor": { "color": "#555555" },
+    "PricingCard": [
+      {
+        "Title": "Starter",
+        "SubTitle": "Perfect for freelancers",
+        "Featured": false,
+        "FeaturedText": "",
+        "Features": [
+          { "Text": "1 Project", "IsHover": false },
+          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
+          { "Text": "Community Access", "IsHover": false }
+        ],
+        "Button": [
+          { "label": "Get Started", "url": "#" }
+        ]
+      },
+      {
+        "Title": "Professional",
+        "SubTitle": "Best for small teams",
+        "Featured": true,
+        "FeaturedText": "Most Popular",
+        "Features": [
+          { "Text": "10 Projects", "IsHover": false },
+          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
+          { "Text": "Team Collaboration", "IsHover": false }
+        ],
+        "Button": [
+          { "label": "Upgrade Now", "url": "#" }
+        ]
+      }]}
+      
+  
