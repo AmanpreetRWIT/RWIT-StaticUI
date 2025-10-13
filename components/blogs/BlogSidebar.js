@@ -12,41 +12,44 @@ const BlogSidebar = ({ categories, tags, recentPost }) => {
           {recentPost?.map((post, index) => (
             <div className="small-post" key={`recent-post-${index}`}>
               <div className="thumbnail flex-shrink-0">
-                {post?.content?.FeaturedImage?.filename && (
-                  <Link href={`/blog/${post.slug}`} legacyBehavior>
-                    <a>
-                      <Image
-                        loading='lazy'
-                        placeholder="blur"
-                        blurDataURL={placeholderLight}
-                        width={100}
-                        height={80}
-                        src={post?.content?.FeaturedImage?.filename}
-                        alt={
-                          post?.content?.FeaturedImage?.alt
-                            ? post?.content?.FeaturedImage?.alt
-                            : 'Blog Image'
-                        }
-                      />
-                    </a>
-                  </Link>
-                )}
+                {
+                  // Support both shapes: nested content.FeaturedImage.filename or flat post.FeaturedImage (string)
+                  (post?.content?.FeaturedImage?.filename || post?.FeaturedImage) && (
+                    <Link href={`/blog/${post.slug}`} legacyBehavior>
+                      <a>
+                        <Image
+                          loading="lazy"
+                          placeholder="blur"
+                          blurDataURL={placeholderLight}
+                          width={100}
+                          height={80}
+                          src={post?.content?.FeaturedImage?.filename || post?.FeaturedImage}
+                          alt={
+                            post?.content?.FeaturedImage?.alt
+                              ? post?.content?.FeaturedImage?.alt
+                              : 'Blog Image'
+                          }
+                        />
+                      </a>
+                    </Link>
+                  )
+                }
               </div>
               <div className="content">
                 <h4>
                   <Link href={`/blog/${post?.slug}`} legacyBehavior>
-                    <a>{post?.content?.Title}</a>
+                    <a>{post?.content?.Title || post?.Title}</a>
                   </Link>
                 </h4>
                 <ul className="blog-meta">
-                  {post?.content?.ArticleDate && (
+                  {(post?.content?.ArticleDate || post?.ArticleDate) && (
                     <li>
                       {formatDateString(
-                        post?.content?.ArticleDate?.split(' ')[0]
+                        (post?.content?.ArticleDate || post?.ArticleDate)?.split(' ')[0]
                       )}
                     </li>
                   )}
-                  <li>{`${post?.content?.ReadTime} min to read`}</li>
+                  <li>{`${post?.content?.ReadTime || post?.ReadTime} min to read`}</li>
                 </ul>
               </div>
             </div>

@@ -9,7 +9,6 @@ const Contact = ({
   contactForms = [],
   ContactCardData = [],
 }) => {
-  console.log('ContactFormData', contactForms)
   return (
     <section className="main-wrapper">
       <div

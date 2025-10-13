@@ -7,7 +7,6 @@ import { getImageDimension } from '../../helpers/utilities';
 import { getImageSrc } from '../../helpers/utilities';
 
 const CategoryCard = ({ blog }) => {
-  console.log('blog', blog?.Title)
   return (
     <>
       <Link className="categoryCard" href={`/blog/${blog?.slug}`}>

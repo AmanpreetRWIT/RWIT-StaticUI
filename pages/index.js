@@ -138,7 +138,6 @@ export default function HomePage() {
       <BlogTable {...blogTable} />
       <CodeView {...codeView} />;
       <LatestStories {...latestStories} />;
-      {/* {console.log('teams', teams)} */}
 
       {/* <Layout layoutSettings={layoutSettings}>
         <Head>

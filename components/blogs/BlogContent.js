@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/legacy/image';
 import BlogSidebar from './BlogSidebar';
@@ -9,6 +9,21 @@ import { placeholderLight } from '../../helpers/utilities';
 const POST_PER_PAGE = 15;
 
 const BlogContent = ({ featuredPost, filteredItems, blogItems }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const paginatedItems = useMemo(() => {
+    const start = (currentPage - 1) * POST_PER_PAGE;
+    const end = start + POST_PER_PAGE;
+    return filteredItems?.slice(start, end) || [];
+  }, [filteredItems, currentPage]);
+
+  const totalPages = Math.max(1, Math.ceil((filteredItems?.length || 0) / POST_PER_PAGE));
+
+  const handlePageClick = (page) => {
+    setCurrentPage(Number(page) || 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="axil-blog-area bg-color-white ax-section-gap">
       <div className="container">
@@ -49,15 +64,13 @@ const BlogContent = ({ featuredPost, filteredItems, blogItems }) => {
           </div>
         )}
 
-        {filteredItems && <BlogGridPost posts={filteredItems} />}
+        {filteredItems && <BlogGridPost posts={paginatedItems} />}
 
         <Pagination
           postPerpage={POST_PER_PAGE}
-          totalPages={Math.ceil(blogItems.length / POST_PER_PAGE)}
-          currentpage={1}
-          handleClick={() =>
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-          }
+          totalPages={totalPages}
+          currentpage={currentPage}
+          handleClick={handlePageClick}
         />
       </div>
     </div>

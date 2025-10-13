@@ -12,7 +12,6 @@ const Button = ({ data, index }) => {
   const buttonLogo = data?.buttonLogo || null;
   const hideButtonLogo = data?.hideButtonLogo || false;
   const extraClass = data?.className || '';
-console.log('data', data)
   return (
     <Link href={href} key={'button' + index} legacyBehavior>
       <a

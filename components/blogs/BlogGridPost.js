@@ -18,10 +18,9 @@ const BlogGridPost = ({ posts }) => {
               posts?.map((post, index) => {
                 let blogDescription;
                 const limit = isWindow ? 150 : 250;
+                const excerpt = post?.content?.Excerpt || post?.Excerpt;
                 blogDescription =
-                  post?.content?.Excerpt?.length > limit
-                    ? post?.content?.Excerpt?.slice(0, limit) + '...'
-                    : post?.content?.Excerpt;
+                  excerpt?.length > limit ? excerpt.slice(0, limit) + '...' : excerpt;
                 return (
                   <div
                     className="col-lg-4 col-sm-6 col-12 mt-4 blog-post-wrap"
@@ -31,7 +30,7 @@ const BlogGridPost = ({ posts }) => {
                       <Link href={`/blog/${post?.slug}`} legacyBehavior>
                         <a>
                           <div className="thumbnail">
-                            {post?.content?.FeaturedImage?.filename && (
+                            {(post?.content?.FeaturedImage?.filename || post?.FeaturedImage) && (
                               <Image
                                 loading="lazy"
                                 placeholder="blur"
@@ -39,7 +38,7 @@ const BlogGridPost = ({ posts }) => {
                                 width={417}
                                 height={235}
                                 className="w-100"
-                                src={post?.content?.FeaturedImage?.filename}
+                                src={post?.content?.FeaturedImage?.filename || post?.FeaturedImage}
                                 alt={
                                   post?.content?.FeaturedImage?.alt
                                     ? post?.content?.FeaturedImage?.alt
@@ -49,10 +48,10 @@ const BlogGridPost = ({ posts }) => {
                             )}
                           </div>
                           <div className="content">
-                            {post?.content?.Title && (
-                              <h4> {post?.content?.Title}</h4>
+                            {(post?.content?.Title || post?.Title) && (
+                              <h4> {post?.content?.Title || post?.Title}</h4>
                             )}
-                            {post?.content?.Excerpt && <p>{blogDescription}</p>}
+                            {(post?.content?.Excerpt || post?.Excerpt) && <p>{blogDescription}</p>}
                           </div>
                         </a>
                       </Link>
