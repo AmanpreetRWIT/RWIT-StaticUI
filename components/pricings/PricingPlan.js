@@ -1,18 +1,16 @@
 import React from 'react';
-import { StoryblokComponent } from '@storyblok/react';
 import SectionTitle from '../common/SectionTitle';
-import PricingIcons from './PricingIcons';
-import { InfoIcons } from './PricingIcons';
+import PricingIcons, { InfoIcons } from './PricingIcons';
 
-const PricingPlan = ({ blok }) => {
+const PricingPlan = ({ data }) => {
   return (
     <div
       id="PricingPlane"
-      className={`pricing d-flex align-items-center  `}
+      className={`pricing d-flex align-items-center`}
       style={
-        blok?.BGColor?.color
+        data?.BGColor?.color
           ? {
-              backgroundColor: `${blok?.BGColor?.color}`,
+              backgroundColor: `${data?.BGColor?.color}`,
             }
           : {}
       }
@@ -23,14 +21,14 @@ const PricingPlan = ({ blok }) => {
             <div className="axil-call-to-action position-relative">
               <SectionTitle
                 titleClass=""
-                title={blok?.Heading}
-                subtitle={blok?.Tags}
+                title={data?.Heading}
+                subtitle={data?.Tags}
                 alignment="center"
-                description={blok?.Description}
-                titleColor={blok?.HeadingColor?.color}
+                description={data?.Description}
+                titleColor={data?.HeadingColor?.color}
                 descriptionColor={
-                  blok?.DescriptionColor?.color
-                    ? blok?.DescriptionColor?.color
+                  data?.DescriptionColor?.color
+                    ? data?.DescriptionColor?.color
                     : ''
                 }
               />
@@ -41,8 +39,8 @@ const PricingPlan = ({ blok }) => {
             <div className="compare"></div>
           </div>
         </div>
-        <div className="pricing-wrapper ">
-          {blok?.PricingCard?.map((Item, index) => {
+        <div className="pricing-wrapper">
+          {data?.PricingCard?.map((Item, index) => {
             return (
               <div
                 className={`pricing-table ${
@@ -90,9 +88,9 @@ const PricingPlan = ({ blok }) => {
                               <span className="featured-icon">
                                 {feature?.InfoText && (
                                   <span
-                                    className={`   ${
+                                    className={`${
                                       feature?.InfoText ? 'featured-text' : ''
-                                    } `}
+                                    }`}
                                   >
                                     {feature?.InfoText}
                                   </span>
@@ -109,10 +107,16 @@ const PricingPlan = ({ blok }) => {
                   <div
                     className={`${
                       Item?.Featured ? 'featured-btn' : ''
-                    } pricing-btn d-flex pricing-btn `}
+                    } pricing-btn d-flex pricing-btn`}
                   >
                     {Item?.Button?.map((button, index) => (
-                      <StoryblokComponent blok={button} key={'block' + index} />
+                      <a
+                        href={button?.url}
+                        key={'button' + index}
+                        className="axil-btn btn-large btn-transparent"
+                      >
+                        {button?.label}
+                      </a>
                     ))}
                   </div>
                 </div>

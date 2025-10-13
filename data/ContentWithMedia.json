@@ -1,8 +1,0 @@
-{
-  "BGColor": { "color": "#fff" },
-  "Title": "Content With Media",
-  "TitleColor": { "color": "#222" },
-  "Description": "Showcase your content with images or video.",
-  "DescriptionColor": { "color": "#555" },
-  "Image": { "filename": "/images/media.jpg", "alt": "Media" }
-}

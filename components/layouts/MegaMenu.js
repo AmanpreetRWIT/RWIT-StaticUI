@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-const MegaMenu = ({ menu, activeMenu, index }) => {
+const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => {
   const updatelist = (menu) => {
     const menulist = menu[0];
     if (!menulist || !Array.isArray(menu)) return 'submenu-lists';
-
     if (
       menulist?.ChildMenus4?.length > 0 &&
       menulist?.ChildMenus3?.length > 0 &&
@@ -43,7 +42,7 @@ const MegaMenu = ({ menu, activeMenu, index }) => {
                 {item?.Description && (
                   <>
                     <p className="submenu-content-title">{item?.Title}</p>
-                    <div className="submenu-content-desc">{item?.Description}</div>
+                    <div className="submenu-content-desc" style={{color: DescriptionColor}}>{item?.Description}</div>
                   </>
                 )}
               </div>

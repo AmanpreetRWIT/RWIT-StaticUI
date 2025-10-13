@@ -1,30 +1,51 @@
 {
-    "MegaMenu": [
-      {
-        "Title": "Web Services",
-        "Description": "We provide web development services.",
-        "ChildMenusTitle": "Frontend",
-        "ChildMenus": [
-          { "MenuLabel": "React", "MenuLink": { "url": "/services/react" } },
-          { "MenuLabel": "Next.js", "MenuLink": { "url": "/services/nextjs" } }
-        ],
-        "ChildMenus2Title": "Backend",
-        "ChildMenus2": [
-          { "MenuLabel": "Node.js", "MenuLink": { "url": "/services/node" } },
-          { "MenuLabel": "Express", "MenuLink": { "url": "/services/express" } }
-        ],
-        "ChildMenus3Title": "Databases",
-        "ChildMenus3": [
-          { "MenuLabel": "MongoDB", "MenuLink": { "url": "/services/mongodb" } },
-          { "MenuLabel": "MySQL", "MenuLink": { "url": "/services/mysql" } }
-        ],
-        "ChildMenus4Title": "Other Services",
-        "ChildMenus4": [
-          { "MenuLabel": "SEO", "MenuLink": { "url": "/services/seo" } }
-        ],
-        "LinkText": "View All Services",
-        "Link": { "url": "/services" }
-      }
-    ]
-  }
-  
+  "MegaMenu": [
+    {
+      "Title": "What we offer",
+      "Description": "Whether you need a blazing-fast e-commerce platform, a dynamic content site, or a custom web application, we deliver tailored solutions that meet your unique needs.",
+      "LinkText": "All Services →",
+      "Link": { "url": "/all-services" }
+    },
+    {
+      "Title": "AI Services",
+      "ChildMenusTitle": "AI Services",
+      "ChildMenus": [
+        { "MenuLabel": "AI Agents Development", "MenuLink": { "url": "/services/ai-agents-development" } },
+        { "MenuLabel": "Generative AI Development", "MenuLink": { "url": "/services/generative-ai-development" } },
+        { "MenuLabel": "N8N Automation", "MenuLink": { "url": "/services/n8n-automation" } },
+        { "MenuLabel": "Headless CMS Migration", "MenuLink": { "url": "/services/headless-cms-migration" } }
+      ]
+    },
+    {
+      "Title": "Marketing",
+      "ChildMenusTitle": "Marketing",
+      "ChildMenus": [
+        { "MenuLabel": "Digital Marketing", "MenuLink": { "url": "/services/digital-marketing" } },
+        { "MenuLabel": "Growth Marketing", "MenuLink": { "url": "/services/growth-marketing" } },
+        { "MenuLabel": "Headless Seo", "MenuLink": { "url": "/services/headless-seo" } },
+        { "MenuLabel": "Headless Website Maintenance", "MenuLink": { "url": "/services/headless-website-maintenance" } }
+      ]
+    },
+    {
+      "Title": "Web Services",
+      "ChildMenusTitle": "Web Services",
+      "ChildMenus": [
+        { "MenuLabel": "Web Development", "MenuLink": { "url": "/services/web-development" } },
+        { "MenuLabel": "Web Design", "MenuLink": { "url": "/services/web-design" } },
+        { "MenuLabel": "Headless Commerce", "MenuLink": { "url": "/services/headless-commerce" } },
+        { "MenuLabel": "Headless CMS", "MenuLink": { "url": "/services/headless-cms" } },
+        { "MenuLabel": "WordPress Development", "MenuLink": { "url": "/services/wordpress-development" } },
+        { "MenuLabel": "Mobile Development", "MenuLink": { "url": "/services/mobile-development" } }
+      ]
+    },
+    {
+      "Title": "Full Stack",
+      "ChildMenusTitle": "Full Stack",
+      "ChildMenus": [
+        { "MenuLabel": "Web App Development", "MenuLink": { "url": "/services/web-app-development" } },
+        { "MenuLabel": "REST API Development", "MenuLink": { "url": "/services/rest-api-development" } },
+        { "MenuLabel": "WHMCS Development", "MenuLink": { "url": "/services/whmcs-development" } }
+      ]
+    }
+  ]
+}

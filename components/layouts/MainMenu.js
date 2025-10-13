@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 const MegaMenu = dynamic(() => import('./MegaMenu'));
 
 const MainMenu = ({ menus }) => {
-  console.log('menus', menus)
   const [selectedIndex, setSelectedIndex] = useState(null);
   const handleDropdownToggle = (index) => {
     setSelectedIndex(selectedIndex === index ? null : index);

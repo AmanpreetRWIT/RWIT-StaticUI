@@ -40,14 +40,14 @@ import OurValues from '../components/ourvalues/OurValues';
 import OurPartners from '../components/partners/Partners';
 import ApplyPopup from '../components/popup/ApplyPopup';
 import Process from "../components/process/Process";
-import SearchComponent  from "../components/search/Search";
 import ServiceCard from "../components/Services/ServiceCard";
 import Services from "../components/Services/Services";
 import ServicesWithLeftTitle from "../components/Services/ServicesWithLeftTitle";
 import ServicesWithStickyCards from "../components/Services/ServicesWithStickyCards";
-import Footer from "../components/layouts/Footer";
-import Header from '../components/layouts/Header';
-import MainMenu from '../components/layouts/MainMenu';
+import Pricing from '../components/pricings/Pricing';
+import PricingPlan from '../components/pricings/PricingPlan';
+import Table from '../components/table/Table';
+import AboutUs from '../components/abouts/AboutUs';
 
 //json
 import heroData from "../data/banner/Hero.json";
@@ -86,7 +86,6 @@ import ourValues from '../data/ourvalues/OurValues.json';
 import ourPartners from '../data/partners/Partners.json';
 import applyPopup from '../data/popup/ApplyPopup';
 import process from "../data/process/Process.json";
-import searchComponent  from "../data/search/Search.json";
 import serviceCard from "../data/Services/ServiceCard.json";
 import services from "../data/Services/Services.json";
 import servicesWithLeftTitle from "../data/Services/ServicesWithLeftTitle.json";
@@ -94,7 +93,13 @@ import servicesWithStickyCards from "../data/Services/ServicesWithStickyCard.jso
 import footer from "../data/layouts/Footer.json";
 import header from '../data/layouts/Header.json';
 import mainMenu from '../data/layouts/MainMenu.json';
-
+import HeaderData from '../data/layouts/Header.json';
+import FooterData from '../data/layouts/Footer.json';
+import LayoutData from '../data/layouts/Layout.json';
+import pricing from '../data/pricings/Pricing.json';
+import pricingPlan from '../data/pricings/PricingPlan.json';
+import table from '../data/table/Table';
+import aboutUs from '../data/abouts/AboutUs';
 //const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
 export default function HomePage() {
@@ -104,21 +109,21 @@ export default function HomePage() {
       style: 'four',
       leftColumn: 'col-lg-4 col-md-6 col-sm-6 col-8 header-left',
       rightColumn: 'col-lg-8 col-md-6 col-sm-6 col-4 header-right',
-      headerMenus: [], // Empty for demo
+      ...HeaderData, // Empty for demo
     },
     footer: {
       style: 'three',
-      footerData: [], // Empty for demo
-      StickyFooter: false,
+      ...FooterData, // Empty for demo
+      StickyFooter: true,
     },
     settings: {},
   };  
   return (
     <>
     
-  
-      <Header {...header}/>
-      <MainMenu menus={mainMenu}/>
+    <Layout layoutSettings={layoutSettings} >
+      
+      
 
       <HeroSection {...heroData} />
       <HeroWithForm {...heroWithForm} />
@@ -156,13 +161,16 @@ export default function HomePage() {
       <OurPartners blok={ourPartners}/>
       {/* <ApplyPopup {...applyPopup}/> */}
       <Process blok={process}/>
-      {/* <SearchComponent onSearch={searchComponent}/> */}
+
       <ServiceCard {...serviceCard}/>
       <Services blok={services}/>
       <ServicesWithLeftTitle blok={servicesWithLeftTitle}/> 
       <ServicesWithStickyCards blok={servicesWithStickyCards}/>
-
-      
+      <Pricing data={pricing}/>
+      <PricingPlan data={pricingPlan}/>
+      <Table  data={table}/>
+      <AboutUs data={aboutUs}/>
+      </Layout>
       
     </>
   );

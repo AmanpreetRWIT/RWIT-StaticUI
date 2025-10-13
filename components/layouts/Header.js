@@ -26,7 +26,7 @@ const Header = ({
 
   const [sessionValue, setSessionValue] = useState('Global');
   const [activeIcon, setActiveIcon] = useState(
-     '/images/Global.svg'
+     'https://a-us.storyblok.com/f/1016184/64x64/149a6e176c/global.svg'
   );
 
   useEffect(() => {
@@ -208,7 +208,7 @@ const Header = ({
         </div>
       )}
 
-      <header className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`}>
+      <header className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`} style={{backgroundColor:"white"}}>
         <div className="header-wrapper">
           <div className={headerContainerClass()}>
             <div className="row align-items-center">
@@ -217,10 +217,10 @@ const Header = ({
                   <Link href="/" prefetch={false}>
                     <Logo
                       variant={headerSettings.style === 'four' ? 'two' : 'one'}
-                      logoImage={siteSettings?.Logo || ''}
-                      companyName={siteSettings?.CompanyName || ''}
-                      tagline={siteSettings?.Tagline || ''}
-                      alt={siteSettings?.LogoAlt || ''}
+                      logoImage={headerSetting?.Logo || siteSettings?.Logo || ''}
+                      companyName={headerSetting?.CompanyName || siteSettings?.CompanyName || ''}
+                      tagline={headerSetting?.Tagline || siteSettings?.Tagline || ''}
+                      alt={headerSetting?.LogoAlt || siteSettings?.LogoAlt || ''}
                     />
                   </Link>
                 </div>
@@ -261,13 +261,8 @@ const Header = ({
                     {headerSettings.style === 'four' && (
                       <div className="ax-header-button  ml_lg--10  header-btn">
                         {headerSetting.headerMenus?.Buttons?.map((headerBtn, headerBtnIndex) => (
-                          <a
-                            key={headerBtnIndex}
-                            href={headerBtn.Link || '#'}
-                            className={headerBtn.className || 'btn'}
-                          >
-                            {headerBtn.Label || 'Button'}
-                          </a>
+                          <a key={headerBtnIndex} class={"hoverable axil-button contactbtn axil-button btn-solid btn-solid btn-medium"} target={""} href={headerBtn.Link}>
+                            <span class={"button-text hoverable px-0"}>{headerBtn.Label}</span></a>
                         ))}
                       </div>
                     )}
@@ -316,11 +311,11 @@ const Header = ({
             </div>
             <div className="sidenav-background">
               <div className="sidenav-heading">
-                {siteSettings?.NavTitle && <h2>{siteSettings.NavTitle}</h2>}
-                {siteSettings?.NavSubTitle && <p>{siteSettings.NavSubTitle}</p>}
+                {headerSettings?.NavTitle && <h2>{headerSettings.NavTitle}</h2>}
+                {headerSettings?.NavSubTitle && <p>{headerSettings.NavSubTitle}</p>}
               </div>
               <div className="sidenav-switch">
-                {siteSettings?.NavMenu?.map((Tab, index) => (
+                {headerSettings?.NavMenu?.map((Tab, index) => (
                   <button
                     className={`sidenav-tab ${sessionValue === Tab?.text ? 'sidenav-active' : ''}`}
                     key={index}

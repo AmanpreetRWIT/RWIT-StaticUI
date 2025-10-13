@@ -1,64 +1,63 @@
 {
-    "header": {
-      "Logo": "",
-      "Menu": [
-        { "Label": "Home", "Link": "/" },
-        { "Label": "About", "Link": "/about" },
-        { "Label": "Contact", "Link": "/contact" }
-      ]
-    },
-    "footer": {
-      "TextColor": "text-white",
-      "BGColor": "#101010",
-      "StickyFooter": true,
-      "FooterLayout": "footerLayout1",
-      "AddressHeading": "Our Offices",
-      "Address": [
-        {
-          "AddressHeading": "USA",
-          "FullAddress": "123 Main Street, New York, NY",
-          "PhoneNumber": [{ "Label": "+1 234 567 8900", "Link": "tel:+12345678900" }],
-          "FlagImage": { "filename": "/images/flags/us.png", "alt": "USA Flag" }
-        },
-        {
-          "AddressHeading": "UK",
-          "FullAddress": "456 King Road, London, UK",
-          "PhoneNumber": [{ "Label": "+44 123 456 7890", "Link": "tel:+441234567890" }],
-          "FlagImage": { "filename": "/images/flags/uk.png", "alt": "UK Flag" }
-        }
-      ],
-      "MoreAddressLink": [{ "Label": "More Offices", "Link": "/locations" }],
-      "FooterCloumn": [
-        {
-          "ColumnHeading": "Company",
-          "Menu": [{ "Label": "About Us", "Link": "/about" }]
-        }
-      ],
-      "PartnerLabel": "Our Partners",
-      "Images": [
-        { "Image": { "filename": "/images/logo1.png", "alt": "Logo 1" }, "ImageLink": "/partner1" }
-      ],
-      "SocialIcons": [
-        { "Image": { "filename": "/images/facebook.png", "alt": "Facebook" }, "ImageLink": "https://facebook.com" }
-      ],
-      "CopyrightText": "All rights reserved.",
-      "CopyrightLinks": [
-        { "Label": "Privacy Policy", "Link": "/privacy", "Target": "_blank" }
-      ]
-    },
-    "settings": {
-      "BadgeText": "New",
-      "Content": "Welcome to our website",
-      "ShowBadge": true,
-      "SectionBgColor": "#ff0000",
-      "SectionTextColor": "#ffffff",
-      "ShowNoticeSection": true,
-      "ShowCloseButton": true,
-      "GTMID": "GTM-XXXX",
-      "SiteCreator": "@rwit",
-      "BackLinkModal": [
-        { "BackLink": "contact", "Content": "Contact form popup content" }
-      ]
-    }
+  "header": {
+    "Logo": "",
+    "Menu": [
+      { "Label": "Home", "Link": "/" },
+      { "Label": "About", "Link": "/about" },
+      { "Label": "Contact", "Link": "/contact" }
+    ]
+  },
+  "footer": {
+    "TextColor": "text-white",
+    "BGColor": "#101010",
+    "StickyFooter": true,
+    "FooterLayout": "footerLayout1",
+    "AddressHeading": "Our Offices",
+    "Address": [
+      {
+        "AddressHeading": "USA",
+        "FullAddress": "123 Main Street, New York, NY",
+        "PhoneNumber": [{ "Label": "+1 234 567 8900", "Link": "tel:+12345678900" }],
+        "FlagImage": { "filename": "/images/flags/us.png", "alt": "USA Flag" }
+      },
+      {
+        "AddressHeading": "UK",
+        "FullAddress": "456 King Road, London, UK",
+        "PhoneNumber": [{ "Label": "+44 123 456 7890", "Link": "tel:+441234567890" }],
+        "FlagImage": { "filename": "/images/flags/uk.png", "alt": "UK Flag" }
+      }
+    ],
+    "MoreAddressLink": [{ "Label": "More Offices", "Link": "/locations" }],
+    "FooterCloumn": [
+      {
+        "ColumnHeading": "Company",
+        "Menu": [{ "Label": "About Us", "Link": "/about" }]
+      }
+    ],
+    "PartnerLabel": "Our Partners",
+    "Images": [
+      { "Image": { "filename": "/images/logo1.png", "alt": "Logo 1" }, "ImageLink": "/partner1" }
+    ],
+    "SocialIcons": [
+      { "Image": { "filename": "/images/facebook.png", "alt": "Facebook" }, "ImageLink": "https://facebook.com" }
+    ],
+    "CopyrightText": "All rights reserved.",
+    "CopyrightLinks": [
+      { "Label": "Privacy Policy", "Link": "/privacy", "Target": "_blank" }
+    ]
+  },
+  "settings": {
+    "BadgeText": "New",
+    "Content": "How Headless Architecture Simplifies Maintenance & Reduces Costs – Read More",
+    "ShowBadge": false,
+    "SectionBgColor": "rgb(5, 1, 72)",
+    "SectionTextColor": "#ffffff",
+    "ShowNoticeSection": true,
+    "ShowCloseButton": false,
+    "GTMID": "GTM-XXXX",
+    "SiteCreator": "@rwit",
+    "BackLinkModal": [
+      { "BackLink": "contact", "Content": "Contact form popup content" }
+    ]
   }
-  
+}

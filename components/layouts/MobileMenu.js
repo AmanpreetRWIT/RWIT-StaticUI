@@ -83,14 +83,14 @@ const MobileMenu = ({
     >
       <div className="inner">
         <div className="mobileheader">
-          {siteSettings && (
+          {(siteSettings || headerSetting) && (
             <div className="logo">
               <Link href="/" prefetch={false}>
                 <Logo
                   variant="two"
-                  logoImage={siteSettings?.Logo?.filename || ''}
-                  companyName={siteSettings?.CompanyName || ''}
-                  tagline={siteSettings?.Tagline || ''}
+                  logoImage={headerSetting?.Logo || siteSettings?.Logo || ''}
+                  companyName={headerSetting?.CompanyName || siteSettings?.CompanyName || ''}
+                  tagline={headerSetting?.Tagline || siteSettings?.Tagline || ''}
                   width="250px"
                 />
               </Link>

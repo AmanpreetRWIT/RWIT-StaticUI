@@ -1,32 +1,160 @@
 [
-    {
-      "MenuLabel": "Home",
-      "MenuLink": { "url": "/" },
-      "MegaMenu": []
-    },
-    {
-      "MenuLabel": "Services",
-      "MenuLink": { "url": "/services" },
-      "MegaMenu": [
-        {
-          "SubLabel": "Web Development",
-          "SubLink": { "url": "/services/web-development" }
-        },
-        {
-          "SubLabel": "Mobile Apps",
-          "SubLink": { "url": "/services/mobile-apps" }
-        }
-      ]
-    },
-    {
-      "MenuLabel": "About Us",
-      "MenuLink": { "url": "/about" },
-      "MegaMenu": []
-    },
-    {
-      "MenuLabel": "Contact",
-      "MenuLink": { "url": "/contact" },
-      "MegaMenu": []
-    }
-  ]
-  
+  {
+    "MenuLabel": "Home",
+    "MenuLink": { "url": "/" },
+    "MegaMenu": []
+  },
+  {
+    "MenuLabel": "About",
+    "MenuLink": { "url": "/about" },
+    "MegaMenu": []
+  },
+  {
+    "MenuLabel": "Case Studies",
+    "MenuLink": { "url": "/casestudies" },
+    "MegaMenu": []
+  },
+  {
+    "MenuLabel": "Services",
+    "MenuLink": { "url": "/services" },
+    "MegaMenu": [
+      
+      {
+        "Title": "What we offer",
+        "Description": "Whether you need a blazing-fast e-commerce platform, a dynamic content site, or a custom web application, we deliver tailored solutions that meet your unique needs.",
+        "LinkText": "All Services →",
+        "Link": { "url": "/all-services" }
+      },
+      
+      {
+        "Title": "AI Services",
+        "ChildMenusTitle": "AI Services",
+        "ChildMenus": [
+          { "MenuLabel": "AI Agents Development", "MenuLink": { "url": "/services/ai-agents-development" } },
+          { "MenuLabel": "Generative AI Development", "MenuLink": { "url": "/services/generative-ai-development" } },
+          { "MenuLabel": "N8N Automation", "MenuLink": { "url": "/services/n8n-automation" } },
+          { "MenuLabel": "Headless CMS Migration", "MenuLink": { "url": "/services/headless-cms-migration" } }
+        ]
+      },
+      
+      {
+        "Title": "Marketing",
+        "ChildMenusTitle": "Marketing",
+        "ChildMenus": [
+          { "MenuLabel": "Digital Marketing", "MenuLink": { "url": "/services/digital-marketing" } },
+          { "MenuLabel": "Growth Marketing", "MenuLink": { "url": "/services/growth-marketing" } },
+          { "MenuLabel": "Headless Seo", "MenuLink": { "url": "/services/headless-seo" } },
+          { "MenuLabel": "Headless Website Maintenance", "MenuLink": { "url": "/services/headless-website-maintenance" } }
+        ]
+      },
+      
+      {
+        "Title": "Web Services",
+        "ChildMenusTitle": "Web Services",
+        "ChildMenus": [
+          { "MenuLabel": "Web Development", "MenuLink": { "url": "/services/web-development" } },
+          { "MenuLabel": "Web Design", "MenuLink": { "url": "/services/web-design" } },
+          { "MenuLabel": "Headless Commerce", "MenuLink": { "url": "/services/headless-commerce" } },
+          { "MenuLabel": "Headless CMS", "MenuLink": { "url": "/services/headless-cms" } },
+          { "MenuLabel": "WordPress Development", "MenuLink": { "url": "/services/wordpress-development" } },
+          { "MenuLabel": "Mobile Development", "MenuLink": { "url": "/services/mobile-development" } }
+        ]
+      },
+      
+      {
+        "Title": "Full Stack",
+        "ChildMenusTitle": "Full Stack",
+        "ChildMenus": [
+          { "MenuLabel": "Web App Development", "MenuLink": { "url": "/services/web-app-development" } },
+          { "MenuLabel": "REST API Development", "MenuLink": { "url": "/services/rest-api-development" } },
+          { "MenuLabel": "WHMCS Development", "MenuLink": { "url": "/services/whmcs-development" } }
+        ]
+      }
+    ]
+  },
+  {
+    "MenuLabel": "Industries",
+    "MenuLink": { "url": "/industries" },
+    "MegaMenu": [
+      
+      {
+        "Title": "Industries",
+        "Description": "We design and develop custom apps and websites that support various industries in solving challenges, improving efficiency, and accelerating growth.",
+        "ChildMenusTitle": "Industry Expertise",
+        "ChildMenus": [
+          { "MenuLabel": "Healthcare", "MenuLink": { "url": "/industries/healthcare" } },
+          { "MenuLabel": "Fintech", "MenuLink": { "url": "/industries/fintech" } },
+          { "MenuLabel": "E-commerce", "MenuLink": { "url": "/industries/e-commerce" } },
+          { "MenuLabel": "Real Estate", "MenuLink": { "url": "/industries/real-estate" } },
+          { "MenuLabel": "Travel & Hospitality", "MenuLink": { "url": "/industries/travel-hospitality" } }
+        ]
+      }
+    ]
+  },
+  {
+    "MenuLabel": "Technologies",
+    "MenuLink": { "url": "/technologies" },
+    "MegaMenu": [
+      
+      {
+        "Title": "Tech Stack",
+        "Description": "Partner with our skilled IT professionals to develop exceptional custom software using a diverse range of frameworks.",
+        "LinkText": "View All Technologies →",
+        "Link": { "url": "/tech-stack" }
+      },
+      
+      {
+        "Title": "Headless Tech", 
+        "ChildMenusTitle": "Headless CMS",
+        "ChildMenus": [
+          { "MenuLabel": "Builder.io", "MenuLink": { "url": "/tech-stack/builder-io" } },
+          { "MenuLabel": "Strapi", "MenuLink": { "url": "/tech-stack/strapi" } },
+          { "MenuLabel": "Sanity", "MenuLink": { "url": "/tech-stack/sanity" } },
+          { "MenuLabel": "Prismic", "MenuLink": { "url": "/tech-stack/prismic" } },
+          { "MenuLabel": "Storyblok", "MenuLink": { "url": "/tech-stack/storyblok" } },
+          { "MenuLabel": "Contentful", "MenuLink": { "url": "/tech-stack/contentful" } },
+          { "MenuLabel": "Directus", "MenuLink": { "url": "/tech-stack/directus" } }
+        ],
+        "ChildMenus2Title": "Headless Commerce", 
+        "ChildMenus2": [
+          { "MenuLabel": "Swell", "MenuLink": { "url": "/tech-stack/swell" } },
+          { "MenuLabel": "Medusa.js", "MenuLink": { "url": "/tech-stack/medusajs" } },
+          { "MenuLabel": "Bigcommerce", "MenuLink": { "url": "/tech-stack/bigcommerce" } },
+          { "MenuLabel": "Shopify Plus", "MenuLink": { "url": "/tech-stack/shopify-plus" } },
+          { "MenuLabel": "dotCMS", "MenuLink": { "url": "/tech-stack/dotcms" } },
+          { "MenuLabel": "Saleor", "MenuLink": { "url": "/tech-stack/saleor" } }
+        ]
+      },
+      
+      {
+        "Title": "Frontend",
+        "ChildMenusTitle": "Frontend Frameworks",
+        "ChildMenus": [
+          { "MenuLabel": "React", "MenuLink": { "url": "/tech-stack/react" } },
+          { "MenuLabel": "Next.js", "MenuLink": { "url": "/tech-stack/nextjs" } },
+          { "MenuLabel": "Typescript", "MenuLink": { "url": "/tech-stack/typescript" } },
+          { "MenuLabel": "Nuxt.js", "MenuLink": { "url": "/tech-stack/nuxtjs" } },
+          { "MenuLabel": "Vue.js", "MenuLink": { "url": "/tech-stack/vuejs" } },
+          { "MenuLabel": "Gatsby", "MenuLink": { "url": "/tech-stack/gatsby" } }
+        ]
+      },
+      
+      {
+        "Title": "Backend",
+        "ChildMenusTitle": "Backend Technologies",
+        "ChildMenus": [
+          { "MenuLabel": "Nest.js", "MenuLink": { "url": "/tech-stack/nestjs" } },
+          { "MenuLabel": "Node.js", "MenuLink": { "url": "/tech-stack/nodejs" } },
+          { "MenuLabel": "ButterCMS", "MenuLink": { "url": "/tech-stack/buttercms" } },
+          { "MenuLabel": "Ghost CMS", "MenuLink": { "url": "/tech-stack/ghost-cms" } },
+          { "MenuLabel": "Payload", "MenuLink": { "url": "/tech-stack/payload" } }
+        ]
+      }
+    ]
+  },
+  {
+    "MenuLabel": "Insights",
+    "MenuLink": { "url": "/blog-by-category" },
+    "MegaMenu": []
+  }
+]

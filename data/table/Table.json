@@ -1,12 +1,37 @@
 {
-  "TitleColor": "#333333",
+  "TitleColor": { "color": "#222222" },
   "Table": {
-    "thead": ["Name", "Age", "Department", "Role"],
+    "thead": [
+      { "value": "Name" },
+      { "value": "Age" },
+      { "value": "Department" },
+      { "value": "Role" }
+    ],
     "tbody": [
-      ["John Doe", "28", "Engineering", "Frontend Developer"],
-      ["Jane Smith", "32", "Marketing", "Content Manager"],
-      ["Michael Johnson", "45", "Sales", "Sales Head"],
-      ["Emily Davis", "26", "Design", "UI/UX Designer"]
+      {
+        "body": [
+          { "value": "John Doe" },
+          { "value": "30" },
+          { "value": "Marketing" },
+          { "value": "Manager" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Jane Smith" },
+          { "value": "25" },
+          { "value": "Development" },
+          { "value": "Developer" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Alice Johnson" },
+          { "value": "28" },
+          { "value": "Design" },
+          { "value": "Designer" }
+        ]
+      }
     ]
   }
 }

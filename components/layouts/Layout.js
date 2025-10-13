@@ -108,7 +108,7 @@ const Layout = ({
         <main>
           {children}
         </main>
-        {showFooter && <Footer footerData={layoutSettings.footer} />}
+        {showFooter && <Footer footerSetting={layoutSettings.footer} />}
         {hasBacklink && (
           <div id="global-popup">
             {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => (
