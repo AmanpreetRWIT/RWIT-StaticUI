@@ -1,142 +1,228 @@
 import Link from 'next/link';
 import Image from 'next/legacy/image';
-import { useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { getImageDimension, formatDateString, placeholderLight } from '../../helpers/utilities';
+import Loader from '../../public/images/loader.gif';
 import SectionTitle from '../common/SectionTitle';
 import { SearchComponent } from '../search/Search';
+import { useRouter } from 'next/router';
+import Button from '../buttons/Button';
 
-const LatestStories = ({
-  BGColor = '#f8f9fa',
-  Title,
-  Tags = [],
-  Description,
-  TitleColor = '#000',
-  DescriptionColor = '#555',
-  ShowDynamicData = true,
-  ShowSearchField = false,
-  ShowCategory = false,
-  Layout = 'col-3',
-  LatestBlogs = [],
-  LoaderImage,
-  Button = []
-}) => {
+const LatestStories = ({ data }) => {
+  const router = useRouter();
   const [activeBlog, setActiveBlog] = useState(0);
-
-  const latestBlogs = ShowDynamicData ? LatestBlogs.slice(0, 3) : LatestBlogs;
+  const latestBlogs =
+    data?.stories?.length > 0 ? data?.stories?.slice(0, 3) : [];
 
   const changeActive = (index) => {
     setActiveBlog(index);
   };
 
-  const getLayoutClass = (layout) => {
-    switch (layout) {
-      case 'col-1': return 'col-lg-12 col-md-6 col-12 mb--40';
-      case 'col-2': return 'col-lg-6 col-md-6 col-12 mb--40';
-      case 'col-3': return 'col-lg-4 col-md-6 col-12 mb--40';
-      case 'col-4': return 'col-lg-3 col-md-6 col-12 mb--40';
-      default: return 'col-lg-4 col-md-6 col-12 mb--40';
-    }
+  const Layout = (Layout) => {
+    if (Layout === 'col-1') return 'col-lg-12 col-md-6 col-12 mb--40';
+    else if (Layout === 'col-2') return 'col-lg-6 col-md-6 col-12 mb--40';
+    else if (Layout === 'col-3') return 'col-lg-4 col-md-6 col-12 mb--40';
+    else if (Layout === 'col-4') return 'col-lg-4 col-md-6 col-12 mb--40';
+    else return '';
   };
 
   const FeatureCard = latestBlogs[0];
-  const blogCards = latestBlogs.slice(1);
+  const blogCards = latestBlogs?.slice(1);
+
+  const handleRouteChange = () => {
+    const latestStoriesSection = document.getElementById('latestStories');
+
+    if (latestStoriesSection) {
+      const links = latestStoriesSection.querySelectorAll('a[href*="/blog/"]');
+
+      links.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href) {
+          const urlParts = href.split('/').filter((part) => part !== '');
+          const blogIndex = urlParts.indexOf('blog');
+
+          if (blogIndex >= 0) {
+            const newPath = urlParts.slice(blogIndex).join('/');
+            const newHref = newPath ? `/${newPath}` : null;
+            if (newHref && link.getAttribute('href') !== newHref) {
+              link.setAttribute('href', newHref);
+            }
+          }
+        }
+      });
+    }
+  };
+
+  useLayoutEffect(() => {
+    handleRouteChange();
+  }, []);
+
+  useEffect(() => {
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
-    <div
-      className="latestStories axil-blog-area ax-section-gap bg-color-lightest"
-      style={{ background: BGColor }}
-    >
-      {ShowSearchField && (
-        <div className="blogSearch__wrapper">
-          <SearchComponent />
-        </div>
-      )}
-
-      <div className="latestStories__cont container">
-        {(Title || Description || Tags.length > 0) && (
-          <div className="row">
-            <div className="col-lg-12">
-              <SectionTitle
-                title={Title}
-                subtitle={Tags}
-                description={Description}
-                alignment="center"
-                titleColor={TitleColor}
-                descriptionColor={DescriptionColor}
-              />
-            </div>
+    <>
+      <div
+        id="latestStories"
+        className="latestStories axil-blog-area ax-section-gap bg-color-lightest"
+        style={data?.BGColor ? { background: data?.BGColor } : {}}
+      >
+        {data?.ShowSearchField && (
+          <div className="blogSearch__wrapper">
+            <SearchComponent />
           </div>
         )}
 
-        {FeatureCard ? (
-          <div className="latestStories__wrapper">
-            <div className="latestStories__leftgrid">
-              <Link href={`/blog/${FeatureCard?.slug}`}>
-                <div className="latestStories__card">
-                  <div className="latestStories__cardimg">
-                    <Image
-                      placeholder="blur"
-                      blurDataURL={placeholderLight}
-                      src={FeatureCard?.FeaturedImage}
-                      width={getImageDimension(FeatureCard?.FeaturedImage).width}
-                      height={getImageDimension(FeatureCard?.FeaturedImage).height}
-                      alt={FeatureCard?.Title || 'Blog image'}
-                    />
-                  </div>
-                  <div className="latestStories__content">
-                    {ShowCategory && <span className="category">{FeatureCard?.Category}</span>}
-                    <p>{formatDateString(FeatureCard?.PublishedAt)}</p>
-                    <h3 className="title">{FeatureCard?.Title}</h3>
-                    <p className="clamped-text">{FeatureCard?.Excerpt}</p>
-                    <div className="latestStories__link">Read more...</div>
-                  </div>
-                </div>
-              </Link>
+        <div className="latestStories__cont container">
+          {(data?.Title || data?.Description || data?.Tags?.length > 0) && (
+            <div className="row">
+              <div className="col-lg-12">
+                <SectionTitle
+                  title={data?.Title}
+                  subtitle={data?.Tags}
+                  description={data?.Description}
+                  alignment="center"
+                  titleColor={data?.TitleColor || ''}
+                  descriptionColor={data?.DescriptionColor || ''}
+                />
+              </div>
             </div>
+          )}
 
-            <div className="latestStories__rightgrid">
-              {blogCards.map((blog, index) => (
-                <Link key={index} href={`/blog/${blog?.slug}`}>
+          {FeatureCard ? (
+            <div className="latestStories__wrapper">
+              <div className="latestStories__leftgrid">
+                <Link
+                  href={
+                    FeatureCard?.slug
+                      ? `/blog/${FeatureCard?.slug.toLowerCase()}`
+                      : '#'
+                  }
+                >
                   <div className="latestStories__card">
-                    <div className="latestStories__cardimg2 latestStories__thumbnail">
+                    <div className="latestStories__cardimg">
                       <Image
                         placeholder="blur"
                         blurDataURL={placeholderLight}
-                        src={blog?.ThumbnailImage}
-                        width={getImageDimension(blog?.ThumbnailImage).width}
-                        height={getImageDimension(blog?.ThumbnailImage).height}
-                        alt={blog?.Title || 'Blog image'}
+                        src={FeatureCard?.content?.FeaturedImage?.filename}
+                        width={
+                          getImageDimension(
+                            FeatureCard?.content?.FeaturedImage?.filename
+                          ).width
+                        }
+                        height={
+                          getImageDimension(
+                            FeatureCard?.content?.FeaturedImage?.filename
+                          ).height
+                        }
+                        alt={
+                          FeatureCard?.content?.FeaturedImage?.alt ||
+                          'Blog image'
+                        }
                       />
                     </div>
-                    <div className="latestStories__cardimg2 latestStories__featuredimg">
-                      <Image
-                        placeholder="blur"
-                        blurDataURL={placeholderLight}
-                        src={blog?.FeaturedImage}
-                        width={getImageDimension(blog?.FeaturedImage).width}
-                        height={getImageDimension(blog?.FeaturedImage).height}
-                        alt={blog?.Title || 'Blog image'}
-                      />
-                    </div>
+
                     <div className="latestStories__content">
-                      {ShowCategory && <span className="category">{blog?.Category}</span>}
-                      <p>{formatDateString(blog?.PublishedAt)}</p>
-                      <h3 className="title">{blog?.Title}</h3>
-                      <p className="clamped-text">{blog?.Excerpt}</p>
-                      <div className="latestStories__link">Read more...</div>
+                      <div className="latestStories__tags">
+                        <span className="category"></span>
+                        <p>
+                          {formatDateString(
+                            FeatureCard?.first_published_at ||
+                              FeatureCard?.published_at ||
+                              FeatureCard?.created_at
+                          )}
+                        </p>
+                      </div>
+
+                      <h3 className="title">
+                        {FeatureCard?.content?.Title}
+                      </h3>
+
+                      <p className="clamped-text">
+                        {FeatureCard?.content?.Excerpt}
+                      </p>
+
+                      <div className="latestStories__link">
+                        {FeatureCard?.slug && 'Read more...'}
+                      </div>
                     </div>
                   </div>
                 </Link>
-              ))}
+              </div>
+
+              <div className="latestStories__rightgrid">
+                {blogCards?.map((blog, index) => (
+                  <Link key={index} href={`/blog/${blog?.slug}`}>
+                    <div className="latestStories__card" id="latestCards">
+                      <div className="latestStories__cardimg2 latestStories__thumbnail">
+                        <Image
+                          placeholder="blur"
+                          blurDataURL={placeholderLight}
+                          src={blog?.content?.ThumbnailImage?.filename}
+                          width={
+                            getImageDimension(
+                              blog?.content?.ThumbnailImage?.filename
+                            ).width
+                          }
+                          height={
+                            getImageDimension(
+                              blog?.content?.ThumbnailImage?.filename
+                            ).height
+                          }
+                          alt={
+                            blog?.content?.ThumbnailImage?.alt || 'Blog image'
+                          }
+                        />
+                      </div>
+
+                      <div className="latestStories__content">
+                        <div className="latestStories__tags">
+                          <p>
+                            {formatDateString(
+                              blog?.first_published_at ||
+                                blog?.published_at ||
+                                blog?.created_at
+                            )}
+                          </p>
+                        </div>
+                        <h3 className="title">{blog?.content?.Title}</h3>
+                        <p className="clamped-text">
+                          {blog?.content?.Excerpt}
+                        </p>
+                        <div className="latestStories__link">Read more...</div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        ) : (
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Image src={LoaderImage} width={120} height={120} alt="Loading..." />
-          </div>
-        )}
+          ) : (
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Image
+                src={Loader}
+                width={120}
+                height={120}
+                alt={'Blog loader'}
+              />
+            </div>
+          )}
+        </div>
+        {FeatureCard && data.Buttons.length > 0 && (
+            <div className="latestStories__btn">
+              <div className="slider-button gap-4 d-flex">
+                {data.Buttons.map((button, index) => (
+                 <Button button={button} key={index} />
+
+                ))}
+              </div>
+            </div>
+          )}
       </div>
-    </div>
+    </>
   );
 };
 

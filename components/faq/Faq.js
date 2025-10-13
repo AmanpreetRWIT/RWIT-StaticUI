@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SectionTitle from '/components/common/SectionTitle';
+import SectionTitle from '../common/SectionTitle';
 import MenuIcon from '../Icons/MenuIcon';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
@@ -109,8 +109,7 @@ const Faq = ({ Title,FaqDescriptionColor, Tags, Description, BGColor, TitleColor
                         }`}
                         id={`heading-${index}`}
                       >
-                        <a
-                          href="#"
+                        <div
                           className="btn btn-link d-block text-start"
                           data-bs-toggle="collapse"
                           data-bs-target={`#collapse-${index}`}
@@ -125,7 +124,7 @@ const Faq = ({ Title,FaqDescriptionColor, Tags, Description, BGColor, TitleColor
                         >
                           {service?.Heading}
                           <MenuIcon color="#007aff" />
-                        </a>
+                        </div>
                       </div>
                       <div
                         id={`#collapse-${index}`}

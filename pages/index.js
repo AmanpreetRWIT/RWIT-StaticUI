@@ -48,6 +48,7 @@ import Pricing from '../components/pricings/Pricing';
 import PricingPlan from '../components/pricings/PricingPlan';
 import Table from '../components/table/Table';
 import AboutUs from '../components/abouts/AboutUs';
+import Testimonial from '../components/testimonials/Testimonial';
 
 //json
 import heroData from "../data/banner/Hero.json";
@@ -100,6 +101,7 @@ import pricing from '../data/pricings/Pricing.json';
 import pricingPlan from '../data/pricings/PricingPlan.json';
 import table from '../data/table/Table';
 import aboutUs from '../data/abouts/AboutUs';
+import testimonial from '../data/testimonials/Testimonial.json';
 //const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
 export default function HomePage() {
@@ -170,6 +172,7 @@ export default function HomePage() {
       <PricingPlan data={pricingPlan}/>
       <Table  data={table}/>
       <AboutUs data={aboutUs}/>
+      <Testimonial data={testimonial}/>
       </Layout>
       
     </>

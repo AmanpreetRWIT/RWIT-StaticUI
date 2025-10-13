@@ -1,42 +1,80 @@
 {
-  "BGColor": "#f8f9fa",
   "Title": "Latest Stories",
-  "Tags": ["News", "Updates"],
-  "Description": "Catch up on our latest blog posts and updates.",
-  "TitleColor": "#0a0a0a",
-  "DescriptionColor": "#555555",
-  "ShowDynamicData": true,
+  "Description": "Stay updated with our latest insights, tutorials, and industry news.",
+  "Tags": [
+    "News",
+    "Insights",
+    "Stories"
+  ],
+  "TitleColor": "#000000",
+  "DescriptionColor": "#333333",
+  "BGColor": "#F8F9FA",
   "ShowSearchField": true,
-  "ShowCategory": true,
-  "Layout": "col-3",
-  "LoaderImage": "/images/loader.gif",
-  "LatestBlogs": [
+  "stories": [
     {
-      "slug": "how-to-grow-your-business",
-      "Title": "How to Grow Your Business",
-      "Excerpt": "Learn the best strategies to scale your business effectively.",
-      "FeaturedImage": "/images/blog1.jpg",
-      "ThumbnailImage": "/images/blog1-thumb.jpg",
-      "PublishedAt": "2025-10-10",
-      "Category": "Business"
+      "slug": "building-scalable-nextjs-apps",
+      "created_at": "2025-10-01T10:00:00Z",
+      "content": {
+        "Title": "Building Scalable Next.js Apps",
+        "Excerpt": "Learn how to structure and scale your Next.js applications for large projects.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/3248x1680/6041b7fd6c/how-does-a-properly-designed-headless-architecture-simplify-maintenance-and-reduce-costs_.webp",
+          "alt": "Next.js scalability guide"
+        },
+        "ThumbnailImage": {
+          "filename": "/images/blog/nextjs-scale-thumb.jpg",
+          "alt": "Next.js scalability thumbnail"
+        }
+      }
     },
     {
-      "slug": "uiux-design-trends",
-      "Title": "UI/UX Design Trends",
-      "Excerpt": "Explore the latest trends in UI/UX for 2025.",
-      "FeaturedImage": "/images/blog2.jpg",
-      "ThumbnailImage": "/images/blog2-thumb.jpg",
-      "PublishedAt": "2025-10-08",
-      "Category": "Design"
+      "slug": "mastering-headless-cms-integration",
+      "created_at": "2025-09-20T12:00:00Z",
+      "content": {
+        "Title": "Mastering Headless CMS Integration",
+        "Excerpt": "A complete guide to integrating Sanity, Storyblok, and other headless CMS tools with React and Next.js.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/ca671c3cb5/how-can-headless-website-maintenance-prevent-website-failures-small.webp",
+          "alt": "Headless CMS integration"
+        },
+        "ThumbnailImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/ca671c3cb5/how-can-headless-website-maintenance-prevent-website-failures-small.webp",
+          "alt": "CMS thumbnail"
+        }
+      }
     },
     {
-      "slug": "productivity-hacks",
-      "Title": "Productivity Hacks",
-      "Excerpt": "Boost your productivity with these simple hacks.",
-      "FeaturedImage": "/images/blog3.jpg",
-      "ThumbnailImage": "/images/blog3-thumb.jpg",
-      "PublishedAt": "2025-10-05",
-      "Category": "Lifestyle"
+      "slug": "optimizing-nextjs-performance",
+      "created_at": "2025-09-10T08:00:00Z",
+      "content": {
+        "Title": "Optimizing Next.js Performance",
+        "Excerpt": "Boost performance in your Next.js applications using best practices and built-in optimizations.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/8e750b67ec/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know-small.webp",
+          "alt": "Performance tips"
+        },
+        "ThumbnailImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/8e750b67ec/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know-small.webp",
+          "alt": "Performance thumbnail"
+        }
+      }
+    }
+  ],
+  "Buttons": [
+    {
+      "Label": "View All",
+      "Link": {
+        "url": "/blog",
+        "target": "_self"
+      },
+      "ButtonColor": "btn-primary",
+      "ButtonSize": "btn-large",
+      "HideArrow": false,
+      "HideButtonLogo": false,
+      "ButtonLogo": {
+        "alt": "Arrow Icon"
+      },
+      "Class": "custom-btn"
     }
   ]
 }

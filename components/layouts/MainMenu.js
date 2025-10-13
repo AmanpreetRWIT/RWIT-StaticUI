@@ -33,7 +33,7 @@ const MainMenu = ({ menus }) => {
                 ? `has-dropdown ${menuIndex === selectedIndex ? 'active-menu' : ''}`
                 : ''
             }
-            key={`menu-item-${menuIndex}`}
+            key={`menu-item-${menu?.MenuLabel?.toString().replace(/\s+/g, '-').toLowerCase() || menu?.MenuLink?.url || menuIndex}`}
             onClick={() => handleDropdownToggle(menuIndex)}
           >
             {menu?.MenuLink?.url ? (

@@ -53,9 +53,11 @@ const TestimonialCard = ({
           </div>
           <div className="description">
             <div className="subtitle-3"> {(data?.Description)} </div>
-            {data?.Link &&
-              data?.Link.map((Button, index) => (
-                 <Buttons data={Button} index={index} key={idx} />
+            {data?.Buttons &&
+              data?.Buttons.map((Button, index) => (
+                <>
+                 <Buttons data={Button} index={index} key={index} />
+                </>
               ))}
           </div>
         </div>

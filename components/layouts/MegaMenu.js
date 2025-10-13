@@ -38,7 +38,7 @@ const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => 
         <ul className="axil-submenu">
           <li className="submenu-container">
             {menu.MegaMenu.map((item, index) => (
-              <div className="submenu-content" key={index}>
+              <div className="submenu-content" key={`submenu-content-${index}-${item?.Title || index}`}>
                 {item?.Description && (
                   <>
                     <p className="submenu-content-title">{item?.Title}</p>
@@ -50,7 +50,7 @@ const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => 
 
             <div className={`${updatelist(menu?.MegaMenu)}`}>
               {menu.MegaMenu.map((Item, Index) => (
-                <React.Fragment key={Index}>
+                <React.Fragment key={`submenu-column-${Index}-${Item?.ChildMenusTitle || Index}`}>
                   {Item?.ChildMenus?.length > 0 && (
                     <ul className={`${updatelist(menu?.MegaMenu)}-container`}>
                       {Item?.ChildMenusTitle && (
@@ -130,7 +130,7 @@ const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => 
               ))}
 
               {menu.MegaMenu.map((item, index) => (
-                <div className="submenu-lists-btnwrapper" key={index}>
+                <div className="submenu-lists-btnwrapper" key={`submenu-btn-${index}-${item?.LinkText || index}`}>
                   {item?.LinkText && (
                     <Link className="allbtn" href={item?.Link?.url} prefetch={false}>
                       <p className="submenu-lists-btn">{item?.LinkText}</p>

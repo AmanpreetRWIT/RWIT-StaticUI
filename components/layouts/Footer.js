@@ -57,7 +57,7 @@ const Footer = ({ footerSetting = {} }) => {
       className={`axil-footer footer-default footer-style-3 bg-color-extra09 ${
         footerSettings.showCopyrightOnly ? "bg-color-lightest" : ""
       } ${footerSetting?.TextColor} ${
-        footerSetting?.StickyFooter ? "" : "isSticky"
+        footerSetting?.StickyFooter ? "isSticky" : ""
       }`}
       style={
         footerSetting?.BGColor

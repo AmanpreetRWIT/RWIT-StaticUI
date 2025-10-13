@@ -3,8 +3,19 @@ import CounterCardOne from './CounterCardOne';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
-const CounterTwo = ({ blok }) => {
-  console.log('blok', blok)
+const CounterTwo = ({
+  SecondLayout = false,
+  BgColor = {},
+  InvertColumns = false,
+  Heading = '',
+  Tags = '',
+  Description = '',
+  TitleColor = {},
+  DescriptionColor = {},
+  Buttons = null,
+  CounterTextColor = {},
+  CounterItem = []
+}) => {
   const counterClass = (i) => {
     if (i === 0) return 'counter-1';
     else if (i === 1) return 'color-style-two mt--60 mt_mobile--40';
