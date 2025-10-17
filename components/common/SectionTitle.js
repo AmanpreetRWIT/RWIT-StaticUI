@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-
 const SectionTitle = ({
   title,
   subtitle,
@@ -28,7 +27,7 @@ const SectionTitle = ({
       style={color ? { color: color } : {}}
     >
       {showTags && subtitle &&
-        <span class="sub-title extra11-color" style={{color:"#2690D4" ,border:"1px solid #2690D4",background:"#D4E9F6"}}>{subtitle}</span>
+        <span class="sub-title extra11-color" style={{color: "rgb(38, 144, 212)", border: "1px solid rgb(38, 144, 212)", background: "rgb(212, 233, 246);"}}>{subtitle}</span>
         }
 
       {showTitle && title && (

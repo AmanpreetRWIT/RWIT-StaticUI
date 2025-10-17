@@ -15,6 +15,7 @@ const ServiceCard = ({
   RemoveAnimations,
   RemoveBorders,
 }) => {
+  console.log('data', data?.Image)
   const [textAlignment, setTextAlignment] = useState('text-center');
   useEffect(() => {
     if (alignment === 'center') setTextAlignment('text-center');
@@ -35,7 +36,7 @@ const ServiceCard = ({
           onMouseEnter={() => changeActive(index)}
         >
           <div className={`inner ${RemoveBorders ? 'hide-border' : ''} ${data?.HideBorder ? 'hide-border' : ''}`}>
-            {data?.Image?.filename && (
+            {data?.Image && (
               <div
                 className={`icon ${data?.GradientStyle} ${
                   data?.HideBG ? 'hide-bg' : ''
@@ -44,20 +45,20 @@ const ServiceCard = ({
                 <div
                   className="icon-inner"
                   style={
-                    data?.IconBgColor?.color
-                      ? { background: data?.IconBgColor?.color }
+                    data?.IconBgColor
+                      ? { background: data?.IconBgColor}
                       : {}
                   }
                 >
                   <div className="image-2">
-                    {data?.Image?.filename && (
+                    {data?.Image && (
                       <Image
                         loading="lazy"
                         width={46}
                         height={36}
-                        src={data?.Image?.filename}
+                        src={data?.Image}
                         alt={
-                          data?.Image?.alt ? data?.Image?.alt : 'Shape Images'
+                          data?.AltText ? data?.AltText : 'Shape Images'
                         }
                       />
                     )}

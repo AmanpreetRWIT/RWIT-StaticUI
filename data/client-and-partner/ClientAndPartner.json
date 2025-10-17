@@ -6,7 +6,7 @@
     "TitleColor": { "color": "#000248" },
     "DescriptionColor": { "color": "#757589" },
     "InfoTextColor": { "color": "#333333" },
-    "HideBorder": false,
+    "HideBorder": true,
     "ClientAndPartnerInfo": [
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg", "alt": "Client 1" },
@@ -17,7 +17,7 @@
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "alt": "Client 2" },
-        "Grayscale": true,
+        "Grayscale": false,
         "LinkText": "Partner",
         "LinkTextClass": "",
         "Link": { "url": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg", "target": "_blank" }

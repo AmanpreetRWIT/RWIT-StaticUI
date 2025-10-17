@@ -1,11 +1,11 @@
-import Image from 'next/legacy/image';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
-import SectionTitle from '../common/SectionTitle';
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
-import React, { useState } from 'react';
-import { placeholderLight } from '../../helpers/utilities';
+import Image from "next/legacy/image";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import SectionTitle from "../common/SectionTitle";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import React, { useState } from "react";
+import { placeholderLight } from "../../helpers/utilities";
 
 const CaseStudySlider = ({ data }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,7 +14,7 @@ const CaseStudySlider = ({ data }) => {
     initial: 0,
     loop: true,
     breakpoints: {
-      '(max-width: 479px)': {
+      "(max-width: 479px)": {
         slides: { spacing: 20 },
       },
     },
@@ -43,13 +43,16 @@ const CaseStudySlider = ({ data }) => {
             title={data?.Title}
             description={data?.Description}
             alignment={data?.TextAlignment}
-            titleColor={data?.TitleColor?.color ? data?.TitleColor?.color : ''}
+            titleColor={data?.TitleColor?.color ? data?.TitleColor?.color : ""}
             descriptionColor={
-              data?.DescriptionColor?.color ? data?.DescriptionColor?.color : ''
+              data?.DescriptionColor?.color ? data?.DescriptionColor?.color : ""
             }
           />
         </div>
-        <div className="container axil-featured-activation axil-carousel" ref={ref}>
+        <div
+          className="container axil-featured-activation axil-carousel"
+          ref={ref}
+        >
           {data?.CaseStudyCard && data?.CaseStudyCard?.length > 0 && (
             <div id="slider-container">
               <div ref={sliderRef} className="keen-slider">
@@ -69,7 +72,7 @@ const CaseStudySlider = ({ data }) => {
                             height={524}
                             className="image w-100"
                             src={item?.Image?.filename}
-                            alt={item?.Image?.alt ? item?.Image?.alt : 'image'}
+                            alt={item?.Image?.alt ? item?.Image?.alt : "image"}
                           />
                         </div>
                       </div>
@@ -77,8 +80,8 @@ const CaseStudySlider = ({ data }) => {
                     <div
                       className={`case-study__desc ${
                         item?.Image?.filename
-                          ? 'col-lg-6 col-xl-6 col-md-12 offset-xl-1 col-12 mt_md--40 mt_sm--40'
-                          : 'col-12 mt_md--40 mt_sm--40'
+                          ? "col-lg-6 col-xl-6 col-md-12 offset-xl-1 col-12 mt_md--40 mt_sm--40"
+                          : "col-12 mt_md--40 mt_sm--40"
                       }`}
                     >
                       <div className="inner">
@@ -86,11 +89,11 @@ const CaseStudySlider = ({ data }) => {
                           {item?.Tags &&
                             item.Tags.length > 0 &&
                             item.Tags.map((tag, index) => (
-                              <span key={index} className="tag">
-                                {tag}
-                              </span>
+                              <span key={index} class="sub-title extra11-color" style={{color: "rgb(38, 144, 212)", border: "1px solid rgb(38, 144, 212)", background: "rgb(212, 233, 246);"}}>{tag}</span>
                             ))}
-                          {item?.Heading && <h3 className="title custom-h2">{item.Heading}</h3>}
+                          {item?.Heading && (
+                            <h3 className="title custom-h2">{item.Heading}</h3>
+                          )}
                           {item?.Description && (
                             <div className="subtitle-2">{item.Description}</div>
                           )}
@@ -98,10 +101,13 @@ const CaseStudySlider = ({ data }) => {
                             item.Button.map((button, index) => (
                               <a
                                 key={index}
-                                href={button?.Link || '#'}
-                                className="btn btn-primary"
+                                class="hoverable axil-button casestudy_btn btn-solid btn-large  "
+                                target="_blank"
+                                href="/case-study/rushordertees"
                               >
-                                {button?.Label}
+                                <span class="button-text hoverable px-0">
+                                  {button?.Label}
+                                </span>
                               </a>
                             ))}
                         </div>
@@ -116,13 +122,17 @@ const CaseStudySlider = ({ data }) => {
                                 {stat?.CounterType && (
                                   <h3
                                     className={`count ${
-                                      item.CaseStudyStatistics.length - 1 === statIndex
-                                        ? 'counter-k'
-                                        : ''
+                                      item.CaseStudyStatistics.length - 1 ===
+                                      statIndex
+                                        ? "counter-k"
+                                        : ""
                                     }`}
                                   >
-                                    <CountUp start={0} end={inView ? stat.Counter : 0} />
-                                    {stat?.CounterType || ''}
+                                    <CountUp
+                                      start={0}
+                                      end={inView ? stat.Counter : 0}
+                                    />
+                                    {stat?.CounterType || ""}
                                   </h3>
                                 )}
                                 <p>{stat?.CounterTitle}</p>
@@ -137,16 +147,20 @@ const CaseStudySlider = ({ data }) => {
 
               {loaded && instanceRef.current && (
                 <div id="slider-container-wrapper">
-                  {[...Array(instanceRef.current.track.details.slides.length).keys()].map(
-                    (idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => instanceRef.current?.moveToIdx(idx)}
-                        aria-label="slider-button"
-                        className={'slider-dot' + (currentSlide === idx ? ' active' : '')}
-                      ></button>
-                    )
-                  )}
+                  {[
+                    ...Array(
+                      instanceRef.current.track.details.slides.length
+                    ).keys(),
+                  ].map((idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => instanceRef.current?.moveToIdx(idx)}
+                      aria-label="slider-button"
+                      className={
+                        "slider-dot" + (currentSlide === idx ? " active" : "")
+                      }
+                    ></button>
+                  ))}
                 </div>
               )}
             </div>

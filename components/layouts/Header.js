@@ -208,7 +208,7 @@ const Header = ({
         </div>
       )}
 
-      <header className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`} style={{backgroundColor:"white"}}>
+      <header className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`}>
         <div className="header-wrapper">
           <div className={headerContainerClass()}>
             <div className="row align-items-center">

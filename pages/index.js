@@ -1,8 +1,5 @@
-
-// pages/index.js
-//import Head from 'next/head';
-import Layout from '../components/layouts/Layout';
 //components
+import Layout from "../components/layouts/Layout";
 import HeroSection from "../components/banner/Hero";
 import HeroWithForm from "../components/banner/HeroWithForm";
 import HeroWithoutImage from "../components/banner/HeroWithoutImage";
@@ -35,10 +32,10 @@ import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
 import Newsletter from "../components/newsletter/Newsletter";
 import NewsletterModal from "../components/newsletter/NewsletterModal";
 import Notice from "../components/notice/Notice";
-import OurOffice from '../components/ouroffice/OurOffice';
-import OurValues from '../components/ourvalues/OurValues';
-import OurPartners from '../components/partners/Partners';
-import ApplyPopup from '../components/popup/ApplyPopup';
+import OurOffice from "../components/ouroffice/OurOffice";
+import OurValues from "../components/ourvalues/OurValues";
+import OurPartners from "../components/partners/Partners";
+import ApplyPopup from "../components/popup/ApplyPopup";
 import Process from "../components/process/Process";
 import ServiceCard from "../components/Services/ServiceCard";
 import Services from "../components/Services/Services";
@@ -48,7 +45,7 @@ import Pricing from '../components/pricings/Pricing';
 import PricingPlan from '../components/pricings/PricingPlan';
 import Table from '../components/table/Table';
 import AboutUs from '../components/abouts/AboutUs';
-import Testimonial from '../components/testimonials/Testimonial';
+import CaseStudyPopup from "../components/popup/CaseStudyPopup";
 
 //json
 import heroData from "../data/banner/Hero.json";
@@ -82,10 +79,10 @@ import jobListing from "../data/joblisting/JobListing.json";
 import newsletter from "../data/newsletter/Newsletter.json";
 import newsletterModal from "../data/newsletter/NewsletterModal.json";
 import notice from "../data/notice/Notice.json";
-import ourOffice from '../data/ouroffice/OurOffice.json';
-import ourValues from '../data/ourvalues/OurValues.json';
-import ourPartners from '../data/partners/Partners.json';
-import applyPopup from '../data/popup/ApplyPopup';
+import ourOffice from "../data/ouroffice/OurOffice.json";
+import ourValues from "../data/ourvalues/OurValues.json";
+import ourPartners from "../data/partners/Partners.json";
+import applyPopup from "../data/popup/ApplyPopup";
 import process from "../data/process/Process.json";
 import serviceCard from "../data/Services/ServiceCard.json";
 import services from "../data/Services/Services.json";
@@ -105,21 +102,20 @@ import testimonial from '../data/testimonials/Testimonial.json';
 //const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
 export default function HomePage() {
-
   const layoutSettings = {
     header: {
-      style: 'four',
-      leftColumn: 'col-lg-4 col-md-6 col-sm-6 col-8 header-left',
-      rightColumn: 'col-lg-8 col-md-6 col-sm-6 col-4 header-right',
-      ...HeaderData, // Empty for demo
+      style: "four",
+      leftColumn: "col-lg-4 col-md-6 col-sm-6 col-8 header-left",
+      rightColumn: "col-lg-8 col-md-6 col-sm-6 col-4 header-right",
+      ...HeaderData, 
     },
     footer: {
-      style: 'three',
-      ...FooterData, // Empty for demo
+      style: "three",
+      ...FooterData,
       StickyFooter: true,
     },
     settings: {},
-  };  
+  };
   return (
     <>
     
@@ -173,8 +169,8 @@ export default function HomePage() {
       <Table  data={table}/>
       <AboutUs data={aboutUs}/>
       <Testimonial data={testimonial}/>
+      <CaseStudyPopup data={caseStudyPopup} />
       </Layout>
-      
     </>
   );
 }

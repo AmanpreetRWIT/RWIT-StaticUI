@@ -1,158 +1,139 @@
 {
-  "TextColor": "text-white",
-  "BGColor": "#000127",
-  "StickyFooter": true,
-  "FooterLayout": "footer-layout-2",
-  "AddressHeading": "Find us",
-  "Address": [
-    {
-      "AddressHeading": "India",
-      "FullAddress": "First Floor, Plot No. D-186/B,\nPhase 8B, Mohali, India",
-      "PhoneNumber": [],
-      "FlagImage": {
-        "filename": "https://a-us.storyblok.com/f/1016184/50x32/b24faa656d/india.png",
-        "alt": "India Flag"
+  "footerData": {
+    "TextColor": "text-white",
+    "BGColor": "#000127",
+    "StickyFooter": true,
+    "FooterLayout": "footer-layout-2",
+    "AddressHeading": "Find us",
+    "FooterLinkTagColor":"rgb(199, 199, 214)",
+    "Address": [
+      {
+        "AddressHeading": "India",
+        "FullAddress": "First Floor, Plot No. D-186/B,\nPhase 8B, Mohali, India",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/b24faa656d/india.png",
+          "alt": "India Flag"
+        }
+      },
+      {
+        "AddressHeading": "UAE",
+        "FullAddress": "Office 210, Business Bay,\nDubai, United Arab Emirates",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/36011c7472/uae.png",
+          "alt": "UAE Flag"
+        }
+      },
+      {
+        "AddressHeading": "United States",
+        "FullAddress": "Suite 402, 123 Silicon Street,\nSan Francisco, CA 94103,\nUSA",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/0f3c4b2496/usa.png",
+          "alt": "United States Flag"
+        }
       }
-    },
-    {
-      "AddressHeading": "UAE",
-      "FullAddress": "Office 210, Business Bay,\nDubai, United Arab Emirates",
-      "PhoneNumber": [],
-      "FlagImage": {
-        "filename": "https://a-us.storyblok.com/f/1016184/50x32/36011c7472/uae.png",
-        "alt": "UAE Flag"
+    ],
+    "MoreAddressLink": [],
+    "FooterCloumn": [
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Company",
+        "Menu": [
+          { "Label": "Home", "Link": { "url": "/home" } },
+          { "Label": "About", "Link": { "url": "/about" } },
+          { "Label": "Services", "Link": { "url": "/services" } },
+          { "Label": "Career", "Link": { "url": "/career" } },
+          { "Label": "Insights", "Link": { "url": "/insights" } },
+          { "Label": "Contact", "Link": { "url": "/contact" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Case Studies",
+        "Menu": [
+          { "Label": "AirDNA", "Link": { "url": "/case-studies/airdna" } },
+          { "Label": "SSD Nodes", "Link": { "url": "/case-studies/ssd-nodes" } },
+          { "Label": "Rush Order Tees", "Link": { "url": "/case-studies/rush-order-tees" } },
+          { "Label": "Redsbaby", "Link": { "url": "/case-studies/redsbaby" } },
+          { "Label": "Tilyo", "Link": { "url": "/case-studies/tilyo" } },
+          { "Label": "Carbmee", "Link": { "url": "/case-studies/carbmee" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Services",
+        "Menu": [
+          { "Label": "Headless Commerce", "Link": { "url": "/services/headless-commerce" } },
+          { "Label": "Web Development", "Link": { "url": "/services/web-development" } },
+          { "Label": "AI Agents Development", "Link": { "url": "/services/ai-agents" } },
+          { "Label": "Generative AI Development", "Link": { "url": "/services/generative-ai" } },
+          { "Label": "Digital Marketing", "Link": { "url": "/services/digital-marketing" } },
+          { "Label": "WHMCS Development", "Link": { "url": "/services/whmcs-development" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":true,
+        "ColumnHeading": "Technologies",
+        "Menu": [
+          { "Label": "React.js", "Link": { "url": "/tech/react" } },
+          { "Label": "Next.js", "Link": { "url": "/tech/next" } },
+          { "Label": "Typescript", "Link": { "url": "/tech/typescript" } },
+          { "Label": "Nuxt.js", "Link": { "url": "/tech/nuxt" } },
+          { "Label": "Vue.js", "Link": { "url": "/tech/vue" } },
+          { "Label": "Node.js", "Link": { "url": "/tech/node" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":true,
+        "ColumnHeading": "Industries",
+        "Menu": [
+          { "Label": "Healthcare", "Link": { "url": "/industries/healthcare" } },
+          { "Label": "Fintech", "Link": { "url": "/industries/fintech" } },
+          { "Label": "E-Commerce", "Link": { "url": "/industries/ecommerce" } },
+          { "Label": "Real Estate", "Link": { "url": "/industries/real-estate" } },
+          { "Label": "Travel & Hospitality", "Link": { "url": "/industries/travel-hospitality" } }
+        ]
       }
-    },
-    {
-      "AddressHeading": "United States",
-      "FullAddress": "Suite 402, 123 Silicon Street,\nSan Francisco, CA 94103,\nUSA",
-      "PhoneNumber": [],
-      "FlagImage": {
-        "filename": "https://a-us.storyblok.com/f/1016184/50x32/0f3c4b2496/usa.png",
-        "alt": "United States Flag"
+    ],
+    "PartnerLabel": "",
+    "Images": [
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x132/aefcb3303a/prismic-seeklogo-2.svg", "alt": "Prismic Logo" },
+        "ImageLink": { "url": "#" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/127x43/0d163c4dba/bc-logo-in-white.svg", "alt": "airCommerce Logo" },
+        "ImageLink": { "url": "#" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x502/717a85543d/sanity-light.svg", "alt": "Sanity Logo" },
+        "ImageLink": { "url": "#" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/8ea82e0e30/storyblok-light.svg", "alt": "Storyblok Logo" },
+        "ImageLink": { "url": "#" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x110/6cfa7d3249/builderio-light.svg", "alt": "builder.io Logo" },
+        "ImageLink": { "url": "#" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x77/aa78207e46/strapi-light.svg", "alt": "Strapi Logo" },
+        "ImageLink": { "url": "#" }
       }
-    }
-  ],
-  "MoreAddressLink": [],
-  "FooterCloumn": [
-    {
-      "ColumnHeading": "Company",
-      "Menu": [
-        { "Label": "Home", "Link": "/home" },
-        { "Label": "About", "Link": "/about" },
-        { "Label": "Services", "Link": "/services" },
-        { "Label": "Career", "Link": "/career" },
-        { "Label": "Insights", "Link": "/insights" },
-        { "Label": "Contact", "Link": "/contact" }
-      ]
-    },
-    {
-      "ColumnHeading": "Case Studies",
-      "Menu": [
-        { "Label": "AirDNA", "Link": "/case-studies/airdna" },
-        { "Label": "SSD Nodes", "Link": "/case-studies/ssd-nodes" },
-        { "Label": "Rush Order Tees", "Link": "/case-studies/rush-order-tees" },
-        { "Label": "Redsbaby", "Link": "/case-studies/redsbaby" },
-        { "Label": "Tilyo", "Link": "/case-studies/tilyo" },
-        { "Label": "Carbmee", "Link": "/case-studies/carbmee" }
-      ]
-    },
-    {
-      "ColumnHeading": "Services",
-      "Menu": [
-        { "Label": "Headless Commerce", "Link": "/services/headless-commerce" },
-        { "Label": "Web Development", "Link": "/services/web-development" },
-        { "Label": "AI Agents Development", "Link": "/services/ai-agents" },
-        { "Label": "Generative AI Development", "Link": "/services/generative-ai" },
-        { "Label": "Digital Marketing", "Link": "/services/digital-marketing" },
-        { "Label": "WHMCS Development", "Link": "/services/whmcs-development" }
-      ]
-    },
-    {
-      "ColumnHeading": "Technologies",
-      "Menu": [
-    { "Label": "React.js", "Link": "/tech/react" },
-    { "Label": "Next.js", "Link": "/tech/next" },
-    { "Label": "Typescript", "Link": "/tech/typescript" },
-    { "Label": "Nuxt.js", "Link": "/tech/nuxt" },
-    { "Label": "Vue.js", "Link": "/tech/vue" },
-    { "Label": "Node.js", "Link": "/tech/node" }
-      ]
-    },
-    {
-      "ColumnHeading": "Industries",
-      "Menu": [
-        { "Label": "Healthcare", "Link": "/industries/healthcare" },
-        { "Label": "Fintech", "Link": "/industries/fintech" },
-        { "Label": "E-Commerce", "Link": "/industries/ecommerce" },
-        { "Label": "Real Estate", "Link": "/industries/real-estate" },
-        { "Label": "Travel & Hospitality", "Link": "/industries/travel-hospitality" }
-      ]
-    }
-  ],
- 
-  "PartnerLabel": "",
-  "Images": [
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/512x132/aefcb3303a/prismic-seeklogo-2.svg",
-        "alt": "Prismic Logo"
-      },
-      "ImageLink": "#"
-    },
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/127x43/0d163c4dba/bc-logo-in-white.svg",
-        "alt": "airCommerce Logo"
-      },
-      "ImageLink": "#"
-    },
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/2500x502/717a85543d/sanity-light.svg",
-        "alt": "Sanity Logo"
-      },
-      "ImageLink": "#"
-    },
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/2500x538/8ea82e0e30/storyblok-light.svg",
-        "alt": "Storyblok Logo"
-      },
-      "ImageLink": "#"
-    },
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/512x110/6cfa7d3249/builderio-light.svg",
-        "alt": "builder.io Logo"
-      },
-      "ImageLink": "#"
-    },
-    {
-      "Image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/300x77/aa78207e46/strapi-light.svg",
-        "alt": "Strapi Logo"
-      },
-      "ImageLink": "#"
-    }
-  ],
-  "SocialIcons": [
-    {
-      "Image": { "filename": "/images/facebook.svg", "alt": "Facebook" },
-      "ImageLink": "https://facebook.com"
-    },
-    {
-      "Image": { "filename": "/images/linkedin.svg", "alt": "LinkedIn" },
-      "ImageLink": "https://linkedin.com"
-    },
-    {
-      "Image": { "filename": "/images/twitter.svg", "alt": "Twitter" },
-      "ImageLink": "https://twitter.com"
-    }
-  ],
-  "CopyrightText": "RW Infotech. All Rights Reserved.",
-  "CopyrightLinks": [
-    { "Label": "Privacy Policy", "Link": "/privacy", "Target": "_blank" },
-    { "Label": "Terms of Use", "Link": "/terms", "Target": "_blank" }
-  ]
+    ],
+    "SocialIcons": [
+      { "Image": { "filename": "/images/facebook-icon.svg", "alt": "Facebook" }, "ImageLink": { "url": "https://facebook.com" } },
+      { "Image": { "filename": "/images/github-icon.svg", "alt": "LinkedIn" }, "ImageLink": { "url": "https://linkedin.com" } },
+      { "Image": { "filename": "/images/linkedin-icon.svg", "alt": "Twitter" }, "ImageLink": { "url": "https://twitter.com" } }
+    ],
+    "CopyrightText": "RW Infotech. All Rights Reserved.",
+    "CopyrightLinks": [
+      { "Label": "Privacy Policy", "Link": { "url": "/privacy" }, "Target": "_blank" },
+      { "Label": "Terms of Use", "Link": { "url": "/terms" }, "Target": "_blank" }
+    ]
+  },
+  "showCopyrightOnly": false
 }

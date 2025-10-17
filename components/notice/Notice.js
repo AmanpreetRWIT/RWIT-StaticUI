@@ -3,13 +3,13 @@ import { useState } from 'react';
 const Notice = ({
   ShowNoticeSection = true,
   HideNavigationNotice = false,
-  SectionBgColor = { color: '#fffbe6' },
-  SectionTextColor = { color: '#222' },
+  SectionBgColor = { color: 'rgb(5, 1, 72)' },
+  SectionTextColor = { color: '#ffffff' },
   ShowBadge = true,
-  BadgeText = '',
-  BadgeBgColor = { color: '#ffecb3' },
+  BadgeText = 'Sanity CMS Contact Form Integration in 2025 – Read More',
+  BadgeBgColor = { color: 'rgb(5, 1, 72)' },
   Content = '',
-  ShowCloseButton = true
+  ShowCloseButton = false
 }) => {
   const [HideNotice, setNotice] = useState(true);
   const CloseNotice = () => {
@@ -41,7 +41,7 @@ const Notice = ({
             )}
             {Content && (
               <div className="notice__content">
-                {(Content)}
+                <p>{Content}</p>
               </div>
             )}
           </div>

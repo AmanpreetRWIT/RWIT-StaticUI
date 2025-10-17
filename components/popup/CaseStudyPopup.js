@@ -1,27 +1,43 @@
-import React, { useEffect, useState, useRef } from 'react';
-import ContactForm from '../forms/ContactForm';
-import { useMobile } from '../../helpers/utilities';
+import React, { useEffect, useState, useRef } from "react";
+import ContactForm from "../forms/ContactForm";
+import { useMobile } from "../../helpers/utilities";
 
-const CaseStudyPopup = ({ layoutSettings, title, description }) => {
-  const { PopupHeadingColor, PopupDescriptionColor, ModalBgColor, Form } =
-    layoutSettings?.CaseStudyModal[0];
+const CaseStudyPopup = ({ data }) => {
+  const layoutSettings = data?.layoutSettings;
+  const CaseStudyModal = layoutSettings?.CaseStudyModal?.[0];
+
+  const PopupHeadingColor = CaseStudyModal?.PopupHeadingColor;
+  const PopupDescriptionColor = CaseStudyModal?.PopupDescriptionColor;
+  const ModalBgColor = CaseStudyModal?.ModalBgColor;
+  const Form = CaseStudyModal?.Form;
+  const title = data?.title;
+  const description = data?.description;
+
   const isMobile = useMobile();
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isActive, setIsActive] = useState(false);
-
   const popupRef = useRef(null);
-  const form = popupRef?.current?.querySelector('form');
-  form?.classList.add('newsletter__form');
-  const formInputs = form?.querySelectorAll('input');
-  formInputs?.forEach((input) => {
-    input.placeholder = input?.nextSibling?.textContent;
-    input.style.padding = '10px';
-  });
 
   useEffect(() => {
+    if (popupRef.current) {
+      const form = popupRef.current.querySelector("form");
+      if (form) {
+        form.classList.add("newsletter__form");
+        const formInputs = form.querySelectorAll("input");
+        formInputs.forEach((input) => {
+          input.placeholder =
+            input?.nextSibling?.textContent || input.placeholder;
+          input.style.padding = "10px";
+        });
+      }
+    }
+  }, [isPopupVisible, isActive]);
+
+  
+  useEffect(() => {
     const checkAndResetPopupState = () => {
-      const storedState = localStorage.getItem('popupState2');
-      const storedDate = localStorage.getItem('popupActivationDate2');
+      const storedState = localStorage.getItem("popupState2");
+      const storedDate = localStorage.getItem("popupActivationDate2");
       const currentDate = new Date();
       const activationDate = storedDate ? new Date(storedDate) : null;
       const daysDifference = activationDate
@@ -29,13 +45,13 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
         : 0;
 
       if (daysDifference >= 30) {
-        localStorage.setItem('popupState2', 'false');
-        localStorage.removeItem('popupActivationDate2');
+        localStorage.setItem("popupState2", "false");
+        localStorage.removeItem("popupActivationDate2");
       } else if (storedState === null && !isActive) {
         setTimeout(() => setIsPopupVisible(true), 30000);
-        localStorage.setItem('popupState2', 'true');
-        localStorage.setItem('popupActivationDate2', currentDate.toISOString());
-      } else if (storedState === 'false') {
+        localStorage.setItem("popupState2", "true");
+        localStorage.setItem("popupActivationDate2", currentDate.toISOString());
+      } else if (storedState === "false") {
         setIsPopupVisible(false);
       } else {
         setTimeout(() => setIsPopupVisible(true), 30000);
@@ -43,49 +59,45 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
     };
 
     checkAndResetPopupState();
-
-    // Cleanup function to clear the timer if the component unmounts
     return () => clearTimeout();
   }, [isActive, isPopupVisible]);
 
   const handleClose = () => {
     setIsActive(false);
     setIsPopupVisible(false);
-    localStorage.setItem('popupState2', 'false');
+    localStorage.setItem("popupState2", "false");
   };
 
+  // Scroll trigger
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const threshold = document.body.scrollHeight * 0.5;
 
       if (scrollPosition >= threshold) {
-        const storedState = localStorage.getItem('popupState2');
-
-        if (storedState === 'true') {
+        const storedState = localStorage.getItem("popupState2");
+        if (storedState === "true") {
           setIsActive(true);
-          localStorage.setItem('popupState2', 'true');
-          window.removeEventListener('scroll', handleScroll); // Remove listener after activation
+          localStorage.setItem("popupState2", "true");
+          window.removeEventListener("scroll", handleScroll);
         } else {
-          localStorage.setItem('popupState2', 'false');
+          localStorage.setItem("popupState2", "false");
           setIsActive(false);
         }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <>
       {!isMobile && (
         <div
           ref={popupRef}
           className={
-            isActive || isPopupVisible ? 'modal-overlay' : 'modal-hide'
+            isActive || isPopupVisible ? "modal-overlay" : "modal-hide"
           }
         >
           <div id="cta-popup" className="newsletterModal">
@@ -93,8 +105,8 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
               className="newsletterModal__cont container"
               style={
                 ModalBgColor?.color
-                  ? { backgroundColor: ModalBgColor?.color }
-                  : { backgroundColor: '#eef0fa' }
+                  ? { backgroundColor: ModalBgColor.color }
+                  : { backgroundColor: "#eef0fa" }
               }
             >
               <div className="newsletterModal__wrapper">
@@ -120,7 +132,7 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
                     <h2
                       style={
                         PopupHeadingColor?.color
-                          ? { color: PopupHeadingColor?.color }
+                          ? { color: PopupHeadingColor.color }
                           : {}
                       }
                     >
@@ -134,7 +146,7 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
                     <p
                       style={
                         PopupDescriptionColor?.color
-                          ? { color: PopupDescriptionColor?.color }
+                          ? { color: PopupDescriptionColor.color }
                           : {}
                       }
                     >
@@ -142,12 +154,18 @@ const CaseStudyPopup = ({ layoutSettings, title, description }) => {
                     </p>
                   </div>
                 )}
+
                 {Form?.length > 0 && (
                   <ContactForm
-                    formData={Form[0]}
+                    className="test"
+                    inputs={Form[0].fields} 
+                    submitButton={Form[0].submitButton?.text || "Submit"}
+                    submitButtonClass="btn-primary" 
                     setIsPopupVisible={setIsPopupVisible}
                     setIsActive={setIsActive}
-                    CaseStudyPopup='CaseStudyPopup'
+                    caseStudyPopup="CaseStudyPopup"
+                    formName={Form[0].formTitle || "Contact-form"}
+                    formType="default-form"
                   />
                 )}
               </div>

@@ -4,14 +4,14 @@
   "tags": "Have a question in mind?",
   "titleColor": "#000248",
   "descriptionColor": "#757589",
-  "bgColor": "#f0f8ff",
+  "bgColor": "#f3f3f3",
   "backgroundImage": "/images/cta-bg.jpg",
   "minHeight": 400,
   "buttons": {
     "label": "Schedule a call",
     "href": "https://calendly.com/jimmynarula/introductory-meeting"
   },
-  "showPhone":true,
+  "showPhone":false,
   "phone": [
     {
       "label": "+1 234 567 890",
