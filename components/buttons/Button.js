@@ -3,7 +3,6 @@ import { getButtonClassNames } from '../../helpers/utilities';
 import Image from 'next/image';
 
 const Button = ({ button, index }) => {
-  console.log('button', button)
   return (
     <Link
       href={

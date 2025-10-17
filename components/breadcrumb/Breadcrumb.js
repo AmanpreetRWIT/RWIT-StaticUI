@@ -12,7 +12,7 @@ const Breadcrumb = ({
   TextColor = '',
   showBreadcrumb = false,
   isCategory,
-  showSearch = false,
+  showSearch = true,
   alignment = 'left',
   showSpan=true,
 }) => {

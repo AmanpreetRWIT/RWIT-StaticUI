@@ -1,23 +1,30 @@
 {
   "BGColor": "#F8F9FA",
-  "Heading": "Our Happy Clients",
-  "HeadingColor": "#222222",
-  "Description": "Clients feedback and experiences.",
-  "DescriptionColor": "#555555",
-  "Tags": ["Trusted", "Professional"],
+  "Heading": "Over 100 clients count on us",
+  "HeadingColor": "#000248",
+  "Description": "Discover how we've made a difference for our clients and how we can do the same for you.",
+  "DescriptionColor": "#757589",
+  "Tags": ["Success stories"],
   "TestimonialCardTextColor": "#333333",
   "TestimonialCard": [
     {
       "Name": "John Doe",
       "Designation": "CEO, Example Co",
-      "ProfileImage": "/images/client1.jpg",
+      "ProfileImage": "/images/daniel-hartzheim.webp",
       "Description": "Excellent service and attention to detail.",
       "SelectStars": 5
     },
     {
       "Name": "Jane Smith",
       "Designation": "Marketing Head, BrandX",
-      "ProfileImage": "/images/client2.jpg",
+      "ProfileImage": "https://a-us.storyblok.com/f/1016184/400x400/d9f12d6cfc/jardar-unifon.jpeg",
+      "Description": "Professional and timely delivery.",
+      "SelectStars": 4
+    },
+    {
+      "Name": "Jane Smith",
+      "Designation": "Marketing Head, BrandX",
+      "ProfileImage": "https://a-us.storyblok.com/f/1016184/400x400/d9f12d6cfc/jardar-unifon.jpeg",
       "Description": "Professional and timely delivery.",
       "SelectStars": 4
     }

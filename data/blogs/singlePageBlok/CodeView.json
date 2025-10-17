@@ -1,5 +1,5 @@
 {
-  "Code": "function add(a, b) {\n  return a + b;\n}\n\nconsole.log(add(2, 3));",
-  "TextColor": "#ffffff",
-  "ThemeColor": "#1e1e1e"
+  "Code": "import React from 'react';\n\nconst HelloWorld = () => {\n  return <h1>Hello, world!</h1>;\n};\n\nexport default HelloWorld;",
+  "TextColor": "#333333",
+  "ThemeColor": "#f0f0f0"
 }

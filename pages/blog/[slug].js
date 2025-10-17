@@ -28,17 +28,14 @@ import latestStories from "../../data/blogs/LatestStories.json";
 import NewsletterModal from "@/components/newsletter/NewsletterModal";
 import newsletterModal from "../../data/newsletter/NewsletterModal.json";
 
-// const NewsletterModal = dynamic(() =>
-//   import("../../components/newsletter/NewsletterModal")
-// );
+
 const BlogDetails = ({ Slug }) => {
-  console.log("Post", Post);
   const [currentUrl, setCurrentUrl] = useState("");
   const [tableList, setTableList] = useState([]);
   const [blogslug, setBlogSlug] = useState(Slug);
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
-  //HowTo steps extraction from Storyblok rich text
+  
   const extractTextFromNode = (node) => {
     if (!node) return "";
     if (node?.type === "text") return node?.text || "";

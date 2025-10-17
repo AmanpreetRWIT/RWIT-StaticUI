@@ -1,47 +1,27 @@
-[
-    {
-      "slug": "how-to-build-a-react-app",
-      "Title": "How Can Headless Website Maintenance Prevent Website Failures",
-      "Excerpt": "Headless websites offer flexibility and performance but come with complex maintenance needs. Proactive headless website maintenance helps prevent failures, secure APIs, optimize performance, and ensure scalability keeping your digital presence robust and future-ready.",
-      "FeaturedImage": {
-        "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/fef9522b52/how-can-headless-website-maintenance-prevent-website-failures.webp",
-        "alt": "React App"
-      },
-      "Author": "/images/author1.jpg",
-      "published_at": "2025-10-08T10:00:00Z"
+{
+  "id": 475992,
+  "slug": "custom-cms-development",
+  "created_at": "2023-10-25T06:02:24.287Z",
+  "published_at": "2025-01-29T05:13:03.136Z",
+  "first_published_at": "2024-02-06T07:32:38.958Z",
+  "content": {
+    "Title": "What Is Custom CMS Development?",
+    "Excerpt": "A custom CMS is likely to be a method reputable for the purpose of generating dynamic websites.",
+    "ArticleDate": "",
+    "img":"/images/jaswinder-s.webp",
+    "Author": "Jaswinder Singh",
+    "FeaturedImage": {
+      "filename": "https://a-us.storyblok.com/f/1016184/585x330/4c2bd5f071/whatiscustomcmsdevelopment.png",
+      "alt": "sanity web development"
     },
-    {
-      "slug": "css-grid-vs-flexbox",
-      "Title": "CSS Grid vs Flexbox",
-      "Excerpt": "Understanding the differences between CSS Grid and Flexbox.",
-      "FeaturedImage": {
-        "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/85e2c18115/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know.webp",
-        "alt": "CSS Layouts"
-      },
-      "Author": "/images/author2.jpg",
-      "published_at": "2025-09-25T09:30:00Z"
-    },
-    {
-        "slug": "how-to-build-a-react-app",
-        "Title": "How to Build a React App",
-        "Excerpt": "A step-by-step guide on creating a React application from scratch.",
-        "FeaturedImage": {
-          "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/fef9522b52/how-can-headless-website-maintenance-prevent-website-failures.webp",
-          "alt": "React App"
-        },
-        "Author": "/images/author1.jpg",
-        "published_at": "2025-10-08T10:00:00Z"
-      },
-      {
-        "slug": "css-grid-vs-flexbox",
-        "Title": "CSS Grid vs Flexbox",
-        "Excerpt": "Understanding the differences between CSS Grid and Flexbox.",
-        "FeaturedImage": {
-          "filename": "https://a-us.storyblok.com/f/1016184/2436x1260/85e2c18115/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know.webp",
-          "alt": "CSS Layouts"
-        },
-        "Author": "/images/author2.jpg",
-        "published_at": "2025-09-25T09:30:00Z"
-      }
-  ]
-  
+    "ReadTime": "5",
+    "IsFeatured": false,
+    "Categories": [
+      { "name": "Headless CMS", "slug": "headless-cms" },
+      { "name": "Backend", "slug": "backend" },
+      { "name": "Frontend", "slug": "frontend" },
+      { "name": "React JS", "slug": "react-js" },
+      { "name": "web development", "slug": "web-development" }
+    ]
+  }
+}

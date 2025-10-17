@@ -15,7 +15,6 @@ const ServiceCard = ({
   RemoveAnimations,
   RemoveBorders,
 }) => {
-  console.log('data', data?.Image)
   const [textAlignment, setTextAlignment] = useState('text-center');
   useEffect(() => {
     if (alignment === 'center') setTextAlignment('text-center');

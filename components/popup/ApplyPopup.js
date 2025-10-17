@@ -1,61 +1,35 @@
 import React, { useRef } from 'react';
 import ContactForm from '../forms/ContactForm';
-import careerData from '../../public/careerData.json';
-import { usePathname } from 'next/navigation';
 
 const ApplyPopup = ({
-  PopupTitle,
-  PopupDescription,
-  PopupHeadingColor,
-  PopupDescriptionColor,
-  ModalBgColor,
-  Form,
+  blok,
   index,
   isActive,
   setIsActive,
   setIsPopupVisible,
   handleClose,
 }) => {
+  
   const popupRef = useRef(null);
-  const formFields = Form?.length > 0 ? Form[0] : [];
-  const path = usePathname();
 
-  const fields = {
-    ...formFields,
-    Inputs: formFields?.Inputs?.map((input) =>
-      input?.Name === 'Position'
-        ? {
-            ...input,
-            Select: careerData?.data?.map((career) => {
-              return {
-                Value: career?.content?.CareerHeading,
-                Default:
-                  (path === '/' + career?.full_slug &&
-                    career?.content?.CareerHeading) ||
-                  '',
-              };
-            }),
-          }
-        : input
-    ),
-  };
-
+  const Form = blok?.Form || [];
   return (
     <div ref={popupRef} id="ApplyPopup">
       <div
         id={`backlink-popup${index + 1}`}
-        className={isActive ? 'modal-overlay' : 'modal-hide'}
+        className={isActive=false ? 'modal-overlay' : 'modal-hide'}
       >
-        <div id="" className="newsletterModal">
+        <div className="newsletterModal">
           <div
             className="newsletterModal__cont container"
             style={
-              ModalBgColor?.color
-                ? { backgroundColor: ModalBgColor.color }
+              blok?.ModalBgColor?.color
+                ? { backgroundColor: blok.ModalBgColor.color }
                 : { backgroundColor: '#EEF0FA' }
             }
           >
             <div className="newsletterModal__wrapper">
+              {/* Close Icon */}
               <svg
                 width="52"
                 height="52"
@@ -72,37 +46,49 @@ const ApplyPopup = ({
                   strokeLinejoin="round"
                 />
               </svg>
-              {PopupTitle && (
+
+              {/* Popup Title */}
+              {blok?.PopupTitle && (
                 <div className="newsletterModal__title">
                   <h2
                     style={
-                      PopupHeadingColor?.color
-                        ? { color: PopupHeadingColor.color }
+                      blok?.PopupHeadingColor?.color
+                        ? { color: blok.PopupHeadingColor.color }
                         : {}
                     }
                   >
-                    {PopupTitle}
+                    {blok.PopupTitle}
                   </h2>
                 </div>
               )}
-              {PopupDescription && (
+
+              {/* Popup Description */}
+              {blok?.PopupDescription && (
                 <div className="newsletterModal__subtitle">
                   <p
                     style={
-                      PopupDescriptionColor?.color
-                        ? { color: PopupDescriptionColor.color }
+                      blok?.PopupDescriptionColor?.color
+                        ? { color: blok.PopupDescriptionColor.color }
                         : {}
                     }
                   >
-                    {PopupDescription}
+                    {blok.PopupDescription}
                   </p>
                 </div>
               )}
+
+              {/* Contact Form */}
               {Form?.length > 0 && (
                 <ContactForm
-                  formData={fields}
+                  className="test"
+                  inputs={Form[0].fields}
+                  submitButton={Form[0].submitButton?.text || 'Submit'}
+                  submitButtonClass="btn-primary"
                   setIsPopupVisible={setIsPopupVisible}
                   setIsActive={setIsActive}
+                  caseStudyPopup="CaseStudyPopup"
+                  formName={Form[0].formTitle || 'Contact-form'}
+                  formType="default-form"
                 />
               )}
             </div>

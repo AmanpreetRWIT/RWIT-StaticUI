@@ -1,0 +1,153 @@
+[
+  {
+    "id": 20669348,
+    "slug": "integrate-supabase-with-next-js-for-serverless-applications",
+    "created_at": "2025-01-23T11:39:37.507Z",
+    "published_at": "2025-09-11T13:36:30.341Z",
+    "first_published_at": "2025-01-23T12:59:35.226Z",
+    "content": {
+      "Title": "How to Integrate Supabase with Next.js for Serverless Applications",
+      "Excerpt": "Integrating Supabase with Next.js enables the creation of serverless applications by combining a powerful backend with a flexible frontend. Start by setting up a Supabase project and a Next.js app, then install the Supabase client library. Use environment variables to securely store your credentials and initialize the client in your app. This setup allows for easy user authentication and data fetching, streamlining your development process.",
+      "ArticleDate": "2025-01-23 12:12",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/1218x630/e43a037099/how-to-integrate-supabase-with-nextjs-for-serverless-applications-thumnail-v1.jpg",
+        "alt": "Integrate Supabase with Nextjs for Serverless Applications"
+      },
+      "ReadTime": "18",
+      "IsFeatured": false,
+      "Categories": [
+        { "name": "Next js", "slug": "next-js" },
+        { "name": "Frontend", "slug": "frontend" },
+        { "name": "Typescript", "slug": "typescript" },
+        { "name": "web development", "slug": "web-development" }
+      ]
+    }
+  },
+  {
+    "id": 9993407,
+    "slug": "what-is-headless-commerce-a-complete-guide",
+    "created_at": "2024-08-08T06:30:29.136Z",
+    "published_at": "2025-01-22T07:47:03.721Z",
+    "first_published_at": "2024-08-08T12:51:45.804Z",
+    "content": {
+      "Title": "What is Headless Commerce? A Complete Guide",
+      "Excerpt": "For e-commerce businesses, the storefront represents the equivalent of the brand's face and is, in turn, a digital space where customers browse products, add them to their carts, and ultimately complete a purchase.",
+      "ArticleDate": "2024-08-08 12:00",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/3254x1723/68543483a9/headless-commerce.jpg",
+        "alt": "headless Commerce"
+      },
+      "ReadTime": "10",
+      "IsFeatured": true,
+      "Categories": [
+        { "name": "Headless Commerce", "slug": "headless-commerce" },
+        { "name": "Backend", "slug": "backend" },
+        { "name": "Frontend", "slug": "frontend" },
+        { "name": "Sanity", "slug": "sanity" },
+        { "name": "Bigcommerce", "slug": "bigcommerce" },
+        { "name": "Shopify", "slug": "shopify" }
+      ]
+    }
+  },
+  {
+    "id": 9583143,
+    "slug": "why-next-js-is-best-for-your-next-project",
+    "created_at": "2024-07-29T10:43:50.606Z",
+    "published_at": "2025-03-11T12:46:40.811Z",
+    "first_published_at": "2024-07-29T13:00:34.760Z",
+    "content": {
+      "Title": "Next.js vs React.js: Why Next.js is Best for Your Next Project?",
+      "Excerpt": "This article explores the differences between next.js and react.js and focuses on the core functionalities, which highlights why you should choose next.js over react.js.",
+      "ArticleDate": "2024-07-29 16:57",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/1220x646/342ef65f51/react-vs-next.jpg",
+        "alt": "next.js web development"
+      },
+      "ReadTime": "10",
+      "IsFeatured": false,
+      "Categories": [
+        { "name": "React JS", "slug": "react-js" },
+        { "name": "Headless CMS", "slug": "headless-cms" },
+        { "name": "Frontend", "slug": "frontend" },
+        { "name": "Next js", "slug": "next-js" },
+        { "name": "Typescript", "slug": "typescript" }
+      ]
+    }
+  },
+  {
+    "id": 7126766,
+    "slug": "reactjs-vs-react-native-development",
+    "created_at": "2024-05-31T11:41:53.805Z",
+    "published_at": "2025-01-28T13:07:01.035Z",
+    "first_published_at": "2024-06-04T04:26:55.633Z",
+    "content": {
+      "Title": "ReactJS vs. React Native Development: Choose the Right Path for You",
+      "Excerpt": "ReactJS and React Native are designed to achieve different requirements. Searching in the terms of ‘vs.’ is not the right way around. To understand it in much better terms, we need to dive deep into its history.",
+      "ArticleDate": "2024-05-31 17:11",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/1220x646/a95c658436/banner-image.jpg",
+        "alt": "React web development"
+      },
+      "ReadTime": "15",
+      "IsFeatured": true,
+      "Categories": [
+        { "name": "React JS", "slug": "react-js" },
+        { "name": "Frontend", "slug": "frontend" }
+      ]
+    }
+  },
+  {
+    "id": 6540942,
+    "slug": "how-react-native-gained-popularity-among-mobile-apps",
+    "created_at": "2024-05-17T11:09:45.197Z",
+    "published_at": "2024-12-06T07:42:02.577Z",
+    "first_published_at": "2024-05-17T12:14:06.048Z",
+    "content": {
+      "Title": "How React Native Gained Popularity among Mobile Apps in 2025?",
+      "Excerpt": "This blog is an eye-opener for business runners to understand how they can reach their audience. In short, the solution is - React Native",
+      "ArticleDate": "2024-05-17 16:39",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/1220x646/2d006ed17a/blog-banner.jpg",
+        "alt": "mobile app development"
+      },
+      "ReadTime": "10",
+      "IsFeatured": true,
+      "Categories": [
+        { "name": "Frontend", "slug": "frontend" },
+        { "name": "React JS", "slug": "react-js" },
+        { "name": "Headless CMS", "slug": "headless-cms" }
+      ]
+    }
+  },
+  {
+    "id": 475992,
+    "slug": "custom-cms-development",
+    "created_at": "2023-10-25T06:02:24.287Z",
+    "published_at": "2025-01-29T05:13:03.136Z",
+    "first_published_at": "2024-02-06T07:32:38.958Z",
+    "content": {
+      "Title": "What Is Custom CMS Development?",
+      "Excerpt": "A custom CMS is likely to be a method reputable for the purpose of generating dynamic websites.",
+      "ArticleDate": "",
+      "Author": "Jaswinder Singh",
+      "FeaturedImage": {
+        "filename": "https://a-us.storyblok.com/f/1016184/585x330/4c2bd5f071/whatiscustomcmsdevelopment.png",
+        "alt": "sanity web development"
+      },
+      "ReadTime": "5",
+      "IsFeatured": false,
+      "Categories": [
+        { "name": "Headless CMS", "slug": "headless-cms" },
+        { "name": "Backend", "slug": "backend" },
+        { "name": "Frontend", "slug": "frontend" },
+        { "name": "React JS", "slug": "react-js" },
+        { "name": "web development", "slug": "web-development" }
+      ]
+    }
+  }
+]

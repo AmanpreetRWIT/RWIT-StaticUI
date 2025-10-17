@@ -5,7 +5,6 @@ import SectionTitle from '../common/SectionTitle';
 
 const TechnologyStack = ({ data }) => {
   const Clients = data?.clients;
-
   return (
     <div
       className="ax-section-gap--lg bg-color-white client-and-partner"

@@ -1,13 +1,11 @@
 {
-  "Title": "Latest Stories",
-  "Description": "Stay updated with our latest insights, tutorials, and industry news.",
+  "Title": "News & Insights",
+  "Description": "We like to share our thoughts on topics we find inspiring. Explore our news and insights.",
   "Tags": [
-    "News",
-    "Insights",
-    "Stories"
+    "Latest Stories"
   ],
-  "TitleColor": "#000000",
-  "DescriptionColor": "#333333",
+  "TitleColor": "#000248",
+  "DescriptionColor": "#757589",
   "BGColor": "#F8F9FA",
   "ShowSearchField": true,
   "stories": [

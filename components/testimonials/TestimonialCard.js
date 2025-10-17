@@ -21,14 +21,14 @@ const TestimonialCard = ({
       >
         <div className="inner">
           <div className="clint-info-wrapper">
-            {data?.ProfileImage?.filename && (
+            {data?.ProfileImage && (
               <div className="thumb">
-                {data?.ProfileImage?.filename && (
+                {data?.ProfileImage && (
                   <Image
                     loading="lazy"
                     width={60}
                     height={60}
-                    src={data?.ProfileImage?.filename}
+                    src={data?.ProfileImage}
                     alt={
                       data?.ProfileImage?.alt
                         ? data?.ProfileImage?.alt

@@ -1,0 +1,36 @@
+{
+    "PopupHeading": "Stay Connected",
+    "PopupHeadingColor": { "color": "#000248" },
+    "PopupDescription": "Subscribe to our newsletter to get the latest updates directly in your inbox.",
+    "PopupDescriptionColor": { "color": "#333333" },
+    "ModalBgColor": { "color": "#EEF0FA" },
+    "Form": [
+      {
+        "FormHeading": "Subscribe Now",
+        "FormDescription": "Join our mailing list to receive updates.",
+        "FormBgColor": { "color": "#ffffff" },
+        "FormHeadingColor": { "color": "#000127" },
+        "FormDescriptionColor": { "color": "#555555" },
+        "fields": [
+          {
+            "type": "text",
+            "label": "Name",
+            "placeholder": "Enter your name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "label": "Email",
+            "placeholder": "Enter your email",
+            "required": true
+          }
+        ],
+        "ButtonText": "Subscribe",
+        "ButtonColor": { "color": "#000248" },
+        "ButtonTextColor": { "color": "#ffffff" },
+        "SuccessMessage": "Thank you for subscribing!",
+        "ErrorMessage": "Something went wrong. Please try again."
+      }
+    ]
+  }
+  

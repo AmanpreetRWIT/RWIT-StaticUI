@@ -1,37 +1,122 @@
 {
-  "TableStyle": "table2",
-  "Alignment": "center",
-  "HeadingBgColor": "#FFDD57",
-  "HeadingColor": "#333",
-  "isBlogPage": false,
+  "_uid": "table-001",
   "Table": {
     "thead": [
-      { "value": "Name" },
-      { "value": "Role" },
-      { "value": "Department" }
+      {
+        "_uid": "th-001",
+        "value": "Provider Type",
+        "component": "_table_head"
+      },
+      {
+        "_uid": "th-002",
+        "value": "Rate (Dubai, 2025)",
+        "component": "_table_head"
+      },
+      {
+        "_uid": "th-003",
+        "value": "Responsibilities",
+        "component": "_table_head"
+      },
+      {
+        "_uid": "th-004",
+        "value": "Best For",
+        "component": "_table_head"
+      }
     ],
     "tbody": [
       {
+        "_uid": "tr-001",
         "body": [
-          { "value": "Alice Johnson" },
-          { "value": "Developer" },
-          { "value": "Engineering" }
-        ]
+          {
+            "_uid": "td-001-1",
+            "value": "Freelancer",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-001-2",
+            "value": "AED 75 – 600+ / hour",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-001-3",
+            "value": "Engineering",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-001-4",
+            "value": "Small or short-term projects",
+            "component": "_table_col"
+          }
+        ],
+        "component": "_table_row"
       },
       {
+        "_uid": "tr-002",
         "body": [
-          { "value": "Bob Smith" },
-          { "value": "Designer" },
-          { "value": "UI/UX" }
-        ]
+          {
+            "_uid": "td-002-1",
+            "value": "Agency",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-002-2",
+            "value": "AED 20K – 200K (per project)",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-002-3",
+            "value": "UI/UX",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-002-4",
+            "value": "End-to-end creative projects",
+            "component": "_table_col"
+          }
+        ],
+        "component": "_table_row"
       },
       {
+        "_uid": "tr-003",
         "body": [
-          { "value": "Charlie Lee" },
-          { "value": "Project Manager" },
-          { "value": "Operations" }
-        ]
+          {
+            "_uid": "td-003-1",
+            "value": "Enterprise Firm",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-003-2",
+            "value": "AED 150K – 2M+ (per program)",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-003-3",
+            "value": "Operations",
+            "component": "_table_col"
+          },
+          {
+            "_uid": "td-003-4",
+            "value": "Large-scale corporate systems",
+            "component": "_table_col"
+          }
+        ],
+        "component": "_table_row"
       }
-    ]
-  }
+    ],
+    "fieldtype": "table"
+  },
+  "Alignment": "center",
+  "TableStyle": "table1",
+  "isBlogPage": false,
+  "HeadingColor": {
+    "_uid": "hc-001",
+    "color": "#ffffff",
+    "plugin": "official-colorpicker"
+  },
+  "HeadingBgColor": {
+    "_uid": "hb-001",
+    "color": "#000248",
+    "plugin": "official-colorpicker"
+  },
+  "component": "BlogTable"
 }

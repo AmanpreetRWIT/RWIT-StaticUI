@@ -1,6 +1,7 @@
 {
   "BGColor": { "color": "#f8f9fa" },
-  "centeredTitle": true,
+  "centeredTitle": false,
+  "showTags":false,
   "Tag": [
     {
       "TagName": "Our Team",
@@ -8,8 +9,8 @@
       "style": "primary"
     }
   ],
-  "Title": "Meet Our Experts",
-  "TitleColor": { "color": "#0a0a0a" },
+  "Title": "Meet our leadership team",
+  "TitleColor": { "color": "#000248" },
   "Description": "Our talented team of designers, developers, and strategists are here to help you grow.",
   "DescriptionColor": { "color": "#555555" },
   "TeamCardTextColor": { "color": "#1d1d1d" },
@@ -17,35 +18,44 @@
   "RemoveCardAnimation": false,
   "Team": [
     {
-      "name": "Jane Smith",
-      "role": "Creative Director",
-      "image": "/images/team/jane.jpg",
+      "name": "Jaswinder Singh",
+      "role": "CEO & Founder",
+      "image": "/images/jaswinder-s.webp",
       "socials": {
         "linkedin": "https://linkedin.com/in/jane-smith",
         "twitter": "https://twitter.com/janesmith"
       }
     },
     {
-      "name": "John Doe",
-      "role": "Lead Developer",
-      "image": "/images/team/john.jpg",
+      "name": "Anupama",
+      "role": "Co-Founder",
+      "image": "/images/anupama_sharma.webp",
       "socials": {
         "linkedin": "https://linkedin.com/in/john-doe",
         "github": "https://github.com/johndoe"
       }
     },
     {
-      "name": "Emily Davis",
-      "role": "Project Manager",
-      "image": "/images/team/emily.jpg",
+      "name": "Srishti Suryavanshi",
+      "role": "HR Manager",
+      "image": "/images/srishtisuryavanshi.webp",
       "socials": {
         "linkedin": "https://linkedin.com/in/emily-davis"
       }
     },
     {
-      "name": "Michael Lee",
-      "role": "UI/UX Designer",
-      "image": "/images/team/michael.jpg",
+      "name": "Suraj Kumar",
+      "role": "Frontend Lead",
+      "image": "/images/surajkumar.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/michael-lee",
+        "dribbble": "https://dribbble.com/michaellee"
+      }
+    },
+    {
+      "name": "Renuka Negi",
+      "role": "Team Lead",
+      "image": "/images/renuka-negi.webp",
       "socials": {
         "linkedin": "https://linkedin.com/in/michael-lee",
         "dribbble": "https://dribbble.com/michaellee"

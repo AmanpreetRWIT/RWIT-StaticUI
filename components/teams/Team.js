@@ -78,6 +78,7 @@ const Team = ({ data }) => {
                   titleColor={data?.headingColor || ""}
                   descriptionColor={data?.descriptionColor || ""}
                   alignment="left"
+                  showTags={data?.showTags}
                 />
 
                 {data?.buttons && (

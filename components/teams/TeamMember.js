@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import Tilt from "react-parallax-tilt";
 import { placeholderLight } from "../../helpers/utilities";
 
-const TeamMember = ({ team, CardBorder, CardAnimation, TitleColor }) => {
+const TeamMember = ({team, CardBorder, CardAnimation, TitleColor }) => {
   return (
     <>
       <Tilt
@@ -12,7 +12,7 @@ const TeamMember = ({ team, CardBorder, CardAnimation, TitleColor }) => {
       >
         <div className="axil-team">
           <div className={`inner ${CardBorder ? "noborder" : ""}`}>
-            {team?.Image?.filename && (
+            {team?.image && (
               <div className={`thumbnail paralax-image`}>
                 {team?.ImageLink?.url || team?.ImageLink?.story?.url ? (
                   <Link
@@ -27,7 +27,7 @@ const TeamMember = ({ team, CardBorder, CardAnimation, TitleColor }) => {
                         width={600}
                         height={560}
                         className="w-100"
-                        src={team?.Image?.filename}
+                        src={team?.image}
                         alt={team?.Image?.alt ? team?.Image?.alt : team?.Name}
                       />
                     </a>
@@ -40,14 +40,14 @@ const TeamMember = ({ team, CardBorder, CardAnimation, TitleColor }) => {
                     width={600}
                     height={560}
                     className="w-100"
-                    src={team?.Image?.filename}
+                    src={team?.image}
                     alt={team?.Image?.alt ? team?.Image?.alt : team?.Name}
                   />
                 )}
               </div>
             )}
             <div className="content">
-              {team?.Name && (
+              {team?.name && (
                 <h3
                   className="title"
                   style={TitleColor ? { color: TitleColor } : {}}
@@ -57,15 +57,15 @@ const TeamMember = ({ team, CardBorder, CardAnimation, TitleColor }) => {
                       href={team?.ImageLink?.url || team?.ImageLink?.story?.url}
                       legacyBehavior
                     >
-                      {team?.Name}
+                      {team?.name}
                     </Link>
                   ) : (
-                    <>{team?.Name}</>
+                    <>{team?.name}</>
                   )}
                 </h3>
               )}
-              {team?.Designation && (
-                <p className="subtitle">{team?.Designation}</p>
+              {team?.role && (
+                <p className="subtitle">{team?.role}</p>
               )}
             </div>
           </div>

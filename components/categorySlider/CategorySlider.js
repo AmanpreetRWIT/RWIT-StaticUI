@@ -9,10 +9,10 @@ const CategoryCard = dynamic(() => import('./CategoryCard'));
 import Link from 'next/link';
 
 const CategorySlider = ({ categoryTitle, categoryLink, blogs }) => {
+  
   const swiperRef = useRef(null);
 
   const [latestBlogs, setLatestBlogs] = useState(blogs ? blogs : []);
-
   const handleNext = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slideNext();
@@ -97,7 +97,7 @@ const CategorySlider = ({ categoryTitle, categoryLink, blogs }) => {
               id="cardSwiper"
               className="cardSwiper container"
             >
-              {latestBlogs?.map((blog, index) => (
+              {blogs?.map((blog, index) => (
                 <SwiperSlide key={index}>
                   <CategoryCard blog={blog} />
                 </SwiperSlide>

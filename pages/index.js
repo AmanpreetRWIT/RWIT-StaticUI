@@ -46,6 +46,17 @@ import PricingPlan from '../components/pricings/PricingPlan';
 import Table from '../components/table/Table';
 import AboutUs from '../components/abouts/AboutUs';
 import CaseStudyPopup from "../components/popup/CaseStudyPopup";
+import Testimonial from "../components/testimonials/Testimonial";
+import Team from "../components/teams/Team";
+import Teams from "../components/teams/Teams";
+import Technologies from "../components/technologies/Technologies";
+import TechnologyStack from "../components/technologies/TechnologyStack";
+import BlogTable from '../components/blogs/singlePageBlok/BlogTable';
+import LatestStories from "../components/blogs/LatestStories";
+import BacklinkPopup from "../components/popup/BacklinkPopup";
+import Breadcrumb from "../components/breadcrumb/Breadcrumb";
+import CategorySlider from "../components/categorySlider/CategorySlider";
+
 
 //json
 import heroData from "../data/banner/Hero.json";
@@ -88,19 +99,24 @@ import serviceCard from "../data/Services/ServiceCard.json";
 import services from "../data/Services/Services.json";
 import servicesWithLeftTitle from "../data/Services/ServicesWithLeftTitle.json";
 import servicesWithStickyCards from "../data/Services/ServicesWithStickyCard.json";
-import footer from "../data/layouts/Footer.json";
-import header from '../data/layouts/Header.json';
-import mainMenu from '../data/layouts/MainMenu.json';
 import HeaderData from '../data/layouts/Header.json';
 import FooterData from '../data/layouts/Footer.json';
-import LayoutData from '../data/layouts/Layout.json';
 import pricing from '../data/pricings/Pricing.json';
 import pricingPlan from '../data/pricings/PricingPlan.json';
 import table from '../data/table/Table';
 import aboutUs from '../data/abouts/AboutUs';
 import testimonial from '../data/testimonials/Testimonial.json';
-//const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
+import caseStudyPopup from "../data/popup/CaseStudyPopup";
+import team from "../data/teams/Team.json";
+import technologies from "../data/technologies/Technologies.json";
+import teams from "../data/teams/Teams";
+import technologyStack from "../data/technologies/TechnologyStack";
+import blogTable from '../data/blogs/singlePageBlok/BlogTable.json';
+import latestStories from "../data/blogs/LatestStories.json";
+import backlinkPopup from "../data/popup/BackLinkPopup.json";
+import categorySlider from "../data/categorySlider/CategorySlider.json";
 
+//const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 export default function HomePage() {
   const layoutSettings = {
     header: {
@@ -116,13 +132,12 @@ export default function HomePage() {
     },
     settings: {},
   };
+
+
   return (
     <>
     
     <Layout layoutSettings={layoutSettings} >
-      
-      
-
       <HeroSection {...heroData} />
       <HeroWithForm {...heroWithForm} />
       <HeroWithoutImage {...heroWithoutImage.Default} />
@@ -137,7 +152,6 @@ export default function HomePage() {
       <ClientLogoSlider data={clientLogoSlider} />
       <ClientAndPartner data={clientAndPartner} />
       <CaseStudySlider data={caseStudySlider} />
-      {/* <CategoryCard  blog={categoryCard[0]}/> */}
       <CmsHighlights data={cmsHighlights} />
       <CompareTable data={compareTable} />
       <Comparison data={comparison} />
@@ -157,9 +171,7 @@ export default function HomePage() {
       <OurOffice {...ourOffice}/>
       <OurValues {...ourValues}  />
       <OurPartners blok={ourPartners}/>
-      {/* <ApplyPopup {...applyPopup}/> */}
       <Process blok={process}/>
-
       <ServiceCard {...serviceCard}/>
       <Services blok={services}/>
       <ServicesWithLeftTitle blok={servicesWithLeftTitle}/> 
@@ -170,6 +182,17 @@ export default function HomePage() {
       <AboutUs data={aboutUs}/>
       <Testimonial data={testimonial}/>
       <CaseStudyPopup data={caseStudyPopup} />
+      <Team data={team}/>
+      <Teams {...teams}/>
+      <Technologies data={technologies}/>
+      <TechnologyStack data={technologyStack}/>
+      <BlogTable {...blogTable}/>
+      <LatestStories data={latestStories}/>
+      <BacklinkPopup blok={backlinkPopup}/>
+      <ApplyPopup blok={applyPopup}/>
+      <Breadcrumb/>
+      {/* <CategoryCard  blog={categoryCard}/> */}
+      <CategorySlider blogs={categorySlider}/>
       </Layout>
     </>
   );

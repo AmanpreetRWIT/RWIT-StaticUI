@@ -25,7 +25,7 @@ const Technologies = ({ data }) => {
         {data?.Tags && data.Tags.length > 0 && (
           <div className="section-title tag">
             {data.Tags.map((tag, index) => (
-              <span key={index}>{tag}</span>
+              <span key={index} class="sub-title extra11-color" style={{color:"#2690D4",border:"1px solid #2690D4",background:"#D4E9F6"}}>{tag}</span>
             ))}
           </div>
         )}

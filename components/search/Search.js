@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export const SearchComponent = ({ onSearch }) => {
+
   // Load all blog data from JSON file
   const allBlogs = require('../../public/allBlogData.json');
 

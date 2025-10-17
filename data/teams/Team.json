@@ -1,31 +1,26 @@
 {
-  "heading": "Meet Our Expert Team",
-  "tags": "Creative Minds",
-  "description": "Our dedicated professionals bring innovation, expertise, and passion to every project.",
-  "headingColor": "#1A1A1A",
-  "descriptionColor": "#555555",
-  "bgColor": "#F9F9F9",
+  "heading": "Team Number",
+  "tags": "Team",
+  "showtags":false,
+  "description": "We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision.",
+  "headingColor": "#000248",
+  "descriptionColor": "#757589",
+  "bgColor": " ",
   "showImageOnRight": false,
   "disableBgShape": false,
   "grayscale": false,
-  "image": "/images/team-photo.jpg",
+  "image": "https://a-us.storyblok.com/f/1016184/2345x2793/7fba737217/senior-lead-manager.jpg",
   "alt": "Our Team",
   "teamNumbers": [
-    {
-      "number": "10+",
-      "text": "Years Experience",
-      "link": "#",
-      "target": "_self"
-    }
   ],
   "buttons": [
     {
-      "text": "Join Our Team",
+      "text": "",
       "link": "/careers",
       "type": "primary"
     },
     {
-      "text": "Learn More",
+      "text": "",
       "link": "/about",
       "type": "secondary"
     }
