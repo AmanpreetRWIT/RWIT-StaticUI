@@ -8,11 +8,12 @@ import React, { useState } from "react";
 import { placeholderLight } from "../../helpers/utilities";
 
 const CaseStudySlider = ({ data }) => {
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
-    loop: true,
+    loop: false,
     breakpoints: {
       "(max-width: 479px)": {
         slides: { spacing: 20 },
@@ -103,7 +104,7 @@ const CaseStudySlider = ({ data }) => {
                                 key={index}
                                 class="hoverable axil-button casestudy_btn btn-solid btn-large  "
                                 target="_blank"
-                                href="/case-study/rushordertees"
+                                href={button.Link}
                               >
                                 <span class="button-text hoverable px-0">
                                   {button?.Label}
@@ -113,7 +114,7 @@ const CaseStudySlider = ({ data }) => {
                         </div>
 
                         <div className="axil-counterup-area d-flex flex-sm-wrap separator-line-vertical">
-                          {item?.CaseStudyStatistics &&
+                          {item?.ShowCaseStudyStatistics && item?.CaseStudyStatistics &&
                             item.CaseStudyStatistics.map((stat, statIndex) => (
                               <div
                                 className="single-counterup counterup-style-1"

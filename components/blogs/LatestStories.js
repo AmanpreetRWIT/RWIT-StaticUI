@@ -78,7 +78,7 @@ const LatestStories = ({ data }) => {
         )}
 
         <div className="latestStories__cont container">
-          {(data?.Title || data?.Description || data?.Tags?.length > 0) && (
+          {(data?.ShowSectionTitle)  && (data?.Title || data?.Description || data?.Tags?.length > 0) && (
             <div className="row">
               <div className="col-lg-12">
                 <SectionTitle

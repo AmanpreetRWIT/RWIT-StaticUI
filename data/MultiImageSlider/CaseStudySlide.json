@@ -1,9 +1,9 @@
 {
-    "RightToLeft": true,
+    
     "images": [
-      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png", "alt": "Slide 1" } },
-      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png", "alt": "Slide 2" } },
-      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/e1f746cc0b/7.png", "alt": "Slide 3" } }
+      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png", "alt": "Slide 1" ,"RightToLeft": false} },
+      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png", "alt": "Slide 2","RightToLeft": true } },
+      { "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/e1f746cc0b/7.png", "alt": "Slide 3","RightToLeft": false } }
     ]
   }
   

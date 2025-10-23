@@ -1,0 +1,91 @@
+{
+    "Settings": {
+      "FavIcon": { "filename": "/favicon.png" },
+      "Logo": { "filename": "/images/rwit-logo.svg" }
+    },
+    "Footer": {
+      "content": {
+        "columns": ["About", "Links", "Contact"]
+      }
+    },
+    "MainMenu": {
+      "content": [
+        { "title": "Home", "link": "/" },
+        { "title": "Blog", "link": "/blog-by-category" },
+        { "title": "Contact", "link": "/contact" }
+      ]
+    },
+    "AllBlogsArchive": {
+      "Seo": {
+        "title": "RW Infotech Blog",
+        "description": "Insights, tips, and strategies from our headless commerce experts.",
+        "og_title": "RW Infotech Blog",
+        "og_description": "Explore expert insights in tech, design, and eCommerce.",
+        "og_image": "/images/meta-image.jpg",
+        "twitter_title": "RW Infotech Blog",
+        "twitter_description": "Expert tips and updates from RW Infotech.",
+        "twitter_image": "/images/meta-image.jpg"
+      },
+      "HideNavigationNotice": "",
+      "Name": "RW Infotech",
+      "RatingCount": "15",
+      "RatingValue": "5",
+      "FocusKeyword": "headless, commerce, tech blog",
+      "CanonicalLink": "https://rwit.io/blog-by-category",
+      "ThumbnailImage": { "filename": "/images/meta-image.jpg", "alt": "RWIT" },
+      "RobotsMetaTag": "all"
+    },
+    "BlogData": {
+      "BlogItems": {
+        "items": [
+          {
+            "id": 1,
+            "title": "Understanding Headless Commerce",
+            "content": {
+              "Categories": [{ "slug": "headless CMS" }]
+            }
+          },
+          {
+            "id": 2,
+            "title": "React Performance Optimization",
+            "content": {
+              "Categories": [{ "slug": "Digital Marketing" }]
+            }
+          },
+          {
+            "id": 3,
+            "title": "Understanding Headless Commerce",
+            "content": {
+              "Categories": [{ "slug": "Headless Commerce" }]
+            }
+          },
+          {
+            "id": 4,
+            "title": "React Performance Optimization",
+            "content": {
+              "Categories": [{ "slug": "Frontend" }]
+            }
+          }
+        ]
+      }
+    },
+    "GetCategory": [
+      { "slug": "commerce", "name": "headless CMS", "full_slug": "/category/commerce" },
+      { "slug": "react", "name": "Digital Marketing", "full_slug": "/category/react" },
+      { "slug": "commerce", "name": "Headless Commerce", "full_slug": "/category/commerce" },
+      { "slug": "react", "name": "Frontend", "full_slug": "/category/react" }
+    ],
+    "PageData": {
+      "content": {
+        "CategoriesToShow": [
+          { "slug": "commerce", "name": "headless CMS", "full_slug": "/category/commerce" },
+      { "slug": "react", "name": "Digital Marketing", "full_slug": "/category/react" },
+      { "slug": "commerce", "name": "Headless Commerce", "full_slug": "/category/commerce" },
+      { "slug": "react", "name": "Frontend", "full_slug": "/category/react" }
+        ],
+        "CategoryTabColor": { "color": "#f3f3f3" },
+        "blogs": []
+      }
+    }
+  }
+  

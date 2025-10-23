@@ -50,7 +50,7 @@ const BlogContentTable = ({ currentUrl, TableTitle, tableList, setTableList }) =
     observer.observe(container, { childList: true, subtree: true });
 
     return () => observer.disconnect();
-  }, [router?.asPath]);
+  }, [router?.asPath,setTableList]);
 
   useEffect(() => {
     const container = document.getElementById('blogArea');

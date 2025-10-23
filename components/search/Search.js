@@ -118,7 +118,7 @@ export const SearchComponent = ({ onSearch }) => {
     };
 
     fetchFilteredBlogs();
-  }, [debouncedQuery]);
+  }, [debouncedQuery,allBlogs]);
 
   // Handle search form submission
   const handleSearch = (e) => {

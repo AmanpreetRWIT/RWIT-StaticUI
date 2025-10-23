@@ -17,7 +17,7 @@
       "AltText": "prismic developer",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "",
-      "Link": "/service/consulting",
+      "Link": "/services/consulting",
       "HideBG": true,
       "HideBorder": false
     },
@@ -28,7 +28,7 @@
       "AltText": "Headless CMS Services",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
-      "Link": "/service/web-development",
+      "Link": "/services/web-development",
       "HideBG": true,
       "HideBorder": false
     },
@@ -39,7 +39,7 @@
       "AltText": "headless e commerce",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
-      "Link": "/service/headless-commerce",
+      "Link": "/services/headless-commerce",
       "HideBG": true,
       "HideBorder": false
     },
@@ -50,7 +50,7 @@
       "AltText": "AI Agents Development",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
-      "Link": "/service/ai-agent-development",
+      "Link": "/services/ai-agent-development",
       "HideBG": true,
       "HideBorder": false
     },
@@ -61,7 +61,7 @@
       "AltText": "Generative AI Development",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
-      "Link": "/service/generative-ai-development",
+      "Link": "/services/generative-ai-development",
       "HideBG": true,
       "HideBorder": false
     },
@@ -72,7 +72,7 @@
       "AltText": "Digital Marketing",
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
-      "Link": "/service/digital-marketing",
+      "Link": "/services/digital-marketing",
       "HideBG": true,
       "HideBorder": false
     }

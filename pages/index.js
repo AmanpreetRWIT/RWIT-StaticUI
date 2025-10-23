@@ -1,129 +1,50 @@
-//components
+import Head from "next/head";
+
+// Components
 import Layout from "../components/layouts/Layout";
 import HeroSection from "../components/banner/Hero";
-import HeroWithForm from "../components/banner/HeroWithForm";
-import HeroWithoutImage from "../components/banner/HeroWithoutImage";
-import HeroWithVerticalImage from "@/components/banner/HeroWithVerticalImage";
 import BrandTwo from "../components/brands/BrandTwo";
 import BrandThree from "../components/brands/BrandThree";
 import CallToAction from "../components/call-to-actions/CallToAction";
-import CallToActionSlim from "../components/call-to-actions/CallToActionSlim";
-import CallToActionWithAvatar from "../components/call-to-actions/CallToActionWithAvatar";
-import CaseStudyGrid from "../components/CaseStudyGrid/CaseStudyGrid";
-import CaseStudyMedia from "../components/CaseStudyGrid/CaseStudyMedia";
-import ClientLogoSlider from "../components/client-and-partner/ClientLogoSlider";
-import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
 import CaseStudySlider from "../components/CaseStudySlider/CaseStudySlider";
-import CategoryCard from "../components/categorySlider/CategoryCard";
-import CmsHighlights from "../components/Comparison/CmsHighlights";
-import CompareTable from "../components/Comparison/CompareTable";
-import Comparison from "../components/Comparison/Comparison";
-import ComparisonBanner from "../components/Comparison/ComparisonBanner";
-import ImageComparisonSlider from "../components/Comparison/ImageComparisonSlider";
-import Contact from "../components/contact/Contact";
-import CounterOne from "../components/counters/Counter";
-import CounterCardOne from "../components/counters/CounterCardOne";
-import CounterTwo from "../components/counters/CounterTwoColumn";
-import Faq from "../components/faq/Faq";
-import OurGallery from "../components/gallery/OurGallery";
-import JobListing from "../components/joblisting/JobListing";
-import CaseStudySlide from "../components/MultiImageSlider/CaseStudySlide";
-import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
-import Newsletter from "../components/newsletter/Newsletter";
-import NewsletterModal from "../components/newsletter/NewsletterModal";
-import Notice from "../components/notice/Notice";
-import OurOffice from "../components/ouroffice/OurOffice";
-import OurValues from "../components/ourvalues/OurValues";
-import OurPartners from "../components/partners/Partners";
-import ApplyPopup from "../components/popup/ApplyPopup";
-import Process from "../components/process/Process";
-import ServiceCard from "../components/Services/ServiceCard";
+import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
 import Services from "../components/Services/Services";
-import ServicesWithLeftTitle from "../components/Services/ServicesWithLeftTitle";
 import ServicesWithStickyCards from "../components/Services/ServicesWithStickyCards";
-import Pricing from '../components/pricings/Pricing';
-import PricingPlan from '../components/pricings/PricingPlan';
-import Table from '../components/table/Table';
-import AboutUs from '../components/abouts/AboutUs';
-import CaseStudyPopup from "../components/popup/CaseStudyPopup";
+import CounterTwo from "../components/counters/CounterTwoColumn";
+import Comparison from "../components/Comparison/Comparison";
 import Testimonial from "../components/testimonials/Testimonial";
-import Team from "../components/teams/Team";
-import Teams from "../components/teams/Teams";
-import Technologies from "../components/technologies/Technologies";
-import TechnologyStack from "../components/technologies/TechnologyStack";
-import BlogTable from '../components/blogs/singlePageBlok/BlogTable';
-import LatestStories from "../components/blogs/LatestStories";
-import BacklinkPopup from "../components/popup/BacklinkPopup";
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import CategorySlider from "../components/categorySlider/CategorySlider";
+import Newsletter from "../components/newsletter/Newsletter";
+import Blogs from "./blog-by-category.js";
+import HeroWithForm from '../components/banner/HeroWithForm'
+import HeroWithoutImage from '../components/banner/HeroWithoutImage';
 
-
-//json
+// JSON Data
 import heroData from "../data/banner/Hero.json";
-import heroWithForm from "../data/banner/HeroWithForm.json";
-import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
-import heroWithVerticalImage from "../data/banner/HeroWithVerticalImage.json";
 import brandTwo from "../data/brands/BrandTwo.json";
 import brandThree from "../data/brands/BrandThree.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
-import callToActionSlim from "../data/call-to-actions/CallToActionSlim.json";
-import callToActionWithAvatar from "../data/call-to-actions/callToActionWithAvatar.json";
-import caseStudyGrid from "../data/CaseStudyGrid/CaseStudyGrid.json";
-import caseStudyMedia from "../data/CaseStudyGrid/CaseStudyMedia.json";
-import clientLogoSlider from "../data/client-and-partner/ClientLogoSlider.json";
-import clientAndPartner from "../data/client-and-partner/ClientAndPartner.json";
 import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
-import categoryCard from "../data/categorySlider/CategoryCard.json";
-import cmsHighlights from "../data/Comparison/CmsHighlights.json";
-import compareTable from "../data/Comparison/CompareTable.json";
-import comparison from "../data/Comparison/Comparison.json";
-import comparisonBanner from "../data/Comparison/ComparisonBanner.json";
-import imageComparisonSlider from "../data/Comparison/ImageComparisonSlider.json";
-import contact from "../data/contact/Contact.json";
-import counterOne from "../data/counters/Counter.json";
-import counterCardOne from "../data/counters/CounterCardOne";
-import counterTwo from "../data/counters/CounterTwoColumn.json";
-import faqData from "../data/faq/Faq.json";
-import ourGallery from "../data/OurGallery/OurGallery.json";
-import caseStudySlidesData from "../data/MultiImageSlider/CaseStudySlides.json";
-import jobListing from "../data/joblisting/JobListing.json";
-import newsletter from "../data/newsletter/Newsletter.json";
-import newsletterModal from "../data/newsletter/NewsletterModal.json";
-import notice from "../data/notice/Notice.json";
-import ourOffice from "../data/ouroffice/OurOffice.json";
-import ourValues from "../data/ourvalues/OurValues.json";
-import ourPartners from "../data/partners/Partners.json";
-import applyPopup from "../data/popup/ApplyPopup";
-import process from "../data/process/Process.json";
-import serviceCard from "../data/Services/ServiceCard.json";
+import clientAndPartner from "../data/client-and-partner/ClientAndPartner.json";
 import services from "../data/Services/Services.json";
-import servicesWithLeftTitle from "../data/Services/ServicesWithLeftTitle.json";
 import servicesWithStickyCards from "../data/Services/ServicesWithStickyCard.json";
-import HeaderData from '../data/layouts/Header.json';
-import FooterData from '../data/layouts/Footer.json';
-import pricing from '../data/pricings/Pricing.json';
-import pricingPlan from '../data/pricings/PricingPlan.json';
-import table from '../data/table/Table';
-import aboutUs from '../data/abouts/AboutUs';
-import testimonial from '../data/testimonials/Testimonial.json';
-import caseStudyPopup from "../data/popup/CaseStudyPopup";
-import team from "../data/teams/Team.json";
-import technologies from "../data/technologies/Technologies.json";
-import teams from "../data/teams/Teams";
-import technologyStack from "../data/technologies/TechnologyStack";
-import blogTable from '../data/blogs/singlePageBlok/BlogTable.json';
-import latestStories from "../data/blogs/LatestStories.json";
-import backlinkPopup from "../data/popup/BackLinkPopup.json";
-import categorySlider from "../data/categorySlider/CategorySlider.json";
+import counterTwo from "../data/counters/CounterTwoColumn.json";
+import comparison from "../data/Comparison/Comparison.json";
+import testimonial from "../data/testimonials/Testimonial.json";
+import newsletter from "../data/newsletter/Newsletter.json";
+import HeaderData from "../data/layouts/Header.json";
+import FooterData from "../data/layouts/Footer.json";
+import NavigationSchema from "../schemas/NavigationSchemas.json";
+import blogs from "../data/blogs/blog-by-category.json";
+import heroWithForm from '../data/banner/HeroWithForm.json';
+import heroWithoutImage from '../data/banner/HeroWithoutImage.json';
 
-//const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 export default function HomePage() {
   const layoutSettings = {
     header: {
       style: "four",
       leftColumn: "col-lg-4 col-md-6 col-sm-6 col-8 header-left",
       rightColumn: "col-lg-8 col-md-6 col-sm-6 col-4 header-right",
-      ...HeaderData, 
+      ...HeaderData,
     },
     footer: {
       style: "three",
@@ -133,66 +54,107 @@ export default function HomePage() {
     settings: {},
   };
 
+  const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
+  const pageTitle = "RW Infotech | Home";
+  const pageDescription =
+    "Welcome to RW Infotech. We provide expert software, app, and web solutions tailored to your business growth.";
 
   return (
     <>
-    
-    <Layout layoutSettings={layoutSettings} >
-      <HeroSection {...heroData} />
-      <HeroWithForm {...heroWithForm} />
-      <HeroWithoutImage {...heroWithoutImage.Default} />
-      <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
-      <BrandTwo {...brandTwo} />
-      <BrandThree {...brandThree} />
-      <CallToAction {...callToAction} />
-      <CallToActionSlim {...callToActionSlim} />
-      <CallToActionWithAvatar {...callToActionWithAvatar} />
-      <CaseStudyGrid {...caseStudyGrid} />
-      <CaseStudyMedia {...caseStudyMedia} />
-      <ClientLogoSlider data={clientLogoSlider} />
-      <ClientAndPartner data={clientAndPartner} />
-      <CaseStudySlider data={caseStudySlider} />
-      <CmsHighlights data={cmsHighlights} />
-      <CompareTable data={compareTable} />
-      <Comparison data={comparison} />
-      <ComparisonBanner data={comparisonBanner} />
-      <ImageComparisonSlider {...imageComparisonSlider} />
-      <Contact {...contact} />
-      <CounterOne {...counterOne} />
-      <CounterCardOne {...counterCardOne} />
-      <CounterTwo {...counterTwo} />
-      <Faq {...faqData} />
-      <OurGallery blok={ourGallery} />
-      <JobListing {...jobListing} />
-      <CaseStudySlides {...caseStudySlidesData} />
-      <Newsletter {...newsletter} />
-      <NewsletterModal data={newsletterModal}/>
-      <Notice {...notice}/>
-      <OurOffice {...ourOffice}/>
-      <OurValues {...ourValues}  />
-      <OurPartners blok={ourPartners}/>
-      <Process blok={process}/>
-      <ServiceCard {...serviceCard}/>
-      <Services blok={services}/>
-      <ServicesWithLeftTitle blok={servicesWithLeftTitle}/> 
-      <ServicesWithStickyCards blok={servicesWithStickyCards}/>
-      <Pricing data={pricing}/>
-      <PricingPlan data={pricingPlan}/>
-      <Table  data={table}/>
-      <AboutUs data={aboutUs}/>
-      <Testimonial data={testimonial}/>
-      <CaseStudyPopup data={caseStudyPopup} />
-      <Team data={team}/>
-      <Teams {...teams}/>
-      <Technologies data={technologies}/>
-      <TechnologyStack data={technologyStack}/>
-      <BlogTable {...blogTable}/>
-      <LatestStories data={latestStories}/>
-      <BacklinkPopup blok={backlinkPopup}/>
-      <ApplyPopup blok={applyPopup}/>
-      <Breadcrumb/>
-      {/* <CategoryCard  blog={categoryCard}/> */}
-      <CategorySlider blogs={categorySlider}/>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="og:site_name" content="RW Infotech" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={site_url} />
+        <meta property="og:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={`${site_url}/images/meta-image.jpg`} />
+        <link rel="icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="canonical" href={site_url} />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(NavigationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "RW Infotech",
+              url: site_url,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${site_url}/search?q={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+      </Head>
+
+      <Layout layoutSettings={layoutSettings}>
+        <HeroSection {...heroData} />
+        <BrandTwo {...brandTwo} />
+        <CaseStudySlider data={caseStudySlider} />
+        <Services blok={services} />
+        <ClientAndPartner data={clientAndPartner} />
+        <CallToAction {...callToAction} />
+        <BrandThree {...brandThree} />
+        <CounterTwo {...counterTwo} />
+        <Comparison data={comparison} />
+        <ServicesWithStickyCards blok={servicesWithStickyCards} />
+        <Testimonial data={testimonial} />
+        <Newsletter data={newsletter} />
+        {/* <HeroWithForm {...heroWithForm} />
+        <HeroWithoutImage {...heroWithoutImage.Default} /> */}
+        {/* <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
+        <CallToActionSlim {...callToActionSlim} />
+        <CallToActionWithAvatar {...callToActionWithAvatar} />
+        <CaseStudyGrid {...caseStudyGrid} />
+        <CaseStudyMedia {...caseStudyMedia} />
+        <ClientLogoSlider data={clientLogoSlider} />
+        <CmsHighlights data={cmsHighlights} />
+        <CompareTable data={compareTable} />
+        <ComparisonBanner data={comparisonBanner} />
+        <ImageComparisonSlider {...imageComparisonSlider} />
+        <Contact {...contact} />
+        <CounterOne {...counterOne} />
+        <CounterCardOne {...counterCardOne} />
+        <Faq {...faqData} />
+        <OurGallery blok={ourGallery} />
+        <JobListing {...jobListing} />
+        <CaseStudySlides {...caseStudySlidesData} />
+        <NewsletterModal data={newsletterModal} />
+        <Notice {...notice} />
+        <OurOffice {...ourOffice} />
+        <OurValues {...ourValues} />
+        <OurPartners {...ourPartners} />
+        <Process blok={process} />
+        <ServiceCard {...serviceCard} />
+        <ServicesWithLeftTitle blok={servicesWithLeftTitle} />
+        <Pricing data={pricing} />
+        <PricingPlan data={pricingPlan} />
+        <Table data={table} />
+        <AboutUs data={aboutUs} />
+        <CaseStudyPopup data={caseStudyPopup} />
+        <Team data={team} />
+        <Teams {...teams} />
+        <Technologies data={technologies} />
+        <TechnologyStack data={technologyStack} />
+        <BlogTable {...blogTable} />
+        <LatestStories data={latestStories} />
+        <BacklinkPopup blok={backlinkPopup} />
+        <ApplyPopup blok={applyPopup} index={0}/>
+        <Breadcrumb />
+         <Blogs blogsData={blogs} /> */}
       </Layout>
     </>
   );

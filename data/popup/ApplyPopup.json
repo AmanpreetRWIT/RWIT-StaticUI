@@ -1,48 +1,45 @@
 {
-  "PopupTitle": "Apply for a Position",
-  "PopupHeadingColor": { "color": "#000248" },
-  "PopupDescription": " ",
-  "PopupDescriptionColor": { "color": "#333333" },
-  "ModalBgColor": { "color": "#EEF0FA" },
+  "PopupTitle": "Apply",
+  "PopupDescription": "",
+  "PopupHeadingColor": {
+    "color": "#000248"
+  },
+  "PopupDescriptionColor": {
+    "color": "#4B4B4B"
+  },
+  "ModalBgColor": {
+    "color": "#EEF0FA"
+  },
   "Form": [
     {
-      "setIsActive": true,
-      "fields": [
+      "FormTitle": "Job Application",
+      "SubmitButtonText": "Submit Application",
+      "Inputs": [
         {
-          "Name": "FullName",
-          "Label": "Name",
+          "Name": "Full Name",
           "Type": "text",
-          "Required": true,
-          "Placeholder": "Enter your full name"
+          "Placeholder": "Enter your full name",
+          "Required": true
         },
         {
           "Name": "Email",
-          "Label": "Email",
           "Type": "email",
-          "Required": true,
-          "Placeholder": "Enter your email"
+          "Placeholder": "Enter your email address",
+          "Required": true
         },
         {
           "Name": "Phone",
-          "Label": "Phone Number",
-          "Type": "text",
-          "Required": false,
-          "Placeholder": "Enter your phone number"
+          "Type": "tel",
+          "Placeholder": "Enter your phone number",
+          "Required": true
         },
         {
           "Name": "Resume",
-          "Label": "Upload Resume",
           "Type": "file",
+          "Placeholder": "Upload your resume",
           "Required": true
         }
-      ],
-      "submitButton": { "text": "Submit Application" },
-      "formTitle": "Application Form",
-      "formDescription": "Complete all required fields to submit your application.",
-      "ButtonColor": { "color": "#000248" },
-      "ButtonTextColor": { "color": "#ffffff" },
-      "SuccessMessage": "Your application has been submitted successfully!",
-      "ErrorMessage": "There was an error submitting your application. Please try again."
+      ]
     }
   ]
 }

@@ -1,12 +1,12 @@
-import { storyblokEditable, StoryblokComponent } from '@storyblok/react';
+// import { storyblokEditable, StoryblokComponent } from '@storyblok/react';
 
-const Page = ({ blok }) => (
-  <main className="page-wrapper" {...storyblokEditable(blok)}>
-    {blok?.body &&
-      blok?.body?.map((nestedBlok) => (
-        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-      ))}
-  </main>
-);
+// const Page = ({ blok }) => (
+//   <main className="page-wrapper" {...storyblokEditable(blok)}>
+//     {blok?.body &&
+//       blok?.body?.map((nestedBlok) => (
+//         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+//       ))}
+//   </main>
+// );
 
-export default Page;
+// export default Page;

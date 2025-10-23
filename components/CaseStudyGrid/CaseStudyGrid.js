@@ -1,5 +1,5 @@
 import SectionTitle from '../common/SectionTitle';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useMemo} from 'react';
 import Link from 'next/link';
 import { formatDateString } from '../../helpers/utilities';
 import { DateTime } from 'luxon';
@@ -16,21 +16,22 @@ const CaseStudyGrid = () => {
   }
 
   // ✅ Use local JSON data directly
-  const latestData = caseStudyData
-    ? caseStudyData?.caseStudies
-        ?.map((study) => ({
-          ...study,
-          full_slug: study?.full_slug,
-          published_at: study?.published_at,
-        }))
-        ?.sort((a, b) => {
-          const beforeDate = DateTime.fromISO(a.published_at).toMillis();
-          const afterDate = DateTime.fromISO(b.published_at).toMillis();
-          return afterDate - beforeDate;
-        })
-    : [];
-
-  const caseStudy = latestData || [];
+  const caseStudy = useMemo(() => {
+    if (!caseStudyData?.caseStudies) return [];
+  
+    return caseStudyData.caseStudies
+      .map((study) => ({
+        ...study,
+        full_slug: study?.full_slug,
+        published_at: study?.published_at,
+      }))
+      .sort((a, b) => {
+        const beforeDate = DateTime.fromISO(a.published_at).toMillis();
+        const afterDate = DateTime.fromISO(b.published_at).toMillis();
+        return afterDate - beforeDate;
+      });
+  }, [caseStudyData]);
+  
 
   const [activeTab, setActiveTab] = useState('All');
   const [activeCards, setActiveCards] = useState([]);
@@ -59,12 +60,12 @@ const CaseStudyGrid = () => {
   useEffect(() => {
     const allLabels = getAllCaseStudyLabels(caseStudy);
     setLabels(allLabels);
-  }, []);
+  }, [caseStudy]);
 
   useEffect(() => {
     const filteredCaseStudies = filterCaseStudiesByLabel(caseStudy, activeTab);
     setActiveCards(filteredCaseStudies);
-  }, [activeTab]);
+  }, [activeTab,caseStudy]);
 
   return (
     <div className="caseStudyGrid">

@@ -3,7 +3,7 @@ import SectionTitle from '../common/SectionTitle';
 import Image from 'next/image';
 import Tag from '../common/Tag';
 import Link from 'next/link';
-import careerData from '../../public/careerData.json';
+import careerData from '../../public/carrerData.json';
 import { useMobile } from '../../helpers/utilities';
 
 const JobListing = ({ data,Title,Tags }) => {

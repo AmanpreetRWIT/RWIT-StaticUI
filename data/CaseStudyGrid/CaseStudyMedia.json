@@ -1,7 +1,7 @@
 {
     "stories": [
       {
-        "full_slug": "/case-study/tech-innovation",
+        "full_slug": "/casestudies",
         "first_published_at": "2024-05-10",
         "content": {
           "body": [
@@ -23,7 +23,7 @@
         }
       },
       {
-        "full_slug": "/case-study/retail-growth",
+        "full_slug": "/casestudies",
         "first_published_at": "2024-03-15",
         "content": {
           "body": [
@@ -45,7 +45,7 @@
         }
       },
       {
-        "full_slug": "/case-study/retail-growth",
+        "full_slug": "/casestudies",
         "first_published_at": "2024-03-15",
         "content": {
           "body": [
@@ -67,7 +67,7 @@
         }
       },
       {
-        "full_slug": "/case-study/retail-growth",
+        "full_slug": "/casestudies",
         "first_published_at": "2024-03-15",
         "content": {
           "body": [

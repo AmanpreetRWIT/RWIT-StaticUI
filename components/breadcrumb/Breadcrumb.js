@@ -3,16 +3,16 @@ import { SearchComponent } from '../search/Search';
 import { useRouter } from 'next/router';
 
 const Breadcrumb = ({
-  title = '',
+  title = 'Contact',
   root = 'Home',
   rootUrl = '/',
-  current = '',
+  current = 'contact',
   description = '',
   BGColor = '',
   TextColor = '',
   showBreadcrumb = false,
   isCategory,
-  showSearch = true,
+  showSearch = false,
   alignment = 'left',
   showSpan=true,
 }) => {

@@ -2,6 +2,7 @@ import SectionTitle from '../common/SectionTitle';
 import CounterCardOne from './CounterCardOne';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 const CounterTwo = ({
   SecondLayout = false,
@@ -52,9 +53,9 @@ const CounterTwo = ({
                 />
                 {Buttons && (
                   <div className="view-all-portfolio-button mt--40">
-                    <a className="hoverable axil-button btn-solid" target="" href="/about">
+                    <Link className="hoverable axil-button btn-solid" target="" href="/about">
                       <span className="button-text hoverable px-0">{Buttons.label}</span>
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>

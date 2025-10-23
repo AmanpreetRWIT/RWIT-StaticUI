@@ -53,12 +53,12 @@
         "ToggleTagLayout":false,
         "ColumnHeading": "Case Studies",
         "Menu": [
-          { "Label": "AirDNA", "Link": { "url": "/case-studies/airdna" } },
-          { "Label": "SSD Nodes", "Link": { "url": "/case-studies/ssd-nodes" } },
-          { "Label": "Rush Order Tees", "Link": { "url": "/case-studies/rush-order-tees" } },
-          { "Label": "Redsbaby", "Link": { "url": "/case-studies/redsbaby" } },
-          { "Label": "Tilyo", "Link": { "url": "/case-studies/tilyo" } },
-          { "Label": "Carbmee", "Link": { "url": "/case-studies/carbmee" } }
+          { "Label": "AirDNA", "Link": { "url": "/casestcaudies" } },
+          { "Label": "SSD Nodes", "Link": { "url": "/casestudies" } },
+          { "Label": "Rush Order Tees", "Link": { "url": "/casestudies" } },
+          { "Label": "Redsbaby", "Link": { "url": "/casestudies" } },
+          { "Label": "Tilyo", "Link": { "url": "/casestudies" } },
+          { "Label": "Carbmee", "Link": { "url": "/casestudies" } }
         ]
       },
       {
@@ -77,12 +77,12 @@
         "ToggleTagLayout":true,
         "ColumnHeading": "Technologies",
         "Menu": [
-          { "Label": "React.js", "Link": { "url": "/tech/react" } },
-          { "Label": "Next.js", "Link": { "url": "/tech/next" } },
-          { "Label": "Typescript", "Link": { "url": "/tech/typescript" } },
-          { "Label": "Nuxt.js", "Link": { "url": "/tech/nuxt" } },
-          { "Label": "Vue.js", "Link": { "url": "/tech/vue" } },
-          { "Label": "Node.js", "Link": { "url": "/tech/node" } }
+          { "Label": "React.js", "Link": { "url": "/tech-stack/react" } },
+          { "Label": "Next.js", "Link": { "url": "/tech-stack/next" } },
+          { "Label": "Typescript", "Link": { "url": "/tech-stack/typescript" } },
+          { "Label": "Nuxt.js", "Link": { "url": "/tech-stack/nuxt" } },
+          { "Label": "Vue.js", "Link": { "url": "/tech-stack/vue" } },
+          { "Label": "Node.js", "Link": { "url": "/tech-stack/node" } }
         ]
       },
       {
@@ -101,27 +101,27 @@
     "Images": [
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x132/aefcb3303a/prismic-seeklogo-2.svg", "alt": "Prismic Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://prismic.io/hire-a-developer/rw-infotech-private-limited" }
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/127x43/0d163c4dba/bc-logo-in-white.svg", "alt": "airCommerce Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://partners.bigcommerce.com/directory/partner/2089927/rw-infotech" }
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x502/717a85543d/sanity-light.svg", "alt": "Sanity Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://www.sanity.io/agency-partners/rw-infotech" }
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/8ea82e0e30/storyblok-light.svg", "alt": "Storyblok Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://www.storyblok.com/pl/rw-infotech" }
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x110/6cfa7d3249/builderio-light.svg", "alt": "builder.io Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://www.rwit.io/technologies/builder" }
       },
       {
         "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x77/aa78207e46/strapi-light.svg", "alt": "Strapi Logo" },
-        "ImageLink": { "url": "#" }
+        "ImageLink": { "url": "https://www.rwit.io/technologies/strapi" }
       }
     ],
     "SocialIcons": [
@@ -131,8 +131,8 @@
     ],
     "CopyrightText": "RW Infotech. All Rights Reserved.",
     "CopyrightLinks": [
-      { "Label": "Privacy Policy", "Link": { "url": "/privacy" }, "Target": "_blank" },
-      { "Label": "Terms of Use", "Link": { "url": "/terms" }, "Target": "_blank" }
+      { "Label": "Privacy Policy", "Link": { "url": "/privacy-policy" }, "Target": "_blank" },
+      { "Label": "Terms of Use", "Link": { "url": "privacy-policy" }, "Target": "_blank" }
     ]
   },
   "showCopyrightOnly": false

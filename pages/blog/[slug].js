@@ -28,14 +28,12 @@ import latestStories from "../../data/blogs/LatestStories.json";
 import NewsletterModal from "@/components/newsletter/NewsletterModal";
 import newsletterModal from "../../data/newsletter/NewsletterModal.json";
 
-
 const BlogDetails = ({ Slug }) => {
   const [currentUrl, setCurrentUrl] = useState("");
   const [tableList, setTableList] = useState([]);
   const [blogslug, setBlogSlug] = useState(Slug);
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL;
 
-  
   const extractTextFromNode = (node) => {
     if (!node) return "";
     if (node?.type === "text") return node?.text || "";

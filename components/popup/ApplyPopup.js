@@ -1,35 +1,54 @@
-import React, { useRef } from 'react';
-import ContactForm from '../forms/ContactForm';
+import React, { useRef } from "react";
+import ContactForm from "../forms/ContactForm";
+import careerData from "../../public/carrerData.json";
+import { usePathname } from "next/navigation";
 
 const ApplyPopup = ({
   blok,
   index,
-  isActive,
+  isActive=false,
   setIsActive,
   setIsPopupVisible,
   handleClose,
 }) => {
-  
   const popupRef = useRef(null);
-
-  const Form = blok?.Form || [];
+  const formFields = blok?.Form?.length > 0 ? blok?.Form[0] : [];
+  const path = usePathname();
+  const fields = {
+    ...formFields,
+    Inputs: formFields?.Inputs?.map((input) =>
+      input?.Name === "Position"
+        ? {
+            ...input,
+            Select: careerData?.data?.map((career) => {
+              return {
+                Value: career?.content?.CareerHeading,
+                Default:
+                  (path === "/" + career?.full_slug &&
+                    career?.content?.CareerHeading) ||
+                  "",
+              };
+            }),
+          }
+        : input
+    ),
+  };
   return (
     <div ref={popupRef} id="ApplyPopup">
       <div
         id={`backlink-popup${index + 1}`}
-        className={isActive=false ? 'modal-overlay' : 'modal-hide'}
+        className={(isActive ? "modal-overlay" : "modal-hide")}
       >
-        <div className="newsletterModal">
+        <div id="" className="newsletterModal">
           <div
             className="newsletterModal__cont container"
             style={
               blok?.ModalBgColor?.color
-                ? { backgroundColor: blok.ModalBgColor.color }
-                : { backgroundColor: '#EEF0FA' }
+                ? { backgroundColor: blok?.ModalBgColor?.color }
+                : { backgroundColor: "#EEF0FA" }
             }
           >
             <div className="newsletterModal__wrapper">
-              {/* Close Icon */}
               <svg
                 width="52"
                 height="52"
@@ -46,49 +65,48 @@ const ApplyPopup = ({
                   strokeLinejoin="round"
                 />
               </svg>
-
-              {/* Popup Title */}
               {blok?.PopupTitle && (
                 <div className="newsletterModal__title">
                   <h2
                     style={
                       blok?.PopupHeadingColor?.color
-                        ? { color: blok.PopupHeadingColor.color }
+                        ? { color: blok?.PopupHeadingColor?.color }
                         : {}
                     }
                   >
-                    {blok.PopupTitle}
+                    {blok?.PopupTitle}
                   </h2>
                 </div>
               )}
-
-              {/* Popup Description */}
               {blok?.PopupDescription && (
                 <div className="newsletterModal__subtitle">
                   <p
                     style={
                       blok?.PopupDescriptionColor?.color
-                        ? { color: blok.PopupDescriptionColor.color }
+                        ? { color: blok?.PopupDescriptionColor?.color }
                         : {}
                     }
                   >
-                    {blok.PopupDescription}
+                    {blok?.PopupDescription}
                   </p>
                 </div>
               )}
-
-              {/* Contact Form */}
-              {Form?.length > 0 && (
+              {blok?.Form?.length > 0 && (
                 <ContactForm
-                  className="test"
-                  inputs={Form[0].fields}
-                  submitButton={Form[0].submitButton?.text || 'Submit'}
-                  submitButtonClass="btn-primary"
+                  formName="Apply-Form"
+                  formType="apply-form"
+                  inputs={(fields?.Inputs || []).map((input) => ({
+                    name: input?.Name,
+                    label: input?.Name,
+                    type: input?.Type,
+                    placeholder: input?.Placeholder,
+                    required: input?.Required,
+                    Select: input?.Select || [],
+                    CssClass: input?.CssClass || "",
+                  }))}
+                  submitButton="Apply Now"
                   setIsPopupVisible={setIsPopupVisible}
                   setIsActive={setIsActive}
-                  caseStudyPopup="CaseStudyPopup"
-                  formName={Form[0].formTitle || 'Contact-form'}
-                  formType="default-form"
                 />
               )}
             </div>
@@ -98,5 +116,5 @@ const ApplyPopup = ({
     </div>
   );
 };
-
 export default ApplyPopup;
+//blok?.Form?.length

@@ -1,7 +1,7 @@
 {
   "BGColor": "#F8F9FA",
   "Heading": "What Our Clients Say",
-  "HeadingColor": "#222222",
+  "HeadingColor": "rgb(0, 2, 72)",
   "Description": "We value our clients’ feedback and experiences.",
   "DescriptionColor": "#555555",
   "TextAlignment": "center",
@@ -12,7 +12,7 @@
     {
       "Name": "John Doe",
       "Designation": "CEO, Example Co",
-      "ProfileImage": "/images/client1.jpg",
+      "ProfileImage": "https://a-us.storyblok.com/f/1016184/800x800/b10a5089da/fredrik-kristiansen.jpeg",
       "Description": "This company exceeded our expectations with its excellent service and attention to detail.",
       "SelectStars": 5
     },

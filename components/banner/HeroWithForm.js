@@ -32,7 +32,7 @@ const HeroWithForm = ({
       }
     }
     setToggleForm(isMobile ? toggleForm : false);
-  }, [isMobile]);
+  }, [isMobile,toggleForm]);
 
   useEffect(() => {
     const pageWrapper = document.querySelectorAll(".page-wrapper")[0];
@@ -46,7 +46,7 @@ const HeroWithForm = ({
         return () => clearTimeout(timer);
       }
     }
-  }, [toggleForm]);
+  }, [toggleForm,isMobile]);
 
   return (
     <div className="axil-slider-area axil-slide-activation">

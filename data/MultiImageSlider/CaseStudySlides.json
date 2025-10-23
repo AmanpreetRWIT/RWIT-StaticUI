@@ -5,29 +5,34 @@
   "HeadingColor": { "color": "#000248" },
   "Description": "We designed and optimized multiple components for AirDNA, ensuring they were reusable, fully responsive, and ready for deployment. Here's a quick overview of a few key components we delivered.",
   "DescriptionColor": { "color": "#757589" },
-  "SliderSpeed": 5000,
+  "SliderSpeed": 50000,
   "slides": [
+    
     {
+      "RightToLeft": false,
       "images": [
         {
           "Image": {
             "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png",
-            "alt": "Case Study 1"
+            "alt": "Case Study 1",
+            "RightToLeft": false
           }
         },
         {
           "Image": {
             "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png",
-            "alt": "Case Study 2"
+            "alt": "Case Study 2",
+            "RightToLeft": false
           }
         }
       ]
     },
     {
+      "RightToLeft": true,
       "images": [
         {
           "Image": {
-            "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/e1f746cc0b/7.png",
+            "filename": "https://a-us.storyblok.com/f/1016184/1000x750/d0a1b00847/ori-case-study.png",
             "alt": "Case Study 3"
           }
         },
@@ -40,17 +45,18 @@
       ]
     },
     {
+      "RightToLeft": false,
       "images": [
         {
           "Image": {
-            "filename": "https://a-us.storyblok.com/f/1016184/2460x1426/a6e00ff48b/6.png",
-            "alt": "Case Study 1"
+            "filename": "https://a-us.storyblok.com/f/1016184/1000x750/1cde10386c/koi-kollektiv-case-study.png",
+            "alt": "Case Study 5"
           }
         },
         {
           "Image": {
             "filename": "https://a-us.storyblok.com/f/1016184/2461x1426/49f6ace72f/2-2.png",
-            "alt": "Case Study 2"
+            "alt": "Case Study 6"
           }
         }
       ]

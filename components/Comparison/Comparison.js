@@ -20,7 +20,7 @@ const Comparison = ({ data }) => {
       setSelectedValue(CmsArray[0]?.toLocaleLowerCase());
       setSelectedValue2(CmsArray[1]?.toLocaleLowerCase());
     }
-  }, []);
+  }, [router?.pathname,router?.query?.slug]);
 
   const options = data?.DropDownOne?.map((item) => ({
     value: item?.replace(/-/g, ''),

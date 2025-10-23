@@ -42,11 +42,11 @@ const OurGallery = ({ blok }) => {
     y: useSpring(mouse.y, delayOptions),
   };
 
-  const manageMouseMove = (e) => {
+  const manageMouseMove = ((e) => {
     const { clientX, clientY } = e;
     mouse.x.set(clientX - cursorSize / 2);
     mouse.y.set(clientY - cursorSize / 2);
-  };
+  },[mouse.x, mouse.y]);
 
   useEffect(() => {
     let timeoutId;
@@ -99,7 +99,7 @@ const OurGallery = ({ blok }) => {
       clearTimeout(timeoutId);
       gsap.killTweensOf('.cursor-bounce');
     };
-  }, []);
+  }, [manageMouseMove]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -108,7 +108,7 @@ const OurGallery = ({ blok }) => {
     window.addEventListener('resize', handleResize);
     handleResize();
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [manageMouseMove]);
 
   const ImageLimit = (layout) => {
     switch (layout) {
@@ -163,7 +163,7 @@ const OurGallery = ({ blok }) => {
 
       return () => scrollTrigger.kill();
     }
-  }, [isMobile]);
+  }, [isMobile,manageMouseMove]);
 
   return (
     <div

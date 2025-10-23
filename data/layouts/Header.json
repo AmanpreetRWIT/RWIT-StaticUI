@@ -25,7 +25,7 @@
       },
       {
         "MenuLabel": "Industries",
-        "MenuLink": { "url": "/industries" },
+        "MenuLink": { "url": "" },
         "MegaMenu": [
           {
             "Title": "Industry Expertise",
@@ -60,7 +60,7 @@
       },
       {
         "MenuLabel": "Services",
-        "MenuLink": { "url": "/services" },
+        "MenuLink": { "url": "" },
         "MegaMenu": [
           {
             "Title": "What we offer",
@@ -152,7 +152,7 @@
       },
       {
         "MenuLabel": "Technologies",
-        "MenuLink": { "url": "/technologies" },
+        "MenuLink": { "url": "" },
         "MegaMenu": [
           {
             "Title": "Tech Stack",

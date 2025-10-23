@@ -1,8 +1,8 @@
 {
-  "Title": "Subscribe to our Newsletter",
-  "TitleColor": "#1b90dc",
-  "BgColor": "#f7f9fc",
-  "BorderColor": "#1b90dc",
+  "Title": "Sign Up for the Latest News, Insights, and Tech Updates to Grow Your Business",
+  "TitleColor": "#000248",
+  "BgColor": "#eef0fa",
+  "BorderColor": "#E0E6FF",
   "ButtonName": "Subscribe",
   "SuccessMessage": "Thanks for subscribing to our newsletter!"
 }

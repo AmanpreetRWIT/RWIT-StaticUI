@@ -5,11 +5,11 @@ import Image from "next/legacy/image";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import BlogContent from "../../components/blogs/BlogContent";
 import Layout from "@/components/layouts/Layout";
-import HeaderData from '../../data/layouts/Header.json';
-import FooterData from '../../data/layouts/Footer.json';
-
+import HeaderData from "../../data/layouts/Header.json";
+import FooterData from "../../data/layouts/Footer.json";
 
 const Blog = ({ blogArchive, headerMenus, settings }) => {
+  
   const [featuredBlog, setFeaturedBlog] = useState([]);
 
   const allBlogs = {
@@ -872,22 +872,21 @@ const Blog = ({ blogArchive, headerMenus, settings }) => {
   };
   const layoutSettings = {
     header: {
-      style: 'four',
-      leftColumn: 'col-lg-4 col-md-6 col-sm-6 col-8 header-left',
-      rightColumn: 'col-lg-8 col-md-6 col-sm-6 col-4 header-right',
+      style: "four",
+      leftColumn: "col-lg-4 col-md-6 col-sm-6 col-8 header-left",
+      rightColumn: "col-lg-8 col-md-6 col-sm-6 col-4 header-right",
       ...HeaderData, // Empty for demo
     },
     footer: {
-      style: 'three',
+      style: "three",
       ...FooterData, // Empty for demo
       StickyFooter: true,
     },
     settings: {},
-  };  
+  };
 
   // Convert GraphQL-like BlogItems.items into the flat shape BlogContent expects
   const rawItems = allBlogs?.blogData?.BlogItems?.items || [];
-
   const mappedBlogItems = rawItems.map((item) => ({
     id: item.id,
     slug: item.slug,
@@ -901,15 +900,12 @@ const Blog = ({ blogArchive, headerMenus, settings }) => {
     ReadTime: item.content?.ReadTime,
     Categories: item.content?.Categories,
   }));
-
   useEffect(
     () => {
       const featuredPosts = mappedBlogItems?.filter((post) => post.IsFeatured);
       setFeaturedBlog(featuredPosts);
     },
-    [
-      /* mappedBlogItems is derived synchronously from allBlogs so no need to add it to deps */
-    ]
+    [mappedBlogItems]
   );
 
   const featuredPost = featuredBlog[0];

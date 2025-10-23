@@ -48,7 +48,6 @@ const CaseStudySlide = ({ slide, Speed }) => {
       s.moveToIdx(s.track.details.abs + 8, true, animation);
     },
   });
-
   return (
     <>
       <div>

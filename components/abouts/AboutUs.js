@@ -3,7 +3,7 @@ import ContactForm from '../forms/ContactForm';
 const AboutUs = ({ data }) => {
   return (
     <div
-      className="axil-about-us-area ax-section-gap bg-color-white axil-shape-position "
+      className="axil-about-us-area ax-section-gap bg-color-white axil-shape-position"
       style={data?.BGColor?.color ? { background: data?.BGColor?.color } : {}}
     >
       <div className={`container`}>
@@ -50,7 +50,15 @@ const AboutUs = ({ data }) => {
                         formType={Form.formType || "default-form"}
                         submitButton={Form.submitButton || "Submit"}
                         submitButtonClass={Form.submitButtonClass || ""}
-                        inputs={Form?.fields} />
+                        inputs={(Form?.fields || []).map((input) => ({
+                          name: input?.Name,
+                          label: input?.Name,
+                          type: input?.Type,
+                          placeholder: input?.Placeholder,
+                          required: input?.Required,
+                          Select: input?.Select || [],
+                          CssClass: input?.CssClass || "",
+                        }))} />
                         }
 
                       {Form?.PhoneNumber && (

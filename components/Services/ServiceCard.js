@@ -77,9 +77,9 @@ const ServiceCard = ({
               )}
               <div className="service__desc">{(data?.Description)}</div>
 
-              {(data?.Link?.url || data?.Link?.story?.url) && (
+              {(data?.Link || data?.Link?.story?.url) && (
                 <Link
-                  href={data?.Link?.url || data?.Link?.story?.url}
+                  href={data?.Link || data?.Link?.story?.url}
                   prefetch={false}
                   className="axil-button mt-4"
                 >

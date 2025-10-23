@@ -7,7 +7,8 @@
   "TitleColor": "#000248",
   "DescriptionColor": "#757589",
   "BGColor": "#F8F9FA",
-  "ShowSearchField": true,
+  "ShowSearchField": false,
+  "ShowSectionTitle":false,
   "stories": [
     {
       "slug": "building-scalable-nextjs-apps",
