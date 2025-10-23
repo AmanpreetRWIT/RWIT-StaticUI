@@ -11,7 +11,7 @@ import ClientLogoSlider from "../components/client-and-partner/ClientLogoSlider"
 import CaseStudyMedia from "../components/CaseStudyGrid/CaseStudyMedia";
 import CounterTwo from "../components/counters/CounterTwoColumn";
 import TestimonalSlider from "../components/testimonials/TestimonalSlider";
-
+import ContentWithMedia from "../components/ContentWithMedia";
 // JSON Data
 import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
@@ -25,6 +25,8 @@ import caseStudyMedia from "../data/CaseStudyGrid/CaseStudyMedia.json";
 import counterTwo from "../data/counters/CounterTwoColumn.json";
 import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
 import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
+import contentWithMedia from "../data/contentWithMedia/ContentWithMedia.json";
+
 
 export default function CaseStudiesPage() {
   const layoutSettings = {
@@ -75,6 +77,7 @@ export default function CaseStudiesPage() {
         <ClientAndPartner data={clientAndPartner} />
         <CaseStudySlider data={caseStudySlider} />
         <TestimonalSlider data={testimonalSlider}/>
+        <ContentWithMedia {...contentWithMedia}/>
       </Layout>
     </>
   );

@@ -79,7 +79,7 @@ const ContentWithMedia = ({
                       </div>
                     )}
 
-                    {!disableBgShape && (
+                    {disableBgShape && (
                       <div>
                         <div className="shape-group shape-01">
                           <Image

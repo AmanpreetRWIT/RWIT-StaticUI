@@ -4,11 +4,11 @@
   "bgColor": "#F8F9FA",
   "disableBgShape": false,
   "image": {
-    "filename": "/images/sample-image.jpg",
+    "filename": "https://a-us.storyblok.com/f/1016184/62x62/673e7f61e5/sanity-1.svg",
     "alt": "Sample image"
   },
   "video": {
-    "filename": "https://www.youtube.com/watch?v=abcd1234"
+    "filename": ""
   },
   "tags": [
     { "name": "Design" },
