@@ -144,21 +144,21 @@ const HeroSection = ({
                 {/* BUTTONS + LOGOS */}
                 {showBadges ? (
                   <div className="hero-badges">
-                    { (
+                    {
                       <div className="slider-button gap-4 d-flex">
-                            <a
-                              className="hoverable axil-button  axil-button btn-solid 
+                        <a
+                          className="hoverable axil-button  axil-button btn-solid 
                          btn-solid 
                         btn-large  "
-                              target=""
-                              href={buttons.href || "#"}
-                            >
-                              <span className="button-text hoverable px-0">
-                                {buttons.label}
-                              </span>
-                            </a>
+                          target=""
+                          href={buttons.href || "#"}
+                        >
+                          <span className="button-text hoverable px-0">
+                            {buttons.label}
+                          </span>
+                        </a>
                       </div>
-                    )}
+                    }
 
                     {logos.length > 0 && (
                       <div
@@ -183,42 +183,45 @@ const HeroSection = ({
                   </div>
                 ) : (
                   <>
-                    {(
+                    {
                       <div className="slider-button gap-4 d-flex">
-                       <a className="hoverable axil-button  axil-button btn-solid 
+                        <a
+                          className="hoverable axil-button  axil-button btn-solid 
                          btn-solid 
                         btn-large  "
-                              target=""
-                              href={buttons.href || "#"}
-                            >
-                              <span className="button-text hoverable px-0">
-                                {buttons.label}
-                              </span>
-                            </a>
+                          target=""
+                          href={buttons.href || "#"}
+                        >
+                          <span className="button-text hoverable px-0">
+                            {buttons.label}
+                          </span>
+                        </a>
                       </div>
-                    )}
+                    }
                   </>
                 )}
               </div>
             </div>
 
             {/* RIGHT SIDE BANNER IMAGE */}
-            {showbannerImage && bannerImage?.src && (!showGridImages || !showFlatColors) && (
-              <div className="col-lg-4 order-1 order-lg-2 mt_md--50 mt_sm--50 flex-grow-1">
-                <div className="d-flex">
-                  <div className="images">
-                    <Image
-                      loading="lazy"
-                      width={487}
-                      height={487}
-                      className="object-fit-contain"
-                      src={bannerImage.src}
-                      alt={bannerImage.alt || "banner-image"}
-                    />
+            {showbannerImage &&
+              bannerImage?.src &&
+              (!showGridImages || !showFlatColors) && (
+                <div className="col-lg-4 order-1 order-lg-2 mt_md--50 mt_sm--50 flex-grow-1">
+                  <div className="d-flex">
+                    <div className="images">
+                      <Image
+                        loading="lazy"
+                        width={487}
+                        height={487}
+                        className="object-fit-contain"
+                        src={bannerImage.src}
+                        alt={bannerImage.alt || "banner-image"}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
 
             {/* GRID IMAGES */}
             {!showFlatColors
