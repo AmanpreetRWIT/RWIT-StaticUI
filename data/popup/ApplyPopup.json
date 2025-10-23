@@ -1,0 +1,45 @@
+{
+  "PopupTitle": "Apply",
+  "PopupDescription": "",
+  "PopupHeadingColor": {
+    "color": "#000248"
+  },
+  "PopupDescriptionColor": {
+    "color": "#4B4B4B"
+  },
+  "ModalBgColor": {
+    "color": "#EEF0FA"
+  },
+  "Form": [
+    {
+      "FormTitle": "Job Application",
+      "SubmitButtonText": "Submit Application",
+      "Inputs": [
+        {
+          "Name": "Full Name",
+          "Type": "text",
+          "Placeholder": "Enter your full name",
+          "Required": true
+        },
+        {
+          "Name": "Email",
+          "Type": "email",
+          "Placeholder": "Enter your email address",
+          "Required": true
+        },
+        {
+          "Name": "Phone",
+          "Type": "tel",
+          "Placeholder": "Enter your phone number",
+          "Required": true
+        },
+        {
+          "Name": "Resume",
+          "Type": "file",
+          "Placeholder": "Upload your resume",
+          "Required": true
+        }
+      ]
+    }
+  ]
+}

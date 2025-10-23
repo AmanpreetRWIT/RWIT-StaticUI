@@ -1,0 +1,15 @@
+{
+    "Default": {
+      "formName": "Contact-form",
+      "formType": "default-form",
+      "submitButton": "Submit",
+      "submitButtonClass": "",
+      "inputs": [
+        { "Name": "firstname", "Label": "First Name", "Type": "text", "Required": true },
+        { "Name": "email", "Label": "Email", "Type": "email", "Required": true },
+        { "Name": "Company", "Label": "Company", "Type": "textarea", "Required": false },
+        { "Name": "message", "Label": "Message", "Type": "textarea", "Required": false }
+      ]
+    }
+  }
+  

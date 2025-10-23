@@ -1,0 +1,30 @@
+{
+    "Title": "",
+    "ShowTitle": false,
+    "Tags": "#LifeAtRWIT",
+    "BgColor": { "color": "#ffffff" },
+    "Loop": true,
+    "CursorColor": { "color": "#1b90dc" },
+    "CursorTextColor": { "color": "#ffffff" },
+    "Slide": [
+      {
+        "Layout": "1",
+        "ImageA": { "filename": "https://a-us.storyblok.com/f/1016184/800x496/c419f844f9/team-image1.webp" },
+        "ImageB": { "filename": "https://a-us.storyblok.com/f/1016184/305x344/28a9f18ad1/team-image2.webp" },
+        "ImageC": { "filename": "https://a-us.storyblok.com/f/1016184/758x496/8038f9db0c/team-image8.webp" },
+        "ImageD": { "filename": "https://a-us.storyblok.com/f/1016184/632x392/88009fbe78/team-image9.webp" }
+      },
+      {
+        "Layout": "2",
+        "ImageA": { "filename": "https://a-us.storyblok.com/f/1016184/369x433/2bd8f66f3c/team-image6.webp" },
+        "ImageB": { "filename": "https://a-us.storyblok.com/f/1016184/619x384/631d12ff9f/frame-84.jpg" },
+        "ImageC": { "filename": "https://a-us.storyblok.com/f/1016184/758x496/8038f9db0c/team-image8.webp" }
+      },
+      {
+        "Layout": "3",
+        "ImageA": { "filename": "https://a-us.storyblok.com/f/1016184/606x398/4ade87b0bf/frame-81.jpg" },
+        "ImageB": { "filename": "https://a-us.storyblok.com/f/1016184/350x223/f36fdb0a89/frame-77.jpg" }
+      }
+    ]
+  }
+  

@@ -1,0 +1,53 @@
+{
+    "Title": "Prismic VS Strapi",
+    "Tags": "Comaprison Table",
+    "Description": "Explore the differences between Prismic VS Strapi to determine which CMS suits your project best. Compare features, ease of use, flexibility, and integration capabilities. Make an informed decision to enhance your content management workflow.",
+    "BgColor": "#f5f5f5",
+    "TitleColor": "#000248",
+    "DescriptionColor": "#555555",
+    "CmsOne": "CMS One",
+    "CmsTwo": "CMS Two",
+    "CompareTable": [
+      {
+        "Label": "Ease of Use",
+        "CmsOne": [{ "FieldType": "BooleanText", "isTrue": true, "TextValue": "User Friendly" }],
+        "CmsTwo": [{ "FieldType": "BooleanText", "isTrue": false, "TextValue": "Complex UI" }]
+      },
+      {
+        "Label": "Performance",
+        "CmsOne": [{ "FieldType": "Text", "TextValue": "Fast" }],
+        "CmsTwo": [{ "FieldType": "Text", "TextValue": "Moderate" }]
+      },
+      {
+        "Label": "Documentation",
+        "CmsOne": [{ "FieldType": "Link", "Link": "https://cmsone.com/docs", "TextValue": "CMS One Docs" }],
+        "CmsTwo": [{ "FieldType": "Link", "Link": "https://cmstwo.com/docs", "TextValue": "CMS Two Docs" }]
+      },
+      {
+        "Label": "Support",
+        "CmsOne": [{ "FieldType": "Boolean", "isTrue": true }],
+        "CmsTwo": [{ "FieldType": "Boolean", "isTrue": false }]
+      },
+      {
+        "Label": "Ease of Use",
+        "CmsOne": [{ "FieldType": "BooleanText", "isTrue": true, "TextValue": "User Friendly" }],
+        "CmsTwo": [{ "FieldType": "BooleanText", "isTrue": false, "TextValue": "Complex UI" }]
+      },
+      {
+        "Label": "Performance",
+        "CmsOne": [{ "FieldType": "Text", "TextValue": "Fast" }],
+        "CmsTwo": [{ "FieldType": "Text", "TextValue": "Moderate" }]
+      },
+      {
+        "Label": "Documentation",
+        "CmsOne": [{ "FieldType": "Link", "Link": "https://cmsone.com/docs", "TextValue": "CMS One Docs" }],
+        "CmsTwo": [{ "FieldType": "Link", "Link": "https://cmstwo.com/docs", "TextValue": "CMS Two Docs" }]
+      },
+      {
+        "Label": "Support",
+        "CmsOne": [{ "FieldType": "Boolean", "isTrue": true }],
+        "CmsTwo": [{ "FieldType": "Boolean", "isTrue": false }]
+      }
+    ]
+  }
+  

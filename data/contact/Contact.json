@@ -1,0 +1,52 @@
+{
+  "BGColor": { "color": "#f9fafb" },
+  "paddingTop": 100,
+  "paddingBottom": 100,
+  "TitleColor": { "color": "#000248" },
+  "DisableBgShape": false,
+  "contactForms": [
+    {
+      "formTitle": "Let's get in touch",
+      "formType": "default-form",
+      "submitButton": "Submit",
+      "submitButtonClass": "btn-primary",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Name",
+          "placeholder": "Enter your full name",
+          "required": true
+        },
+        {
+          "name": "Email",
+          "type": "email",
+          "label": "Work email",
+          "placeholder": "Enter your email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "label": "How can we help?",
+          "placeholder": "Write your message",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "ContactCardData": [
+    {
+      "Icon": { "type": "fa", "icon": "fa-phone" },
+      "Heading": "Email",
+      "Description": "You can share your project details and requirements in our email.",
+      "Links": [{ "label": "Share your requirements", "url": "tel:+1234567890" }]
+    },
+    {
+      "Icon": { "type": "fa", "icon": "fa-envelope" },
+      "Heading": "Career",
+      "Description": "Are you looking to join our team? Please share your CV in our email.",
+      "Links": [{ "label": "Send your resume", "url": "mailto:info@example.com" }]
+    }
+  ]
+}

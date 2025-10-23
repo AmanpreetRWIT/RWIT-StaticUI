@@ -1,0 +1,13 @@
+{
+    "column": "col-lg-3 col-md-6 col-sm-6 col-6",
+    "counterClass": "axil-counterup mt--60 text-center counter-first",
+    "data": {
+      "Number": 1200,
+      "Description": "Projects Completed",
+      "Icon": { "type": "fas", "icon": "fa-check-circle" },
+      "IconColor": { "color": "#ff0000" },
+      "BgColor": { "color": "#f0f0f0" }
+    },
+    "TitleColor": "#111111"
+  }
+  

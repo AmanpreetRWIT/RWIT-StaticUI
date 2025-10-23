@@ -1,0 +1,15 @@
+{
+    "Tag": "Cloud Service Provider",
+    "TagColor": { "color": "#1b90dc" },
+    "Heading": "Project Overview",
+    "HeadingColor": { "color": "#000248" },
+    "Description": "SSD Nodes approached us to improve the conversion rate of their existing website. They were facing challenges in adding new features to the site due to their use of WHMCS. To address their needs, we redesigned their outdated website, modernized their legacy code, and developed custom WHMCS add-ons to enhance the site's functionality.",
+    "DescriptionColor": { "color": "#757589" },
+    "changeOnHover": false,
+    "SliderPosition": 50,
+    "BeforeImage": { "filename": "https://a-us.storyblok.com/f/1016184/1260x900/a182a937ee/before.jpg" },
+    "AfterImage": { "filename": "https://a-us.storyblok.com/f/1016184/1260x900/2cd03e32bf/after.jpg" },
+    "SubTitle": "A comparison after we improve the main dashboard UI",
+    "SubTitleColor": { "color": "#333333" }
+  }
+  

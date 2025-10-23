@@ -1,0 +1,199 @@
+/* 
+Pagination Styles 
+*/
+.post-pagination {
+  margin-top: 40px;
+  width: 100%;
+
+  @media #{$lg-layout} {
+    margin-top: 40px;
+  }
+
+  @media #{$md-layout} {
+    margin-top: 30px;
+  }
+
+  @media #{$sm-layout} {
+    margin-top: 30px;
+  }
+
+  nav {
+    &.pagination {
+      display: block;
+
+      .screen-reader-text {
+        display: none;
+      }
+
+      ul {
+        position: relative;
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin: -3px;
+        padding: 0;
+
+        @media #{$small-mobile} {
+          margin-bottom: 30px;
+        }
+
+        li {
+          margin: 3px;
+          // margin-right: 10px;
+          @media #{$small-mobile} {
+            margin: 2px;
+          }
+
+          a {
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            color: $black-color;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+            // padding: 5px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media #{$sm-layout} {
+              width: 30px;
+              height: 30px;
+            }
+
+            width: 40px;
+            height: 40px;
+
+            &:hover,
+            &.active {
+              background-color: $darkest-color;
+              color: $white-color;
+              border: 1px solid $darkest-color;
+            }
+
+            &.disabled {
+              pointer-events: none;
+              cursor: default;
+              opacity: 0.6;
+            }
+          }
+
+          &:nth-last-child(1) a {
+            background: $darkest-color;
+            border-color: $darkest-color;
+            color: $white-color;
+            // padding: 5px 16px;
+            border-radius: 3px;
+
+            @media #{$sm-layout} {
+              margin-left: 0;
+            }
+
+            margin-left: 20px;
+
+            &:hover {
+              background-color: $darkest-color;
+              border-color: $darkest-color;
+            }
+          }
+
+          &:first-child a {
+            background: $darkest-color;
+            border-color: $darkest-color;
+            color: $white-color;
+            // padding: 5px 16px;
+            border-radius: 3px;
+
+            @media #{$sm-layout} {
+              margin-right: 0;
+            }
+
+            margin-right: 20px;
+
+            &:hover {
+              background-color: $extra09-color;
+              border-color: $extra09-color;
+            }
+          }
+
+          span {
+            line-height: 42px;
+            min-width: 42px;
+            text-align: center;
+            color: $heading-color;
+            transition: all 0.5s;
+            display: block;
+            padding: 0 15px;
+            transition: all 0.5s;
+            border: 1px solid $border-color;
+
+            &.linkspan {
+              border: none;
+              text-align: center;
+              font-size: $h5;
+              padding: 0px;
+              min-width: auto;
+              line-height: 0;
+              margin-bottom: 20px;
+              display: inline-block;
+            }
+
+            &.current {
+              background: var(--color-primary);
+              color: #ffffff;
+              border-color: var(--color-primary);
+            }
+          }
+
+          button {
+            line-height: 42px;
+            min-width: 42px;
+            text-align: center;
+            color: $heading-color;
+            transition: all 0.5s;
+            display: block;
+            padding: 0 15px;
+            transition: all 0.5s;
+            border: 1px solid $border-color;
+
+            &:hover,
+            &.current {
+              background: var(--color-primary);
+              color: #ffffff;
+              border-color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.axil-page-links,
+.page-links {
+  clear: both;
+  padding: 20px 0;
+
+  .post-page-numbers {
+    line-height: 42px;
+    min-width: 42px;
+    text-align: center;
+    color: $heading-color;
+    transition: all 0.5s;
+    display: inline-block;
+    padding: 0 15px;
+    transition: all 0.5s;
+    border: 1px solid $border-color;
+    margin: 3px;
+
+    &.current,
+    &:hover {
+      background: var(--color-primary);
+      color: #ffffff;
+      border-color: var(--color-primary);
+    }
+  }
+}

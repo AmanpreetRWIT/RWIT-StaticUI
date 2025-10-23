@@ -1,0 +1,9 @@
+{
+    "RightToLeft": true,
+    "images": [
+      { "Image": { "filename": "https://via.placeholder.com/590x332.png?text=Slide+1", "alt": "Slide 1" } },
+      { "Image": { "filename": "https://via.placeholder.com/590x332.png?text=Slide+2", "alt": "Slide 2" } },
+      { "Image": { "filename": "https://via.placeholder.com/590x332.png?text=Slide+3", "alt": "Slide 3" } }
+    ]
+  }
+  

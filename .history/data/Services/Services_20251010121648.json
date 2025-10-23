@@ -1,0 +1,14 @@
+{
+  "BGColor": { "color": "#fff" },
+  "Heading": "Our Services",
+  "Tags": "What We Offer",
+  "Description": "Explore our range of services.",
+  "TitleColor": { "color": "#222" },
+  "DescriptionColor": { "color": "#555" },
+  "ServiceCardTextColor": { "color": "#333" },
+  "ServiceCard": [
+    { "Heading": "Web Development", "Description": "<p>Modern web solutions.</p>" },
+    { "Heading": "UI/UX Design", "Description": "<p>Beautiful and usable interfaces.</p>" },
+    { "Heading": "Consulting", "Description": "<p>Expert advice for your business.</p>" }
+  ]
+}

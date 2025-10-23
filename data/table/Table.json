@@ -1,0 +1,37 @@
+{
+  "TitleColor": { "color": "#222222" },
+  "Table": {
+    "thead": [
+      { "value": "Name" },
+      { "value": "Age" },
+      { "value": "Department" },
+      { "value": "Role" }
+    ],
+    "tbody": [
+      {
+        "body": [
+          { "value": "John Doe" },
+          { "value": "30" },
+          { "value": "Marketing" },
+          { "value": "Manager" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Jane Smith" },
+          { "value": "25" },
+          { "value": "Development" },
+          { "value": "Developer" }
+        ]
+      },
+      {
+        "body": [
+          { "value": "Alice Johnson" },
+          { "value": "28" },
+          { "value": "Design" },
+          { "value": "Designer" }
+        ]
+      }
+    ]
+  }
+}

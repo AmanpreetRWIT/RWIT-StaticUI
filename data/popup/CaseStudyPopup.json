@@ -1,0 +1,40 @@
+{
+  "layoutSettings": {
+    "CaseStudyModal": [
+      {
+        "PopupHeadingColor": { "color": "#000248" },
+        "PopupDescriptionColor": { "color": "#757589" },
+        "ModalBgColor": { "color": "#EEF0FA" },
+        "Form": [
+          {
+            "formTitle": "Get in Touch",
+            "formSubtitle": "We’d love to hear from you. Please fill out the form below.",
+            "fields": [
+              {
+                "name": "name",
+                "type": "text",
+                "label": "Full Name",
+                "placeholder": "Enter your full name",
+                "required": true
+              },
+              {
+                "name": "email",
+                "type": "email",
+                "label": "Email Address",
+                "placeholder": "Enter your email",
+                "required": true
+              }
+            ],
+            "submitButton": {
+              "text": "Submit Now",
+              "bgColor": "#000248",
+              "textColor": "#FFFFFF"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "title": "Facing similar challenges to Medely’s website?",
+  "description": "Contact us to discover our tailored solutions."
+}

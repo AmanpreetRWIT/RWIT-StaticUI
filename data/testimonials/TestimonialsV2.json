@@ -1,0 +1,38 @@
+{
+  "BGColor": "#F8F9FA",
+  "Heading": "What Our Clients Say",
+  "HeadingColor": "#222222",
+  "Description": "Client testimonials and case studies.",
+  "DescriptionColor": "#555555",
+  "Tags": ["Trusted", "Professional"],
+  "TestimonialCardTextColor": "#333333",
+  "TestimonialCard": [
+    {
+      "Name": "John Doe",
+      "Designation": "CEO, Example Co",
+      "ProfileImage": { "filename": "/images/client1.jpg", "alt": "John Doe" },
+      "Description": "Excellent service and attention to detail.",
+      "CaseStudyStatistics": [
+        { "Counter": 120, "CounterType": "+", "CounterTitle": "Projects" }
+      ]
+    },
+    {
+      "Name": "Jane Smith",
+      "Designation": "Marketing Head, BrandX",
+      "ProfileImage": { "filename": "/images/client2.jpg", "alt": "Jane Smith" },
+      "Description": "Professional and timely delivery.",
+      "CaseStudyStatistics": [
+        { "Counter": 45, "CounterType": "+", "CounterTitle": "Clients" }
+      ]
+    }
+  ],
+  "SelectClients": [
+    {
+      "FirstName": "Alice",
+      "LastName": "Brown",
+      "ContactPosition": "Project Manager, Startup Y",
+      "ClientImage": { "filename": "/images/client3.jpg", "alt": "Alice Brown" },
+      "Testimonial": "Great collaboration and quality work."
+    }
+  ]
+}

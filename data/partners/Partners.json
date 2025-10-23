@@ -1,0 +1,68 @@
+{
+  "Title": "Our Partners",
+  "Tags": ["Our partners"],
+  "Description": "We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision.",
+  "TitleColor": "",
+  "DescriptionColor": "",
+  "BgColor": "#f3f3f3",
+  "BenefitsTitle": "Benefits Title",
+  "PartnershipCards": [
+    {
+      "Name": "Partnership Card 1",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      },
+      "Description": "We started with a mission to provide high-quality software products, tailored to your vision.",
+      "LinkText": "Learn More",
+      "Link": {
+        "url": "https://example.com",
+        "target": "_blank"
+      },
+      "benefits": [
+        { "title": "Fast delivery" },
+        { "title": "Dedicated support" },
+        { "title": "Scalable solutions" },
+        { "title": "Quality assurance" }
+      ]
+    },
+    {
+      "Name": "Partnership Card 2",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      },
+      "Description": "We help companies transform digitally through innovative and reliable technology partnerships.",
+      "LinkText": "View Partner",
+      "Link": {
+        "url": "https://example.org",
+        "target": "_blank"
+      },
+      "benefits": [
+        { "title": "Long-term collaboration" },
+        { "title": "Innovation driven" },
+        { "title": "24/7 availability" },
+        { "title": "Proven expertise" }
+      ]
+    },
+    {
+      "Name": "Partnership Card 3",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      },
+      "Description": "Our partners enable us to deliver top-quality digital solutions with precision and speed.",
+      "LinkText": "Discover More",
+      "Link": {
+        "url": "https://example.net",
+        "target": "_blank"
+      },
+      "benefits": [
+        { "title": "Trusted network" },
+        { "title": "Tailored strategies" },
+        { "title": "Expert guidance" },
+        { "title": "Global reach" }
+      ]
+    }
+  ]
+}

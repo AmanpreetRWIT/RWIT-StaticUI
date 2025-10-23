@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Service",
+  "serviceType": "Headless Website Development",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://rwit.io/#services",
+    "url": "https://rwit.io/services",
+    "name": "RW Infotech"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "USA"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Headless Web Development",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Headless CMS Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Headless Commerce"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consulting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

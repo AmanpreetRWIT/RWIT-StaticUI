@@ -1,0 +1,224 @@
+{
+    "BgColor": "#f5f5f5",
+    "TitleColor": "#333333",
+    "TextAlign": "text-center",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": " ",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 1
+        },
+        "content": [
+          {
+            "text": "Privacy Policy",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Last Updated:",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              },
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          },
+          {
+            "text": " Feb 20th, 2024",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "RW Infotech (\"us\", \"we\", or \"our\") operates the website ",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          },
+          {
+            "text": "www.rwit.io",
+            "type": "text",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.rwit.io",
+                  "uuid": null,
+                  "anchor": null,
+                  "target": "_self",
+                  "linktype": "url"
+                }
+              },
+              {
+                "type": "bold"
+              },
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(17, 85, 204)"
+                }
+              },
+              {
+                "type": "underline"
+              }
+            ]
+          },
+          {
+            "text": " (the \"Site\"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from Site users.",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information per this policy.",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Information Collection and Use",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              },
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include but is not limited to, your name, email address, postal address, and phone number (\"Personal Information\").",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "text": "Log Data",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              },
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "text": "Like many site operators, we collect information your browser sends whenever you visit our Site (\"Log Data\"). This Log Data may include information such as your computer's Internet Protocol (\"IP\") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages, and other statistics.",
+            "type": "text",
+            "marks": [
+              {
+                "type": "textStyle",
+                "attrs": {
+                  "color": "rgb(0, 0, 0)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Data collection methods",
+          "Usage of collected information",
+          "Third-party sharing policies"
+        ]
+      }
+    ]
+  }
+  

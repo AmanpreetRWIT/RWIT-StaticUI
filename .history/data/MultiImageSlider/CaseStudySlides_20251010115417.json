@@ -1,0 +1,43 @@
+{
+  "Tag": "Featured",
+  "TagColor": { "color": "#FF5733" },
+  "Heading": "Our Case Studies",
+  "HeadingColor": { "color": "#222" },
+  "Description": "Explore our latest projects and success stories.",
+  "DescriptionColor": { "color": "#555" },
+  "SliderSpeed": 2000,
+  "slides": [
+    {
+      "images": [
+        {
+          "Image": {
+            "filename": "/images/case1.jpg",
+            "alt": "Case Study 1"
+          }
+        },
+        {
+          "Image": {
+            "filename": "/images/case2.jpg",
+            "alt": "Case Study 2"
+          }
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "Image": {
+            "filename": "/images/case3.jpg",
+            "alt": "Case Study 3"
+          }
+        },
+        {
+          "Image": {
+            "filename": "/images/case4.jpg",
+            "alt": "Case Study 4"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "isSlim": false,
+  "isBlogPage": false,
+  "bgColor": "#f9f9f9",
+  "avatar": "https://a-us.storyblok.com/f/1016184/397x462/0f47330420/jim-sir.png",
+  "heading": "Hi, my name is Jaswinder, let's talk about your business needs.",
+  "tags": "Are you ready?",
+  "description": "I will do my best to find a reliable solution for you!",
+  "headingColor": "#000248",
+  "descriptionColor": "#757589",
+  "showTags":true,
+  "buttons": {
+    "label": "Book a discovery call",
+    "href": "https://calendly.com/jimmynarula/introductory-meeting"
+  }
+}

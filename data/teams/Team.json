@@ -1,0 +1,28 @@
+{
+  "heading": "Team Number",
+  "tags": "Team",
+  "showtags":false,
+  "description": "We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision. We started with a mission to provide high-quality software products, tailored to your vision.",
+  "headingColor": "#000248",
+  "descriptionColor": "#757589",
+  "bgColor": " ",
+  "showImageOnRight": false,
+  "disableBgShape": false,
+  "grayscale": false,
+  "image": "https://a-us.storyblok.com/f/1016184/2345x2793/7fba737217/senior-lead-manager.jpg",
+  "alt": "Our Team",
+  "teamNumbers": [
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "link": "/careers",
+      "type": "primary"
+    },
+    {
+      "text": "",
+      "link": "/about",
+      "type": "secondary"
+    }
+  ]
+}

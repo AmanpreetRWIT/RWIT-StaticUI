@@ -1,0 +1,214 @@
+/*-----------------------
+    Accordion Styles 
+-------------------------*/
+
+.axil-accordion {
+  .card {
+    border: 0 none;
+    border-bottom: 1px solid #f6f5fa;
+    border-radius: 0;
+    background-color: transparent;
+
+    .card-header {
+      padding: 20px 0px;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-bottom: 0;
+
+      &:first-child {
+        border-radius: 0;
+      }
+
+      h5 {
+        .btn {
+          &.btn-link {
+            padding: 0;
+            font-size: 22px;
+            line-height: 26px;
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 600;
+            color: $primary-color;
+            @extend %transition;
+            outline: none;
+            border: 0 none;
+
+            i {
+              padding-right: 14px;
+              font-weight: 400;
+            }
+
+            &.collapsed {
+              color: #52526c;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0 0 25px;
+    }
+
+    .collapse {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        height: 3px;
+        background: $primary-color;
+        width: 100%;
+        z-index: 2;
+        bottom: -1px;
+        @extend %transition;
+        opacity: 1;
+      }
+
+      &.show {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*-----------------------------
+Accourdion Style Two  
+-------------------------------*/
+.axil-accordion--2 {
+  color: #757589;
+
+  .card {
+    border-radius: 0;
+    border: 1px solid rgba(199, 199, 213, 1);
+    .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-bottom: 0;
+
+      &:first-child {
+        border-radius: 0;
+      }
+
+      .btn {
+        &.btn-link {
+          padding: 0;
+          font-size: 22px;
+          line-height: 26px;
+          border-radius: 0;
+          text-decoration: none;
+          font-weight: 700;
+          color: $secondary-color;
+          @extend %transition;
+          outline: none;
+          border: 0 none;
+          padding: 24px 48px 24px 24px;
+          position: relative;
+
+          @media #{$sm-layout} {
+            font-size: 19px;
+            line-height: 26px;
+            padding: 15px 14px;
+            padding-right: 35px;
+          }
+
+          &.collapsed {
+            color: $heading-color;
+
+            &::after {
+              border-width: 7px 7px 0px 7px;
+              border-color: $heading-color transparent transparent;
+            }
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          svg {
+            position: absolute;
+            right: 26px;
+            height: 9px;
+            width: 22px;
+            font-weight: 700;
+            top: 33px;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            @media #{$sm-layout} {
+              right: 17px;
+              top: 20px;
+            }
+            @media #{$small-mobile} {
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 24px;
+      padding-top: 0px;
+      color: inherit;
+      font-size: 18px;
+      line-height: 30px;
+
+      @media #{$sm-layout} {
+        padding: 0 14px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .collapse {
+      position: relative;
+    }
+
+    & + .card {
+      margin-top: 30px;
+    }
+  }
+
+  &.custom-color {
+    .card {
+      .card-header {
+        .btn {
+          &.btn-link {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.axil-faq-area {
+  .axil-accordion--2  {
+    .card {
+      .collapsed {
+        max-height: 0;
+        transition: 0.3s max-height ease;
+        overflow: hidden;
+      }
+      svg {
+        transition: 0.25s all ease-in-out;
+      }
+      
+      &.activefaq {
+        box-shadow: 0px 0px 24px 0px rgba(0, 2, 72, 0.1);
+        border: none !important;
+        svg {
+          rotate: 180deg;
+        }
+      }
+    }
+  }
+}
