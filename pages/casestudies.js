@@ -12,6 +12,7 @@ import CaseStudyMedia from "../components/CaseStudyGrid/CaseStudyMedia";
 import CounterTwo from "../components/counters/CounterTwoColumn";
 import TestimonalSlider from "../components/testimonials/TestimonalSlider";
 import ContentWithMedia from "../components/ContentWithMedia";
+import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
 
 // JSON Data
 import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
@@ -27,6 +28,7 @@ import counterTwo from "../data/counters/CounterTwoColumn.json";
 import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
 import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
 import contentWithMedia from "../data/contentWithMedia/contentWithMedia.json";
+import caseStudySlides from "../data/MultiImageSlider/CaseStudySlides.json";
 
 
 export default function CaseStudiesPage() {
@@ -79,6 +81,7 @@ export default function CaseStudiesPage() {
         <CaseStudySlider data={caseStudySlider} />
         <TestimonalSlider data={testimonalSlider}/>
         <ContentWithMedia {...contentWithMedia}/>
+        <CaseStudySlides {...caseStudySlides}/>
       </Layout>
     </>
   );
