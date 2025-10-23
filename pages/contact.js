@@ -9,7 +9,7 @@ import heroData from "../data/banner/Hero.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
-import ourOffice from "../data/ouroffice/OurOffice.json";
+import ourOffice from "../data/ouroffice/Ouroffice.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
 
 

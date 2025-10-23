@@ -20,7 +20,7 @@ import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
 import brandsThree from "../data/brands/BrandThree.json";
-import ourValues from "../data/ourvalues/OurValues.json";
+import ourValues from "../data/ourvalues/Ourvalues.json";
 import teams from "../data/teams/Teams.json";
 import ourGallery from "../data/OurGallery/OurGallery.json";
 
