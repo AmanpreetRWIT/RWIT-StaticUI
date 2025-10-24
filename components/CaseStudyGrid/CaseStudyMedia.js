@@ -51,11 +51,10 @@ const CaseStudyMedia = ({ data }) => {
       : latestData;
 
   const isMobile = useMobile();
-
   return (
     <>
       {caseStudy?.length > 0 && (
-        <div className="casestudyMedia d-flex">
+        <div className="casestudyMedia">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}

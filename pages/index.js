@@ -14,9 +14,7 @@ import CounterTwo from "../components/counters/CounterTwoColumn";
 import Comparison from "../components/Comparison/Comparison";
 import Testimonial from "../components/testimonials/Testimonial";
 import Newsletter from "../components/newsletter/Newsletter";
-import Blogs from "./blog-by-category.js";
-import HeroWithForm from '../components/banner/HeroWithForm'
-import HeroWithoutImage from '../components/banner/HeroWithoutImage';
+
 
 // JSON Data
 import heroData from "../data/banner/Hero.json";
@@ -34,9 +32,7 @@ import newsletter from "../data/newsletter/Newsletter.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
-import blogs from "../data/blogs/blog-by-category.json";
-import heroWithForm from '../data/banner/HeroWithForm.json';
-import heroWithoutImage from '../data/banner/HeroWithoutImage.json';
+
 
 export default function HomePage() {
   const layoutSettings = {
@@ -113,48 +109,6 @@ export default function HomePage() {
         <ServicesWithStickyCards blok={servicesWithStickyCards} />
         <Testimonial data={testimonial} />
         <Newsletter data={newsletter} />
-        {/* <HeroWithForm {...heroWithForm} />
-        <HeroWithoutImage {...heroWithoutImage.Default} /> */}
-        {/* <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
-        <CallToActionSlim {...callToActionSlim} />
-        <CallToActionWithAvatar {...callToActionWithAvatar} />
-        <CaseStudyGrid {...caseStudyGrid} />
-        <CaseStudyMedia {...caseStudyMedia} />
-        <ClientLogoSlider data={clientLogoSlider} />
-        <CmsHighlights data={cmsHighlights} />
-        <CompareTable data={compareTable} />
-        <ComparisonBanner data={comparisonBanner} />
-        <ImageComparisonSlider {...imageComparisonSlider} />
-        <Contact {...contact} />
-        <CounterOne {...counterOne} />
-        <CounterCardOne {...counterCardOne} />
-        <Faq {...faqData} />
-        <OurGallery blok={ourGallery} />
-        <JobListing {...jobListing} />
-        <CaseStudySlides {...caseStudySlidesData} />
-        <NewsletterModal data={newsletterModal} />
-        <Notice {...notice} />
-        <OurOffice {...ourOffice} />
-        <OurValues {...ourValues} />
-        <OurPartners {...ourPartners} />
-        <Process blok={process} />
-        <ServiceCard {...serviceCard} />
-        <ServicesWithLeftTitle blok={servicesWithLeftTitle} />
-        <Pricing data={pricing} />
-        <PricingPlan data={pricingPlan} />
-        <Table data={table} />
-        <AboutUs data={aboutUs} />
-        <CaseStudyPopup data={caseStudyPopup} />
-        <Team data={team} />
-        <Teams {...teams} />
-        <Technologies data={technologies} />
-        <TechnologyStack data={technologyStack} />
-        <BlogTable {...blogTable} />
-        <LatestStories data={latestStories} />
-        <BacklinkPopup blok={backlinkPopup} />
-        <ApplyPopup blok={applyPopup} index={0}/>
-        <Breadcrumb />
-         <Blogs blogsData={blogs} /> */}
       </Layout>
     </>
   );

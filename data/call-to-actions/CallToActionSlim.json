@@ -16,7 +16,7 @@
     "label": "Schedule a call",
     "href": "https://calendly.com/jimmynarula/introductory-meeting"
   },
-  "showPhone":true,
+  "showPhone":false,
   "phones": [
     {
       "label": "+1 234 567 890",

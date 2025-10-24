@@ -10,6 +10,7 @@ import BrandThree from "../components/brands/BrandThree";
 import OurValues from "../components/ourvalues/OurValues";
 import Teams from "../components/teams/Teams";
 import OurGallery from "../components/gallery/OurGallery";
+import LatestStories from "../components/blogs/LatestStories";
 
 // JSON Data
 import heroData from "../data/banner/HeroWithVerticalImage.json";
@@ -23,6 +24,7 @@ import brandsThree from "../data/brands/BrandThree.json";
 import ourValues from "../data/ourvalues/Ourvalues.json";
 import teams from "../data/teams/Teams.json";
 import ourGallery from "../data/OurGallery/OurGallery.json";
+import latestStories from "../data/blogs/LatestStories.json";
 
 
 export default function AboutPage() {
@@ -71,6 +73,7 @@ export default function AboutPage() {
         <CallToAction {...callToAction} />
         <Teams {...teams}/>
         <OurGallery blok={ourGallery}/>
+        <LatestStories data={latestStories}/>
       </Layout>
     </>
   );

@@ -12,6 +12,8 @@ import CallToActionWithAvatar from "../../components/call-to-actions/CallToActio
 import Faq from "../../components/faq/Faq";
 import Testimonial from "../../components/testimonials/Testimonial";
 import ServicesWithStickyCards from "../../components/Services/ServicesWithStickyCards";
+import TechnologyStack from "../../components/technologies/TechnologyStack";
+import CallToActionSlim from "../../components/call-to-actions/CallToActionSlim";
 
 // JSON Data
 import aboutUsData from "../../data/abouts/AboutUs.json";
@@ -26,6 +28,8 @@ import servicesWithLeftTitle from "../../data/Services/ServicesWithLeftTitle.jso
 import faq from "../../data/faq/Faq.json";
 import testimonial from "../../data/testimonials/Testimonial.json";
 import servicesWithStickyCards from "../../data/Services/ServicesWithStickyCard.json";
+import technologyStack from "../../data/technologies/TechnologyStack.json";
+import callToActionSlim from "../../data/call-to-actions/CallToActionSlim.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -76,6 +80,8 @@ export default function AboutPage() {
         <Faq {...faq}/>
         <Testimonial data={testimonial}/>
         <ServicesWithStickyCards blok={servicesWithStickyCards}/>
+        <TechnologyStack data={technologyStack}/>
+        <CallToActionSlim {...callToActionSlim}/>
       </Layout>
     </>
   );
