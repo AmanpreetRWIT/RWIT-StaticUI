@@ -5,7 +5,7 @@
   "titleColor": "#000248",
   "descriptionColor": "#757589",
   "bgColor": "#f3f3f3",
-  "backgroundImage": "/images/bg-image-2.svg",
+  "backgroundImage": " ",
   "minHeight": 400,
   "buttons": {
     "label": "Schedule a call",

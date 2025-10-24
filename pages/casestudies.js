@@ -13,7 +13,6 @@ import CounterTwo from "../components/counters/CounterTwoColumn";
 import TestimonalSlider from "../components/testimonials/TestimonalSlider";
 import ContentWithMedia from "../components/ContentWithMedia";
 import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
-
 // JSON Data
 import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";

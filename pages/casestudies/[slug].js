@@ -2,27 +2,27 @@ import Head from "next/head";
 
 // Components
 import Layout from "../../components/layouts/Layout";
+import HeroWithoutImage from "../../components/banner/HeroWithoutImage";
+import Testimonial from "../../components/testimonials/Testimonial";
+import ContentWithMedia from "../../components/ContentWithMedia";
+import CaseStudySlides from "../../components/MultiImageSlider/CaseStudySlides";
 import HeroWithVerticalImage from "../../components/banner/HeroWithVerticalImage";
-import HeroSection from "../../components/banner/Hero";
-import AboutUs from "../../components/abouts/AboutUs";
-import CallToAction from "../../components/call-to-actions/CallToAction";
-import ClientAndPartner from "../../components/client-and-partner/ClientAndPartner";
-import Services from "../../components/Services/Services";
-
-
+import CallToActionWithAvatar from "../../components/call-to-actions/CallToActionWithAvatar";
+import RepeatableItems from "../../components/content/RepeatableItems";
 // JSON Data
-import heroData from "../../data/banner/Hero.json";
-import aboutUsData from "../../data/abouts/AboutUs.json";
-import callToAction from "../../data/call-to-actions/CallToAction.json";
-import clientAndPartner from "../../data/client-and-partner/ClientAndPartner.json";
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
-import services from "../../data/Services/Services.json";
+import heroWithoutImage from "../../data/banner/HeroWithoutImage.json";
+import contentWithMedia from "../../data/contentWithMedia/contentWithMedia.json";
+import caseStudySlides from "../../data/MultiImageSlider/CaseStudySlides.json";
 import heroWithVerticalImage from "../../data/banner/HeroWithVerticalImage.json";
+import testimonial from "../../data/testimonials/Testimonial.json";
+import callToActionWithAvatar from "../../data/call-to-actions/CallToActionWithAvatar.json";
+import repeatableItems from "../../data/content/RepeatableItems.json";
 
 
-export default function AboutPage() {
+export default function CaseStudiesPage() {
   const layoutSettings = {
     header: {
       style: "four",
@@ -39,8 +39,8 @@ export default function AboutPage() {
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
-  const pageTitle = "RW Infotech | About";
-  const pageDescription = "Learn more about RW Infotech and our mission, values, and clients.";
+  const pageTitle = "RW Infotech | Case Studies";
+  const pageDescription = "Explore our successful projects and case studies at RW Infotech.";
 
   return (
     <>
@@ -62,11 +62,13 @@ export default function AboutPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithVerticalImage {...heroWithVerticalImage.Default}/>
-        <AboutUs data={aboutUsData} />
-        <CallToAction {...callToAction} />
-        <Services blok={services}/>
-        <ClientAndPartner data={clientAndPartner} />
+        <HeroWithoutImage {...heroWithoutImage.Default}/>
+        <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
+        <RepeatableItems blok={repeatableItems}/>
+        <Testimonial data={testimonial}/>
+        <ContentWithMedia {...contentWithMedia}/>
+        <CaseStudySlides {...caseStudySlides}/>
+        <CallToActionWithAvatar {...callToActionWithAvatar}/>
       </Layout>
     </>
   );

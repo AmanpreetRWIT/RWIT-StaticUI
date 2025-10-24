@@ -1,0 +1,48 @@
+{
+    "BgColor": {
+      "color": "#ffffff"
+    },
+    "RowBlock": [
+      {
+        "ColumnWidth": "col-3",
+        "TextAlign": "text-start",
+        "BlockContents": [
+          {
+            "Title": "Client",
+            "Description": "<p>Rush Order Tees</p>"
+          },
+          {
+            "Title": "Location",
+            "Description": "<p>United States</p>"
+          },
+          {
+            "Title": "Industry",
+            "Description": "<p>Custom Apparel</p>"
+          },
+          {
+            "Title": "Services",
+            "Description": "<p>Consulting<br/>Development<br/>DevOps</p>"
+          },
+          {
+            "Title": "Technologies",
+            "Description": "<p>Prismic<br/>Dynamo DB<br/>NEXT.js</p>"
+          }
+        ]
+      },
+      {
+        "ColumnWidth": "col-9",
+        "TextAlign": "text-start",
+        "BlockContents": [
+          {
+            "Title": "Problem",
+            "Description": "<p>Rushorder Tees encountered operational hurdles with their existing system, struggling to manage the influx of orders efficiently. The absence of a robust webshop hindered seamless order processing. Additionally, the lack of a user-friendly customization feature posed a challenge, impacting the overall customer experience. The pressing need to address these issues arose from the company's commitment to meeting customer demands promptly and enhancing the online ordering process. A comprehensive solution was required to streamline order management and provide customers with an intuitive customization interface, ensuring a smoother, more satisfying transaction process for both the business and its clientele.</p>"
+          },
+          {
+            "Title": "Solution",
+            "Description": "<p>To address Rushorder Tees' operational challenges, we propose a comprehensive solution involving the migration from Gatsby to Next.js, integrated with the content management capabilities of Prismic.</p><p>Firstly, we will execute a seamless transition from Gatsby to Next.js, leveraging the strengths of Next.js for enhanced server-side rendering and improved scalability, crucial for managing the high volume of incoming orders.</p><p>Simultaneously, we will integrate Prismic as the content management system, enabling efficient content updates and customization options for users. This integration will empower Rushorder Tees to easily manage product information and facilitate a user-friendly customization experience.</p><p>By combining Next.js for robust web performance, Prismic for streamlined content management, and implementing intuitive customization features, the proposed solution aims to optimize operational efficiency, elevate user experience, and meet Rushorder Tees' commitment to prompt order fulfillment and customer satisfaction.</p>"
+          }
+        ]
+      }
+    ]
+  }
+  
