@@ -1,19 +1,19 @@
 import Head from "next/head";
+// Components
 import Layout from "../components/layouts/Layout";
-import Contact from "../components/contact/Contact";
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import OurOffice from "../components/ouroffice/OurOffice";
-import CallToAction from "../components/call-to-actions/CallToAction";
-// JSON Data
-import heroData from "../data/banner/Hero.json";
+import RenderSections from "../components/common/RenderSections";
+
+// Static JSON Data
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
-import ourOffice from "../data/ouroffice/Ouroffice.json";
+import ourOfficeData from "../data/ouroffice/Ouroffice.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
 
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../lib/payload");
 
-export default function ContactPage() {
+export default function ContactPage({ sections }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -34,6 +34,16 @@ export default function ContactPage() {
   const pageDescription =
     "Get in touch with RW Infotech for expert software, app, and web development solutions.";
 
+  // Default sections if none provided in CMS
+  const fallbackSections = [
+    { type: 'breadcrumb', data: { title: 'Contact Us', current: 'Contact' } },
+    { type: 'contact', data: contact },
+    { type: 'ourOffice', data: ourOfficeData },
+    { type: 'callToAction', data: callToAction }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
+
   return (
     <>
       <Head>
@@ -43,11 +53,28 @@ export default function ContactPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <Breadcrumb/>
-          <Contact {...contact}/>
-          <OurOffice {...ourOffice}/>
-          <CallToAction {...callToAction}/>
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const page = await getPageBySlug("contact");
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+      },
+    };
+  } catch (err) {
+    console.error("Payload fetch error on /contact:", err);
+    return {
+      props: {
+        sections: null,
+      },
+    };
+  }
 }

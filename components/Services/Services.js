@@ -29,9 +29,8 @@ const Services = ({ blok }) => {
     <>
       <div
         id={blok?.RemoveAnimations ? 'ServiceCards' : 'Services'}
-        className={`axil-service-area ax-section-gap bg-color-white  ${
-          visible ? '' : 'axil-service-visible'
-        }`}
+        className={`axil-service-area ax-section-gap bg-color-white  ${visible ? '' : 'axil-service-visible'
+          }`}
         style={blok?.BGColor?.color ? { background: blok?.BGColor?.color } : {}}
       >
         <div className="container">
@@ -44,7 +43,7 @@ const Services = ({ blok }) => {
                 titleColor={
                   blok?.TitleColor?.color ? blok?.TitleColor?.color : ''
                 }
-                alignment={blok.TextAlign ? blok.TextAlign : 'center'}
+                alignment={blok?.TextAlign ? blok.TextAlign : 'center'}
                 titleClass={'p-inline'}
                 descriptionColor={
                   blok?.DescriptionColor?.color

@@ -2,22 +2,10 @@ import Head from "next/head";
 
 // Components
 import Layout from "../components/layouts/Layout";
-import HeroSection from "../components/banner/Hero";
-import BrandTwo from "../components/brands/BrandTwo";
-import BrandThree from "../components/brands/BrandThree";
-import CallToAction from "../components/call-to-actions/CallToAction";
-import CaseStudySlider from "../components/CaseStudySlider/CaseStudySlider";
-import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
-import Services from "../components/Services/Services";
-import ServicesWithStickyCards from "../components/Services/ServicesWithStickyCards";
-import CounterTwo from "../components/counters/CounterTwoColumn";
-import Comparison from "../components/Comparison/Comparison";
-import Testimonial from "../components/testimonials/Testimonial";
-import Newsletter from "../components/newsletter/Newsletter";
+import RenderSections from "../components/common/RenderSections";
 
-
-// JSON Data
-import heroData from "../data/banner/Hero.json";
+// Static JSON Data (fallback)
+import staticHeroData from "../data/banner/Hero.json";
 import brandTwo from "../data/brands/BrandTwo.json";
 import brandThree from "../data/brands/BrandThree.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
@@ -33,8 +21,10 @@ import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
 
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../lib/payload");
 
-export default function HomePage() {
+export default function HomePage({ sections }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -54,6 +44,24 @@ export default function HomePage() {
   const pageTitle = "RW Infotech | Home";
   const pageDescription =
     "Welcome to RW Infotech. We provide expert software, app, and web solutions tailored to your business growth.";
+
+  // Default sections for homepage if none found in CMS
+  const fallbackSections = [
+    { type: 'hero', data: staticHeroData },
+    { type: 'brandTwo', data: brandTwo },
+    { type: 'caseStudySlider', data: caseStudySlider },
+    { type: 'services', data: services },
+    { type: 'clientAndPartner', data: clientAndPartner },
+    { type: 'callToAction', data: callToAction },
+    { type: 'brandThree', data: brandThree },
+    { type: 'counterTwo', data: counterTwo },
+    { type: 'comparison', data: comparison },
+    { type: 'servicesWithStickyCards', data: servicesWithStickyCards },
+    { type: 'testimonial', data: testimonial },
+    { type: 'newsletter', data: newsletter }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -97,19 +105,28 @@ export default function HomePage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroSection {...heroData} />
-        <BrandTwo {...brandTwo} />
-        <CaseStudySlider data={caseStudySlider} />
-        <Services blok={services} />
-        <ClientAndPartner data={clientAndPartner} />
-        <CallToAction {...callToAction} />
-        <BrandThree {...brandThree} />
-        <CounterTwo {...counterTwo} />
-        <Comparison data={comparison} />
-        <ServicesWithStickyCards blok={servicesWithStickyCards} />
-        <Testimonial data={testimonial} />
-        <Newsletter data={newsletter} />
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const page = await getPageBySlug("home");
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+      },
+    };
+  } catch (err) {
+    console.error("Payload fetch error on homepage:", err);
+    return {
+      props: {
+        sections: null,
+      },
+    };
+  }
 }

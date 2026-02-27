@@ -2,35 +2,28 @@ import Head from "next/head";
 
 // Components
 import Layout from "../components/layouts/Layout";
-import HeroWithoutImage from "../components/banner/HeroWithoutImage";
-import CaseStudySlider from "../components/CaseStudySlider/CaseStudySlider";
-import CallToAction from "../components/call-to-actions/CallToAction";
-import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
-import CaseStudyGrid from "../components/CaseStudyGrid/CaseStudyGrid"; // optional if you have it
-import ClientLogoSlider from "../components/client-and-partner/ClientLogoSlider";
-import CaseStudyMedia from "../components/CaseStudyGrid/CaseStudyMedia";
-import CounterTwo from "../components/counters/CounterTwoColumn";
-import TestimonalSlider from "../components/testimonials/TestimonalSlider";
-import ContentWithMedia from "../components/ContentWithMedia";
-import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
+import RenderSections from "../components/common/RenderSections";
+
 // JSON Data
-import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
-import callToAction from "../data/call-to-actions/CallToAction.json";
-import clientAndPartner from "../data/client-and-partner/ClientAndPartner.json";
-import caseStudyGridData from "../data/CaseStudyGrid/CaseStudyGrid.json"; // optional
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
-import clientLogoSlider from "../data/client-and-partner/ClientLogoSlider.json";
-import caseStudyMedia from "../data/CaseStudyGrid/CaseStudyMedia.json";
-import counterTwo from "../data/counters/CounterTwoColumn.json";
-import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
-import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
-import contentWithMedia from "../data/contentWithMedia/contentWithMedia.json";
-import caseStudySlides from "../data/MultiImageSlider/CaseStudySlides.json";
+import caseStudySliderData from "../data/CaseStudySlider/CaseStudySlider.json";
+import callToActionData from "../data/call-to-actions/CallToAction.json";
+import clientAndPartnerData from "../data/client-and-partner/ClientAndPartner.json";
+import caseStudyGridData from "../data/CaseStudyGrid/CaseStudyGrid.json";
+import clientLogoSliderData from "../data/client-and-partner/ClientLogoSlider.json";
+import caseStudyMediaData from "../data/CaseStudyGrid/CaseStudyMedia.json";
+import counterTwoData from "../data/counters/CounterTwoColumn.json";
+import heroWithoutImageData from "../data/banner/HeroWithoutImage.json";
+import testimonalSliderData from "../data/testimonials/TestimonalSlider.json";
+import contentWithMediaData from "../data/contentWithMedia/contentWithMedia.json";
+import caseStudySlidesData from "../data/MultiImageSlider/CaseStudySlides.json";
 
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../lib/payload");
 
-export default function CaseStudiesPage() {
+export default function CaseStudiesPage({ sections }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -49,6 +42,23 @@ export default function CaseStudiesPage() {
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
   const pageTitle = "RW Infotech | Case Studies";
   const pageDescription = "Explore our successful projects and case studies at RW Infotech.";
+
+  // Default sections if none provided in CMS
+  const fallbackSections = [
+    { type: 'heroWithoutImage', data: heroWithoutImageData.Default },
+    { type: 'clientLogoSlider', data: clientLogoSliderData },
+    { type: 'caseStudyMedia', data: caseStudyMediaData },
+    { type: 'caseStudyGrid', data: caseStudyGridData },
+    { type: 'counterTwo', data: counterTwoData },
+    { type: 'callToAction', data: callToActionData },
+    { type: 'clientAndPartner', data: clientAndPartnerData },
+    { type: 'caseStudySlider', data: caseStudySliderData },
+    { type: 'testimonalSlider', data: testimonalSliderData },
+    { type: 'contentWithMedia', data: contentWithMediaData },
+    { type: 'caseStudySlides', data: caseStudySlidesData }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -70,18 +80,28 @@ export default function CaseStudiesPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithoutImage {...heroWithoutImage.Default}/>
-        <ClientLogoSlider data={clientLogoSlider}/>
-        <CaseStudyMedia data={caseStudyMedia}/>
-        <CaseStudyGrid data={caseStudyGridData} />
-        <CounterTwo {...counterTwo}/>
-        <CallToAction {...callToAction} />
-        <ClientAndPartner data={clientAndPartner} />
-        <CaseStudySlider data={caseStudySlider} />
-        <TestimonalSlider data={testimonalSlider}/>
-        <ContentWithMedia {...contentWithMedia}/>
-        <CaseStudySlides {...caseStudySlides}/>
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const page = await getPageBySlug("casestudies");
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+      },
+    };
+  } catch (err) {
+    console.error("Payload fetch error on /casestudies:", err);
+    return {
+      props: {
+        sections: null,
+      },
+    };
+  }
 }

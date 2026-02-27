@@ -2,13 +2,7 @@ import Head from "next/head";
 
 // Components
 import Layout from "../../components/layouts/Layout";
-import HeroWithVerticalImage from "../../components/banner/HeroWithVerticalImage";
-import HeroSection from "../../components/banner/Hero";
-import AboutUs from "../../components/abouts/AboutUs";
-import CallToAction from "../../components/call-to-actions/CallToAction";
-import ClientAndPartner from "../../components/client-and-partner/ClientAndPartner";
-import Services from "../../components/Services/Services";
-
+import RenderSections from "../../components/common/RenderSections";
 
 // JSON Data
 import heroData from "../../data/banner/Hero.json";
@@ -19,10 +13,12 @@ import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
 import services from "../../data/Services/Services.json";
-import heroWithVerticalImage from "../../data/banner/HeroWithVerticalImage.json";
+import heroWithVerticalImageData from "../../data/banner/HeroWithVerticalImage.json";
 
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../../lib/payload");
 
-export default function AboutPage() {
+export default function IndustryPage({ sections, slug }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -39,8 +35,19 @@ export default function AboutPage() {
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
-  const pageTitle = "RW Infotech | About";
-  const pageDescription = "Learn more about RW Infotech and our mission, values, and clients.";
+  const pageTitle = `RW Infotech | ${slug?.charAt(0).toUpperCase() + slug?.slice(1) || 'Industry'}`;
+  const pageDescription = "Explore the industries we serve at RW Infotech.";
+
+  // Default sections if none provided in CMS
+  const fallbackSections = [
+    { type: 'heroWithVerticalImage', data: heroWithVerticalImageData.Default },
+    { type: 'aboutUs', data: aboutUsData },
+    { type: 'callToAction', data: callToAction },
+    { type: 'services', data: services },
+    { type: 'clientAndPartner', data: clientAndPartner }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -62,12 +69,36 @@ export default function AboutPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithVerticalImage {...heroWithVerticalImage.Default}/>
-        <AboutUs data={aboutUsData} />
-        <CallToAction {...callToAction} />
-        <Services blok={services}/>
-        <ClientAndPartner data={clientAndPartner} />
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps({ params }) {
+  const { slug } = params;
+  try {
+    // Try both with and without prefix for flexibility
+    let page = await getPageBySlug(`industries/${slug}`);
+    if (!page) {
+      page = await getPageBySlug(slug);
+    }
+
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+        slug: slug,
+      },
+    };
+  } catch (err) {
+    console.error(`Payload fetch error on /industries/${slug}:`, err);
+    return {
+      props: {
+        sections: null,
+        slug: slug,
+      },
+    };
+  }
 }

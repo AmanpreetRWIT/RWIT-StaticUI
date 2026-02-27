@@ -10,13 +10,14 @@ import SectionTitle from '../common/SectionTitle';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
-const OurGallery = ({ blok }) => {
+const OurGallery = ({ blok, data }) => {
+  const galleryData = blok || data;
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const cursorSize = 15;
 
-  const CursurBackgroundColor = blok?.CursorColor?.color;
-  const CursorIconColor = blok?.CursorTextColor?.color;
+  const CursurBackgroundColor = galleryData?.CursorColor?.color;
+  const CursorIconColor = galleryData?.CursorTextColor?.color;
 
   const mouse = {
     x: useMotionValue(0),
@@ -46,7 +47,7 @@ const OurGallery = ({ blok }) => {
     const { clientX, clientY } = e;
     mouse.x.set(clientX - cursorSize / 2);
     mouse.y.set(clientY - cursorSize / 2);
-  },[mouse.x, mouse.y]);
+  }, [mouse.x, mouse.y]);
 
   useEffect(() => {
     let timeoutId;
@@ -163,14 +164,14 @@ const OurGallery = ({ blok }) => {
 
       return () => scrollTrigger.kill();
     }
-  }, [isMobile,manageMouseMove]);
+  }, [isMobile, manageMouseMove]);
 
   return (
     <div
       className="axil-call-to-action-area shape-position gl-section-gap d-flex align-items-center"
       style={
-        blok?.BgColor?.color
-          ? { backgroundColor: blok.BgColor.color, zIndex: '1', cursor: 'none' }
+        galleryData?.BgColor?.color
+          ? { backgroundColor: galleryData.BgColor.color, zIndex: '1', cursor: 'none' }
           : { cursor: 'none' }
       }
       onMouseEnter={() => setIsHovered(true)}
@@ -178,11 +179,11 @@ const OurGallery = ({ blok }) => {
     >
       <div className="container" id="gallery">
         <SectionTitle
-          subtitle={blok?.Tags}
-          title={blok?.Title || ''}
-          titleColor={blok?.TitleColor?.color || ''}
+          subtitle={galleryData?.Tags}
+          title={galleryData?.Title || ''}
+          titleColor={galleryData?.TitleColor?.color || ''}
           alignment="center"
-          showTitle={blok?.showTitle}
+          showTitle={galleryData?.showTitle}
         />
 
         <div className="slider-container">
@@ -190,7 +191,7 @@ const OurGallery = ({ blok }) => {
             slidesPerView={'auto'}
             pagination={{ clickable: false, el: null }}
             speed={1200}
-            loop={blok?.Loop ? true : false}
+            loop={galleryData?.Loop ? true : false}
             watchSlidesProgress={true}
             freeMode={true}
             draggable={true}
@@ -229,7 +230,7 @@ const OurGallery = ({ blok }) => {
               ></motion.div>
             </>
 
-            {blok?.Slide?.map((item, index) => (
+            {galleryData?.Slide?.map((item, index) => (
               <SwiperSlide
                 style={{ overflow: 'hidden' }}
                 key={index}
@@ -237,43 +238,41 @@ const OurGallery = ({ blok }) => {
               >
                 <div className="img_wrap" style={{ width: '100%' }}>
                   <div className={`img_style1`}>
-                    {item?.ImageA?.filename && (
+                    {item?.ImageA?.src && (
                       <Image
-                        src={item.ImageA.filename}
-                        alt="Shape image"
-                        width={getImageDimension(item.ImageA.filename).width}
-                        height={getImageDimension(item.ImageA.filename).height}
+                        src={item.ImageA.src}
+                        alt={item.ImageA.alt || "Shape image"}
+                        width={item.ImageA.width || 400}
+                        height={item.ImageA.height || 400}
                       />
                     )}
-
-                    {item?.ImageB?.filename && ImageLimit(item.Layout) >= '2' && (
+                    {item?.ImageB?.src && ImageLimit(item.Layout) >= '2' && (
                       <div className={`img_style2`}>
                         <Image
-                          src={item.ImageB.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageB.filename).width}
-                          height={getImageDimension(item.ImageB.filename).height}
+                          src={item.ImageB.src}
+                          alt={item.ImageB.alt || "Shape image"}
+                          width={item.ImageB.width || 400}
+                          height={item.ImageB.height || 400}
                         />
                       </div>
                     )}
-
-                    {item?.ImageC?.filename && ImageLimit(item.Layout) == '3' && (
+                    {item?.ImageC?.src && ImageLimit(item.Layout) == '3' && (
                       <div className={`img_style3`}>
                         <Image
-                          src={item.ImageC.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageC.filename).width}
-                          height={getImageDimension(item.ImageC.filename).height}
+                          src={item.ImageC.src}
+                          alt={item.ImageC.alt || "Shape image"}
+                          width={item.ImageC.width || 400}
+                          height={item.ImageC.height || 400}
                         />
                       </div>
                     )}
-                    {item?.ImageD?.filename && ImageLimit(item.Layout) == '4' && (
+                    {item?.ImageD?.src && ImageLimit(item.Layout) == '4' && (
                       <div className={`img_style4`}>
                         <Image
-                          src={item.ImageD.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageD.filename).width}
-                          height={getImageDimension(item.ImageD.filename).height}
+                          src={item.ImageD.src}
+                          alt={item.ImageD.alt || "Shape image"}
+                          width={item.ImageD.width || 400}
+                          height={item.ImageD.height || 400}
                         />
                       </div>
                     )}

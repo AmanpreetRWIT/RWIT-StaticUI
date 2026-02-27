@@ -1,16 +1,18 @@
 import Head from "next/head";
+// Components
 import Layout from "../components/layouts/Layout";
-import Services from "../components/Services/Services";
-import JobListing from "../components/joblisting/JobListing";
+import RenderSections from "../components/common/RenderSections";
 
 // JSON Data
-import jobListing from "../data/joblisting/JobListing.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
-import contact from "../data/contact/Contact.json";
-import services from "../data/Services/Services.json";
+import jobListingData from "../data/joblisting/JobListing.json";
+import servicesData from "../data/Services/Services.json";
 
-export default function Career() {
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../lib/payload");
+
+export default function Career({ sections }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -27,9 +29,17 @@ export default function Career() {
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
-  const pageTitle = "RW Infotech | Contact Us";
+  const pageTitle = "RW Infotech | Careers";
   const pageDescription =
-    "Get in touch with RW Infotech for expert software, app, and web development solutions.";
+    "Explore career opportunities at RW Infotech and join our team of experts.";
+
+  // Default sections if none provided in CMS
+  const fallbackSections = [
+    { type: 'services', data: servicesData },
+    { type: 'jobListing', data: jobListingData }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -40,9 +50,28 @@ export default function Career() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <Services blok={services}/>
-          <JobListing {...jobListing}/>
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const page = await getPageBySlug("career");
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+      },
+    };
+  } catch (err) {
+    console.error("Payload fetch error on /career:", err);
+    return {
+      props: {
+        sections: null,
+      },
+    };
+  }
 }

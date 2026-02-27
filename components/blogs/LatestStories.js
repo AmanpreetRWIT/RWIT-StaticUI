@@ -8,11 +8,12 @@ import { SearchComponent } from '../search/Search';
 import { useRouter } from 'next/router';
 import Button from '../buttons/Button';
 
-const LatestStories = ({ data }) => {
+const LatestStories = ({ data, blok }) => {
+  const storiesData = data || blok;
   const router = useRouter();
   const [activeBlog, setActiveBlog] = useState(0);
   const latestBlogs =
-    data?.stories?.length > 0 ? data?.stories?.slice(0, 3) : [];
+    storiesData?.stories?.length > 0 ? storiesData.stories.slice(0, 3) : [];
 
   const changeActive = (index) => {
     setActiveBlog(index);
@@ -69,25 +70,25 @@ const LatestStories = ({ data }) => {
       <div
         id="latestStories"
         className="latestStories axil-blog-area ax-section-gap bg-color-lightest"
-        style={data?.BGColor ? { background: data?.BGColor } : {}}
+        style={storiesData?.BGColor ? { background: storiesData.BGColor } : {}}
       >
-        {data?.ShowSearchField && (
+        {storiesData?.ShowSearchField && (
           <div className="blogSearch__wrapper">
             <SearchComponent />
           </div>
         )}
 
         <div className="latestStories__cont container">
-          {(data?.ShowSectionTitle)  && (data?.Title || data?.Description || data?.Tags?.length > 0) && (
+          {(storiesData?.ShowSectionTitle) && (storiesData?.Title || storiesData?.Description || storiesData?.Tags?.length > 0) && (
             <div className="row">
               <div className="col-lg-12">
                 <SectionTitle
-                  title={data?.Title}
-                  subtitle={data?.Tags}
-                  description={data?.Description}
+                  title={storiesData?.Title}
+                  subtitle={storiesData?.Tags}
+                  description={storiesData?.Description}
                   alignment="center"
-                  titleColor={data?.TitleColor || ''}
-                  descriptionColor={data?.DescriptionColor || ''}
+                  titleColor={storiesData?.TitleColor || ''}
+                  descriptionColor={storiesData?.DescriptionColor || ''}
                 />
               </div>
             </div>
@@ -108,17 +109,9 @@ const LatestStories = ({ data }) => {
                       <Image
                         placeholder="blur"
                         blurDataURL={placeholderLight}
-                        src={FeatureCard?.content?.FeaturedImage?.filename}
-                        width={
-                          getImageDimension(
-                            FeatureCard?.content?.FeaturedImage?.filename
-                          ).width
-                        }
-                        height={
-                          getImageDimension(
-                            FeatureCard?.content?.FeaturedImage?.filename
-                          ).height
-                        }
+                        src={FeatureCard?.content?.FeaturedImage?.src}
+                        width={FeatureCard?.content?.FeaturedImage?.width || 800}
+                        height={FeatureCard?.content?.FeaturedImage?.height || 600}
                         alt={
                           FeatureCard?.content?.FeaturedImage?.alt ||
                           'Blog image'
@@ -132,8 +125,8 @@ const LatestStories = ({ data }) => {
                         <p>
                           {formatDateString(
                             FeatureCard?.first_published_at ||
-                              FeatureCard?.published_at ||
-                              FeatureCard?.created_at
+                            FeatureCard?.published_at ||
+                            FeatureCard?.created_at
                           )}
                         </p>
                       </div>
@@ -184,8 +177,8 @@ const LatestStories = ({ data }) => {
                           <p>
                             {formatDateString(
                               blog?.first_published_at ||
-                                blog?.published_at ||
-                                blog?.created_at
+                              blog?.published_at ||
+                              blog?.created_at
                             )}
                           </p>
                         </div>
@@ -211,16 +204,16 @@ const LatestStories = ({ data }) => {
             </div>
           )}
         </div>
-        {FeatureCard && data.Buttons.length > 0 && (
-            <div className="latestStories__btn">
-              <div className="slider-button gap-4 d-flex">
-                {data.Buttons.map((button, index) => (
-                 <Button button={button} key={index} />
+        {FeatureCard && storiesData?.Buttons?.length > 0 && (
+          <div className="latestStories__btn">
+            <div className="slider-button gap-4 d-flex">
+              {storiesData.Buttons.map((button, index) => (
+                <Button button={button} key={index} />
 
-                ))}
-              </div>
+              ))}
             </div>
-          )}
+          </div>
+        )}
       </div>
     </>
   );

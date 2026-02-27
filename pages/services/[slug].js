@@ -2,29 +2,25 @@ import Head from "next/head";
 
 // Components
 import Layout from "../../components/layouts/Layout";
-import HeroWithForm from "../../components/banner/HeroWithForm";
-import ServicesWithLeftTitle from "../../components/Services/ServicesWithLeftTitle";
-import AboutUs from "../../components/abouts/AboutUs";
-import CallToAction from "../../components/call-to-actions/CallToAction";
-import ClientAndPartner from "../../components/client-and-partner/ClientAndPartner";
-import CallToActionWithAvatar from "../../components/call-to-actions/CallToActionWithAvatar";
-import Faq from "../../components/faq/Faq";
-import Testimonial from "../../components/testimonials/Testimonial";
+import RenderSections from "../../components/common/RenderSections";
 
 // JSON Data
-import aboutUsData from "../../data/abouts/AboutUs.json";
-import callToAction from "../../data/call-to-actions/CallToAction.json";
-import clientAndPartner from "../../data/client-and-partner/ClientAndPartner.json";
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
+import aboutUsData from "../../data/abouts/AboutUs.json";
+import callToAction from "../../data/call-to-actions/CallToAction.json";
+import clientAndPartner from "../../data/client-and-partner/ClientAndPartner.json";
 import callToActionWithAvatar from "../../data/call-to-actions/CallToActionWithAvatar.json";
 import heroWithForm from "../../data/banner/HeroWithForm.json";
 import servicesWithLeftTitle from "../../data/Services/ServicesWithLeftTitle.json";
 import faq from "../../data/faq/Faq.json";
 import testimonial from "../../data/testimonials/Testimonial.json";
 
-export default function AboutPage() {
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../../lib/payload");
+
+export default function ServicePage({ sections, slug }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -41,8 +37,22 @@ export default function AboutPage() {
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
-  const pageTitle = "RW Infotech | About";
-  const pageDescription = "Learn more about RW Infotech and our mission, values, and clients.";
+  const pageTitle = `RW Infotech | ${slug?.charAt(0).toUpperCase() + slug?.slice(1) || 'Service'}`;
+  const pageDescription = "Explore our specialized services at RW Infotech.";
+
+  // Default sections if none provided in CMS
+  const fallbackSections = [
+    { type: 'heroWithForm', data: heroWithForm },
+    { type: 'servicesWithLeftTitle', data: servicesWithLeftTitle },
+    { type: 'aboutUs', data: aboutUsData },
+    { type: 'callToAction', data: callToAction },
+    { type: 'clientAndPartner', data: clientAndPartner },
+    { type: 'callToActionWithAvatar', data: callToActionWithAvatar },
+    { type: 'faq', data: faq },
+    { type: 'testimonial', data: testimonial }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -64,15 +74,36 @@ export default function AboutPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithForm {...heroWithForm} />
-        <ServicesWithLeftTitle blok={servicesWithLeftTitle}/>
-        <AboutUs data={aboutUsData} />
-        <CallToAction {...callToAction} />
-        <ClientAndPartner data={clientAndPartner} />
-        <CallToActionWithAvatar {...callToActionWithAvatar}/>
-        <Faq {...faq}/>
-        <Testimonial data={testimonial}/>
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps({ params }) {
+  const { slug } = params;
+  try {
+    // Try both with and without prefix for flexibility
+    let page = await getPageBySlug(`services/${slug}`);
+    if (!page) {
+      page = await getPageBySlug(slug);
+    }
+
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+        slug: slug,
+      },
+    };
+  } catch (err) {
+    console.error(`Payload fetch error on /services/${slug}:`, err);
+    return {
+      props: {
+        sections: null,
+        slug: slug,
+      },
+    };
+  }
 }

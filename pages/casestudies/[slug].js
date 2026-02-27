@@ -2,13 +2,8 @@ import Head from "next/head";
 
 // Components
 import Layout from "../../components/layouts/Layout";
-import HeroWithoutImage from "../../components/banner/HeroWithoutImage";
-import Testimonial from "../../components/testimonials/Testimonial";
-import ContentWithMedia from "../../components/ContentWithMedia";
-import CaseStudySlides from "../../components/MultiImageSlider/CaseStudySlides";
-import HeroWithVerticalImage from "../../components/banner/HeroWithVerticalImage";
-import CallToActionWithAvatar from "../../components/call-to-actions/CallToActionWithAvatar";
-import RepeatableItems from "../../components/content/RepeatableItems";
+import RenderSections from "../../components/common/RenderSections";
+
 // JSON Data
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
@@ -21,8 +16,10 @@ import testimonial from "../../data/testimonials/Testimonial.json";
 import callToActionWithAvatar from "../../data/call-to-actions/CallToActionWithAvatar.json";
 import repeatableItems from "../../data/content/RepeatableItems.json";
 
+// Payload CMS data fetching
+const { getPageBySlug, mapPageSections } = require("../../lib/payload");
 
-export default function CaseStudiesPage() {
+export default function CaseStudyPage({ sections, slug }) {
   const layoutSettings = {
     header: {
       style: "four",
@@ -39,8 +36,21 @@ export default function CaseStudiesPage() {
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
-  const pageTitle = "RW Infotech | Case Studies";
+  const pageTitle = `RW Infotech | ${slug?.charAt(0).toUpperCase() + slug?.slice(1) || 'Case Study'}`;
   const pageDescription = "Explore our successful projects and case studies at RW Infotech.";
+
+  // Default sections for individual case study if none provided in CMS
+  const fallbackSections = [
+    { type: 'heroWithoutImage', data: heroWithoutImage.Default },
+    { type: 'heroWithVerticalImage', data: heroWithVerticalImage.Default },
+    { type: 'repeatableItems', data: repeatableItems },
+    { type: 'testimonial', data: testimonial },
+    { type: 'contentWithMedia', data: contentWithMedia },
+    { type: 'caseStudySlides', data: caseStudySlides },
+    { type: 'callToActionWithAvatar', data: callToActionWithAvatar }
+  ];
+
+  const finalSections = sections?.length > 0 ? sections : fallbackSections;
 
   return (
     <>
@@ -62,14 +72,36 @@ export default function CaseStudiesPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithoutImage {...heroWithoutImage.Default}/>
-        <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
-        <RepeatableItems blok={repeatableItems}/>
-        <Testimonial data={testimonial}/>
-        <ContentWithMedia {...contentWithMedia}/>
-        <CaseStudySlides {...caseStudySlides}/>
-        <CallToActionWithAvatar {...callToActionWithAvatar}/>
+        <RenderSections sections={finalSections} />
       </Layout>
     </>
   );
+}
+
+export async function getServerSideProps({ params }) {
+  const { slug } = params;
+  try {
+    // Try both with and without prefix
+    let page = await getPageBySlug(`casestudies/${slug}`);
+    if (!page) {
+      page = await getPageBySlug(slug);
+    }
+
+    const sections = mapPageSections(page);
+
+    return {
+      props: {
+        sections: sections.length > 0 ? sections : null,
+        slug: slug,
+      },
+    };
+  } catch (err) {
+    console.error(`Payload fetch error on /casestudies/${slug}:`, err);
+    return {
+      props: {
+        sections: null,
+        slug: slug,
+      },
+    };
+  }
 }
