@@ -1,0 +1,79 @@
+{
+    "BGColor": { "color": "#f8f9fa" },
+    "Title": "Client work",
+    "Description": "Through cutting-edge technology solutions, we have assisted over 50 innovative companies.",
+    "TextAlignment": "center",
+    "TitleColor": { "color": "#000248" },
+    "DescriptionColor": { "color": "#757589" },
+    "CaseStudyCard": [
+      {
+        "Image": {
+          "filename": "https://a-us.storyblok.com/f/1016184/660x667/7346a70c55/redsbaby2.jpg",
+          "alt": "Case Study 1"
+        },
+        "Tags": ["Prismic & Nextjs"],
+        "Heading": "Rush Order Tees ",
+        "Description": "Rush Order Tees is a custom apparel company and due to their tech-savvy ideologies, we suggested a Headless Commerce website using Prismic, Dynamo DB, and Nextjs. Prismic's headless CMS enabled effortless content management, while Jamstack's speed and security optimized user experience. The new site boasted quick load times, resulting in quick checkout flow which resulted in a boost in conversions within a few months. ",
+        "Button": [
+          { "Label": "Read Case study", "Link": "/casestudies" }
+        ],
+        "ShowCaseStudyStatistics":true,
+        "CaseStudyStatistics": [
+          { "Counter": 120, "CounterType": "+", "CounterTitle": "Clients" },
+          { "Counter": 95, "CounterType": "%", "CounterTitle": "Satisfaction" }
+        ]
+      },
+      {
+        "Image": {
+          "filename": "https://a-us.storyblok.com/f/1016184/600x600/6e39e3370b/redsbaby.jpg",
+          "alt": "Case Study 2"
+        },
+        "Tags": ["Marketing"],
+        "Heading": "Redsbaby",
+        "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
+        "Button": [
+          { "Label": "Read Case study", "Link": "/casestudies" }
+        ],
+        "ShowCaseStudyStatistics":true,
+        "CaseStudyStatistics": [
+          { "Counter": 85, "CounterType": "+", "CounterTitle": "Projects" },
+          { "Counter": 99, "CounterType": "%", "CounterTitle": "Success Rate" }
+        ]
+      },
+      {
+        "Image": {
+          "filename": "https://a-us.storyblok.com/f/1016184/600x600/6e39e3370b/redsbaby.jpg",
+          "alt": "Case Study 3"
+        },
+        "Tags": ["Digital Marketing"],
+        "Heading": "Redsbaby",
+        "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
+        "Button": [
+          { "Label": "Read Case study", "Link": "/casestudies" }
+        ],
+        "ShowCaseStudyStatistics":true,
+        "CaseStudyStatistics": [
+          { "Counter": 85, "CounterType": "+", "CounterTitle": "Projects" },
+          { "Counter": 99, "CounterType": "%", "CounterTitle": "Success Rate" }
+        ]
+      },
+      {
+        "Image": {
+          "filename": "https://a-us.storyblok.com/f/1016184/600x600/6e39e3370b/redsbaby.jpg",
+          "alt": "Case Study 4"
+        },
+        "Tags": ["Digital Marketing"],
+        "Heading": "Redsbaby",
+        "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
+        "Button": [
+          { "Label": "Read Case study", "Link": "/casestudies" }
+        ],
+        "ShowCaseStudyStatistics":false,
+        "CaseStudyStatistics": [
+          { "Counter": 85, "CounterType": "+", "CounterTitle": "Projects" },
+          { "Counter": 99, "CounterType": "%", "CounterTitle": "Success Rate" }
+        ]
+      }
+    ]
+  }
+  

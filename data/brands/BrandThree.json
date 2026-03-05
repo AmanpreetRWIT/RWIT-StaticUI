@@ -1,0 +1,105 @@
+{
+  "bgColor": "#f9f9f9",
+  "revertColumn": false,
+  "title": "Our Clients",
+  "subtitle": "Helping clients since 2012",
+  "description": "RW Infotech is a founder-led digital agency, originally established in India. Over the years, we’ve expanded our operations across Dubai, the USA, and Australia. Today, our primary operations are based in Dubai UAE, serving clients across the globe with innovative, scalable solutions.",
+  "titleColor": "#000248",
+  "descriptionColor": "#757589",
+  "logos": [
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/300x212/c02c23c595/ssd.svg",
+      "alt": "Brand 1",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/667x433/82bccd9495/mountain-tacticle.svg",
+      "alt": "Brand 2",
+      "grayscale": true
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/115x37/42d462c708/diller.svg",
+      "alt": "Brand 3",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/215x141/fd9b957657/tilyo.svg",
+      "alt": "Brand 4",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/115x36/362db42cbf/carbon_collective_logo-dark.svg",
+      "alt": "Brand 5",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/167x40/cf679a2920/carbmee-dark.svg",
+      "alt": "Brand 6",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/220x34/9c6243368b/container.png",
+      "alt": "Brand 7",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/88x22/d18b658c92/hohme.svg",
+      "alt": "Brand 8",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/119x28/d59e4a9a5e/redsbaby.svg",
+      "alt": "Brand 9",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/300x120/ac248451a7/rushordertees-dark.svg",
+      "alt": "Brand 10",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/c14894d9df/semine.svg",
+      "alt": "Brand 11",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/116x63/d011f35a32/unifon.svg",
+      "alt": "Brand 12",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/110x110/db0ccd5580/meta-signals-logo-black.svg",
+      "alt": "Brand 13",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/221x91/8d63e8307a/link.png",
+      "alt": "Brand 14",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/220x78/3a045cb8d3/header-logo-b746c28b-1.png",
+      "alt": "Brand 15",
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/220x68/7c10b5240f/frame-2.png",
+      "alt": "Brand 16",
+      "grayscale": false
+    }
+  ],
+  "clients": [
+    {
+      "src": "/images/client1.png",
+      "alt": "Client 1"
+    },
+    {
+      "src": "/images/client2.png",
+      "alt": "Client 2"
+    },
+    {
+      "src": "/images/client3.png",
+      "alt": "Client 3"
+    }
+  ]
+}

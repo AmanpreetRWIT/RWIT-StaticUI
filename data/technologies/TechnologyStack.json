@@ -1,0 +1,211 @@
+{
+  "title": "Our Technology Stack",
+  "tags": "Technologies",
+  "description": " ",
+  "bgColor": "#f9f9f9",
+  "titleColor": "#000248",
+  "descriptionColor": "#555555",
+  "hideBorder": false,
+  "clients": [
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Builder io",
+      "link": "https://clientone.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client One Logo",
+      "linkTextClass": "highlight"
+    },
+    {
+      "name": "Sanity",
+      "link": "https://clienttwo.com",
+      "target": "_blank",
+      "image": "/images/sanity-1.svg",
+      "grayscale": true,
+      "alt": "Client Two Logo",
+      "linkTextClass": ""
+    },
+    {
+      "name": "Client Three",
+      "image": "/images/sanity-1.svg",
+      "grayscale": false,
+      "alt": "Client Three Logo",
+      "linkTextClass": ""
+    }
+  ]
+}

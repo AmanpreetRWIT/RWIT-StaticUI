@@ -1,0 +1,51 @@
+{
+  "title": "Welcome to Our Services",
+  "heading": "Book Your Discovery Call Today",
+  "description": "Connect with our experts and explore solutions tailored to your business needs.",
+  "bgColor": "#F5F5F5",
+  "gradientStyle": "theme-gradient-3",
+  "removeExtraPadding": false,
+  "buttons": {
+    "label": "Book a Discovery Call",
+    "href": "https://calendly.com/jimmynarula/introductory-meeting",
+    "target": "_blank"
+  },
+  "contactForms": [
+    {
+      "formTitle": "Request a Callback",
+      "formType": "default-form",
+      "submitButton": "Submit",
+      "submitButtonClass": "btn-primary",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email Address",
+          "placeholder": "Enter your email",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "type": "text",
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number",
+          "required": false
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "label": "Message",
+          "placeholder": "Write your message",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

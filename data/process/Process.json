@@ -1,0 +1,40 @@
+{
+  "Title": "Process Component",
+  "Tags": ["Process Component"],
+  "BGColor": { "color": "#ffffff" },
+  "TitleColor": { "color": "" },
+  "Description": "Process Component Process Component",
+  "DescriptionColor": { "color": "" },
+  "ProcessCard": [
+    {
+      "Tags": ["Process Card"],
+      "Index": "",
+      "Heading": "Process Card",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      }
+    },
+    {
+      "Tags": ["Process Card"],
+      "Index": "",
+      "Heading": "Process Card",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      }
+    },
+    {
+      "Tags": ["Process Card"],
+      "Index": "",
+      "Heading": "Process Card",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Image": {
+        "filename": "https://a-us.storyblok.com/f/1016184/688x552/795f107131/ori-logo.png",
+        "alt": "Ori Logo"
+      }
+    }
+  ]
+}

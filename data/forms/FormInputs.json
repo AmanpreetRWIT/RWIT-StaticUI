@@ -1,0 +1,54 @@
+{
+  "TextInput": {
+    "type": "text",
+    "name": "firstname",
+    "label": "First Name",
+    "required": true,
+    "Required": true,
+    "CssClass": "form-control"
+  },
+  "EmailInput": {
+    "type": "email",
+    "name": "email",
+    "label": "Email Address",
+    "required": true,
+    "Required": true,
+    "CssClass": "form-control"
+  },
+  "PhoneInput": {
+    "type": "tel",
+    "name": "phone",
+    "label": "Phone Number",
+    "required": true,
+    "Required": true,
+    "CssClass": "form-control"
+  },
+  "TextareaInput": {
+    "type": "textarea",
+    "name": "message",
+    "label": "Your Message",
+    "required": false,
+    "CssClass": "form-control"
+  },
+  "SelectInput": {
+    "type": "select",
+    "name": "country",
+    "label": "Select Country",
+    "required": true,
+    "CssClass": "form-control",
+    "options": [
+      { "Value": "USA" },
+      { "Value": "Canada" },
+      { "Value": "India", "Default": true },
+      { "Value": "UK" }
+    ]
+  },
+  "FileInput": {
+    "type": "file",
+    "name": "resume",
+    "label": "Upload Resume",
+    "required": true,
+    "Required": true,
+    "CssClass": "file-input"
+  }
+}

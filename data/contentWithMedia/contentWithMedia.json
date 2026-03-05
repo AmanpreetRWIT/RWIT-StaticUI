@@ -1,0 +1,33 @@
+{
+  "layoutType": "flex-row",
+  "gradientStyle": "theme-gradient-2",
+  "bgColor": "#F8F9FA",
+  "disableBgShape": false,
+  "image": {
+    "filename": "https://a-us.storyblok.com/f/1016184/62x62/673e7f61e5/sanity-1.svg",
+    "alt": "Sample image"
+  },
+  "video": {
+    "filename": ""
+  },
+  "tags": [
+    { "name": "Design" },
+    { "name": "Development" }
+  ],
+  "title": "Beautifully Crafted UI Section",
+  "titleColor": "#222222",
+  "description": "This section showcases how media and content blend seamlessly in a responsive layout.",
+  "descriptionColor": "#555555",
+  "buttons": [
+    {
+      "text": "Learn More",
+      "href": "#",
+      "style": "btn-primary"
+    },
+    {
+      "text": "Contact Us",
+      "href": "#",
+      "style": "btn-outline"
+    }
+  ]
+}

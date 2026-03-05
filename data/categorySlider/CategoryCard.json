@@ -1,0 +1,27 @@
+{
+  "id": 475992,
+  "slug": "custom-cms-development",
+  "created_at": "2023-10-25T06:02:24.287Z",
+  "published_at": "2025-01-29T05:13:03.136Z",
+  "first_published_at": "2024-02-06T07:32:38.958Z",
+  "content": {
+    "Title": "What Is Custom CMS Development?",
+    "Excerpt": "A custom CMS is likely to be a method reputable for the purpose of generating dynamic websites.",
+    "ArticleDate": "",
+    "img":"/images/jaswinder-s.webp",
+    "Author": "Jaswinder Singh",
+    "FeaturedImage": {
+      "filename": "https://a-us.storyblok.com/f/1016184/585x330/4c2bd5f071/whatiscustomcmsdevelopment.png",
+      "alt": "sanity web development"
+    },
+    "ReadTime": "5",
+    "IsFeatured": false,
+    "Categories": [
+      { "name": "Headless CMS", "slug": "headless-cms" },
+      { "name": "Backend", "slug": "backend" },
+      { "name": "Frontend", "slug": "frontend" },
+      { "name": "React JS", "slug": "react-js" },
+      { "name": "web development", "slug": "web-development" }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+/*------------------------
+    Brand Styles 
+-------------------------*/
+
+.axil-brand-logo-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media #{$sm-layout} {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media #{$md-layout} {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#brand__container {
+  @media #{$small-mobile} {
+    padding-inline: 0;
+
+    .brand {
+      &__wrap {
+        margin-inline: 0px;
+
+        > div {
+          padding-inline: 0px;
+        }
+      }
+
+      &__grid {
+        margin-top: 1.25rem !important;
+      }
+    }
+
+    .section-title {
+      padding-inline: 1.25rem;
+    }
+  }
+}
+
+.brand-list {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+
+  @media #{$large-mobile} {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media #{$small-mobile} {
+    display: flex;
+    overflow-x: auto;
+    gap: 0px;
+    padding-inline-start: 1.25rem;
+    margin-bottom: 0.75rem;
+
+    & li {
+      margin: auto;
+    }
+  }
+
+  li {
+    a {
+      text-align: center;
+      @extend %transition;
+
+      > span {
+        overflow: visible !important;
+      }
+
+      img {
+        @extend %transition;
+        height: 110px !important;
+        max-width: 110px !important;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+
+    span {
+      text-align: center;
+      @extend %transition;
+
+      > span {
+        overflow: visible !important;
+      }
+
+      img {
+        @extend %transition;
+        height: 110px !important;
+        max-width: 110px !important;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+
+        @media #{$small-mobile} {
+          height: none;
+          max-width: none;
+          aspect-ratio: auto;
+        }
+      }
+    }
+
+    img {
+      @extend %transition;
+      height: 110px !important;
+      max-width: 110px !important;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+
+      @media #{$small-mobile} {
+        max-height: none;
+        max-width: none;
+        aspect-ratio: auto;
+      }
+    }
+  }
+}
+
+.bg-color-white {
+  .brand-list {
+    &::before {
+      background: #f6f5fa;
+
+      @media #{$large-mobile} {
+        display: none;
+      }
+    }
+
+    li {
+      a {
+        > span {
+          overflow: visible !important;
+        }
+
+        @media #{$large-mobile} {
+          border: 0 none;
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          border-color: transparent;
+        }
+      }
+
+      &:last-child {
+        a {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.client-list.slick-initialized .slick-slide {
+  margin-bottom: 0;
+}
+
+/*-------------------------
+Client List  
+--------------------------*/
+ul {
+  &.client-list {
+    position: relative;
+    z-index: 2;
+
+    .slick-slide {
+      margin-bottom: 0;
+      text-align: center;
+
+      div {
+        display: block;
+
+        > span {
+          display: block !important;
+        }
+
+        img {
+          width: auto !important;
+          min-width: initial !important;
+          max-height: 40px !important;
+
+          @media #{$sm-layout} {
+            width: auto;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.axil-bg-oval {
+  position: relative;
+  z-index: 2;
+  padding-top: 110px;
+  margin-top: -110px;
+  background-color: transparent;
+
+  .bg-shape-container {
+    .light,
+    .dark {
+      > span {
+        z-index: -1;
+      }
+    }
+
+    .dark {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .bg-shape-container {
+      .light,
+      .dark {
+        > span {
+          width: 150vw !important;
+          left: 50% !important;
+          transform: translateX(-50%) !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 70px;
+    margin-top: -150px;
+    background-size: contain;
+  }
+}

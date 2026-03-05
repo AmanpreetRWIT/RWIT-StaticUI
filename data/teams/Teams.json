@@ -1,0 +1,65 @@
+{
+  "BGColor": { "color": "#f8f9fa" },
+  "centeredTitle": false,
+  "showTags":false,
+  "Tag": [
+    {
+      "TagName": "Our Team",
+      "Link": "#",
+      "style": "primary"
+    }
+  ],
+  "Title": "Meet our leadership team",
+  "TitleColor": { "color": "#000248" },
+  "Description": "Our talented team of designers, developers, and strategists are here to help you grow.",
+  "DescriptionColor": { "color": "#555555" },
+  "TeamCardTextColor": { "color": "#1d1d1d" },
+  "RemoveCardBorder": false,
+  "RemoveCardAnimation": false,
+  "Team": [
+    {
+      "name": "Jaswinder Singh",
+      "role": "CEO & Founder",
+      "image": "/images/jaswinder-s.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/jane-smith",
+        "twitter": "https://twitter.com/janesmith"
+      }
+    },
+    {
+      "name": "Anupama",
+      "role": "Co-Founder",
+      "image": "/images/anupama_sharma.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/john-doe",
+        "github": "https://github.com/johndoe"
+      }
+    },
+    {
+      "name": "Srishti Suryavanshi",
+      "role": "HR Manager",
+      "image": "/images/srishtisuryavanshi.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/emily-davis"
+      }
+    },
+    {
+      "name": "Suraj Kumar",
+      "role": "Frontend Lead",
+      "image": "/images/surajkumar.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/michael-lee",
+        "dribbble": "https://dribbble.com/michaellee"
+      }
+    },
+    {
+      "name": "Renuka Negi",
+      "role": "Team Lead",
+      "image": "/images/renuka-negi.webp",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/michael-lee",
+        "dribbble": "https://dribbble.com/michaellee"
+      }
+    }
+  ]
+}

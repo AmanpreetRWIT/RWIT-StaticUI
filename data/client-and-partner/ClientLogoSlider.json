@@ -1,0 +1,45 @@
+{
+    "Title": "Helping clients since 2012",
+    "Tags": "Our Clients",
+    "Description": "RW Infotech is a founder-led digital agency, originally established in India. Over the years, we’ve expanded our operations across Dubai, USA, and Australia. Today, our primary operations are based in Dubai, serving clients across the globe with innovative, scalable solutions.",
+    "BGColor": { "color": "#f9f9f9" },
+    "TitleColor": { "color": "#000248" },
+    "DescriptionColor": { "color": "#757589" },
+    "FreeMode": true,
+    "Autoplay": true,
+    "Loop": true,
+    "SliderDelay": 2500,
+    "Logos": [
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/5529c01fbb/list-item-link-4.png", "alt": "Client 1" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/221x91/8d63e8307a/link.png", "alt": "Client 2" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/fb900a6fb3/list-item-link.png", "alt": "Client 3" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/20902848ba/list-item-link-3.png", "alt": "Client 4" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/89x110/f0806ef664/list-item-link.png", "alt": "Client 5" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/5529c01fbb/list-item-link-4.png", "alt": "Client 1" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/221x91/8d63e8307a/link.png", "alt": "Client 2" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/fb900a6fb3/list-item-link.png", "alt": "Client 3" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/110x110/20902848ba/list-item-link-3.png", "alt": "Client 4" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/89x110/f0806ef664/list-item-link.png", "alt": "Client 5" }
+      }
+    ]
+  }
+  

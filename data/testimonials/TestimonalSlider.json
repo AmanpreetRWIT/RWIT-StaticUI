@@ -1,0 +1,36 @@
+{
+  "BGColor": "#F8F9FA",
+  "Heading": "What Our Clients Say",
+  "HeadingColor": "rgb(0, 2, 72)",
+  "Description": "We value our clients’ feedback and experiences.",
+  "DescriptionColor": "#555555",
+  "TextAlignment": "center",
+  "Tags": ["Trusted", "Professional"],
+  "TestimonialCardColor": "#ffffff",
+  "TestimonialCardShadow": true,
+  "TestimonialCard": [
+    {
+      "Name": "John Doe",
+      "Designation": "CEO, Example Co",
+      "ProfileImage": "https://a-us.storyblok.com/f/1016184/800x800/b10a5089da/fredrik-kristiansen.jpeg",
+      "Description": "This company exceeded our expectations with its excellent service and attention to detail.",
+      "SelectStars": 5
+    },
+    {
+      "Name": "Jane Smith",
+      "Designation": "Marketing Head, BrandX",
+      "ProfileImage": "/images/client2.jpg",
+      "Description": "Highly professional and timely delivery. We loved working with them.",
+      "SelectStars": 4
+    }
+  ],
+  "SelectClients": [
+    {
+      "FirstName": "Alice Brown",
+      "ContactPosition": "Project Manager, Startup Y",
+      "ClientImage": "/images/client3.jpg",
+      "Testimonial": "Great collaboration and quality work throughout our project.",
+      "SelectRatingStars": 5
+    }
+  ]
+}

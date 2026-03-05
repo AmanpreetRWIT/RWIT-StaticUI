@@ -1,0 +1,79 @@
+{
+  "Title": "News & Insights",
+  "Description": "We like to share our thoughts on topics we find inspiring. Explore our news and insights.",
+  "Tags": [
+    "Latest Stories"
+  ],
+  "TitleColor": "#000248",
+  "DescriptionColor": "#757589",
+  "BGColor": "#F8F9FA",
+  "ShowSearchField": false,
+  "ShowSectionTitle":true,
+  "stories": [
+    {
+      "slug": "building-scalable-nextjs-apps",
+      "created_at": "2025-10-01T10:00:00Z",
+      "content": {
+        "Title": "Building Scalable Next.js Apps",
+        "Excerpt": "Learn how to structure and scale your Next.js applications for large projects.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/3248x1680/6041b7fd6c/how-does-a-properly-designed-headless-architecture-simplify-maintenance-and-reduce-costs_.webp",
+          "alt": "Next.js scalability guide"
+        },
+        "ThumbnailImage": {
+          "filename": "/images/blog/nextjs-scale-thumb.jpg",
+          "alt": "Next.js scalability thumbnail"
+        }
+      }
+    },
+    {
+      "slug": "mastering-headless-cms-integration",
+      "created_at": "2025-09-20T12:00:00Z",
+      "content": {
+        "Title": "Mastering Headless CMS Integration",
+        "Excerpt": "A complete guide to integrating Sanity, Storyblok, and other headless CMS tools with React and Next.js.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/ca671c3cb5/how-can-headless-website-maintenance-prevent-website-failures-small.webp",
+          "alt": "Headless CMS integration"
+        },
+        "ThumbnailImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/ca671c3cb5/how-can-headless-website-maintenance-prevent-website-failures-small.webp",
+          "alt": "CMS thumbnail"
+        }
+      }
+    },
+    {
+      "slug": "optimizing-nextjs-performance",
+      "created_at": "2025-09-10T08:00:00Z",
+      "content": {
+        "Title": "Optimizing Next.js Performance",
+        "Excerpt": "Boost performance in your Next.js applications using best practices and built-in optimizations.",
+        "FeaturedImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/8e750b67ec/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know-small.webp",
+          "alt": "Performance tips"
+        },
+        "ThumbnailImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/960x726/8e750b67ec/breaking-the-myths-around-headless-cms_-what-businesses-really-need-to-know-small.webp",
+          "alt": "Performance thumbnail"
+        }
+      }
+    }
+  ],
+  "Buttons": [
+    {
+      "Label": "View All",
+      "Link": {
+        "url": "/blog",
+        "target": "_self"
+      },
+      "ButtonColor": "btn-primary",
+      "ButtonSize": "btn-large",
+      "HideArrow": false,
+      "HideButtonLogo": false,
+      "ButtonLogo": {
+        "alt": "Arrow Icon"
+      },
+      "Class": "custom-btn"
+    }
+  ]
+}

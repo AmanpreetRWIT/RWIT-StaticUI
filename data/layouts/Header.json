@@ -1,0 +1,295 @@
+{
+  "style": "four",
+  "Logo": "https://a-us.storyblok.com/f/1016184/300x157/4d7b1ba280/rwit-logo.svg",
+  "LogoAlt": "Company Logo",
+  "CompanyName": "RW INFOTECH",
+  "Tagline": "A Headless commerce agency",
+  "DescriptionColor": "#757589",
+  "activeIcon": "https://a-us.storyblok.com/f/1016184/64x64/149a6e176c/global.svg",
+  "headerMenus": {
+    "Menus": [
+      {
+        "MenuLabel": "Home",
+        "MenuLink": { "url": "/" },
+        "MegaMenu": []
+      },
+      {
+        "MenuLabel": "About",
+        "MenuLink": { "url": "/about" },
+        "MegaMenu": []
+      },
+      {
+        "MenuLabel": "Case Studies",
+        "MenuLink": { "url": "/casestudies" },
+        "MegaMenu": []
+      },
+      {
+        "MenuLabel": "Industries",
+        "MenuLink": { "url": "" },
+        "MegaMenu": [
+          {
+            "Title": "Industry Expertise",
+            "Description": "We design and develop custom apps and websites that support various industries in solving challenges, improving efficiency, and accelerating growth.",
+            "ChildMenusTitle": "Industries",
+            "ChildMenus": [
+              {
+                "MenuLabel": "Healthcare",
+                "MenuLink": { "url": "/industries/healthcare" }
+              },
+              {
+                "MenuLabel": "Fintech",
+                "MenuLink": { "url": "/industries/fintech" }
+              },
+              {
+                "MenuLabel": "E-commerce",
+                "MenuLink": { "url": "/industries/e-commerce" }
+              },
+              {
+                "MenuLabel": "Real Estate",
+                "MenuLink": { "url": "/industries/real-estate" }
+              },
+              {
+                "MenuLabel": "Travel & Hospitality",
+                "MenuLink": { "url": "/industries/travel-hospitality" }
+              }
+            ],
+            "LinkText": "",
+            "Link": { "url": "/technologies" }
+          }
+        ]
+      },
+      {
+        "MenuLabel": "Services",
+        "MenuLink": { "url": "" },
+        "MegaMenu": [
+          {
+            "Title": "What we offer",
+            "Description": "Whether you need a blazing-fast e-commerce platform, a dynamic content site, or a custom web application, we deliver tailored solutions that meet your unique needs.",
+            "ChildMenusTitle": "AI Services",
+            "ChildMenus": [
+              {
+                "MenuLabel": "AI Agents Development",
+                "MenuLink": { "url": "/services/ai-agents-development" }
+              },
+              {
+                "MenuLabel": "Generative AI Development",
+                "MenuLink": { "url": "/services/generative-ai-development" }
+              },
+              {
+                "MenuLabel": "N8N Automation",
+                "MenuLink": { "url": "/services/n8n-automation" }
+              },
+              {
+                "MenuLabel": "Headless CMS Migration",
+                "MenuLink": { "url": "/services/headless-cms-migration" }
+              }
+            ],
+            "ChildMenus2Title": "Marketing",
+            "ChildMenus2": [
+              {
+                "MenuLabel": "Digital Marketing",
+                "MenuLink": { "url": "/services/digital-marketing" }
+              },
+              {
+                "MenuLabel": "Growth Marketing",
+                "MenuLink": { "url": "/services/growth-marketing" }
+              },
+              {
+                "MenuLabel": "Headless Seo",
+                "MenuLink": { "url": "/services/headless-seo" }
+              },
+              {
+                "MenuLabel": "Headless Website Maintenance",
+                "MenuLink": { "url": "/services/headless-website-maintenance" }
+              }
+            ],
+            "ChildMenus3Title": "Web Services",
+            "ChildMenus3": [
+              {
+                "MenuLabel": "Web Development",
+                "MenuLink": { "url": "/services/web-development" }
+              },
+              {
+                "MenuLabel": "Web Design",
+                "MenuLink": { "url": "/services/web-design" }
+              },
+              {
+                "MenuLabel": "Headless Commerce",
+                "MenuLink": { "url": "/services/headless-commerce" }
+              },
+              {
+                "MenuLabel": "Headless CMS",
+                "MenuLink": { "url": "/services/headless-cms" }
+              },
+              {
+                "MenuLabel": "WordPress Development",
+                "MenuLink": { "url": "/services/wordpress-development" }
+              },
+              {
+                "MenuLabel": "Mobile Development",
+                "MenuLink": { "url": "/services/mobile-development" }
+              }
+            ],
+            "ChildMenus4Title": "Full Stack",
+            "ChildMenus4": [
+              {
+                "MenuLabel": "Web App Development",
+                "MenuLink": { "url": "/services/web-app-development" }
+              },
+              {
+                "MenuLabel": "REST API Development",
+                "MenuLink": { "url": "/services/rest-api-development" }
+              },
+              {
+                "MenuLabel": "WHMCS Development",
+                "MenuLink": { "url": "/services/whmcs-development" }
+              }
+            ],
+            "LinkText": "All Services",
+            "Link": { "url": "/services" }
+          }
+        ]
+      },
+      {
+        "MenuLabel": "Technologies",
+        "MenuLink": { "url": "" },
+        "MegaMenu": [
+          {
+            "Title": "Tech Stack",
+            "Description": "Partner with our skilled IT professionals to develop exceptional custom software using a diverse range of frameworks.",
+            "ChildMenusTitle": "Headless CMS",
+            "ChildMenus": [
+              {
+                "MenuLabel": "Builder.io",
+                "MenuLink": { "url": "/tech-stack/builder-io" }
+              },
+              {
+                "MenuLabel": "Strapi",
+                "MenuLink": { "url": "/tech-stack/strapi" }
+              },
+              {
+                "MenuLabel": "Sanity",
+                "MenuLink": { "url": "/tech-stack/sanity" }
+              },
+              {
+                "MenuLabel": "Prismic",
+                "MenuLink": { "url": "/tech-stack/prismic" }
+              },
+              {
+                "MenuLabel": "Storyblok",
+                "MenuLink": { "url": "/tech-stack/storyblok" }
+              },
+              {
+                "MenuLabel": "Contentful",
+                "MenuLink": { "url": "/tech-stack/contentful" }
+              },
+              {
+                "MenuLabel": "Directus",
+                "MenuLink": { "url": "/tech-stack/directus" }
+              }
+            ],
+            "ChildMenus2Title": "Headless Commerce",
+            "ChildMenus2": [
+              {
+                "MenuLabel": "Swell",
+                "MenuLink": { "url": "/tech-stack/swell" }
+              },
+              {
+                "MenuLabel": "Medusa.js",
+                "MenuLink": { "url": "/tech-stack/medusajs" }
+              },
+              {
+                "MenuLabel": "Bigcommerce",
+                "MenuLink": { "url": "/tech-stack/bigcommerce" }
+              },
+              {
+                "MenuLabel": "Shopify Plus",
+                "MenuLink": { "url": "/tech-stack/shopify-plus" }
+              },
+              {
+                "MenuLabel": "dotCMS",
+                "MenuLink": { "url": "/tech-stack/dotcms" }
+              },
+              {
+                "MenuLabel": "Saleor",
+                "MenuLink": { "url": "/tech-stack/saleor" }
+              }
+            ],
+            "ChildMenus3Title": "Frontend",
+            "ChildMenus3": [
+              {
+                "MenuLabel": "React",
+                "MenuLink": { "url": "/tech-stack/react" }
+              },
+              {
+                "MenuLabel": "Next.js",
+                "MenuLink": { "url": "/tech-stack/nextjs" }
+              },
+              {
+                "MenuLabel": "Typescript",
+                "MenuLink": { "url": "/tech-stack/typescript" }
+              },
+              {
+                "MenuLabel": "Nuxt.js",
+                "MenuLink": { "url": "/tech-stack/nuxtjs" }
+              },
+              {
+                "MenuLabel": "Vue.js",
+                "MenuLink": { "url": "/tech-stack/vuejs" }
+              },
+              {
+                "MenuLabel": "Gatsby",
+                "MenuLink": { "url": "/tech-stack/gatsby" }
+              }
+            ],
+            "ChildMenus4Title": "Backend",
+            "ChildMenus4": [
+              {
+                "MenuLabel": "Nest.js",
+                "MenuLink": { "url": "/tech-stack/nestjs" }
+              },
+              {
+                "MenuLabel": "Node.js",
+                "MenuLink": { "url": "/tech-stack/nodejs" }
+              },
+              {
+                "MenuLabel": "ButterCMS",
+                "MenuLink": { "url": "/tech-stack/buttercms" }
+              },
+              {
+                "MenuLabel": "Ghost CMS",
+                "MenuLink": { "url": "/tech-stack/ghost-cms" }
+              },
+              {
+                "MenuLabel": "Payload",
+                "MenuLink": { "url": "/tech-stack/payload" }
+              }
+            ],
+            "LinkText": "",
+            "Link": { "url": "/technologies" }
+          }
+        ]
+      },
+      {
+        "MenuLabel": "Insights",
+        "MenuLink": { "url": "/blog-by-category" },
+        "MegaMenu": []
+      }
+    ],
+    "Buttons": [
+      { "Label": "Contact", "Link": "/contact", "className": "btn btn-primary" }
+    ]
+  },
+  "NavTitle": "Select Your Region",
+  "NavSubTitle": "Region-Based Optimized Content",
+  "NavMenu": [
+    {
+      "text": "Global",
+      "image": "https://a-us.storyblok.com/f/1016184/64x64/149a6e176c/global.svg"
+    },
+    {
+      "text": "USA",
+      "image": "https://a-us.storyblok.com/f/1016184/64x64/9df9af98dc/usa.svg"
+    }
+  ]
+}

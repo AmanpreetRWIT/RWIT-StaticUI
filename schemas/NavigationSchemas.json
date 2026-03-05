@@ -1,0 +1,62 @@
+{
+  "@context": "http://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "SiteNavigationElement",
+      "position": "1",
+      "name": "Home",
+      "description": "RW Infotech is a Dubai-based agency offering custom web development, headless CMS integration, and scalable digital solutions across the UAE. Trusted for innovation and reliability.",
+      "url": "https://www.rwit.io/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "2",
+      "name": "About",
+      "description": "Learn about RW Infotech—delivering top-notch web solutions and headless CMS services for over a decade. Trusted by clients in Dubai, UAE and worldwide.",
+      "url": "https://www.rwit.io/about"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "3",
+      "name": "Case Studies",
+      "description": "Explore RW Infotech’s portfolio of achievements—real-world case studies that highlight our commitment to delivering high-quality web and headless CMS solutions.",
+      "url": "https://www.rwit.io/casestudies"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "4",
+      "name": "Industries",
+      "description": "RW Infotech is a Dubai-based agency offering custom web development, headless CMS integration, and scalable digital solutions across the UAE. Trusted for innovation and reliability.",
+      "url": "https://www.rwit.io/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "5",
+      "name": "Services",
+      "description": "Boost your online presence with expert headless CMS, web, and app development Agency in Dubai, UAE. We also offer digital marketing and cloud-based solutions with quality assurance.",
+      "url": "https://www.rwit.io/services"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "6",
+      "name": "Technologies",
+      "description": "RW Infotech is a Dubai-based agency offering custom web development, headless CMS integration, and scalable digital solutions across the UAE. Trusted for innovation and reliability.",
+      "url": "https://www.rwit.io/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "7",
+      "name": "Insights",
+      "description": "Dive into our latest blogs on Headless CMS, Digital Marketing, Mobile App, and more. Get the latest tips and trends from RW Infotech to stay ahead.",
+      "url": "https://www.rwit.io/blog-by-category"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": "8",
+      "name": "Contact",
+      "description": "Get in touch with RW Infotech in Dubai, UAE for expert headless CMS, web, and app development services. Start your project today or ask us anything you need!",
+      "url": "https://www.rwit.io/contact"
+    }
+  ]
+}

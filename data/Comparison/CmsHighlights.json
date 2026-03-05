@@ -1,0 +1,38 @@
+{
+    "Title": "Prismic VS Strapi",
+    "Tags": "Highlights",
+    "Description": "Explore the differences between Prismic VS Strapi to determine which CMS suits your project best. Compare features, ease of use, flexibility, and integration capabilities. Make an informed decision to enhance your content management workflow.",
+    "BgColor": "#f9f9f9",
+    "TitleColor": "#000248",
+    "DescriptionColor": "#757589",
+    "ApplyCardWithImage": true,
+    "ApplyBorder": true,
+    "BorderColor": "#cccccc",
+    "CmsOne": {
+      "CmsName": "Prismic",
+      "CmsLogo": "https://a-us.storyblok.com/f/1016184/151x150/f120ed0df8/prismic.svg",
+      "Highlights": [
+        { "Feature": "Pricing Starting from $7/month" },
+        { "Feature": "25 users limited" },
+        { "Feature": "Founded in 2013, San Francisco" },
+        { "Feature": "Pricing Starting from $7/month" },
+        { "Feature": "25 users limited" },
+        { "Feature": "Founded in 2013, San Francisco" } 
+      ]
+    },
+    "CmsTwo": {
+      "CmsName": "CMS Two",
+      "CmsLogo": "https://a-us.storyblok.com/f/1016184/151x150/5796617f80/strapiog.svg",
+      "Highlights": [
+        { "Feature": "Pricing Starting from $15/month" },
+        { "Feature": "custom users" },
+        { "Feature": "Founded in 2016, Paris" },
+        { "Feature": "Pricing Starting from $15/month" },
+        { "Feature": "custom users" },
+        { "Feature": "Founded in 2016, Paris" }
+      ]
+    },
+    "CmsOneImage": "https://a-us.storyblok.com/f/1016184/528x345/3d68f03449/prismic.svg",
+    "CmsTwoImage": "https://a-us.storyblok.com/f/1016184/540x372/d3586463d3/strapi.svg"
+  }
+  

@@ -1,0 +1,139 @@
+{
+  "footerData": {
+    "TextColor": "text-white",
+    "BGColor": "#000127",
+    "StickyFooter": true,
+    "FooterLayout": "footer-layout-2",
+    "AddressHeading": "Find us",
+    "FooterLinkTagColor":"rgb(199, 199, 214)",
+    "Address": [
+      {
+        "AddressHeading": "India",
+        "FullAddress": "First Floor, Plot No. D-186/B,\nPhase 8B, Mohali, India",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/b24faa656d/india.png",
+          "alt": "India Flag"
+        }
+      },
+      {
+        "AddressHeading": "UAE",
+        "FullAddress": "Office 210, Business Bay,\nDubai, United Arab Emirates",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/36011c7472/uae.png",
+          "alt": "UAE Flag"
+        }
+      },
+      {
+        "AddressHeading": "United States",
+        "FullAddress": "Suite 402, 123 Silicon Street,\nSan Francisco, CA 94103,\nUSA",
+        "PhoneNumber": [],
+        "FlagImage": {
+          "filename": "https://a-us.storyblok.com/f/1016184/50x32/0f3c4b2496/usa.png",
+          "alt": "United States Flag"
+        }
+      }
+    ],
+    "MoreAddressLink": [],
+    "FooterCloumn": [
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Company",
+        "Menu": [
+          { "Label": "Home", "Link": { "url": "/home" } },
+          { "Label": "About", "Link": { "url": "/about" } },
+          { "Label": "Services", "Link": { "url": "/services" } },
+          { "Label": "Career", "Link": { "url": "/career" } },
+          { "Label": "Insights", "Link": { "url": "/insights" } },
+          { "Label": "Contact", "Link": { "url": "/contact" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Case Studies",
+        "Menu": [
+          { "Label": "AirDNA", "Link": { "url": "/casestcaudies" } },
+          { "Label": "SSD Nodes", "Link": { "url": "/casestudies" } },
+          { "Label": "Rush Order Tees", "Link": { "url": "/casestudies" } },
+          { "Label": "Redsbaby", "Link": { "url": "/casestudies" } },
+          { "Label": "Tilyo", "Link": { "url": "/casestudies" } },
+          { "Label": "Carbmee", "Link": { "url": "/casestudies" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":false,
+        "ColumnHeading": "Services",
+        "Menu": [
+          { "Label": "Headless Commerce", "Link": { "url": "/services/headless-commerce" } },
+          { "Label": "Web Development", "Link": { "url": "/services/web-development" } },
+          { "Label": "AI Agents Development", "Link": { "url": "/services/ai-agents" } },
+          { "Label": "Generative AI Development", "Link": { "url": "/services/generative-ai" } },
+          { "Label": "Digital Marketing", "Link": { "url": "/services/digital-marketing" } },
+          { "Label": "WHMCS Development", "Link": { "url": "/services/whmcs-development" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":true,
+        "ColumnHeading": "Technologies",
+        "Menu": [
+          { "Label": "React.js", "Link": { "url": "/tech-stack/react" } },
+          { "Label": "Next.js", "Link": { "url": "/tech-stack/next" } },
+          { "Label": "Typescript", "Link": { "url": "/tech-stack/typescript" } },
+          { "Label": "Nuxt.js", "Link": { "url": "/tech-stack/nuxt" } },
+          { "Label": "Vue.js", "Link": { "url": "/tech-stack/vue" } },
+          { "Label": "Node.js", "Link": { "url": "/tech-stack/node" } }
+        ]
+      },
+      {
+        "ToggleTagLayout":true,
+        "ColumnHeading": "Industries",
+        "Menu": [
+          { "Label": "Healthcare", "Link": { "url": "/industries/healthcare" } },
+          { "Label": "Fintech", "Link": { "url": "/industries/fintech" } },
+          { "Label": "E-Commerce", "Link": { "url": "/industries/ecommerce" } },
+          { "Label": "Real Estate", "Link": { "url": "/industries/real-estate" } },
+          { "Label": "Travel & Hospitality", "Link": { "url": "/industries/travel-hospitality" } }
+        ]
+      }
+    ],
+    "PartnerLabel": "",
+    "Images": [
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x132/aefcb3303a/prismic-seeklogo-2.svg", "alt": "Prismic Logo" },
+        "ImageLink": { "url": "https://prismic.io/hire-a-developer/rw-infotech-private-limited" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/127x43/0d163c4dba/bc-logo-in-white.svg", "alt": "airCommerce Logo" },
+        "ImageLink": { "url": "https://partners.bigcommerce.com/directory/partner/2089927/rw-infotech" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x502/717a85543d/sanity-light.svg", "alt": "Sanity Logo" },
+        "ImageLink": { "url": "https://www.sanity.io/agency-partners/rw-infotech" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/2500x538/8ea82e0e30/storyblok-light.svg", "alt": "Storyblok Logo" },
+        "ImageLink": { "url": "https://www.storyblok.com/pl/rw-infotech" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/512x110/6cfa7d3249/builderio-light.svg", "alt": "builder.io Logo" },
+        "ImageLink": { "url": "https://www.rwit.io/technologies/builder" }
+      },
+      {
+        "Image": { "filename": "https://a-us.storyblok.com/f/1016184/300x77/aa78207e46/strapi-light.svg", "alt": "Strapi Logo" },
+        "ImageLink": { "url": "https://www.rwit.io/technologies/strapi" }
+      }
+    ],
+    "SocialIcons": [
+      { "Image": { "filename": "/images/facebook-icon.svg", "alt": "Facebook" }, "ImageLink": { "url": "https://facebook.com" } },
+      { "Image": { "filename": "/images/github-icon.svg", "alt": "LinkedIn" }, "ImageLink": { "url": "https://linkedin.com" } },
+      { "Image": { "filename": "/images/linkedin-icon.svg", "alt": "Twitter" }, "ImageLink": { "url": "https://twitter.com" } }
+    ],
+    "CopyrightText": "RW Infotech. All Rights Reserved.",
+    "CopyrightLinks": [
+      { "Label": "Privacy Policy", "Link": { "url": "/privacy-policy" }, "Target": "_blank" },
+      { "Label": "Terms of Use", "Link": { "url": "privacy-policy" }, "Target": "_blank" }
+    ]
+  },
+  "showCopyrightOnly": false
+}

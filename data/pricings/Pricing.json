@@ -1,0 +1,68 @@
+{
+    "BGColor": { "color": "#f9f9f9" },
+    "TextColor": { "color": "#222222" },
+    "DisableBgShape": false,
+    "PricingCard": [
+      {
+        "Title": "Starter Plan",
+        "SubTitle": "Best for small teams",
+        "Featured": false,
+        "DefaultPrice": "19",
+        "Price": {
+          "monthly": "19",
+          "yearly": "199"
+        },
+        "Button": [
+          { "label": "Get Started", "url": "#" }
+        ],
+        "ButtonNote": "No credit card required",
+        "Features": [
+          { "Feature": "5 Projects" },
+          { "Feature": "Basic Analytics" },
+          { "Feature": "Email Support" },
+          { "Feature": "Community Access" }
+        ]
+      },
+      {
+        "Title": "Professional Plan",
+        "SubTitle": "Ideal for growing businesses",
+        "Featured": true,
+        "DefaultPrice": "49",
+        "Price": {
+          "monthly": "49",
+          "yearly": "499"
+        },
+        "Button": [
+          { "label": "Upgrade Now", "url": "#" }
+        ],
+        "ButtonNote": "Most popular choice",
+        "Features": [
+          { "Feature": "Unlimited Projects" },
+          { "Feature": "Advanced Analytics" },
+          { "Feature": "Priority Email Support" },
+          { "Feature": "Team Collaboration" }
+        ]
+      },
+      {
+        "Title": "Enterprise Plan",
+        "SubTitle": "For large organizations",
+        "Featured": false,
+        "DefaultPrice": "99",
+        "Price": {
+          "monthly": "99",
+          "yearly": "999"
+        },
+        "Button": [
+          { "label": "Contact Sales", "url": "#" }
+        ],
+        "ButtonNote": "Custom solutions available",
+        "Features": [
+          { "Feature": "Dedicated Account Manager" },
+          { "Feature": "Custom Integrations" },
+          { "Feature": "24/7 Support" },
+          { "Feature": "Unlimited Users" }
+        ]
+      }
+    ]
+  }
+  

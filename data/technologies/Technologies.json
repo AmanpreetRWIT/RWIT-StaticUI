@@ -1,0 +1,250 @@
+{
+  "Title": "Our Technology Stack",
+  "BGColor": "",
+  "TitleColor": "",
+  "RowTitleColor": "",
+  "Tags": ["Our technology stack"],
+  "Technologies": [
+    {
+      "RowHeading": "Headless CMS",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg",
+            "alt": "storyblok headless cms",
+            "title": "Storyblok"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg",
+            "alt": "Strapi Development",
+            "title": "Strapi"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg",
+            "alt": "Prismic Development",
+            "title": "Prismic"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg",
+            "alt": "Sanity web development",
+            "title": "Sanity"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x61/406019815f/contentful_logo_vector-cropped-dark.svg",
+            "alt": "contentful cms",
+            "title": "Contentful"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg",
+            "alt": "builder.io cms",
+            "title": "Builder"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    },
+    {
+      "RowHeading": "Headless Commerce",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x61/6ad6318db0/shopifyplus-dark.svg",
+            "alt": "Headless shopify",
+            "title": "Shopify Plus"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/250x80/08817bb925/bigcommerce-dark.svg",
+            "alt": "bigcommerce development",
+            "title": "Bigcommerce"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x125/f7332b5b4e/swell-cropped-dark.svg",
+            "alt": "Swell Development",
+            "title": "Swell"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    },
+    {
+      "RowHeading": "Frontend",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/207x124/0cd8e8f06a/nextjs_logo-dark.svg",
+            "alt": "next js web development",
+            "title": "Next JS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x51/45b7d70df8/nuxtjs_ar-cropped-dark.svg",
+            "alt": "nuxt js app development",
+            "title": "Nuxt JS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2194x2500/2f1cd08132/react-native.svg",
+            "alt": "react native",
+            "title": "React JS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x106/b3b9b78fd1/vuejs_ar-cropped-dark.svg",
+            "alt": "headless cms development company",
+            "title": "Vue JS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2183x2500/808462afa6/js.svg",
+            "alt": "javascript web development",
+            "title": "Javascript"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/150x150/9de0b031f1/gatsby-monogram.svg",
+            "alt": "gatsby development",
+            "title": "Gatsby JS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x1875/089c9c6b2d/scss.svg",
+            "alt": "Sanity website development services",
+            "title": "SASS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x1499/7806715543/tailwind.svg",
+            "alt": "tailwind css",
+            "title": "Tailwind"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    },
+    {
+      "RowHeading": "Backend",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x1309/adce82bef8/php.svg",
+            "alt": "php web development",
+            "title": "PHP"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2418x2500/192f4d67c7/laravel.svg",
+            "alt": "Laravel development",
+            "title": "Laravel"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x879/5824daf0e6/rails-on-rails.svg",
+            "alt": "rails web development",
+            "title": "Ruby on rails"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    },
+    {
+      "RowHeading": "Cloud",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/250x150/d6fe384934/aws-svgrepo-com-cropped-dark.svg",
+            "alt": "AWS server",
+            "title": "AWS"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/800x800/f738a1f3c2/gcp.svg",
+            "alt": "google cloud platform",
+            "title": "Google Cloud"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x1995/6b5fe4c32e/azure.svg",
+            "alt": "azure cloud",
+            "title": "Azure"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/147x40/0b5f37bf65/netlify_logo-dark.svg",
+            "alt": "netlify cloud",
+            "title": "Netlify"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    }
+  ]
+}

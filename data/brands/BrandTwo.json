@@ -1,0 +1,77 @@
+{
+  "title": "Helping brands since 2012",
+  "titleColor": "rgb(255, 255, 255)",
+  "bgColor": "f#9f9f9",
+  "sliderBgColor": "rgb(0, 2, 72)",
+  "logos": [
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/07b93a7079/diller-logo.svg",
+      "alt": "Brand 1",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/e5be8cd0b2/hohme-logo.svg",
+      "alt": "Brand 2",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/167x40/49d611a60d/carbmee-light.svg",
+      "alt": "Brand 3",
+      "width": 120,
+      "height": 80,
+      "grayscale": true
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/88ea47bab0/redsbaby-logo.svg",
+      "alt": "Brand 4",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/300x91/5ec88d4961/meta-signals-light.svg",
+      "alt": "Brand 5",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/73f667ee9f/airdna-light.svg",
+      "alt": "Brand 6",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/1ab7825beb/medely-light.svg",
+      "alt": "Brand 7",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/9493d002c0/planq-light.svg",
+      "alt": "Brand 8",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    },
+    {
+      "src": "https://a-us.storyblok.com/f/1016184/168x35/a51964c516/ssdnodes-light.svg",
+      "alt": "Brand 9",
+      "width": 120,
+      "height": 80,
+      "grayscale": false
+    }
+  ],
+  "sliderSettings": {
+    "autoplay": true,
+    "speed": 12000,
+    "infinite": true,
+    "slidesToShow": 4
+  }
+}
