@@ -27,6 +27,7 @@ import LatestStories from "@/components/blogs/LatestStories";
 import latestStories from "../../data/blogs/LatestStories.json";
 import NewsletterModal from "@/components/newsletter/NewsletterModal";
 import newsletterModal from "../../data/newsletter/NewsletterModal.json";
+import NoticeData from "../../data/notice/Notice.json";
 
 const BlogDetails = ({ Slug }) => {
   const [currentUrl, setCurrentUrl] = useState("");
@@ -77,6 +78,9 @@ const BlogDetails = ({ Slug }) => {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
   let author = Post?.content?.Author || "Jaswinder Singh";
 

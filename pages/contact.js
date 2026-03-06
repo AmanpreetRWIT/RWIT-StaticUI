@@ -6,6 +6,7 @@ import OurOffice from "../components/ouroffice/OurOffice";
 import CallToAction from "../components/call-to-actions/CallToAction";
 // JSON Data
 import heroData from "../data/banner/Hero.json";
+import NoticeData from "../data/notice/Notice.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
@@ -27,6 +28,9 @@ export default function ContactPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

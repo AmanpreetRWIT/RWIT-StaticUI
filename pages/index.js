@@ -15,7 +15,6 @@ import Comparison from "../components/Comparison/Comparison";
 import Testimonial from "../components/testimonials/Testimonial";
 import Newsletter from "../components/newsletter/Newsletter";
 
-
 // JSON Data
 import heroData from "../data/banner/Hero.json";
 import brandTwo from "../data/brands/BrandTwo.json";
@@ -29,10 +28,10 @@ import counterTwo from "../data/counters/CounterTwoColumn.json";
 import comparison from "../data/Comparison/Comparison.json";
 import testimonial from "../data/testimonials/Testimonial.json";
 import newsletter from "../data/newsletter/Newsletter.json";
+import NoticeData from "../data/notice/Notice.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
-
 
 export default function HomePage() {
   const layoutSettings = {
@@ -48,6 +47,9 @@ export default function HomePage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
@@ -65,11 +67,17 @@ export default function HomePage() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={site_url} />
-        <meta property="og:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta
+          property="og:image"
+          content={`${site_url}/images/meta-image.jpg`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta
+          name="twitter:image"
+          content={`${site_url}/images/meta-image.jpg`}
+        />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <link rel="canonical" href={site_url} />
 

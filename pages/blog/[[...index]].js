@@ -7,6 +7,7 @@ import BlogContent from "../../components/blogs/BlogContent";
 import Layout from "@/components/layouts/Layout";
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
+import NoticeData from "../../data/notice/Notice.json";
 
 const Blog = ({ blogArchive, headerMenus, settings }) => {
   
@@ -883,6 +884,9 @@ const Blog = ({ blogArchive, headerMenus, settings }) => {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   // Convert GraphQL-like BlogItems.items into the flat shape BlogContent expects

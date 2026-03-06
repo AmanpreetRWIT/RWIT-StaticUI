@@ -28,6 +28,7 @@ import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
 import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
 import contentWithMedia from "../data/contentWithMedia/contentWithMedia.json";
 import caseStudySlides from "../data/MultiImageSlider/CaseStudySlides.json";
+import NoticeData from "../data/notice/Notice.json";
 
 
 export default function CaseStudiesPage() {
@@ -44,6 +45,9 @@ export default function CaseStudiesPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

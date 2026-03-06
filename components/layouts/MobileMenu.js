@@ -5,30 +5,11 @@ import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 const MainMenu = dynamic(() => import('./MainMenu'), { loading: () => <></> });
 
-const MobileMenu = ({
-  menus,
-  siteSettings,
-  headerSetting,
-  headerSettings,
-  isMenuOpen,
-  setIsMenuOpen,
-  buttons = [] // Added buttons prop from simple JSON
-}) => {
-  const updateActive = (id) => {
-    const menusList = document.querySelectorAll(
-      '.popup-mobile-manu .mainmenu .has-dropdown'
-    );
-    menusList?.forEach((item, index) => {
-      if (item.classList.contains('active-menu') && !id != index) {
-        item.classList.remove('active-menu');
-      }
-    });
-  };
-
+const MobileMenu = ({ menus, siteSettings, headerSetting, setIsMenuOpen }) => {
   const toggleMobileMenu = () => {
     const body = document.querySelector('body'),
       submenus = document.querySelectorAll(
-        '.popup-mobile-manu .mainmenu .has-dropdown .axil-submenu'
+        '.popup-mobile-manu .mainmenu .has-dropdown .axil-submenu',
       );
 
     const mainContent = document.querySelector('.main-content');
@@ -58,13 +39,15 @@ const MobileMenu = ({
   const closeMobileMenu = () => {
     const body = document.querySelector('body');
     body.classList.remove('popup-mobile-manu-visible');
+    if (body.classList.contains('.popup-mobile-manu-visible')) {
+    }
     const mainContent = document.querySelector('.main-content');
     const backdropMenu = document.querySelector('.backdrop-menu');
     if (backdropMenu) mainContent?.removeChild(backdropMenu);
   };
 
   useEffect(() => {
-    // Close menu while navigating to another page
+    // Close menu while navigate to another page
     Router.events.on('routeChangeStart', closeMobileMenu);
     return () => {
       Router.events.off('routeChangeStart', closeMobileMenu);
@@ -83,14 +66,14 @@ const MobileMenu = ({
     >
       <div className="inner">
         <div className="mobileheader">
-          {(siteSettings || headerSetting) && (
+          {headerSetting && (
             <div className="logo">
               <Link href="/" prefetch={false}>
                 <Logo
                   variant="two"
-                  logoImage={headerSetting?.Logo || siteSettings?.Logo || ''}
-                  companyName={headerSetting?.CompanyName || siteSettings?.CompanyName || ''}
-                  tagline={headerSetting?.Tagline || siteSettings?.Tagline || ''}
+                  logoImage={headerSetting?.Logo?.filename || ''}
+                  companyName={headerSetting?.CompanyName || ''}
+                  tagline={headerSetting?.Tagline || ''}
                   width="250px"
                 />
               </Link>
@@ -114,15 +97,19 @@ const MobileMenu = ({
           id="mobile-btn"
           className="ax-header-button ml--20 ml_lg--10 d-sm-block"
         >
-          {buttons && buttons.map((btn, idx) => (
-            <Link
-              href={btn.url}
-              key={idx}
-              className={`btn ${btn.type === 'solid' ? 'btn-solid' : 'btn-transparent'}`}
-            >
-              {btn.label}
-            </Link>
-          ))}
+          {headerSetting?.headerMenus?.Buttons?.map(
+            (headerBtn, headerBtnIndex) => (
+              <Link
+                key={headerBtnIndex}
+                href={`/${headerBtn.Link.story.full_slug}`}
+                class={`hoverable ${headerBtn.Class} ${headerBtn.ButtonColor} ${headerBtn.ButtonSize}`}
+              >
+                <span class={'button-text hoverable px-0'}>
+                  {headerBtn.Label}
+                </span>
+              </Link>
+            ),
+          )}
         </div>
       </div>
     </div>

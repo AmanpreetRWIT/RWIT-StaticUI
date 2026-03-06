@@ -30,6 +30,7 @@ import testimonial from "../../data/testimonials/Testimonial.json";
 import servicesWithStickyCards from "../../data/Services/ServicesWithStickyCard.json";
 import technologyStack from "../../data/technologies/TechnologyStack.json";
 import callToActionSlim from "../../data/call-to-actions/CallToActionSlim.json";
+import NoticeData from "../../data/notice/Notice.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -45,6 +46,9 @@ export default function AboutPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

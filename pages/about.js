@@ -25,6 +25,7 @@ import ourValues from "../data/ourvalues/Ourvalues.json";
 import teams from "../data/teams/Teams.json";
 import ourGallery from "../data/OurGallery/OurGallery.json";
 import latestStories from "../data/blogs/LatestStories.json";
+import NoticeData from "../data/notice/Notice.json";
 
 
 export default function AboutPage() {
@@ -41,6 +42,9 @@ export default function AboutPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

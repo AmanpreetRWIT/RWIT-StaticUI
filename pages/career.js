@@ -9,6 +9,7 @@ import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
 import services from "../data/Services/Services.json";
+import NoticeData from "../data/notice/Notice.json";
 
 export default function Career() {
   const layoutSettings = {
@@ -24,6 +25,9 @@ export default function Career() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

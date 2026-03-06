@@ -371,21 +371,19 @@
 
 #popup-mobile-manu {
   .inner {
-          ul.axil-submenu {
-            margin-bottom: 0 !important;
+    ul.axil-submenu {
+      margin-bottom: 0 !important;
 
-            li.submenu-container {
-              padding: 0;
+      li.submenu-container {
+        padding: 0;
 
-              span.submenu-list-title-span {
-                &-submenu-lists,
-                &-submenu-lists4 {
-                  padding: 0;
-                }
-              }
-            }
+        span.submenu-list-title-span {
+          &-submenu-lists,
+          &-submenu-lists4 {
+            padding: 0;
           }
         }
       }
-   
-
+    }
+  }
+}

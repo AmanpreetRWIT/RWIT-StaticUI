@@ -7,14 +7,13 @@ import { isProduction } from '../../helpers/utilities';
 import BacklinkPopup from '../popup/BacklinkPopup';
 import Head from 'next/head';
 
-const Footer = dynamic(() => import('./Footer'), { loading: () => <></> });
+const Footer = dynamic(() => import('./Footer'), { loading: <></> });
 
 const Layout = ({
-  layoutSettings = { header: {}, footer: {}, settings: {}, notice: {} },
+  layoutSettings = { header: '', footer: '', settings: '', notice: '' },
   children,
   showFooter = true,
 }) => {
-  const [isNotice, setNotice] = useState();
   const router = useRouter();
   const [showGtm, setShowGtm] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -33,24 +32,13 @@ const Layout = ({
   };
 
   useEffect(() => {
-    const NoticeFromSetting = {
-      BadgeText: layoutSettings?.settings?.BadgeText || '',
-      Content: layoutSettings?.settings?.Content || '',
-      ShowBadge: layoutSettings?.settings?.ShowBadge || '',
-      SectionBgColor: layoutSettings?.settings?.SectionBgColor || '',
-      SectionTextColor: layoutSettings?.settings?.SectionTextColor || '',
-      BadgeBgColor: layoutSettings?.settings?.BadgeBgColor || '',
-      ShowNoticeSection: layoutSettings?.settings?.ShowNoticeSection || '',
-      ShowCloseButton: layoutSettings?.settings?.ShowCloseButton || '',
-    };
-    setNotice(NoticeFromSetting);
-  }, [layoutSettings?.settings]);
-
-  useEffect(() => {
     const currentDomain = window?.location?.hostname;
-    setShowGtm(currentDomain === 'www.rwit.io');
+    if (currentDomain == 'www.rwit.io') {
+      setShowGtm(true);
+    } else {
+      setShowGtm(false);
+    }
   }, [router]);
-
   useEffect(() => {
     const mainWrapper = document?.querySelector('#__next');
     layoutSettings?.settings?.BackLinkModal?.forEach((modal, index) => {
@@ -62,7 +50,7 @@ const Layout = ({
         mainWrapper?.appendChild(ctaPopup);
       }
     });
-  }, [layoutSettings?.settings]);
+  }, []);
 
   useEffect(() => {
     const allLinks = document.querySelectorAll('a');
@@ -81,21 +69,28 @@ const Layout = ({
           }
         });
       });
-
       const backlink = arr?.some((link) => {
         const url = link?.getAttribute('href');
-        return layoutSettings?.settings?.BackLinkModal?.some((modal) => url === `/${modal?.BackLink}`);
+        return layoutSettings?.settings?.BackLinkModal?.some((modal) => {
+          return url === `/${modal?.BackLink}`;
+        });
       });
       setHasBacklink(backlink);
     }
-  }, [router, layoutSettings?.settings]);
+  }, [router]);
 
   return (
     <>
       <Head>
-        <meta name="twitter:site" content={layoutSettings?.settings?.SiteCreator || ''} />
-        <meta name="twitter:creator" content={layoutSettings?.settings?.SiteCreator || ''} />
-      </Head> 
+        <meta
+          name="twitter:site"
+          content={layoutSettings?.settings?.SiteCreator || ''}
+        />
+        <meta
+          name="twitter:creator"
+          content={layoutSettings?.settings?.SiteCreator || ''}
+        />
+      </Head>
       <div className="main-content">
         {layoutSettings?.settings?.GTMID && showGtm && isProduction && (
           <GoogleTagManager gtmId={layoutSettings?.settings?.GTMID} />
@@ -103,27 +98,27 @@ const Layout = ({
         <Header
           headerSetting={layoutSettings.header}
           siteSettings={layoutSettings.settings}
-          noticeData={isNotice}
+          noticeData={layoutSettings.notice}
         />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         {showFooter && <Footer footerSetting={layoutSettings.footer} />}
         {hasBacklink && (
           <div id="global-popup">
-            {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => (
-              <BacklinkPopup
-                key={index}
-                index={index}
-                modal={modal}
-                isActive={isActive}
-                activeModalIndex={activeModalIndex === index}
-                setIsActive={setIsActive}
-                isPopupVisible={isPopupVisible}
-                setIsPopupVisible={setIsPopupVisible}
-                handleClose={handleClose}
-              />
-            ))}
+            {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => {
+              return (
+                <BacklinkPopup
+                  key={index}
+                  index={index}
+                  modal={modal}
+                  isActive={isActive}
+                  activeModalIndex={activeModalIndex === index}
+                  setIsActive={setIsActive}
+                  isPopupVisible={isPopupVisible}
+                  setIsPopupVisible={setIsPopupVisible}
+                  handleClose={handleClose}
+                />
+              );
+            })}
           </div>
         )}
       </div>

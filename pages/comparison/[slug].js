@@ -11,6 +11,7 @@ import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
 import compareTable from "../../data/Comparison/CompareTable.json";
+import NoticeData from "../../data/notice/Notice.json";
 
 export default function ComparisonPage() {
   const layoutSettings = {
@@ -26,6 +27,9 @@ export default function ComparisonPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

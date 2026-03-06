@@ -23,6 +23,7 @@ import heroWithForm from "../../data/banner/HeroWithForm.json";
 import servicesWithLeftTitle from "../../data/Services/ServicesWithLeftTitle.json";
 import faq from "../../data/faq/Faq.json";
 import testimonial from "../../data/testimonials/Testimonial.json";
+import NoticeData from "../../data/notice/Notice.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -38,6 +39,9 @@ export default function AboutPage() {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

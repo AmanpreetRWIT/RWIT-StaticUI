@@ -11,6 +11,7 @@ import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import LatestStories from "../components/blogs/LatestStories";
 import latestStories from "../data/blogs/LatestStories.json";
+import NoticeData from "../data/notice/Notice.json";
 
 const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
 
@@ -55,6 +56,9 @@ const Blogs = () => {
       StickyFooter: true,
     },
     settings: {},
+    notice: {
+      ...NoticeData,
+    },
   };
 
   const {
