@@ -1,58 +1,174 @@
-import SectionTitle from '../common/SectionTitle';
-import React, { useEffect, useState,useMemo} from 'react';
-import Link from 'next/link';
-import { formatDateString } from '../../helpers/utilities';
-import { DateTime } from 'luxon';
+import SectionTitle from "../common/SectionTitle";
+import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
+import { formatDateString } from "../../helpers/utilities";
+import { DateTime } from "luxon";
+import CaseStudyCard from "./CaseStudyCard";
+import CaseStudyList from "./CaseStudyList";
+const iconMap = {
+  all: "all-tech.svg",
+  webflow: "webflow.svg",
+  nextjs: "next-js.svg",
+  "next-js": "next-js.svg",
+  prismic: "prismic.svg",
+  sanity: "sanity.svg",
+  "headless-cms": "headless-cms.svg",
+  headlesscms: "headless-cms.svg",
+  builder: "builder.svg",
+  builderio: "builder.svg",
+  wordpress: "wordpress.svg",
+  storyblok: "storyblok.svg",
+};
 
-const CaseStudyGrid = () => {
+const blok = {
+  component: "CaseStudyGrid",
+  BGColor: {
+    _uid: "6dfe7208-16e5-41a8-ac1d-711949ba8a9f",
+    color: "",
+    plugin: "official-colorpicker",
+  },
+  Heading: "Success Stories from Our Global Clients",
+  HeadingColor: {
+    _uid: "fe3779a5-0ae5-4b54-a2d1-c975e9738889",
+    color: "",
+    plugin: "official-colorpicker",
+  },
+  Description:
+    "RW Infotech partners with businesses worldwide to build scalable, high-performance solutions. Explore our case studies to see how our expertise and innovation drive success across industries.",
+  DescriptionColor: {
+    _uid: "a440adf8-8c7c-4950-a2b0-96df2693bb17",
+    color: "",
+    plugin: "official-colorpicker",
+  },
+  GridLayout: false,
+  CaseStudies: null,
+  CategoryTab: [
+    "Next JS",
+    "Headless CMS",
+    "Prismic",
+    "Sanity",
+    "Builder.io",
+    "Wordpress",
+    "Webflow",
+    "Storyblok",
+  ],
+  Tags: [
+    {
+      component: "Tag",
+      _uid: "e1731cab-c1c6-4636-bca3-d3a79e108c3c",
+      _editable:
+        '<!--#storyblok#{"name": "Tag", "space": "1016184", "uid": "e1731cab-c1c6-4636-bca3-d3a79e108c3c", "id": "2739103"}-->',
+      TagName: "Case Studies",
+      BGColor: {
+        _uid: "31096543-04f1-4b43-b1b8-c21e6b88f931",
+        color: "",
+        plugin: "official-colorpicker",
+      },
+      TextColor: {
+        _uid: "312d4e95-f5ab-41f7-b863-ab23c7fe1e0f",
+        color: "",
+        plugin: "official-colorpicker",
+      },
+    },
+  ],
+};
+const CaseStudyGrid = ({}) => {
   let caseStudyData;
   const [mouseLeaveTab, setMouseLeaveTab] = useState(null);
-
   try {
-    caseStudyData = require('../../data/CaseStudyGrid/CaseStudyGrid.json');
+    caseStudyData = require("../../public/caseStudyData.json");
   } catch (error) {
-    console.error('caseStudyData.json not found:', error);
+    console.error("caseStudyData.json not found:", error);
     caseStudyData = null;
   }
-
-  // ✅ Use local JSON data directly
-  const caseStudy = useMemo(() => {
-    if (!caseStudyData?.caseStudies) return [];
-  
-    return caseStudyData.caseStudies
-      .map((study) => ({
-        ...study,
-        full_slug: study?.full_slug,
-        published_at: study?.published_at,
-      }))
-      .sort((a, b) => {
-        const beforeDate = DateTime.fromISO(a.published_at).toMillis();
-        const afterDate = DateTime.fromISO(b.published_at).toMillis();
-        return afterDate - beforeDate;
-      });
-  }, [caseStudyData]);
-  
-
-  const [activeTab, setActiveTab] = useState('All');
-  const [activeCards, setActiveCards] = useState([]);
-  const [labels, setLabels] = useState([]);
-
-  // ✅ Get unique labels
-  const getAllCaseStudyLabels = (caseStudies) => {
-    const labelSet = new Set();
-    labelSet.add('All');
-    caseStudies?.forEach((caseStudy) => {
-      caseStudy?.CaseStudyLabels?.forEach((label) => labelSet.add(label));
+  const latestData = caseStudyData
+    ? caseStudyData?.stories?.flatMap((study) =>
+        study?.content?.body
+          ?.filter((content) => content?.component === "CaseStudyDetails")
+          ?.map((caseStudyDetail) => ({
+            ...caseStudyDetail,
+            full_slug: study?.full_slug,
+            published_at: study?.first_published_at,
+          }))
+          ?.sort((a, b) => {
+            const beforeDate = DateTime.fromFormat(
+              formatDateString(a.published_at),
+              "MMMM dd yyyy",
+            ).toMillis();
+            const afterDate = DateTime.fromFormat(
+              formatDateString(b.published_at),
+              "MMMM dd yyyy",
+            ).toMillis();
+            return afterDate - beforeDate;
+          }),
+      )
+    : [];
+  const mapCaseStudyGridCard = (studies) => {
+    return studies?.map((study) => {
+      const matchedCaseStudy = caseStudyData?.stories?.find(
+        (caseStudy) => caseStudy?.uuid === study.CaseStudy,
+      );
+      const caseStudyDetails = matchedCaseStudy?.content.body?.find(
+        (content) => content?.component === "CaseStudyDetails",
+      );
+      return {
+        ...caseStudyDetails,
+        full_slug: matchedCaseStudy?.full_slug,
+        published_at: matchedCaseStudy?.published_at,
+      };
     });
-    return Array.from(labelSet);
   };
 
-  // ✅ Filter by selected label
+  let caseStudy = [];
+
+  if (blok?.CaseStudyGridCard?.length > 0) {
+    caseStudy = mapCaseStudyGridCard(blok.CaseStudyGridCard);
+  } else if (blok?.CaseStudies?.length > 0) {
+    caseStudy = blok.CaseStudies.flatMap((study) =>
+      study?.content?.body
+        ?.filter((content) => content?.component === "CaseStudyDetails")
+        ?.map((caseStudyDetail) => ({
+          ...caseStudyDetail,
+          full_slug: study?.full_slug,
+          published_at: study?.first_published_at,
+        })),
+    );
+  } else {
+    caseStudy = latestData;
+  }
+
+  const [activeTab, setActiveTab] = useState("All");
+  const [activeCards, setActiveCards] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(6);
+  const [labels, setLabels] = useState([]);
+  const loadMoreRef = useRef(null);
+
+  // Function to get all case study labels
+  const getAllCaseStudyLabels = (caseStudies) => {
+    const labelSet = new Set();
+    labelSet?.add("All");
+
+    blok?.CategoryTab?.length > 0
+      ? blok?.CategoryTab?.forEach((tab) => labelSet?.add(tab))
+      : caseStudies?.forEach((caseStudy) => {
+          // Add each label to the Set
+          caseStudy?.CaseStudyLabels?.forEach((label) => {
+            labelSet?.add(label);
+          });
+        });
+    // Convert the Set back to an array
+    return Array?.from(labelSet);
+  };
+
   const filterCaseStudiesByLabel = (caseStudies, selectedLabel) => {
-    if (!selectedLabel || selectedLabel === 'All') return caseStudies || [];
+    if (!selectedLabel || selectedLabel === "All") {
+      return caseStudies || [];
+    }
+
+    // Filter case studies that contain the selected label
     return (
       caseStudies?.filter((caseStudy) =>
-        caseStudy?.CaseStudyLabels?.includes(selectedLabel)
+        caseStudy?.CaseStudyLabels?.includes(selectedLabel),
       ) || []
     );
   };
@@ -65,92 +181,128 @@ const CaseStudyGrid = () => {
   useEffect(() => {
     const filteredCaseStudies = filterCaseStudiesByLabel(caseStudy, activeTab);
     setActiveCards(filteredCaseStudies);
-  }, [activeTab,caseStudy]);
+    setVisibleCount(6);
+  }, [activeTab, caseStudy]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prevCount) => prevCount + 4);
+        }
+      },
+      { threshold: 0.1 },
+    );
+
+    if (loadMoreRef.current) {
+      observer.observe(loadMoreRef.current);
+    }
+
+    return () => {
+      if (loadMoreRef.current) {
+        observer.unobserve(loadMoreRef.current);
+      }
+    };
+  }, [activeCards]);
 
   return (
     <div className="caseStudyGrid">
       <div className="caseStudyGrid__container container">
         <SectionTitle
-          subtitle="Case Studies"
-          title="Our Work"
-          description="Explore our successful case studies showcasing business growth and innovation."
+          subtitle={blok?.Tags}
+          title={blok?.Heading}
+          description={blok?.Description}
           alignment="center"
-          titleColor=""
-          descriptionColor=""
+          titleColor={blok?.TitleColor?.color ? blok?.TitleColor?.color : ""}
+          descriptionColor={
+            blok?.DescriptionColor?.color ? blok?.DescriptionColor?.color : ""
+          }
         />
-
         <div className="caseStudyGrid__tabs">
           <ul>
-            {labels?.map((tab, index) => (
-              <li
-                key={index}
-                className={`caseStudyGrid__tab`}
-                onClick={() => setActiveTab(tab)}
-              >
-                <button
-                  style={
-                    activeTab === tab
-                      ? { color: '#ffffff', backgroundColor: '#000248' }
-                      : {}
-                  }
-                  className="caseStudyGrid__tab-btn"
+            {labels?.map((tab, index) => {
+              const formattedLabel = tab
+                ?.toLowerCase()
+                ?.replace(/\s+/g, "-")
+                ?.replace(/\./g, "");
+              const iconSrc = iconMap[formattedLabel];
+              return (
+                <li
+                  key={index}
+                  className={`caseStudyGrid__tab`}
+                  onClick={() => setActiveTab(tab)}
                 >
-                  {tab}
-                </button>
-              </li>
-            ))}
+                  <button
+                    className={`caseStudyGrid__tab-btn ${!blok?.GridLayout ? "list" : ""} ${
+                      activeTab === tab ? "active" : ""
+                    }`}
+                  >
+                    {iconSrc && !blok?.GridLayout && (
+                      <Image
+                        src={`/images/${iconSrc}`}
+                        alt={`${tab} icon`}
+                        width={20}
+                        height={20}
+                      />
+                    )}
+                    {tab}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
         <div
-          className={`caseStudyGrid__wrapper ${
-            activeCards?.length >= 1 ? '' : 'no-result'
+          key={activeTab}
+          className={`caseStudyGrid__wrapper ${!blok?.GridLayout ? "listView" : ""} ${
+            activeCards?.length >= 1 ? "" : "no-result"
           }`}
         >
           {activeCards?.length >= 1 ? (
-            activeCards.map((caseStudyDetails, index) => (
-              <Link key={index} href={caseStudyDetails?.full_slug || '/'}>
+            <>
+              {activeCards
+                .slice(0, visibleCount)
+                .map((caseStudyDetails, index) => {
+                  const caseStudyHref = caseStudyDetails?.full_slug || "/";
+                  const isCaseStudyNoLocale =
+                    /\/(blog|category|case-study|casestudies)(\/|$)|^(blog|category|case-study|casestudies)(\/|$)/.test(
+                      caseStudyHref,
+                    );
+                  return blok?.GridLayout ? (
+                    <CaseStudyCard
+                      key={index}
+                      caseStudyDetails={caseStudyDetails}
+                      index={index}
+                      mouseLeaveTab={mouseLeaveTab}
+                      setMouseLeaveTab={setMouseLeaveTab}
+                      href={caseStudyHref}
+                      locale={isCaseStudyNoLocale ? false : undefined}
+                    />
+                  ) : (
+                    <CaseStudyList
+                      key={index}
+                      caseStudyDetails={caseStudyDetails}
+                      href={caseStudyHref}
+                      locale={isCaseStudyNoLocale ? false : undefined}
+                    />
+                  );
+                })}
+              {visibleCount < activeCards.length && (
                 <div
-                  className={`caseStudyGrid__card ${
-                    mouseLeaveTab === index ? 'mouseleave' : ''
-                  }`}
+                  ref={loadMoreRef}
                   style={{
-                    backgroundImage: `url(${caseStudyDetails?.CoverImage})`,
-                  }}
-                  onMouseEnter={() => {
-                    setTimeout(() => setMouseLeaveTab(null), 450);
-                  }}
-                  onMouseLeave={() => {
-                    setMouseLeaveTab(index);
-                    setTimeout(() => setMouseLeaveTab(null), 450);
+                    height: "20px",
+                    width: "100%",
+                    gridColumn: "1 / -1",
+                    textAlign: "center",
+                    color: blok?.DescriptionColor?.color,
                   }}
                 >
-                  <div className="caseStudyGrid__card-content">
-                    {caseStudyDetails?.Title && (
-                      <h3>
-                        {caseStudyDetails?.Title}{' '}
-                        <span className="d-md-none fas fa-external-link-alt"></span>
-                      </h3>
-                    )}
-                    {caseStudyDetails?.Description && (
-                      <p className="clamped-texts">
-                        {caseStudyDetails?.Description}
-                      </p>
-                    )}
-                    <div
-                      id="caseStudyBtn"
-                      className="axil-button-group caseStudyGrid__card-btn"
-                    >
-                      <button className="hoverable axil-button casestudy_btn axil-button btn-solid btn-medium">
-                        <span className={`button-text hoverable px-0`}>
-                          {caseStudyDetails?.Label || 'Read Case Study'}
-                        </span>
-                      </button>
-                    </div>
-                  </div>
+                  Loading...
                 </div>
-              </Link>
-            ))
+              )}
+            </>
           ) : (
             <div className="no-result">No Result Found</div>
           )}

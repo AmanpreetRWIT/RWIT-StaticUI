@@ -172,9 +172,10 @@
         "alt": "",
         "name": "",
         "focus": "",
-        "title": ""
+        "title": "",
+        "filename":"/images/clutch.svg"
       },
-      "RatingText": "Rated by global clients across top review platform.",
+      "RatingText": "<p>Rated by global clients across top review platform.<p>",
 
       "CounterElement": [
         {
@@ -196,7 +197,7 @@
           "component": "Counter Element",
           "_uid": "0f7c451f-e1d9-4a88-bade-812c7858b02c",
           "Number": "500+",
-          "Description": "",
+          "Description": "Projects delivered",
           "BgColor": "",
           "IconColor": "",
           "Icon": {
@@ -209,7 +210,7 @@
           "component": "Counter Element",
           "_uid": "b8b83d2a-7bc8-494d-bf0c-d8faab5be0cb",
           "Number": "100+",
-          "Description": "",
+          "Description": "Happy clients",
           "BgColor": "",
           "IconColor": "",
           "Icon": {
