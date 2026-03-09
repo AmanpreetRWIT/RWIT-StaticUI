@@ -293,7 +293,7 @@ const Header = ({ headerSetting = {}, siteSettings, noticeData }) => {
                           (headerBtn, headerBtnIndex) => (
                             <Link
                               key={headerBtnIndex}
-                              href={`/${headerBtn.Link.story.full_slug}`}
+                              href={headerBtn.Link.url.startsWith('/') ? headerBtn.Link.url : `/${headerBtn.Link.url}`}
                               class={`hoverable ${headerBtn.Class} ${headerBtn.ButtonColor} ${headerBtn.ButtonSize}`}
                               target={''}
                             >

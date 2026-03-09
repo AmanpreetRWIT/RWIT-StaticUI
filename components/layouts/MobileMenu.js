@@ -101,7 +101,7 @@ const MobileMenu = ({ menus, siteSettings, headerSetting, setIsMenuOpen }) => {
             (headerBtn, headerBtnIndex) => (
               <Link
                 key={headerBtnIndex}
-                href={`/${headerBtn.Link.story.full_slug}`}
+                href={headerBtn.Link.url.startsWith('/') ? headerBtn.Link.url : `/${headerBtn.Link.url}`}
                 class={`hoverable ${headerBtn.Class} ${headerBtn.ButtonColor} ${headerBtn.ButtonSize}`}
               >
                 <span class={'button-text hoverable px-0'}>

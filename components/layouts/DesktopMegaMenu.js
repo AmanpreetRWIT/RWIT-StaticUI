@@ -175,11 +175,7 @@ const DesktopMegaMenu = ({ menu }) => {
                       {section.menus.map((submenuItem, submenuIndex) => (
                         <li key={submenuIndex}>
                           <Link
-                            href={
-                              submenuItem?.MenuLink?.story?.url !== undefined
-                                ? '/' + submenuItem?.MenuLink?.story?.url
-                                : submenuItem?.MenuLink?.url || '#'
-                            }
+                            href={submenuItem?.MenuLink?.url || '#'}
                             prefetch={false}
                             className='megamenu-menuLink'
                           >

@@ -37,10 +37,7 @@ const MainMenu = ({ menus }) => {
   return (
     <ul className='mainmenu'>
       {menus?.map((menu, menuIndex) => {
-        const menuHref =
-          menu?.MenuLink?.story?.url !== undefined
-            ? '/' + menu?.MenuLink?.story?.url
-            : menu?.MenuLink?.url;
+        const menuHref = menu?.MenuLink?.url;
         const isInternalLink = typeof menuHref === 'string' && menuHref.startsWith('/');
         const isForcedNoLocale =
           isInternalLink && /\/(blog|category|case-study|casestudies)(\/|$)/.test(menuHref);
