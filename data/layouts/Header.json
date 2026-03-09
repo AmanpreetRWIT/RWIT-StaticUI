@@ -1,6 +1,6 @@
-{
+﻿{
   "Logo": {
-    "filename": "https://a-us.storyblok.com/f/1016184/300x157/4d7b1ba280/rwit-logo.svg",
+    "filename": "/images/logos/rwit-logo.svg",
     "alt": "RW Infotech logo"
   },
   "CompanyName": "RW INFOTECH",
@@ -85,7 +85,7 @@
                   "url": "/industries/healthcare-app-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/45cabb71cc/healthcare.svg",
+                  "filename": "/images/icons/industries/healthcare.svg",
                   "alt": "healthcare"
                 },
                 "MenuLabel": "Healthcare",
@@ -97,7 +97,7 @@
                   "url": "/industries/fintech-app-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/b97fbf232b/fintech.svg",
+                  "filename": "/images/icons/industries/fintech.svg",
                   "alt": "fintech"
                 },
                 "MenuLabel": "Fintech",
@@ -109,7 +109,7 @@
                   "url": "/industries/ecommerce-app-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/e36b3a59e9/e-commerce.svg",
+                  "filename": "/images/icons/industries/e-commerce.svg",
                   "alt": "e-commerce"
                 },
                 "MenuLabel": "E-commerce",
@@ -121,7 +121,7 @@
                   "url": "/industries/real-estate-app-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/484597456c/real-estate.svg",
+                  "filename": "/images/icons/industries/real-estate.svg",
                   "alt": "real-estate"
                 },
                 "MenuLabel": "Real Estate",
@@ -133,7 +133,7 @@
                   "url": "/industries/travel-hospitality-app-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/57ce5811f8/travel-and-hospitality.svg",
+                  "filename": "/images/icons/industries/travel-and-hospitality.svg",
                   "alt": "travel-and-hospitality"
                 },
                 "MenuLabel": "Travel & Hospitality",
@@ -145,7 +145,7 @@
                   "url": "/industries/ecommerce-personalization"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/a5bc09be73/ecommerce-personlisation.svg",
+                  "filename": "/images/icons/industries/ecommerce-personlisation.svg",
                   "alt": "eCommerce-personlisation"
                 },
                 "MenuLabel": "E-commerce Personalization",
@@ -157,7 +157,7 @@
                   "url": "/public-sectors"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/8d94c0d11a/public-sector.svg",
+                  "filename": "/images/icons/industries/public-sector.svg",
                   "alt": "Public Sector"
                 },
                 "MenuLabel": "Public Sector",
@@ -171,7 +171,7 @@
                   "url": "/public-sector/hospitals-health-districts"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/92838e6c0c/hospitals-health-districts.svg",
+                  "filename": "/images/icons/industries/hospitals-health-districts.svg",
                   "alt": "Hospitals & Health Districts"
                 },
                 "MenuLabel": "Hospitals & Health Districts",
@@ -183,7 +183,7 @@
                   "url": "/public-sector/government-portals"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/dc0ae727f1/government-portals.svg",
+                  "filename": "/images/icons/industries/government-portals.svg",
                   "alt": "Government Portals"
                 },
                 "MenuLabel": "Government Portals",
@@ -195,7 +195,7 @@
                   "url": "/public-sector/police-fire"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/15d1f4f0c8/police-fire.svg",
+                  "filename": "/images/icons/industries/police-fire.svg",
                   "alt": "Police & Fire"
                 },
                 "MenuLabel": "Police & Fire",
@@ -207,7 +207,7 @@
                   "url": "/public-sector/crm"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/5b34b1b6ce/crm.svg",
+                  "filename": "/images/icons/industries/crm.svg",
                   "alt": "CRM"
                 },
                 "MenuLabel": "CRM",
@@ -219,7 +219,7 @@
                   "url": "/public-sector/state-tourism-departments"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/b5a5cef780/state-tourism-departments.svg",
+                  "filename": "/images/icons/industries/state-tourism-departments.svg",
                   "alt": "State Tourism Departments"
                 },
                 "MenuLabel": "State Tourism Departments",
@@ -231,7 +231,7 @@
                   "url": "/public-sector/libraries"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/6fba9355fb/libraries.svg",
+                  "filename": "/images/icons/industries/libraries.svg",
                   "alt": "Libraries"
                 },
                 "MenuLabel": "Libraries",
@@ -243,7 +243,7 @@
                   "url": "/public-sector/utility-districts"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/90709f6720/utility-districts.svg",
+                  "filename": "/images/icons/industries/utility-districts.svg",
                   "alt": "Utility Districts"
                 },
                 "MenuLabel": "Utility Districts",
@@ -255,7 +255,7 @@
                   "url": "/public-sector/department-of-defense"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/f7a16743a4/department-of-defense.svg",
+                  "filename": "/images/icons/industries/department-of-defense.svg",
                   "alt": "Department of Defense"
                 },
                 "MenuLabel": "Department of Defense",
@@ -267,7 +267,7 @@
                   "url": "/public-sector/schools-school-districts"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/54e9aae057/schools-school-districts.svg",
+                  "filename": "/images/icons/industries/schools-school-districts.svg",
                   "alt": "Schools & School Districts"
                 },
                 "MenuLabel": "Schools & School Districts",
@@ -294,7 +294,7 @@
               ]
             },
             "BackgroundImage": {
-              "filename": "https://a-us.storyblok.com/f/1016184/340x175/c038e3ec3b/industries-expertise.png",
+              "filename": "/images/icons/industries/industries-expertise.png",
               "alt": "AI-powered personalization for higher engagement and sales."
             },
             "ChildMenusTitle": "Industries",
@@ -326,7 +326,7 @@
                   "url": "/service/ai-agent-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/8aa05fdac6/ai-agents.svg",
+                  "filename": "/images/icons/services/ai-agents.svg",
                   "alt": "ai-agents"
                 },
                 "MenuLabel": "AI Agents Development",
@@ -338,7 +338,7 @@
                   "url": "/service/generative-ai-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/d406d4f10d/generative-ai.svg",
+                  "filename": "/images/icons/services/generative-ai.svg",
                   "alt": "generative-ai"
                 },
                 "MenuLabel": "Generative AI Development",
@@ -350,7 +350,7 @@
                   "url": "/service/n8n-automation"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/f883286921/n8n-automation.svg",
+                  "filename": "/images/icons/services/n8n-automation.svg",
                   "alt": "n8n-automation"
                 },
                 "MenuLabel": "N8N Automation",
@@ -362,7 +362,7 @@
                   "url": "/service/wordpress-to-headless-cms-migration"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/b02b8235b4/headles-cms-migration.svg",
+                  "filename": "/images/icons/services/headles-cms-migration.svg",
                   "alt": "headles-cms-migration"
                 },
                 "MenuLabel": "Headless CMS Migration",
@@ -376,7 +376,7 @@
                   "url": "/service/digital-marketing"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/4ad774a0ff/digital-marketing.svg",
+                  "filename": "/images/icons/services/digital-marketing.svg",
                   "alt": "digital-marketing"
                 },
                 "MenuLabel": "Digital Marketing",
@@ -388,7 +388,7 @@
                   "url": "/service/growth-marketing"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/56985e805e/growth-marketing.svg",
+                  "filename": "/images/icons/services/growth-marketing.svg",
                   "alt": "growth-marketing"
                 },
                 "MenuLabel": "Growth Marketing",
@@ -400,7 +400,7 @@
                   "url": "/service/headless-seo"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/a8d9e411db/headless-seo.svg",
+                  "filename": "/images/icons/services/headless-seo.svg",
                   "alt": "headless-SEO"
                 },
                 "MenuLabel": "Headless Seo",
@@ -412,7 +412,7 @@
                   "url": "/service/brand-marketing"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/ebe8c7ce00/brand-marketing.svg",
+                  "filename": "/images/icons/services/brand-marketing.svg",
                   "alt": "Brand Marketing"
                 },
                 "MenuLabel": "Brand Marketing",
@@ -424,7 +424,7 @@
                   "url": "/service/headless-website-maintenance"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/a6554f861a/headless-website-maintenance.svg",
+                  "filename": "/images/icons/services/headless-website-maintenance.svg",
                   "alt": "headless-website-maintenance"
                 },
                 "MenuLabel": "Headless Website Maintenance",
@@ -438,7 +438,7 @@
                   "url": "/service/web-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/e6f428e676/website-developement.svg",
+                  "filename": "/images/icons/services/website-developement.svg",
                   "alt": "website-developement"
                 },
                 "MenuLabel": "Web Development",
@@ -450,7 +450,7 @@
                   "url": "/service/web-design"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/70c9eb59b8/web-design.svg",
+                  "filename": "/images/icons/services/web-design.svg",
                   "alt": "web-design"
                 },
                 "MenuLabel": "Web Design",
@@ -462,7 +462,7 @@
                   "url": "/service/headless-commerce"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/069a0fd830/headless-commerce.svg",
+                  "filename": "/images/icons/services/headless-commerce.svg",
                   "alt": "headless-commerce"
                 },
                 "MenuLabel": "Headless Commerce",
@@ -474,7 +474,7 @@
                   "url": "/service/headless-cms"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/4be8d39008/headless-cms.svg",
+                  "filename": "/images/icons/services/headless-cms.svg",
                   "alt": "headless-cms"
                 },
                 "MenuLabel": "Headless CMS",
@@ -486,7 +486,7 @@
                   "url": "/service/wordpress-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/a3117cf1b7/wordpress-development.svg",
+                  "filename": "/images/icons/services/wordpress-development.svg",
                   "alt": "wordpress-development"
                 },
                 "MenuLabel": "WordPress Development",
@@ -498,7 +498,7 @@
                   "url": "/service/mobile-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/d9be14c75e/mobile-development.svg",
+                  "filename": "/images/icons/services/mobile-development.svg",
                   "alt": "mobile-development"
                 },
                 "MenuLabel": "Mobile Development",
@@ -512,7 +512,7 @@
                   "url": "/service/web-application-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/17098557f5/web-app-development.svg",
+                  "filename": "/images/icons/services/web-app-development.svg",
                   "alt": "web-app-development"
                 },
                 "MenuLabel": "Web App Development",
@@ -524,7 +524,7 @@
                   "url": "/service/rest-api-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/c0c815328b/rest-api-development.svg",
+                  "filename": "/images/icons/services/rest-api-development.svg",
                   "alt": "rest-api-development"
                 },
                 "MenuLabel": "REST API Development",
@@ -536,7 +536,7 @@
                   "url": "/service/whmcs-development"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/05f7b60c18/whmcs-development.svg",
+                  "filename": "/images/icons/services/whmcs-development.svg",
                   "alt": "whmcs-development"
                 },
                 "MenuLabel": "WHMCS Development",
@@ -548,7 +548,7 @@
                   "url": "/service/white-label-services"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/dfb6cc9cb7/white-label-services.svg",
+                  "filename": "/images/icons/services/white-label-services.svg",
                   "alt": "white-label-services"
                 },
                 "MenuLabel": "White Label Services",
@@ -633,7 +633,7 @@
                   "url": "/technologies/builder"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/7f55116a52/builder.svg",
+                  "filename": "/images/icons/tech/builder.svg",
                   "alt": "builder"
                 },
                 "MenuLabel": "Builder.io",
@@ -645,7 +645,7 @@
                   "url": "/technologies/strapi"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/5500fa00fb/stapi.svg",
+                  "filename": "/images/icons/tech/stapi.svg",
                   "alt": "stapi"
                 },
                 "MenuLabel": "Strapi",
@@ -657,7 +657,7 @@
                   "url": "/technologies/sanity"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/53e0c5d8c4/sanity.svg",
+                  "filename": "/images/icons/tech/sanity.svg",
                   "alt": "sanity"
                 },
                 "MenuLabel": "Sanity",
@@ -669,7 +669,7 @@
                   "url": "/technologies/prismic"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/78db398dbc/prismic.svg",
+                  "filename": "/images/icons/tech/prismic.svg",
                   "alt": "prismic"
                 },
                 "MenuLabel": "Prismic",
@@ -681,7 +681,7 @@
                   "url": "/technologies/storyblok"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/31e937b6b1/storyblok.svg",
+                  "filename": "/images/icons/tech/storyblok.svg",
                   "alt": "storyblok"
                 },
                 "MenuLabel": "Storyblok",
@@ -693,7 +693,7 @@
                   "url": "/technologies/contentful"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/2d5dacf9e1/contentful.svg",
+                  "filename": "/images/icons/tech/contentful.svg",
                   "alt": "contentful"
                 },
                 "MenuLabel": "Contentful",
@@ -705,7 +705,7 @@
                   "url": "/technologies/directus"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/4b35605bae/directus.svg",
+                  "filename": "/images/icons/tech/directus.svg",
                   "alt": "directus"
                 },
                 "MenuLabel": "Directus",
@@ -719,7 +719,7 @@
                   "url": "/technologies/swell"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/f1a97300fc/swell.svg",
+                  "filename": "/images/icons/tech/swell.svg",
                   "alt": "swell"
                 },
                 "MenuLabel": "Swell",
@@ -731,7 +731,7 @@
                   "url": "/technologies/medusa-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/9a9c93cc20/medusajs.svg",
+                  "filename": "/images/icons/tech/medusajs.svg",
                   "alt": "medusajs"
                 },
                 "MenuLabel": "Medusa.js",
@@ -743,7 +743,7 @@
                   "url": "/technologies/bigcommerce"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/ff8cd1a065/bigcommerce.svg",
+                  "filename": "/images/icons/tech/bigcommerce.svg",
                   "alt": "bigcommerce"
                 },
                 "MenuLabel": "Bigcommerce",
@@ -755,7 +755,7 @@
                   "url": "/technologies/shopify-plus"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/18d0c52048/shopify-plus.svg",
+                  "filename": "/images/icons/tech/shopify-plus.svg",
                   "alt": "shopify-plus"
                 },
                 "MenuLabel": "Shopify Plus",
@@ -767,7 +767,7 @@
                   "url": "/technologies/dotcms"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/d309d9713e/dot-cms.svg",
+                  "filename": "/images/icons/tech/dot-cms.svg",
                   "alt": "dot-cms"
                 },
                 "MenuLabel": "dotCMS",
@@ -779,7 +779,7 @@
                   "url": "/technologies/saleor"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/64eb31280f/saleor.svg",
+                  "filename": "/images/icons/tech/saleor.svg",
                   "alt": "saleor"
                 },
                 "MenuLabel": "Saleor",
@@ -793,7 +793,7 @@
                   "url": "/technologies/react"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/f85c2ba912/react.svg",
+                  "filename": "/images/icons/tech/react.svg",
                   "alt": "react"
                 },
                 "MenuLabel": "React",
@@ -805,7 +805,7 @@
                   "url": "/technologies/next-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/5d1c30373f/nextjs.svg",
+                  "filename": "/images/icons/tech/nextjs.svg",
                   "alt": "nextjs"
                 },
                 "MenuLabel": "Next.js",
@@ -817,7 +817,7 @@
                   "url": "/technologies/typescript"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/22f7b1da23/typescript.svg",
+                  "filename": "/images/icons/tech/typescript.svg",
                   "alt": "typescript"
                 },
                 "MenuLabel": "Typescript",
@@ -829,7 +829,7 @@
                   "url": "/technologies/nuxt-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/fab4d61784/nuxtjs.svg",
+                  "filename": "/images/icons/tech/nuxtjs.svg",
                   "alt": "nuxtjs"
                 },
                 "MenuLabel": "Nuxt.js",
@@ -841,7 +841,7 @@
                   "url": "/technologies/vue-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/85d1eec0f3/vuejs.svg",
+                  "filename": "/images/icons/tech/vuejs.svg",
                   "alt": "vuejs"
                 },
                 "MenuLabel": "Vue.js",
@@ -853,7 +853,7 @@
                   "url": "/technologies/gatsby-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/7f12f8b62e/gatsby.svg",
+                  "filename": "/images/icons/tech/gatsby.svg",
                   "alt": "gatsby"
                 },
                 "MenuLabel": "Gatsby",
@@ -867,7 +867,7 @@
                   "url": "/technologies/nest-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/b1abe66a4f/nestjs.svg",
+                  "filename": "/images/icons/tech/nestjs.svg",
                   "alt": "nestjs"
                 },
                 "MenuLabel": "Nest.js",
@@ -879,7 +879,7 @@
                   "url": "/technologies/node-js"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/2ee6487101/nodejs.svg",
+                  "filename": "/images/icons/tech/nodejs.svg",
                   "alt": "nodejs"
                 },
                 "MenuLabel": "Node.js",
@@ -891,7 +891,7 @@
                   "url": "/technologies/buttercms"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/441aa1b676/buttercms.svg",
+                  "filename": "/images/icons/tech/buttercms.svg",
                   "alt": "butterCMS"
                 },
                 "MenuLabel": "ButterCMS",
@@ -903,7 +903,7 @@
                   "url": "/technologies/ghost-cms"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/b5df0dd896/ghostcms.svg",
+                  "filename": "/images/icons/tech/ghostcms.svg",
                   "alt": "ghostCMS"
                 },
                 "MenuLabel": "Ghost CMS",
@@ -915,7 +915,7 @@
                   "url": "/technologies/payload-cms"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/fb38bc8743/payload.svg",
+                  "filename": "/images/icons/tech/payload.svg",
                   "alt": "payload"
                 },
                 "MenuLabel": "Payload ",
@@ -967,7 +967,7 @@
                   "url": "/about"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/6f6842d591/about-us.svg",
+                  "filename": "/images/icons/about-us.svg",
                   "alt": "About Us"
                 },
                 "MenuLabel": "About Us",
@@ -979,7 +979,7 @@
                   "url": "/blog-by-category"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/ce291764c4/insights.svg",
+                  "filename": "/images/icons/insights.svg",
                   "alt": "Insights"
                 },
                 "MenuLabel": "Insights",
@@ -991,7 +991,7 @@
                   "url": "/contact"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/3140df674d/contact.svg",
+                  "filename": "/images/icons/contact.svg",
                   "alt": "Contact"
                 },
                 "MenuLabel": "Contact Us",
@@ -1003,7 +1003,7 @@
                   "url": "/career"
                 },
                 "MenuImage": {
-                  "filename": "https://a-us.storyblok.com/f/1016184/72x72/a52307c4b0/career.svg",
+                  "filename": "/images/icons/career.svg",
                   "alt": "Career"
                 },
                 "MenuLabel": "Careers",
@@ -1080,13 +1080,13 @@
     {
       "text": "Global",
       "image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/64x64/149a6e176c/global.svg"
+        "filename": "/images/icons/global.svg"
       }
     },
     {
       "text": "USA",
       "image": {
-        "filename": "https://a-us.storyblok.com/f/1016184/64x64/9df9af98dc/usa.svg"
+        "filename": "/images/icons/usa.svg"
       }
     }
   ]
