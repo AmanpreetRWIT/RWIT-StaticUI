@@ -1,0 +1,82 @@
+{
+  "component": "ClientFeedback",
+  "BGColor": {
+    "_uid": "c91711e5-0981-47bd-bfc6-1ae3cf1c2f50",
+    "color": "#ffffff",
+    "plugin": "official-colorpicker"
+  },
+  "TopPadding": "40",
+  "BottomPadding": "200",
+  "CardBgColor": {
+    "_uid": "72ab05fb-857f-4049-9df1-f654fd2bcab7",
+    "color": "",
+    "plugin": "official-colorpicker"
+  },
+  "CardShadow": true,
+  "TestimonialCardShadow": false,
+  "TestimonialCardTextColor": {
+    "_uid": "b3415b91-2699-4eae-b516-9d991140062a",
+    "color": "",
+    "plugin": "official-colorpicker"
+  },
+  "Heading": "Client’s Feedback",
+  "HeadingColor": {
+    "_uid": "ef12334a-8ce2-4ba1-8ce1-a1c03b06251f",
+    "color": "",
+    "plugin": "official-colorpicker"
+  },
+  "Description": "Discover how we've made a difference for our clients and how we can do the same for you.",
+  "DescriptionColor": {
+    "_uid": "06c7f213-78bb-4bb7-9106-c8d3e03217b4",
+    "color": "",
+    "plugin": "official-colorpicker"
+  },
+  "Name": "Tara Fung",
+  "Designation": "Founder & CEO",
+  "PlatformName": "Clutch",
+  "PlatformRating": "5.0",
+  "PlatformLink": {
+    "fieldtype": "multilink",
+    "linktype": "url",
+    "url": "https://clutch.co/go-to-review/08b14c6f-a425-4665-8355-d35e453b1d6c/419671",
+    "cached_url": "https://clutch.co/go-to-review/08b14c6f-a425-4665-8355-d35e453b1d6c/419671",
+    "id": ""
+  },
+  "CaseStudyLogo": {
+    "fieldtype": "asset",
+    "id": 823251,
+    "filename": "https://a-us.storyblok.com/f/1016184/512x110/22f5ba18b6/builder-seeklogo.svg",
+    "alt": "",
+    "title": "",
+    "name": "",
+    "focus": "",
+    "is_external_url": false,
+    "meta_data": {}
+  },
+  "PlatformLogo": {
+    "id": 112303668235522,
+    "filename": "",
+    "alt": "",
+    "name": "",
+    "focus": "",
+    "title": ""
+  },
+  "ProfileImage": {
+    "fieldtype": "asset",
+    "id": 114121309195321,
+    "filename": "https://a-us.storyblok.com/f/1016184/200x200/3fccf29410/co-create-tara-fung.png",
+    "alt": "CO:CREATE Tara Fung",
+    "title": "CO:CREATE Tara Fung",
+    "name": "",
+    "focus": "",
+    "is_external_url": false,
+    "meta_data": {
+      "alt": "CO:CREATE Tara Fung",
+      "title": "CO:CREATE Tara Fung",
+      "source": "",
+      "copyright": ""
+    }
+  },
+  "FeedbackText": "<h4><span style=\"color: rgb(23, 49, 59);\">They didn't just execute; they made strategic recommendations that improved the development</span></h4><p><span style=\"color: rgb(74, 82, 85);\">RW Infotech Private Limited's work increased clarity and understanding of the product for the client's customers, as evidenced by tests before and after the overhaul. The team delivered on time, communicated effectively, and collaborated well. Their valuable and strategic recommendations stood out.</span></p>",
+  "Tags": ""
+}

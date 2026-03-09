@@ -1,0 +1,72 @@
+{
+  "component": "VideoTestimonials",
+  "_uid": "e52dde36-29d4-43f1-8e8f-01c5eb480afc",
+  "Title": "Watch our clients share their experiences and results with us",
+  "descriptionBoolean": false,
+  "Description": "<p style=\"text-align:center\">Turn Your Idea Into a <span style=\"color:\"><strong>Production Ready</strong></span> Platform </p>",
+  "Tags": [
+    {
+      "component": "Tag",
+      "_uid": "21cd18e6-851a-41f2-94b7-2c90e01701f3",
+      "TagName": "Our Success stories",
+      "BGColor": "",
+      "TextColor": ""
+    }
+  ],
+  "Cards": [
+    {
+      "component": "VideoTestimonialCard",
+      "_uid": "44996b50-5e30-4569-a4df-19f671bf939a",
+      "PublishedDate": "2025-12-22 18:30",
+      "TagName": "SSD Nodes",
+      "Quote": "Trusted partnership drives performance, innovation, and growth engineering and marketing working seamlessly together.",
+      "authorName": "Marc Chartouny",
+      "authorRole": "CTO",
+      "videoDuration": "PT2M17S",
+      "isEmbedded": true,
+      "embeddedCode": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Sclt7XPmDVY?si=ZYzPLA33z4NlUJJ6\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+      "Video": {
+        "id": 260298,
+        "alt": "Headless WordPress development",
+        "name": "",
+        "focus": "",
+        "title": ""
+      },
+      "authorImage": {
+        "id": 114123527367739,
+        "alt": "Marc Chartouny ssd nodes",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "/images/marc-chartouny.png"
+      }
+    },
+    {
+      "component": "VideoTestimonialCard",
+      "_uid": "7bb064d0-392e-4e47-a9b8-96b85d49f46b",
+      "PublishedDate": "2025-12-28 18:30",
+      "TagName": "Accessible CMS",
+      "Quote": "Working with RW Infotech means having a reliable partner who stands behind their work and helps us deliver excellence.",
+      "authorName": "Tiger Gill Finnegan",
+      "authorRole": "Co-Director",
+      "videoDuration": "PT1M20S",
+      "isEmbedded": true,
+      "embeddedCode": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9hlLz10Cng0?si=UyGQqyrum40Gl0YP\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+      "Video": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null
+      },
+      "authorImage": {
+        "id": 128642204682837,
+        "alt": "Tiger Gill Finnegan",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "/images/tiger-gill-finnegan.webp"
+      }
+    }
+  ]
+}

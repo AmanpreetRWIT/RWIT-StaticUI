@@ -14,7 +14,7 @@ const Breadcrumb = ({
   isCategory,
   showSearch = false,
   alignment = 'left',
-  showSpan=true,
+  showSpan=false,
 }) => {
   const router = useRouter();
 

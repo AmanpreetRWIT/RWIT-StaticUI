@@ -184,7 +184,8 @@ export function trimArticleKeywords(inputString) {
 const getButtonClassNames = (blok) => {
   let classNames = 'hoverable axil-button';
 
-  const url = blok?.Link?.story?.url || blok?.Link?.url || '';
+  const url =
+    blok?.Link?.story?.url || blok?.Link?.cached_url || blok?.Link?.url || '';
 
   if (url.includes('case-study/')) {
     classNames += ' casestudy_btn';

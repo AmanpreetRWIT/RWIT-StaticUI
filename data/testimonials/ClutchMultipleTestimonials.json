@@ -1,0 +1,224 @@
+{
+  "component": "ClutchMultipleTestimonials",
+  "_uid": "a30036bd-2725-4382-8d2f-c5e9ab8085c1",
+  "_editable": "<!--#storyblok#{\"name\": \"ClutchMultipleTestimonials\", \"space\": \"1016184\", \"uid\": \"a30036bd-2725-4382-8d2f-c5e9ab8085c1\", \"id\": \"134283845601415\"}-->",
+  "Title": "Verified Client Reviews on Clutch",
+  "Description": "Read authentic Clutch reviews from clients who partnered with us for dependable delivery, technical expertise, and clear outcomes.",
+  "Button": [
+    {
+      "component": "Button",
+      "_uid": "70fcc39a-d0dd-4892-88ce-09ec7eafd185",
+      "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"70fcc39a-d0dd-4892-88ce-09ec7eafd185\", \"id\": \"134283845601415\"}-->",
+      "ButtonColor": "axil-button btn-solid",
+      "ButtonSize": "btn-extra-large",
+      "Class": "",
+      "HideArrow": true,
+      "HideButtonLogo": false,
+      "Label": "Get in Touch",
+      "ButtonLogo": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null
+      },
+      "Link": {
+        "fieldtype": "multilink",
+        "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+        "linktype": "story",
+        "cached_url": "contact",
+        "url": ""
+      }
+    }
+  ],
+  "Cards": [
+    {
+      "component": "ClientsMultipleTestimonialsCards",
+      "_uid": "12fc12be-ea68-438b-8772-937fbe3b4d20",
+      "_editable": "<!--#storyblok#{\"name\": \"ClientsMultipleTestimonialsCards\", \"space\": \"1016184\", \"uid\": \"12fc12be-ea68-438b-8772-937fbe3b4d20\", \"id\": \"134283845601415\"}-->",
+      "Name": "Marc Chartouny",
+      "Designation": "Global Infrastructure Manager, SSD Nodes",
+      "Title": "SEO, Web Design & Development for Virtual Private Servers Company",
+      "Rating": "5.0",
+      "verified": true,
+      "Image": {
+        "id": 131472922699063,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a-us.storyblok.com/f/1016184/56x56/8b54788d6a/marc-chartouny.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false,
+        "meta_data": {},
+        "source": ""
+      },
+      "Description": "<p>RW Infotech Private Limited not only meets our expectations but often exceeds them.<br><br>RW Infotech Private Limited's work has led to an increase in new customers and customer retention and loyalty. The client has also seen decreased churn rates and user complaints. RW Infotech Private Limited meticulously organizes the project and provides regular updates to the client.</p>"
+    },
+    {
+      "component": "ClientsMultipleTestimonialsCards",
+      "_uid": "12fc12be-ea68-438b-8772-937fbe3b4d20",
+      "_editable": "<!--#storyblok#{\"name\": \"ClientsMultipleTestimonialsCards\", \"space\": \"1016184\", \"uid\": \"12fc12be-ea68-438b-8772-937fbe3b4d20\", \"id\": \"134283845601415\"}-->",
+      "Name": "Marc Chartouny",
+      "Designation": "Global Infrastructure Manager, SSD Nodes",
+      "Title": "SEO, Web Design & Development for Virtual Private Servers Company",
+      "Rating": "5.0",
+      "verified": true,
+      "Image": {
+        "id": 131472922699063,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a-us.storyblok.com/f/1016184/56x56/8b54788d6a/marc-chartouny.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false,
+        "meta_data": {},
+        "source": ""
+      },
+      "Description": "<p>RW Infotech Private Limited not only meets our expectations but often exceeds them.<br><br>RW Infotech Private Limited's work has led to an increase in new customers and customer retention and loyalty. The client has also seen decreased churn rates and user complaints. RW Infotech Private Limited meticulously organizes the project and provides regular updates to the client.</p>"
+    },
+    {
+      "component": "ClientsMultipleTestimonialsCards",
+      "_uid": "12fc12be-ea68-438b-8772-937fbe3b4d20",
+      "_editable": "<!--#storyblok#{\"name\": \"ClientsMultipleTestimonialsCards\", \"space\": \"1016184\", \"uid\": \"12fc12be-ea68-438b-8772-937fbe3b4d20\", \"id\": \"134283845601415\"}-->",
+      "Name": "Marc Chartouny",
+      "Designation": "Global Infrastructure Manager, SSD Nodes",
+      "Title": "SEO, Web Design & Development for Virtual Private Servers Company",
+      "Rating": "5.0",
+      "verified": true,
+      "Image": {
+        "id": 131472922699063,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a-us.storyblok.com/f/1016184/56x56/8b54788d6a/marc-chartouny.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false,
+        "meta_data": {},
+        "source": ""
+      },
+      "Description": "<p>RW Infotech Private Limited not only meets our expectations but often exceeds them.<br><br>RW Infotech Private Limited's work has led to an increase in new customers and customer retention and loyalty. The client has also seen decreased churn rates and user complaints. RW Infotech Private Limited meticulously organizes the project and provides regular updates to the client.</p>"
+    },
+    {
+      "component": "ClientsMultipleTestimonialsCards",
+      "_uid": "12fc12be-ea68-438b-8772-937fbe3b4d20",
+      "_editable": "<!--#storyblok#{\"name\": \"ClientsMultipleTestimonialsCards\", \"space\": \"1016184\", \"uid\": \"12fc12be-ea68-438b-8772-937fbe3b4d20\", \"id\": \"134283845601415\"}-->",
+      "Name": "Marc Chartouny",
+      "Designation": "Global Infrastructure Manager, SSD Nodes",
+      "Title": "SEO, Web Design & Development for Virtual Private Servers Company",
+      "Rating": "5.0",
+      "verified": true,
+      "Image": {
+        "id": 131472922699063,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a-us.storyblok.com/f/1016184/56x56/8b54788d6a/marc-chartouny.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false,
+        "meta_data": {},
+        "source": ""
+      },
+      "Description": "<p>RW Infotech Private Limited not only meets our expectations but often exceeds them.<br><br>RW Infotech Private Limited's work has led to an increase in new customers and customer retention and loyalty. The client has also seen decreased churn rates and user complaints. RW Infotech Private Limited meticulously organizes the project and provides regular updates to the client.</p>"
+    },
+    {
+      "component": "ClientsMultipleTestimonialsCards",
+      "_uid": "12fc12be-ea68-438b-8772-937fbe3b4d20",
+      "_editable": "<!--#storyblok#{\"name\": \"ClientsMultipleTestimonialsCards\", \"space\": \"1016184\", \"uid\": \"12fc12be-ea68-438b-8772-937fbe3b4d20\", \"id\": \"134283845601415\"}-->",
+      "Name": "Marc Chartouny",
+      "Designation": "Global Infrastructure Manager, SSD Nodes",
+      "Title": "SEO, Web Design & Development for Virtual Private Servers Company",
+      "Rating": "5.0",
+      "verified": true,
+      "Image": {
+        "id": 131472922699063,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a-us.storyblok.com/f/1016184/56x56/8b54788d6a/marc-chartouny.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false,
+        "meta_data": {},
+        "source": ""
+      },
+      "Description": "<p>RW Infotech Private Limited not only meets our expectations but often exceeds them.<br><br>RW Infotech Private Limited's work has led to an increase in new customers and customer retention and loyalty. The client has also seen decreased churn rates and user complaints. RW Infotech Private Limited meticulously organizes the project and provides regular updates to the client.</p>"
+    }
+  ],
+  "Tags": [
+    {
+      "component": "Tag",
+      "_uid": "0a1396ec-f216-4d57-9d62-3c2aaf45cd02",
+      "_editable": "<!--#storyblok#{\"name\": \"Tag\", \"space\": \"1016184\", \"uid\": \"0a1396ec-f216-4d57-9d62-3c2aaf45cd02\", \"id\": \"134283845601415\"}-->",
+      "TagName": "Success stories",
+      "BGColor": "",
+      "TextColor": ""
+    }
+  ],
+  "sidebar": [
+    {
+      "ContentCentre": true,
+      "Rating": "5.0",
+      "Image": {
+        "id": 131471825466678,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": ""
+      },
+      "RatingText": "Rated by global clients across top review platform.",
+
+      "CounterElement": [
+        {
+          "component": "Counter Element",
+          "_uid": "553d3121-a567-411f-b36c-d731a852e37f",
+          "_editable": "<!--#storyblok#{\"name\": \"Counter Element\", \"space\": \"1016184\", \"uid\": \"553d3121-a567-411f-b36c-d731a852e37f\", \"id\": \"134283845601415\"}-->",
+          "Number": "12+",
+          "Description": "Years of experience",
+          "BgColor": "",
+          "IconColor": "",
+          "Icon": {
+            "plugin": "fontawesome-selector",
+            "type": "fas",
+            "icon": "",
+            "_uid": "7661a6e3-3018-42cd-8cd8-e5a9bafc3769"
+          }
+        },
+        {
+          "component": "Counter Element",
+          "_uid": "0f7c451f-e1d9-4a88-bade-812c7858b02c",
+          "Number": "500+",
+          "Description": "",
+          "BgColor": "",
+          "IconColor": "",
+          "Icon": {
+            "plugin": "fontawesome-selector",
+            "type": "fas",
+            "icon": ""
+          }
+        },
+        {
+          "component": "Counter Element",
+          "_uid": "b8b83d2a-7bc8-494d-bf0c-d8faab5be0cb",
+          "Number": "100+",
+          "Description": "",
+          "BgColor": "",
+          "IconColor": "",
+          "Icon": {
+            "plugin": "fontawesome-selector",
+            "type": "fas",
+            "icon": ""
+          }
+        }
+      ]
+    }
+  ]
+}

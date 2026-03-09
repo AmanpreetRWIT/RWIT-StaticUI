@@ -2,6 +2,7 @@ import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Tilt from 'react-parallax-tilt';
+import Button from '../buttons/Button';
 
 const ServiceCard = ({
   column,
@@ -24,41 +25,32 @@ const ServiceCard = ({
 
   return (
     <div className={column}>
-      <Tilt
-        tiltMaxAngleX={RemoveAnimations ? 0 : 7}
-        tiltMaxAngleY={RemoveAnimations ? 0 : 7}
-      >
+      <Tilt tiltMaxAngleX={RemoveAnimations ? 0 : 7} tiltMaxAngleY={RemoveAnimations ? 0 : 7}>
         <div
-          className={`axil-service axil-control paralax-image ${serviceClass ? serviceClass : ''} ${textAlignment} ${
-            activeIndex === index ? 'active' : ''
-          }`}
+          className={`axil-service axil-control paralax-image ${
+            serviceClass ? serviceClass : ''
+          } ${textAlignment} ${activeIndex === index ? 'active' : ''}`}
           onMouseEnter={() => changeActive(index)}
         >
-          <div className={`inner ${RemoveBorders ? 'hide-border' : ''} ${data?.HideBorder ? 'hide-border' : ''}`}>
+          <div
+            className={`inner ${RemoveBorders ? 'hide-border' : ''} ${
+              data?.HideBorder ? 'hide-border' : ''
+            }`}
+          >
             {data?.Image && (
-              <div
-                className={`icon ${data?.GradientStyle} ${
-                  data?.HideBG ? 'hide-bg' : ''
-                }`}
-              >
+              <div className={`icon ${data?.GradientStyle} ${data?.HideBG ? 'hide-bg' : ''}`}>
                 <div
-                  className="icon-inner"
-                  style={
-                    data?.IconBgColor
-                      ? { background: data?.IconBgColor}
-                      : {}
-                  }
+                  className='icon-inner'
+                  style={data?.IconBgColor?.color ? { background: data?.IconBgColor?.color } : {}}
                 >
-                  <div className="image-2">
+                  <div className='image-2'>
                     {data?.Image && (
                       <Image
-                        loading="lazy"
-                        width={46}
-                        height={36}
+                        loading='lazy'
+                        width={60}
+                        height={60}
                         src={data?.Image}
-                        alt={
-                          data?.AltText ? data?.AltText : 'Shape Images'
-                        }
+                        alt={data?.Image?.alt ? data?.Image?.alt : 'Shape Images'}
                       />
                     )}
                   </div>
@@ -66,26 +58,28 @@ const ServiceCard = ({
               </div>
             )}
 
-            <div className="content">
+            <div className='content'>
               {data?.Heading && (
-                <h3
-                  className="title"
-                  style={TextColor ? { color: TextColor } : {}}
-                >
+                <h3 className='title' style={TextColor ? { color: TextColor } : {}}>
                   {data?.Heading}
                 </h3>
               )}
-              <div className="service__desc">{(data?.Description)}</div>
+              <div className='service__desc'>{(data?.Description)}</div>
 
               {(data?.Link || data?.Link?.story?.url) && (
                 <Link
                   href={data?.Link || data?.Link?.story?.url}
                   prefetch={false}
-                  className="axil-button mt-4"
+                  className='axil-button service-more-btn mt-4'
                 >
                   Learn More
                 </Link>
               )}
+              <div className='d-flex-center mt-4'>
+                {data?.Button?.map((button, index) => (
+                  <Button blok={button} key={'block' + index} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

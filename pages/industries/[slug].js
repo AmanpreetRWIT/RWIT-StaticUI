@@ -8,7 +8,7 @@ import AboutUs from "../../components/abouts/AboutUs";
 import CallToAction from "../../components/call-to-actions/CallToAction";
 import ClientAndPartner from "../../components/client-and-partner/ClientAndPartner";
 import Services from "../../components/Services/Services";
-
+import FounderSpotlightCTA from "../../components/call-to-actions/FounderSpotlightCTA";
 
 // JSON Data
 import heroData from "../../data/banner/Hero.json";
@@ -20,6 +20,7 @@ import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
 import services from "../../data/Services/Services.json";
 import heroWithVerticalImage from "../../data/banner/HeroWithVerticalImage.json";
+import founderSpotlightCTA from "@/data/call-to-actions/FounderSpotlightCTA";
 
 
 export default function AboutPage() {
@@ -67,6 +68,7 @@ export default function AboutPage() {
         <CallToAction {...callToAction} />
         <Services blok={services}/>
         <ClientAndPartner data={clientAndPartner} />
+        <FounderSpotlightCTA blok={founderSpotlightCTA}/>
       </Layout>
     </>
   );
