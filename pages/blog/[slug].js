@@ -77,10 +77,7 @@ const BlogDetails = ({ Slug }) => {
       ...FooterData, // Empty for demo
       StickyFooter: true,
     },
-    settings: {},
-    notice: {
-      ...NoticeData,
-    },
+    settings: {...NoticeData},
   };
   let author = Post?.content?.Author || "Jaswinder Singh";
 

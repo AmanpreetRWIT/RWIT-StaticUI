@@ -27,10 +27,7 @@ export default function ContactPage() {
       ...FooterData,
       StickyFooter: true,
     },
-    settings: {},
-    notice: {
-      ...NoticeData,
-    },
+    settings: {...NoticeData},
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";

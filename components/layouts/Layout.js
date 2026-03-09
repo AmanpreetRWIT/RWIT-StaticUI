@@ -14,6 +14,7 @@ const Layout = ({
   children,
   showFooter = true,
 }) => {
+  const [isNotice, setNotice] = useState();
   const router = useRouter();
   const [showGtm, setShowGtm] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -30,6 +31,21 @@ const Layout = ({
     setIsPopupVisible(false);
     setActiveModalIndex(null);
   };
+
+  useEffect(() => {
+    // from settings  notice data
+    const NoticeFromSetting = {
+      BadgeText: layoutSettings?.settings?.BadgeText || '',
+      Content: layoutSettings?.settings?.Content || '',
+      ShowBadge: layoutSettings?.settings?.ShowBadge || '',
+      SectionBgColor: layoutSettings?.settings?.SectionBgColor || '',
+      SectionTextColor: layoutSettings?.settings?.SectionTextColor || '',
+      BadgeBgColor: layoutSettings?.settings?.BadgeBgColor || '',
+      ShowNoticeSection: layoutSettings?.settings?.ShowNoticeSection || '',
+      ShowCloseButton: layoutSettings?.settings?.ShowCloseButton || '',
+    };
+    setNotice(NoticeFromSetting);
+  }, []);
 
   useEffect(() => {
     const currentDomain = window?.location?.hostname;
@@ -82,28 +98,22 @@ const Layout = ({
   return (
     <>
       <Head>
-        <meta
-          name="twitter:site"
-          content={layoutSettings?.settings?.SiteCreator || ''}
-        />
-        <meta
-          name="twitter:creator"
-          content={layoutSettings?.settings?.SiteCreator || ''}
-        />
+        <meta name='twitter:site' content={layoutSettings?.settings?.SiteCreator || ''} />
+        <meta name='twitter:creator' content={layoutSettings?.settings?.SiteCreator || ''} />
       </Head>
-      <div className="main-content">
+      <div className='main-content'>
         {layoutSettings?.settings?.GTMID && showGtm && isProduction && (
           <GoogleTagManager gtmId={layoutSettings?.settings?.GTMID} />
         )}
         <Header
           headerSetting={layoutSettings.header}
           siteSettings={layoutSettings.settings}
-          noticeData={layoutSettings.notice}
+          noticeData={isNotice}
         />
         <main>{children}</main>
         {showFooter && <Footer footerSetting={layoutSettings.footer} />}
         {hasBacklink && (
-          <div id="global-popup">
+          <div id='global-popup'>
             {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => {
               return (
                 <BacklinkPopup

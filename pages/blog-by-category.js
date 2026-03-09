@@ -55,10 +55,7 @@ const Blogs = () => {
       ...FooterData,
       StickyFooter: true,
     },
-    settings: {},
-    notice: {
-      ...NoticeData,
-    },
+    settings: {...NoticeData},
   };
 
   const {

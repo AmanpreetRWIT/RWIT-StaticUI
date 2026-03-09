@@ -883,10 +883,7 @@ const Blog = ({ blogArchive, headerMenus, settings }) => {
       ...FooterData, // Empty for demo
       StickyFooter: true,
     },
-    settings: {},
-    notice: {
-      ...NoticeData,
-    },
+    settings: {...NoticeData},
   };
 
   // Convert GraphQL-like BlogItems.items into the flat shape BlogContent expects
