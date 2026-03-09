@@ -3,13 +3,24 @@ import { getButtonClassNames } from '../../helpers/utilities';
 import Image from 'next/image';
 
 const Button = ({ button, index }) => {
+  const hideArrow =
+    button?.HideArrow ?? button?.hideArrow ?? button?.hidearrow ?? button?.hide_arrow;
+
+  const rawHref =
+    button?.Link?.story?.url ?? button?.Link?.cached_url ?? button?.Link?.url;
+
+  const href =
+    typeof rawHref === 'string' && rawHref.length > 0
+      ? rawHref.startsWith('http://') || rawHref.startsWith('https://')
+        ? rawHref
+        : rawHref.startsWith('/')
+          ? rawHref
+          : '/' + rawHref
+      : '/';
+
   return (
     <Link
-      href={
-        button?.Link?.story?.url !== undefined
-          ? '/' + button?.Link?.story?.url
-          : button?.Link?.url || '/'
-      }
+      href={href}
       key={'button' + index}
       legacyBehavior
     >
@@ -28,7 +39,7 @@ const Button = ({ button, index }) => {
       >
         <span
           className={`button-text hoverable ${
-            button?.HideArrow &&
+            hideArrow &&
             (!button?.ButtonLogo?.filename || button?.HideButtonLogo)
               ? 'px-0'
               : ''
@@ -50,7 +61,7 @@ const Button = ({ button, index }) => {
         )}
 
         {(!button?.ButtonLogo?.filename || button?.HideButtonLogo) &&
-          !button?.HideArrow && (
+          !hideArrow && (
             <span className="fas fa-external-link-alt"></span>
           )}
       </a>

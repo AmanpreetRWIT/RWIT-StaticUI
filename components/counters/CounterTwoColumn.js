@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import Link from 'next/link';
 
 const CounterTwo = ({
-  SecondLayout = false,
+  SecondLayout = true,
   BgColor = {},
   InvertColumns = false,
   Heading = '',

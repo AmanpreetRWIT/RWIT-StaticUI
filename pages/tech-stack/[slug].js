@@ -14,7 +14,7 @@ import Testimonial from "../../components/testimonials/Testimonial";
 import ServicesWithStickyCards from "../../components/Services/ServicesWithStickyCards";
 import TechnologyStack from "../../components/technologies/TechnologyStack";
 import CallToActionSlim from "../../components/call-to-actions/CallToActionSlim";
-
+import ClientFeedback from "@/components/ClientFeedback/ClientFeedback";
 // JSON Data
 import aboutUsData from "../../data/abouts/AboutUs.json";
 import callToAction from "../../data/call-to-actions/CallToAction.json";
@@ -30,6 +30,7 @@ import testimonial from "../../data/testimonials/Testimonial.json";
 import servicesWithStickyCards from "../../data/Services/ServicesWithStickyCard.json";
 import technologyStack from "../../data/technologies/TechnologyStack.json";
 import callToActionSlim from "../../data/call-to-actions/CallToActionSlim.json";
+import clientFeedback from "@/data/ClientFeedback/ClientFeedback.json";
 import NoticeData from "../../data/notice/Notice.json";
 
 export default function AboutPage() {
@@ -73,6 +74,7 @@ export default function AboutPage() {
 
       <Layout layoutSettings={layoutSettings}>
         <HeroWithForm {...heroWithForm} />
+        <ClientFeedback blok={clientFeedback}/>
         <ServicesWithLeftTitle blok={servicesWithLeftTitle}/>
         <AboutUs data={aboutUsData} />
         <CallToAction {...callToAction} />

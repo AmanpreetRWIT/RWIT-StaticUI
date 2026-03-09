@@ -22,7 +22,8 @@
       "href": "tel:+919876543210"
     }
   ],
-  "showTags": true,
+  "showTags": false,
   "disableBgShape": false,
-  "Sectiontitle": true
+  "Sectiontitle": false,
+  "description":false
 }

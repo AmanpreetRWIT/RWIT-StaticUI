@@ -15,7 +15,7 @@
         "Heading": "Rush Order Tees ",
         "Description": "Rush Order Tees is a custom apparel company and due to their tech-savvy ideologies, we suggested a Headless Commerce website using Prismic, Dynamo DB, and Nextjs. Prismic's headless CMS enabled effortless content management, while Jamstack's speed and security optimized user experience. The new site boasted quick load times, resulting in quick checkout flow which resulted in a boost in conversions within a few months. ",
         "Button": [
-          { "Label": "Read Case study", "Link": "/casestudies" }
+          { "Label": "Read Case study", "Link": "/casestudies/ecommerce" }
         ],
         "ShowCaseStudyStatistics":true,
         "CaseStudyStatistics": [
@@ -32,7 +32,7 @@
         "Heading": "Redsbaby",
         "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
         "Button": [
-          { "Label": "Read Case study", "Link": "/casestudies" }
+          { "Label": "Read Case study", "Link": "/casestudies/ecommerce" }
         ],
         "ShowCaseStudyStatistics":true,
         "CaseStudyStatistics": [
@@ -49,7 +49,7 @@
         "Heading": "Redsbaby",
         "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
         "Button": [
-          { "Label": "Read Case study", "Link": "/casestudies" }
+          { "Label": "Read Case study", "Link": "/casestudies/ecommerce" }
         ],
         "ShowCaseStudyStatistics":true,
         "CaseStudyStatistics": [
@@ -66,7 +66,7 @@
         "Heading": "Redsbaby",
         "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuitive navigation, and responsive layout, the new site offered seamless browsing across devices.",
         "Button": [
-          { "Label": "Read Case study", "Link": "/casestudies" }
+          { "Label": "Read Case study", "Link": "/casestudies/ecommerce" }
         ],
         "ShowCaseStudyStatistics":false,
         "CaseStudyStatistics": [

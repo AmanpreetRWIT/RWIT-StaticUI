@@ -1,0 +1,131 @@
+// Color Variables
+$primary-dark: #000248;
+$text-gray: #757589;
+$card-bg: #ecf5fb;
+$border-purple: #8b5cf6;
+$dot-inactive: #0002481a;
+$dot-active: #000248;
+
+.awards {
+  padding: 44px 0;
+  text-align: center;
+  background-color: #ffffff;
+
+  @media #{$sm-layout} {
+    padding: 30px 0 60px;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: $primary-dark;
+    margin-bottom: 20px;
+    line-height: 62px;
+
+    @media #{$sm-layout} {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 1011px;
+    margin: 0 auto 50px;
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-gray;
+
+    @media #{$sm-layout} {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__slider {
+    padding-bottom: 80px !important;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+
+    @media #{$sm-layout} {
+      min-height: auto;
+      padding-bottom: 28px !important;
+      margin-top: 30px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination {
+      bottom: 10px !important;
+
+      @media #{$sm-layout} {
+        bottom: -8px !important;
+      }
+    }
+
+    & .swiper-pagination-bullet-active {
+      background: $dot-active;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 220px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$sm-layout} {
+      width: 200px;
+      height: 232px;
+    }
+  }
+
+  &__shape {
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 2;
+    max-width: 145px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Pagination Dots */
+  &__slider {
+    --swiper-pagination-bullet-size: 16px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+
+    @media #{$sm-layout} {
+      --swiper-pagination-bullet-size: 8px;
+      --swiper-pagination-bullet-height: 8px;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background: $dot-inactive;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 5px;
+}
+
+.swiper-grid-column > .swiper-slide {
+  margin-top: 25px !important;
+
+  @media #{$sm-layout} {
+    margin-top: 15px !important;
+  }
+}

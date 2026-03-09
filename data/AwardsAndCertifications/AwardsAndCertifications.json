@@ -1,0 +1,422 @@
+{
+  "_uid": "a1394e99-2b8f-4dd1-8a64-e734ffd8f241",
+  "component": "AwardsAndCertifications",
+  "Title": "Awards & Certifications",
+  "Description": "Our awards and certifications highlight our skills, experience, and commitment to quality work. They show the trust clients place in us for delivering reliable digital solutions.",
+
+  "BGColor": {
+    "_uid": "fa38d063-3854-408a-99c0-4f27f828ca78",
+    "color": "#ffffff",
+    "plugin": "official-colorpicker"
+  },
+
+  "Tags": [
+    {
+      "_uid": "dd755a91-b6eb-4823-b750-ad23b9eedfb8",
+      "component": "Tag",
+      "TagName": "Trusted & Certified",
+
+      "BGColor": {
+        "_uid": "90a57209-3a89-46fd-9801-36b2e5ee9af6",
+        "color": "#f2f2f2",
+        "plugin": "official-colorpicker"
+      },
+
+      "TextColor": {
+        "_uid": "0bc41dfa-54df-4d8b-bf38-21fc4d6eeef0",
+        "color": "#000000",
+        "plugin": "official-colorpicker"
+      },
+
+      "_editable": ""
+    }
+  ],
+
+  "Logos": [
+    {
+      "_uid": "logo-1",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-2",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-3",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-4",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-5",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-6",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-7",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-8",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-9",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-10",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-11",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-12",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-13",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-14",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-15",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    },
+    {
+      "_uid": "logo-16",
+      "component": "Image",
+      "Grayscale": false,
+      "Image": {
+        "id": 129675552955920,
+        "alt": "Clutch Premier verified",
+        "filename": "https://a-us.storyblok.com/f/1016184/957x820/f4f0d1a89b/clutch-premier-verified.svg",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "Clutch Premier verified",
+          "title": "",
+          "source": "",
+          "copyright": ""
+        }
+      },
+      "ImageLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      }
+    }
+  ],
+  "_editable": ""
+}

@@ -1,0 +1,232 @@
+.client-feedback {
+  padding-top: var(--desktop-top-padding, 0px);
+  padding-bottom: var(--desktop-bottom-padding, 0px);
+
+  .section-title {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  img {
+    vertical-align: unset;
+  }
+
+  &-card {
+    border-radius: 10px;
+    padding: 32px;
+    background-color: white;
+
+    &.card-shadow {
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &-content {
+    margin-bottom: 40px;
+  }
+
+  .client-details {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    max-width: 280px;
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+
+      .client-info {
+        text-align: left;
+
+        &-profile {
+          width: 64px;
+          height: 64px;
+        }
+
+        .title {
+          margin-bottom: 0;
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        .designation {
+          line-height: 28px;
+        }
+      }
+
+      .case-study-logo {
+        width: 208px;
+        height: 64px;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .review-platform {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+
+        &-wrapper {
+          max-width: 280px;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &-logo {
+          width: 85px;
+          height: 24px;
+          flex: none;
+
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &-ratings {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+
+          .star-icon {
+            display: flex;
+          }
+        }
+
+        &-link {
+          font-weight: 600;
+          color: $cyan-color;
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 24px;
+
+          .arrow {
+            margin-left: 12px;
+          }
+        }
+
+        &-text {
+          font-size: 16px;
+          line-height: 24px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  @media #{$md-layout} {
+    &-content {
+      margin-bottom: 35px;
+      font-size: 20px;
+    }
+
+    .client-details {
+      max-width: 172px;
+
+      &-wrapper {
+        .case-study-logo {
+          width: 180px;
+          height: 60px;
+        }
+
+        .review-platform {
+          flex-direction: column;
+          gap: 20px;
+
+          &-wrapper {
+            max-width: 172px;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$sm-layout} {
+    padding: 56px 0 64px;
+
+    &-content {
+      margin-bottom: 32px;
+      font-size: 20px;
+    }
+
+    &-card {
+      padding: 12px;
+      padding-bottom: 20px;
+    }
+
+    .client-details {
+      &-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .client-info {
+          &-profile {
+            width: 48px;
+            height: 48px;
+          }
+
+          .title {
+            font-size: 18px;
+            line-height: 26px;
+          }
+
+          .designation {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        .case-study-logo {
+          width: 156px;
+          height: 48px;
+        }
+
+        .review-platform {
+          flex-direction: column;
+          gap: 12px;
+
+          &-logo {
+            width: 64px;
+            height: 18px;
+          }
+
+          &-ratings {
+            .star-icon {
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+
+          &-link {
+            font-size: 14px;
+            line-height: 14px;
+
+            .arrow {
+              margin-left: 6px;
+            }
+          }
+
+          &-text {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,9 @@ import CounterTwo from "../components/counters/CounterTwoColumn";
 import TestimonalSlider from "../components/testimonials/TestimonalSlider";
 import ContentWithMedia from "../components/ContentWithMedia";
 import CaseStudySlides from "../components/MultiImageSlider/CaseStudySlides";
+import VideoTestimonials from "@/components/testimonials/VideoTestimonials";
+import ClutchMultipleTestimonials from "@/components/testimonials/ClutchMultipleTestimonials";
+import CallToActionWithAvatar from "@/components/call-to-actions/CallToActionWithAvatar";
 // JSON Data
 import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
@@ -28,6 +31,9 @@ import heroWithoutImage from "../data/banner/HeroWithoutImage.json";
 import testimonalSlider from "../data/testimonials/TestimonalSlider.json";
 import contentWithMedia from "../data/contentWithMedia/contentWithMedia.json";
 import caseStudySlides from "../data/MultiImageSlider/CaseStudySlides.json";
+import videoTestimonials from "@/data/testimonials/VideoTestimonials.json";
+import clutchMultipleTestimonials from "@/data/testimonials/ClutchMultipleTestimonials.json";
+import callToActionWithAvatar from "@/data/call-to-actions/CallToActionWithAvatar";
 import NoticeData from "../data/notice/Notice.json";
 
 
@@ -49,7 +55,8 @@ export default function CaseStudiesPage() {
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
   const pageTitle = "RW Infotech | Case Studies";
-  const pageDescription = "Explore our successful projects and case studies at RW Infotech.";
+  const pageDescription =
+    "Explore our successful projects and case studies at RW Infotech.";
 
   return (
     <>
@@ -61,7 +68,10 @@ export default function CaseStudiesPage() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={site_url} />
-        <meta property="og:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta
+          property="og:image"
+          content={`${site_url}/images/meta-image.jpg`}
+        />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <link rel="canonical" href={site_url} />
         <script
@@ -71,17 +81,16 @@ export default function CaseStudiesPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <HeroWithoutImage {...heroWithoutImage.Default}/>
-        <ClientLogoSlider data={clientLogoSlider}/>
-        <CaseStudyMedia data={caseStudyMedia}/>
-        <CaseStudyGrid data={caseStudyGridData} />
-        <CounterTwo {...counterTwo}/>
-        <CallToAction {...callToAction} />
-        <ClientAndPartner data={clientAndPartner} />
-        <CaseStudySlider data={caseStudySlider} />
-        <TestimonalSlider data={testimonalSlider}/>
+        <HeroWithoutImage {...heroWithoutImage.Default} />
+        <ClientLogoSlider data={clientLogoSlider} />
+        <CaseStudyMedia blok={caseStudyMedia} />
+        <CaseStudyGrid blok={caseStudyGridData} />
+        <CounterTwo {...counterTwo} />
+        <VideoTestimonials blok={videoTestimonials} />
+        <ClutchMultipleTestimonials blok={clutchMultipleTestimonials} />
         <ContentWithMedia {...contentWithMedia}/>
-        <CaseStudySlides {...caseStudySlides}/>
+        {/* <CaseStudySlides {...caseStudySlides}/> */}
+        <CallToActionWithAvatar {...callToActionWithAvatar} />
       </Layout>
     </>
   );

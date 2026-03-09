@@ -1,0 +1,265 @@
+.video-testimonial {
+  z-index: 99;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: bold;
+    color: #0b1c4d;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 30px;
+    color: #555555;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    background-color: #eef0fa;
+    padding: 32px;
+    max-width: 1004px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__tab {
+    padding: 9px 76px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &--active,
+    &:focus {
+      background-color: #0b1c4d;
+      color: #ffffff;
+      border-color: transparent;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__media {
+    position: relative;
+    max-width: 1004px;
+    margin-inline: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 360px;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__play-btn {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 64px;
+    height: 75px;
+    cursor: pointer;
+  }
+
+  &__content {
+    margin-top: 32px;
+    text-align: left;
+    gap: 20px;
+    display: grid;
+  }
+
+  &__quote-icon {
+    display: block;
+  }
+
+  &__quote {
+    font-size: 22px;
+    margin: 0;
+    line-height: 28px;
+    color: #333333;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+
+    &-image {
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      display: block;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 32px;
+      color: #000248;
+    }
+
+    &-role {
+      font-size: 18px;
+      line-height: 28px;
+      color: #8f8f8f;
+    }
+  }
+
+  &__slider {
+    & .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+    }
+
+    & .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  @media #{$sm-layout} {
+    padding: 30px 20px;
+
+    &__heading {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      padding: 0px;
+    }
+
+    &__tabs {
+      justify-content: space-around;
+      background-color: white;
+      padding-bottom: 32px;
+    }
+
+    &__tab {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 7px 25px;
+    }
+
+    &__card {
+      padding: 20px 20px 32px;
+    }
+
+    &__media {
+      aspect-ratio: 16 / 9;
+      min-height: 200px;
+      height: auto;
+      overflow: hidden;
+    }
+
+    &__play-btn {
+      width: 28px;
+      height: 30px;
+    }
+
+    &__content {
+      margin-top: 20px;
+    }
+
+    &__quote-icon {
+      display: none;
+    }
+
+    &__quote {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #757589;
+    }
+
+    &__author {
+      margin: 0 auto 1.5rem;
+
+      &-image {
+        width: 48px;
+        height: 48px;
+      }
+
+      &-name {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      &-role {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__slider {
+      & .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+      }
+
+      & .swiper-pagination {
+        bottom: 8px;
+      }
+    }
+  }
+}

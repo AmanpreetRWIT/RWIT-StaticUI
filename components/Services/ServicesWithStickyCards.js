@@ -2,6 +2,7 @@ import Image from 'next/legacy/image';
 import React from 'react';
 import Link from 'next/link';
 import { getImageDimension } from '../../helpers/utilities';
+import Button from '../buttons/Button';
 
 const ServicesWithStickyCards = ({ blok }) => {
   const CardTitleColor = blok?.CardTitleColor || '';
@@ -54,6 +55,23 @@ const ServicesWithStickyCards = ({ blok }) => {
                     {(blok?.Description)}
                   </div>
                 )}
+
+                {blok?.Button?.length > 0 &&
+                  blok.Button.map((button, index) => {
+                    const link = button?.Link || {};
+                    const hrefCandidate =
+                      link?.story?.url ?? link?.cached_url ?? link?.url ?? '';
+                    if (!hrefCandidate) return null;
+
+                    return (
+                      <Button
+                        key={button?._uid || `button-${index}`}
+                        button={button}
+                        index={index}
+                      />
+                    );
+                  })}
+
               </div>
 
               {blok?.Image && (
@@ -75,7 +93,7 @@ const ServicesWithStickyCards = ({ blok }) => {
                 {blok?.Services.map((service, index) => (
                   <div key={`service${index}`}>
                     {service?.Link ? (
-                      <Link href={service?.Link}>
+                      <Link href={service?.Link} legacyBehavior>
                         <a>
                           <div className="sticky_service__items">
                             {service?.Image && (

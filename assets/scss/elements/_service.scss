@@ -232,7 +232,6 @@ Service Styles
         align-items: center;
         justify-content: center;
         text-align: center;
-        border-radius: 100%;
         background: $primary-color;
         left: 32px;
         z-index: 1;
@@ -296,7 +295,7 @@ Service Styles
       }
 
       a {
-        &.axil-button {
+        &.service-more-btn {
           background: transparent;
           height: auto;
           line-height: inherit;
@@ -350,7 +349,7 @@ Service Styles
 
       .content {
         a {
-          &.axil-button {
+          &.service-more-btn {
             color: $primary-color;
 
             &::after {
@@ -540,7 +539,7 @@ Service Style Three
     word-break: break-word;
     padding-top: 40px;
 
-   .custom-color p{
+    .custom-color p{
       word-break: unset;
       hyphens: none;
     }
@@ -1059,6 +1058,18 @@ Service Style Three
 
     &__detail {
       display: none;
+      text-align: center;
+
+      &.show-mobile-desc {
+        display: block;
+
+        p {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+        }
+      }
     }
   }
 }

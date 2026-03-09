@@ -1,93 +1,254 @@
 {
-    "stories": [
-      {
-        "full_slug": "/casestudies",
-        "first_published_at": "2024-05-10",
-        "content": {
-          "body": [
-            {
-              "component": "CaseStudyDetails",
-              "Title": "AirDNA",
-              "Description": "We helped AirDNA overcome slow load times, outdated technology, and limited multilingual support by upgrading to Prismic Slice Machine and optimizing Next.js/MUI. With streamlined API calls via GraphQL and a cleaned-up codebase, we enhanced site performance and user experience. Adding French language support expanded global reach, while speed ...",
-              "Label": "Read Case Study",
-              "Image": {
-                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/16ea06a624/airdna-thumbnail.png",
-                "alt": "Tech Innovation"
-              },
-              "Logo": {
-                "filename": "https://a-us.storyblok.com/f/1016184/135x110/527f1d319f/airdna-logo.png",
-                "alt": "Tech Company Logo"
-              }
-            }
-          ]
-        }
+  "_uid": "case-study-media-block",
+  "component": "CaseStudyMedia",
+  "Layout": "layout-2",
+  "ReverseLayout": false,
+  "CaseStudyBlock":false,
+  "DisableBgShape":false,
+  "GradientStyle": "theme-gradient-3",
+  "Button": [
+    {
+      "_uid": "bdadece0-8713-4291-9c1b-84ffed200032",
+      "component": "Button",
+      "Label": "Read CaseStudy",
+      "ButtonSize": "btn-large",
+      "ButtonColor": "",
+      "Class": "",
+      "HideArrow": true,
+      "Link": {
+        "id": "",
+        "url": "",
+        "cached_url": "",
+        "linktype": "url",
+        "fieldtype": "multilink"
       },
-      {
-        "full_slug": "/casestudies",
-        "first_published_at": "2024-03-15",
-        "content": {
-          "body": [
-            {
-              "component": "CaseStudyDetails",
-              "Title": "SSD Nodes Digital Marketing",
-              "Description": "SSD Nodes approached us to enhance their online presence and improve their search rankings. They faced challenges with outdated content and technical SEO issues. We revamped their website structure, optimized for search engines, and launched targeted Google Ads campaigns. These improvements helped SSD Nodes attract more traffic and generate be...",
-              "Label": "Read Case Study",
-              "Image": {
-                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/f9f2e9f62b/ssdnodesdm-thumbnail.png",
-                "alt": "Retail Growth"
-              },
-              "Logo": {
-                "filename": "https://a-us.storyblok.com/f/1016184/135x110/3a28ae087b/ssdnodes-logo.png",
-                "alt": "Retail Company Logo"
-              }
+      "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"bdadece0-8713-4291-9c1b-84ffed200032\", \"id\": \"271566\"}-->"
+    }
+  ]
+,
+
+  "CaseStudies": [
+    {
+      "alternates": [],
+      "content": {
+        "component": "page",
+        "CanonicalLink": "Case Study Alamo Tees",
+        "Title": "Alamo Tees",
+        "Description": "Alamo Tees is a custom apparel and promotional merchandise platform",
+        "PageOption": "Regular Page",
+        "PopupTitle": "Facing similar challenges to Alamo Tees Web Application?",
+        "PopupDescription": "Contact us to discover our tailored solutions.",
+        "DisableStickyFooter": false,
+        "ExcludeFromSitemap": false,
+        "RemoveBreadcrumb": false,
+        "RobotsMetaTag": "all",
+        "full_slug": "/case-studies/alamo-tees",
+        "Label": "Read Case Study",
+
+        "BGColor": {
+          "_uid": "3bed23d1-6797-4851-8113-46b953c90abb",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+
+        "TextColor": {
+          "_uid": "056eb801-4f4b-4d8f-b696-bc0c7e952918",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+
+        "Seo": {
+          "_uid": "a4c94915-ae84-478f-99ab-899934ec812e",
+          "plugin": "seo_metatags",
+          "title": "Case Study: Alamo Tees | Sanity | Next.js | Laravel | Shopify",
+          "og_image": "",
+          "og_title": ""
+        },
+
+        "ThumbnailImage": {
+          "id": 148046922052192,
+          "alt": "Alamo Tee Thumbnail Meta Image",
+          "name": "",
+          "focus": "",
+          "title": ""
+        },
+
+        "Image": {
+          "filename": "/images/wordpress-development.svg",
+          "alt": "Alamo Tees Case Study"
+        },
+
+        "Logo": {
+          "filename": "/images/nextjs-icon.svg",
+          "alt": "Next.js"
+        },
+
+        "TechnologyLogos": [
+          {
+            "Image": {
+              "filename": "/images/nextjs-icon.svg",
+              "alt": "Next.js"
             }
-          ]
-        }
+          },
+          {
+            "Image": {
+              "filename": "/images/laravel-icon.svg",
+              "alt": "Laravel"
+            }
+          },
+          {
+            "Image": {
+              "filename": "/images/algolia-icon.svg",
+              "alt": "Algolia"
+            }
+          }
+        ],
+
+        "body": []
       },
-      {
-        "full_slug": "/casestudies",
-        "first_published_at": "2024-03-15",
-        "content": {
-          "body": [
-            {
-              "component": "CaseStudyDetails",
-              "Title": "Tilyo",
-              "Description": "Tilyo approached us to enhance their website built on Prismic and Next.js, seeking improvements and expansions for their existing platform. Faced with challenges in scaling their website, we collaborated on developing multiple new components and pages to address their specific needs. Our efforts were directed towards refining the user experien...",
-              "Label": "Read Case Study",
-              "Image": {
-                "filename": "https://a-us.storyblok.com/f/1016184/1000x810/171e349fe2/tilyo-cs.png",
-                "alt": "Retail Growth"
-              },
-              "Logo": {
-                "filename": "https://a-us.storyblok.com/f/1016184/135x110/3b32210908/tilyo-logo.png",
-                "alt": "Retail Company Logo"
-              }
+
+      "_uid": "a0a30fe8-c1ff-442c-b237-e3fb19230cd8",
+      "_editable": "<!--#storyblok#{\"name\": \"page\", \"space\": \"1016184\", \"uid\": \"a0a30fe8-c1ff-442c-b237-e3fb19230cd8\", \"id\": \"146631679821128\"}-->"
+    },
+
+    {
+      "alternates": [],
+      "content": {
+        "component": "page",
+        "CanonicalLink": "Case Study 2",
+        "Title": "Case Study Two",
+        "Description": "A B2B SaaS platform modernized its UI and improved performance across devices.",
+        "PageOption": "Regular Page",
+        "PopupTitle": "Facing similar challenges?",
+        "PopupDescription": "Contact us to discover our tailored solutions.",
+        "DisableStickyFooter": false,
+        "ExcludeFromSitemap": false,
+        "RemoveBreadcrumb": false,
+        "RobotsMetaTag": "all",
+        "full_slug": "/case-studies/case-study-two",
+        "Label": "Read Case Study",
+        "Image": {
+          "filename": "/images/next-js-light-icon.svg",
+          "alt": "Case Study Two"
+        },
+        "TechnologyLogos": [
+          {
+            "Image": {
+              "filename": "/images/nextjs-icon.svg",
+              "alt": "Next.js"
             }
-          ]
-        }
-      },
-      {
-        "full_slug": "/casestudies",
-        "first_published_at": "2024-03-15",
-        "content": {
-          "body": [
-            {
-              "component": "CaseStudyDetails",
-              "Title": "Redsbaby",
-              "Description": "We helped Redsbaby, an Australian baby products company to harness the full benefits of Headless CMS by Sanity and Bigcommerce for website development. We utilized Sanity's flexible content platform to enable seamless content updates, while Bigcommerce's e-commerce capabilities to streamline transactions. By integrating a modern design, intuit...",
-              "Label": "Read Case Study",
-              "Image": {
-                "filename": "https://a-us.storyblok.com/f/1016184/1000x750/df6164a4f6/redsbaby-cs.png",
-                "alt": "Retail Growth"
-              },
-              "Logo": {
-                "filename": "https://a-us.storyblok.com/f/1016184/135x110/b106f325c9/redsbaby-logo.png",
-                "alt": "Retail Company Logo"
-              }
+          },
+          {
+            "Image": {
+              "filename": "/images/gsap-logo.svg",
+              "alt": "GSAP"
             }
-          ]
-        }
+          }
+        ],
+        "body": []
       }
-    ]
-  }
-  
+    },
+
+    {
+      "alternates": [],
+      "content": {
+        "component": "page",
+        "CanonicalLink": "Case Study 3",
+        "Title": "Case Study Three",
+        "Description": "Replatforming a content-heavy site to a modern headless setup.",
+        "PageOption": "Regular Page",
+        "PopupTitle": "Facing similar challenges?",
+        "PopupDescription": "Contact us to discover our tailored solutions.",
+        "full_slug": "/case-studies/case-study-three",
+        "Label": "Read Case Study",
+        "Image": {
+          "filename": "/images/wordpress-icon.svg",
+          "alt": "Case Study Three"
+        },
+        "TechnologyLogos": [
+          {
+            "Image": {
+              "filename": "/images/wordpress.svg",
+              "alt": "WordPress"
+            }
+          },
+          {
+            "Image": {
+              "filename": "/images/php-icon.svg",
+              "alt": "PHP"
+            }
+          }
+        ],
+        "body": []
+      }
+    },
+
+    {
+      "alternates": [],
+      "content": {
+        "component": "page",
+        "CanonicalLink": "Case Study 4",
+        "Title": "Case Study Four",
+        "Description": "An ecommerce brand scaled globally with a performant storefront.",
+        "PageOption": "Regular Page",
+        "PopupTitle": "Facing similar challenges?",
+        "PopupDescription": "Contact us to discover our tailored solutions.",
+        "full_slug": "/case-studies/case-study-four",
+        "Label": "Read Case Study",
+        "Image": {
+          "filename": "/images/gsap-light-icon.svg",
+          "alt": "Case Study Four"
+        },
+        "TechnologyLogos": [
+          {
+            "Image": {
+              "filename": "/images/gsap-logo.svg",
+              "alt": "GSAP"
+            }
+          },
+          {
+            "Image": {
+              "filename": "/images/next-js-light-icon.svg",
+              "alt": "Next.js"
+            }
+          }
+        ],
+        "body": []
+      }
+    },
+
+    {
+      "alternates": [],
+      "content": {
+        "component": "page",
+        "CanonicalLink": "Case Study 5",
+        "Title": "Case Study Five",
+        "Description": "A membership platform improved onboarding and user retention.",
+        "PageOption": "Regular Page",
+        "PopupTitle": "Facing similar challenges?",
+        "PopupDescription": "Contact us to discover our tailored solutions.",
+        "full_slug": "/case-studies/case-study-five",
+        "Label": "Read Case Study",
+        "Image": {
+          "filename": "/images/builder-icon.svg",
+          "alt": "Case Study Five"
+        },
+        "TechnologyLogos": [
+          {
+            "Image": {
+              "filename": "/images/nextjs-icon.svg",
+              "alt": "Next.js"
+            }
+          },
+          {
+            "Image": {
+              "filename": "/images/prismic-icon.svg",
+              "alt": "Prismic"
+            }
+          }
+        ],
+        "body": []
+      }
+    }
+  ]
+}
