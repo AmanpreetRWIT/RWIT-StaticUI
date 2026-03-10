@@ -1,36 +1,59 @@
 {
-    "Tags": "What we offer",
-    "Title": "React Development Services",
-    "BGColor": "#ffffff",
-    "TitleColor": "#000248",
-    "DescriptionColor": "#757589",
-    "InvertColumn": false,
-    "Description": "Empower your projects with our React development services. We craft, maintain, and optimize for seamless growth.",
-    "Services": [
-      {
-        "Heading": "Custom React Development",
-        "Description": "At our core, we build systems that smoothly manage data flow by organizing components smartly, handling state, and managing props effectively. To guarantee top-notch quality and reliability, we rigorously test our solutions using trusted frameworks like Jest, ensuring your software performs flawlessly.",
-        "Image": "https://a-us.storyblok.com/f/1016184/512x512/5b12ce8111/tailored-react-app-development-solutions.svg",
-        "AltText": "Tailored React App Development Solutions"
+  "Tags": "",
+  "Title": "Your Tech Partner in Healthcare",
+  "TitleColor": "",
+  "BGColor": "#ffffff",
+  "Description": "We work with healthcare startups to design, develop and launch secure digital products that are built to scale. From early-stage MVPs to advanced platforms, our team brings deep technical expertise and a clear understanding of compliance, user experience and speed to market. Whether you are solving for patient care, diagnostics or internal workflows, we help you move fast and build with confidence.",
+  "InvertColumn": false,
+  "DescriptionColor": "",
+  "Services": [
+    {
+      "Image": {
+        "alt": "Strategy & MVP Development",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/73ab93cb51/strategy-mvp-development.svg"
       },
-      {
-        "Heading": "React Development Support & Maintenance",
-        "Description": "Creating your app is only the beginning of the journey. Keep your operations smooth, bugs at bay, and performance high with our specialized React app support and maintenance services. From regular security updates to compatibility checks, we've got you covered, ensuring your app stays secure and running seamlessly.",
-        "Image": "https://a-us.storyblok.com/f/1016184/512x512/ea2581bb83/maintenance-support-for-us-based-businesses.svg",
-        "AltText": "Maintenance & Support for US Based Businesses"
+      "Heading": "Strategy & MVP Development",
+      "Description": "Validate your idea and launch a lean, market-ready product that aligns with user needs, regulatory goals and business outcomes."
+    },
+    {
+      "Image": {
+        "alt": "Custom App Development",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/f0ca2fd722/custom-app-development.svg"
       },
-      {
-        "Heading": "SaaS Frontend Development & Migration",
-        "Description": "Transform your SaaS application's front end with our React expertise, backed by Redux and GraphQL magic. We sculpt dynamic interfaces that seamlessly manage states and retrieve data efficiently. Elevate user experiences and scalability effortlessly with our personalized front-end solutions.",
-        "Image": "https://a-us.storyblok.com/f/1016184/661x661/79712884a7/saas-development-migration.svg",
-        "AltText": "SaaS Development & Migration"
+      "Heading": "Custom App Development",
+      "Description": "We build fast, secure and scalable mobile and web apps tailored to the workflows of healthcare professionals, patients and admins."
+    },
+    {
+      "Image": {
+        "alt": "AI and Automation Integration",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/399181c7c1/ai-and-automation-integration.svg"
       },
-      {
-        "Heading": "SaaS Frontend Development & Migration",
-        "Description": "Transform your SaaS application's front end with our React expertise, backed by Redux and GraphQL magic. We sculpt dynamic interfaces that seamlessly manage states and retrieve data efficiently. Elevate user experiences and scalability effortlessly with our personalized front-end solutions.",
-        "Image": "https://a-us.storyblok.com/f/1016184/512x512/53859af630/react-headless-cms-integration.svg",
-        "AltText": "React + Headless CMS Integration"
-      }
-    ]
-  }
-  
+      "Heading": "AI and Automation Integration",
+      "Description": "Speed up diagnostics, personalize care and improve decision-making by integrating smart automation and AI-driven tools."
+    },
+    {
+      "Image": {
+        "alt": "HIPAA-Compliant Backend Systems",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/59957dd75e/hipaa-compliant-backend-systems.svg"
+      },
+      "Heading": "HIPAA-Compliant Backend Systems",
+      "Description": "Get secure, compliant and scalable backend architecture that protects patient data and supports long-term product growth."
+    },
+    {
+      "Image": {
+        "alt": "Third-Party Integrations and APIs",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/1ce00097c1/third-party-integrations-and-apis.svg"
+      },
+      "Heading": "Third-Party Integrations and APIs",
+      "Description": "Connect with EHRs, insurance platforms, health wearables or payment systems to create seamless user experiences and operational flow."
+    },
+    {
+      "Image": {
+        "alt": "Ongoing Support and Growth Partnership",
+        "filename": "https://a-us.storyblok.com/f/1016184/60x60/6a81ac79ab/ongoing-support-and-growth-partnership.svg"
+      },
+      "Heading": "Ongoing Support and Growth Partnership",
+      "Description": "We stay with you beyond launch to help you iterate, optimize and expand as your product evolves and your startup grows."
+    }
+  ]
+}
