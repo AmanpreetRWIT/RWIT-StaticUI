@@ -10,10 +10,12 @@
   "bgColor": "",
   "removeExtraPadding": false,
   "textAlignment": "centre",
-  "buttons": {
-    "label": "Get in touch",
-    "href": "/contact"
-  },
+  "buttons": [
+    {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
+  ],
   "showBadges": false,
   "logos": [
     {

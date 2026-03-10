@@ -183,21 +183,21 @@ const HeroSection = ({
                   </div>
                 ) : (
                   <>
-                    {
-                      <div className="slider-button gap-4 d-flex">
-                        <a
-                          className="hoverable axil-button  axil-button btn-solid 
-                         btn-solid 
-                        btn-large  "
-                          target=""
-                          href={buttons.href || "#"}
-                        >
-                          <span className="button-text hoverable px-0">
-                            {buttons.label}
-                          </span>
-                        </a>
+                    {buttons?.length > 0 && (
+                      <div className='slider-button gap-4 d-flex'>
+                        {buttons.map((button) => (
+                          <a
+                            key={button.label}
+                            href={button.href || "#"}
+                            className="hoverable axil-button btn-solid btn-large"
+                          >
+                            <span className="button-text hoverable px-0">
+                              {button.label}
+                            </span>
+                          </a>
+                        ))}
                       </div>
-                    }
+                    )}
                   </>
                 )}
               </div>
