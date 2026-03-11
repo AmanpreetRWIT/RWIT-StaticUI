@@ -2,70 +2,49 @@ import Link from 'next/link';
 import { getButtonClassNames } from '../../helpers/utilities';
 import Image from 'next/image';
 
-const Button = ({ button, index }) => {
-  const hideArrow =
-    button?.HideArrow ?? button?.hideArrow ?? button?.hidearrow ?? button?.hide_arrow;
+const Button = ({ blok, Index }) => {
 
-  const rawHref =
-    button?.Link?.story?.url ?? button?.Link?.cached_url ?? button?.Link?.url;
-
-  const href =
-    typeof rawHref === 'string' && rawHref.length > 0
-      ? rawHref.startsWith('http://') || rawHref.startsWith('https://')
-        ? rawHref
-        : rawHref.startsWith('/')
-          ? rawHref
-          : '/' + rawHref
-      : '/';
-
-      const colorClass = button?.ButtonColor
-  ? button.ButtonColor.startsWith("btn-")
-    ? button.ButtonColor
-    : `btn-${button.ButtonColor}`
-  : "btn-primary";
-  console.log('colorClass', colorClass)
-  
 
   return (
     <Link
-      href={href}
-      key={'button' + index}
+      href={blok?.Link?.url || ""}
+      key={'button' + Index}
       legacyBehavior
     >
-    <a
-  className={`${getButtonClassNames(button)}
-  ${button?.Class || ""}
-  ${colorClass}
-  ${button?.ButtonSize || ""}`}
-  target={button?.Link?.target || ""}
->
+      <a
+        className={`${getButtonClassNames(blok)} ${blok?.Class ? blok?.Class : ''} ${
+          blok?.ButtonColor ? blok?.ButtonColor : ''
+        } 
+        ${
+          blok?.ButtonColor != 'btn-transparent' && blok?.ButtonColor != 'axil-link-button'
+            ? 'btn-solid'
+            : ''
+        } 
+        ${blok?.ButtonSize ? blok?.ButtonSize : ''}  `}
+        target={blok?.Link?.target || ''}
+      >
         <span
           className={`button-text hoverable ${
-            hideArrow &&
-            (!button?.ButtonLogo?.filename || button?.HideButtonLogo)
-              ? 'px-0'
-              : ''
+            blok?.HideArrow && (!blok?.ButtonLogo?.filename || blok?.HideButtonLogo) ? 'px-0' : ''
           }`}
         >
-          {button?.Label}
+          {blok?.Label}
         </span>
 
-        {button?.ButtonLogo?.filename && !button?.HideButtonLogo && (
-          <div className="button-logo-wrap">
+        {blok?.ButtonLogo?.filename && !blok?.HideButtonLogo && (
+          <div className='button-logo-wrap'>
             <Image
-              src={button?.ButtonLogo?.filename}
+              src={blok?.ButtonLogo?.filename}
               width={24}
               height={24}
-              alt={button?.ButtonLogo?.alt || 'Button Logo'}
-              className="button-logo"
+              alt={blok?.ButtonLogo?.alt || 'Button Logo'}
+              className='button-logo'
             />
           </div>
         )}
-
-        {(!button?.ButtonLogo?.filename || button?.HideButtonLogo) &&
-          !hideArrow && (
-            <span className="fas fa-external-link-alt"></span>
-          )}
+        {(!blok?.ButtonLogo?.filename || blok?.HideButtonLogo) && !blok?.HideArrow && (
+          <span className='fas fa-external-link-alt'></span>
+        )}
       </a>
     </Link>
   );
