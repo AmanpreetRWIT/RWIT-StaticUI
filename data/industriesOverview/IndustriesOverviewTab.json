@@ -46,10 +46,13 @@
           "_uid": "btn1",
           "component": "Button",
           "Label": "Transform Your Business Today",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/healthcare-app-development",
             "cached_url": "industries/healthcare-app-development"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -89,10 +92,13 @@
           "_uid": "btn2",
           "component": "Button",
           "Label": "Explore Fintech Solutions",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/fintech-software-development",
             "cached_url": "industries/fintech-software-development"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -132,10 +138,13 @@
           "_uid": "btn3",
           "component": "Button",
           "Label": "Grow Your Online Store",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/ecommerce-development",
             "cached_url": "industries/ecommerce-development"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -175,10 +184,13 @@
           "_uid": "btn4",
           "component": "Button",
           "Label": "Explore Real Estate Solutions",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/real-estate-software",
             "cached_url": "industries/real-estate-software"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -218,10 +230,13 @@
           "_uid": "btn5",
           "component": "Button",
           "Label": "Enhance Travel Experiences",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/travel-hospitality-solutions",
             "cached_url": "industries/travel-hospitality-solutions"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -261,10 +276,13 @@
           "_uid": "btn6",
           "component": "Button",
           "Label": "Modernize Public Services",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/public-sector-solutions",
             "cached_url": "industries/public-sector-solutions"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     },
@@ -304,10 +322,13 @@
           "_uid": "btn7",
           "component": "Button",
           "Label": "Boost Conversions with AI",
+          "ButtonColor": "extra09-color",
           "Link": {
             "url": "/industries/ecommerce-personalization",
             "cached_url": "industries/ecommerce-personalization"
-          }
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
         }
       ]
     }

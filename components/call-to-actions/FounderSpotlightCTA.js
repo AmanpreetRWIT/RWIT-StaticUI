@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Button from '../buttons/Button';
+import Button from "@/components/buttons/Button";
 
 export default function FounderSpotlightCTA({ blok }) {
   

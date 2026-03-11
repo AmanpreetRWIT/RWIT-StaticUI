@@ -2,6 +2,9 @@ import Head from "next/head";
 import Layout from "../components/layouts/Layout";
 import Services from "../components/Services/Services";
 import JobListing from "../components/joblisting/JobListing";
+import HeroSection from "@/components/banner/Hero";
+import CounterTwo from "@/components/counters/CounterTwoColumn";
+import OurGallery from "@/components/gallery/OurGallery";
 
 // JSON Data
 import jobListing from "../data/joblisting/JobListing.json";
@@ -10,6 +13,9 @@ import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
 import services from "../data/Services/Services.json";
 import NoticeData from "../data/notice/Notice.json";
+import heroSection from "@/data/banner/Hero.json";
+import counterTwo from "@/data/counters/CounterTwoColumn.json";
+import ourGallery from "@/data/OurGallery/OurGallery.json";
 
 export default function Career() {
   const layoutSettings = {
@@ -41,8 +47,11 @@ export default function Career() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
+        <HeroSection {...heroSection} />
         <Services blok={services}/>
-          <JobListing {...jobListing}/>
+        <JobListing {...jobListing}/>
+        <OurGallery blok={ourGallery}/>
+        <CounterTwo {...counterTwo}/>
       </Layout>
     </>
   );

@@ -72,9 +72,9 @@ const HeroWithoutImage = ({
                   </div>
                 )}
 
-                {showButtons && buttons.length > 0 && (
+                {showButtons && buttons?.length > 0 && (
                   <div className="slider-button gap-4 d-flex justify-content-center">
-                    {buttons.map((button, index) => (
+                    {buttons?.map((button, index) => (
                       <button
                         key={index}
                         className="btn btn-primary"

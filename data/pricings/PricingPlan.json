@@ -15,10 +15,39 @@
         "Features": [
           { "Text": "1 Project", "IsHover": false },
           { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
-          { "Text": "Community Access", "IsHover": false }
+          { "Text": "Community Access", "IsHover": false },
+          { "Text": "1 Project", "IsHover": false },
+          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
+          { "Text": "Community Access", "IsHover": false },
+          { "Text": "1 Project", "IsHover": false }
+          
         ],
         "Button": [
-          { "label": "Get Started", "url": "#" }
+          {
+            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
+            "component": "Button",
+            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
+            "Label": "Get In Touch",
+            "ButtonColor": "extra10-color",
+            "ButtonSize": "",
+            "Class": "",
+            "HideArrow": true,
+            "HideButtonLogo": false,
+            "ButtonLogo": {
+              "id": null,
+              "alt": null,
+              "name": "",
+              "focus": null,
+              "title": null
+            },
+            "Link": {
+              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "/us/contact"
+            }
+          }
         ]
       },
       {
@@ -29,10 +58,84 @@
         "Features": [
           { "Text": "10 Projects", "IsHover": false },
           { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
-          { "Text": "Team Collaboration", "IsHover": false }
+          { "Text": "Team Collaboration", "IsHover": false },
+          { "Text": "10 Projects", "IsHover": false },
+          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
+          { "Text": "Team Collaboration", "IsHover": false },
+          { "Text": "10 Projects", "IsHover": false },
+          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
+          { "Text": "Team Collaboration", "IsHover": false },
+          { "Text": "10 Projects", "IsHover": false }
         ],
         "Button": [
-          { "label": "Upgrade Now", "url": "#" }
+          {
+            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
+            "component": "Button",
+            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
+            "Label": "Contact us",
+            "ButtonColor": "transparent",
+            "ButtonSize": "",
+            "Class": "",
+            "HideArrow": true,
+            "HideButtonLogo": false,
+            "ButtonLogo": {
+              "id": null,
+              "alt": null,
+              "name": "",
+              "focus": null,
+              "title": null
+            },
+            "Link": {
+              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "/us/contact"
+            }
+          }
+        ]
+      },
+      {
+        "Title": "Starter",
+        "SubTitle": "Perfect for freelancers",
+        "Featured": false,
+        "FeaturedText": "",
+        "Features": [
+          { "Text": "1 Project", "IsHover": false },
+          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
+          { "Text": "Community Access", "IsHover": false },
+          { "Text": "1 Project", "IsHover": false },
+          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
+          { "Text": "Community Access", "IsHover": false },
+          { "Text": "1 Project", "IsHover": false }
+          
+        ],
+        "Button": [
+          {
+            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
+            "component": "Button",
+            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
+            "Label": "Get In Touch",
+            "ButtonColor": "extra09-color",
+            "ButtonSize": "",
+            "Class": "",
+            "HideArrow": true,
+            "HideButtonLogo": false,
+            "ButtonLogo": {
+              "id": null,
+              "alt": null,
+              "name": "",
+              "focus": null,
+              "title": null
+            },
+            "Link": {
+              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "/us/contact"
+            }
+          }
         ]
       }]}
       

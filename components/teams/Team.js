@@ -83,7 +83,7 @@ const Team = ({ data }) => {
 
                 {data?.buttons && (
                   <div className="axil-button-group mt--40">
-                    {data.buttons.map((btn, index) => (
+                    {data?.buttons?.map((btn, index) => (
                       <Link href={btn.link || "#"} key={`btn-${index}`} legacyBehavior>
                         <a className={`axil-btn btn-${btn.type || "primary"}`}>
                           {btn.text}

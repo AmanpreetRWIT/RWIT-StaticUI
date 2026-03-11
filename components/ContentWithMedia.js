@@ -146,7 +146,7 @@ const ContentWithMedia = ({
 
                   {buttons && (
                     <div className="axil-button-group mt--40">
-                      {buttons.map((btn, index) => (
+                      {buttons?.map((btn, index) => (
                         <a
                           key={index}
                           href={btn.href}
