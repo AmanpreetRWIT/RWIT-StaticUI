@@ -1,10 +1,10 @@
 {
-    "SecondLayout": true,
+    "SecondLayout": false,
     "InvertColumns": true,
     "BgColor": { "color": "#EEF0FA" },
     "Heading": "We are proud of what we do",
-    "Tags": "",
-    "Description": "",
+    "Tags": "Our Story",
+    "Description": "We started with a mission to provide high-quality digital marketing services, tailored to your vision.",
     "TitleColor": { "color": "#000248" },
     "DescriptionColor": { "color": "#757589" },
     "CounterTextColor": { "color": "#000248" },
@@ -15,6 +15,13 @@
         "Icon": { "type": "", "icon": "" },
         "IconColor": { "color": "#000248" },
         "BgColor": { "color": "#000248" }
+      },
+      {
+        "Number": 800,
+        "Description": "Happy Clients",
+        "Icon": { "type": "", "icon": "" },
+        "IconColor": { "color": "#000248" },
+        "BgColor": { "color": "#e0e0e0" }
       },
       {
         "Number": 800,

@@ -7,7 +7,7 @@ import Link from 'next/link';
 const CounterTwo = ({
   SecondLayout = true,
   BgColor = {},
-  InvertColumns = false,
+  InvertColumns = true,
   Heading = '',
   Tags = '',
   Description = '',
@@ -54,7 +54,7 @@ const CounterTwo = ({
                 {Buttons && (
                   <div className="view-all-portfolio-button mt--40">
                     <Link className="hoverable axil-button btn-solid" target="" href="/about">
-                      <span className="button-text hoverable px-0">{Buttons.label}</span>
+                      <span className="button-text hoverable px-0">{Buttons?.label}</span>
                     </Link>
                   </div>
                 )}

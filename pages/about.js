@@ -3,6 +3,7 @@ import Head from "next/head";
 // Components
 import Layout from "../components/layouts/Layout";
 import HeroSection from "../components/banner/HeroWithVerticalImage";
+import IndustriesOverviewTab from "@/components/industriesOverview/IndustriesOverviewTab";
 import AboutUs from "../components/abouts/AboutUs";
 import CallToAction from "../components/call-to-actions/CallToAction";
 import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
@@ -11,6 +12,9 @@ import OurValues from "../components/ourvalues/OurValues";
 import Teams from "../components/teams/Teams";
 import OurGallery from "../components/gallery/OurGallery";
 import LatestStories from "../components/blogs/LatestStories";
+import VideoTestimonials from "@/components/testimonials/VideoTestimonials";
+import AwardsAndCertifications from "@/components/AwardsAndCertifications/AwardsAndCertifications";
+import ClutchMultipleTestimonials from "@/components/testimonials/ClutchMultipleTestimonials";
 
 // JSON Data
 import heroData from "../data/banner/HeroWithVerticalImage.json";
@@ -26,7 +30,10 @@ import teams from "../data/teams/Teams.json";
 import ourGallery from "../data/OurGallery/OurGallery.json";
 import latestStories from "../data/blogs/LatestStories.json";
 import NoticeData from "../data/notice/Notice.json";
-
+import industriesOverviewTab from "@/data/industriesOverview/IndustriesOverviewTab.json";
+import videoTestimonials from "@/data/testimonials/VideoTestimonials.json";
+import awardsAndCertifications from "@/data/AwardsAndCertifications/AwardsAndCertifications.json";
+import clutchMultipleTestimonials from "@/data/testimonials/ClutchMultipleTestimonials.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -68,13 +75,15 @@ export default function AboutPage() {
 
       <Layout layoutSettings={layoutSettings}>
         <HeroSection {...heroData.Default} />
-        <BrandThree {...brandsThree}/>
-        <AboutUs data={aboutUsData} />
+        <IndustriesOverviewTab blok={industriesOverviewTab}/>
+        <BrandThree blok={brandsThree}/>
+        <VideoTestimonials blok={videoTestimonials}/>
         <OurValues {...ourValues}/>
-        <CallToAction {...callToAction} />
+        <AwardsAndCertifications blok={awardsAndCertifications}/>
+        <ClutchMultipleTestimonials blok={clutchMultipleTestimonials}/>
         <Teams {...teams}/>
-        <OurGallery blok={ourGallery}/>
         <LatestStories data={latestStories}/>
+        <AboutUs data={aboutUsData} />
       </Layout>
     </>
   );

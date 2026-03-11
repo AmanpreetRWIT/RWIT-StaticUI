@@ -211,10 +211,10 @@ const LatestStories = ({ data }) => {
             </div>
           )}
         </div>
-        {FeatureCard && data.Buttons.length > 0 && (
+        {FeatureCard && data?.Buttons.length > 0 && (
             <div className="latestStories__btn">
               <div className="slider-button gap-4 d-flex">
-                {data.Buttons.map((button, index) => (
+                {data?.Buttons.map((button, index) => (
                  <Button button={button} key={index} />
 
                 ))}

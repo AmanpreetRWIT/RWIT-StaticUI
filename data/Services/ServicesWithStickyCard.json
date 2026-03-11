@@ -10,7 +10,7 @@
         "_uid": "services-sticky-cta",
         "component": "Button",
         "Label": "Book a free consultation",
-        "ButtonColor": "",
+        "ButtonColor": "extra09-color",
         "ButtonSize": "",
         "Class": "",
         "HideArrow": false,

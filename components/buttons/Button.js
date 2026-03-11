@@ -18,25 +18,27 @@ const Button = ({ button, index }) => {
           : '/' + rawHref
       : '/';
 
+      const colorClass = button?.ButtonColor
+  ? button.ButtonColor.startsWith("btn-")
+    ? button.ButtonColor
+    : `btn-${button.ButtonColor}`
+  : "btn-primary";
+  console.log('colorClass', colorClass)
+  
+
   return (
     <Link
       href={href}
       key={'button' + index}
       legacyBehavior
     >
-      <a
-        className={`${getButtonClassNames(button)} 
-          ${button?.Class || ''} 
-          ${button?.ButtonColor || ''} 
-          ${
-            button?.ButtonColor !== 'btn-transparent' &&
-            button?.ButtonColor !== 'axil-link-button'
-              ? 'btn-solid'
-              : ''
-          } 
-          ${button?.ButtonSize || ''}`}
-        target={button?.Link?.target || ''}
-      >
+    <a
+  className={`${getButtonClassNames(button)}
+  ${button?.Class || ""}
+  ${colorClass}
+  ${button?.ButtonSize || ""}`}
+  target={button?.Link?.target || ""}
+>
         <span
           className={`button-text hoverable ${
             hideArrow &&

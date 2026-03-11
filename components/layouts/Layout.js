@@ -7,7 +7,7 @@ import { isProduction } from '../../helpers/utilities';
 import BacklinkPopup from '../popup/BacklinkPopup';
 import Head from 'next/head';
 
-const Footer = dynamic(() => import('./Footer'), { loading: <></> });
+const Footer = dynamic(() => import('./Footer'), { loading: () => <></> });
 
 const Layout = ({
   layoutSettings = { header: '', footer: '', settings: '', notice: '' },

@@ -1,5 +1,5 @@
 {
-  "heading": "Let's work together",
+  "title": "Let's work together",
   "description": "We collaborate with clients to build custom web solutions and headless CMS applications tailored to their unique business needs.",
   "tags": "Have a question in mind?",
   "titleColor": "#000248",
@@ -7,10 +7,33 @@
   "bgColor": "#f3f3f3",
   "backgroundImage": " ",
   "minHeight": 400,
-  "buttons": {
-    "label": "Schedule a call",
-    "href": "https://calendly.com/jimmynarula/introductory-meeting"
-  },
+  "Buttons": [
+    {
+      "_uid": "56d06790-a767-42af-b052-a6a978d08717",
+      "component": "Button",
+      "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
+      "Label": "Get In Touch",
+      "ButtonColor": "extra09-color",
+      "ButtonSize": "",
+      "Class": "",
+      "HideArrow": false,
+      "HideButtonLogo": false,
+      "ButtonLogo": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null
+      },
+      "Link": {
+        "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "/us/contact"
+      }
+    }
+  ],
   "showPhone":false,
   "phone": [
     {
@@ -24,6 +47,6 @@
   ],
   "showTags": false,
   "disableBgShape": false,
-  "Sectiontitle": false,
-  "description":false
+  "Sectiontitle": true,
+  "Showdescription":true
 }

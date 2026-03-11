@@ -314,7 +314,7 @@
         "MegaMenu": [
           {
             "Link": {
-              "url": "/services"
+              "url": "/"
             },
             "Title": "What we offer",
             "Layout": "layout1",
@@ -601,7 +601,7 @@
           }
         ],
         "MenuLink": {
-          "url": "/services"
+          "url": "/"
         },
         "MenuImage": {
           "id": null,

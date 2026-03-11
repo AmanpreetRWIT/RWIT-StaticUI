@@ -1,6 +1,7 @@
-import React from 'react';
-import SectionTitle from '../common/SectionTitle';
-import PricingIcons, { InfoIcons } from './PricingIcons';
+import React from "react";
+import SectionTitle from "../common/SectionTitle";
+import PricingIcons, { InfoIcons } from "./PricingIcons";
+import Button from "../buttons/Button";
 
 const PricingPlan = ({ data }) => {
   return (
@@ -29,7 +30,7 @@ const PricingPlan = ({ data }) => {
                 descriptionColor={
                   data?.DescriptionColor?.color
                     ? data?.DescriptionColor?.color
-                    : ''
+                    : ""
                 }
               />
 
@@ -44,7 +45,7 @@ const PricingPlan = ({ data }) => {
             return (
               <div
                 className={`pricing-table ${
-                  Item?.Featured ? 'featured-table' : ''
+                  Item?.Featured ? "featured-table" : ""
                 }`}
                 key={index}
               >
@@ -56,14 +57,14 @@ const PricingPlan = ({ data }) => {
                 <div className="pricing-innertable">
                   {Item?.Title && (
                     <div className="pricing-table-title">
-                      <h3 style={Item?.Featured ? { color: '#fff' } : {}}>
+                      <h3 style={Item?.Featured ? { color: "#fff" } : {}}>
                         {Item?.Title}
                       </h3>
                     </div>
                   )}
                   {Item?.SubTitle && (
                     <div className="pricing-table-subtitle">
-                      <p style={Item?.Featured ? { color: '#fff' } : {}}>
+                      <p style={Item?.Featured ? { color: "#fff" } : {}}>
                         {Item?.SubTitle}
                       </p>
                     </div>
@@ -78,9 +79,9 @@ const PricingPlan = ({ data }) => {
                         <div className="position-relative">
                           <p
                             className={`${
-                              feature?.IsHover ? 'featured-wrapper' : ''
+                              feature?.IsHover ? "featured-wrapper" : ""
                             }`}
-                            style={Item?.Featured ? { color: '#fff' } : {}}
+                            style={Item?.Featured ? { color: "#fff" } : {}}
                           >
                             {feature?.Text}
 
@@ -89,7 +90,7 @@ const PricingPlan = ({ data }) => {
                                 {feature?.InfoText && (
                                   <span
                                     className={`${
-                                      feature?.InfoText ? 'featured-text' : ''
+                                      feature?.InfoText ? "featured-text" : ""
                                     }`}
                                   >
                                     {feature?.InfoText}
@@ -106,18 +107,26 @@ const PricingPlan = ({ data }) => {
 
                   <div
                     className={`${
-                      Item?.Featured ? 'featured-btn' : ''
+                      Item?.Featured ? "featured-btn" : ""
                     } pricing-btn d-flex pricing-btn`}
                   >
-                    {Item?.Button?.map((button, index) => (
-                      <a
-                        href={button?.url}
-                        key={'button' + index}
-                        className="axil-btn btn-large btn-transparent"
-                      >
-                        {button?.label}
-                      </a>
-                    ))}
+                    {Item?.Button?.length > 0 &&
+                      Item.Button.map((button, index) => {
+                        const link = button?.Link || {};
+                        const hrefCandidate =
+                          link?.story?.url ??
+                          link?.cached_url ??
+                          link?.url ??
+                          "";
+                        if (!hrefCandidate) return null;
+                        return (
+                          <Button
+                            key={button?._uid || `button-${index}`}
+                            button={button}
+                            index={index}
+                          />
+                        );
+                      })}
                   </div>
                 </div>
               </div>

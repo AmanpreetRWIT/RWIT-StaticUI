@@ -2,9 +2,9 @@ import Link from "next/link";
 import SectionTitle from "../common/SectionTitle";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-
+import Button from "@/components/buttons/Button";
 const CallToAction = ({
-  heading = "",
+  title = "",
   description = "",
   tags = [],
   titleColor = "",
@@ -12,12 +12,14 @@ const CallToAction = ({
   bgColor = "",
   backgroundImage = "",
   minHeight = 0,
+  Buttons=[],
   buttons = [],
   phone = [],
   showPhone=true,
   showTags=true,
-  disableBgShape = false,
-  Sectiontitle = false,
+  disableBgShape = true,
+  Sectiontitle = true,
+  Showdescription=true,
 }) => {
   const router = useRouter();
   const [isThankYouPage, setIsThankYouPage] = useState(false);
@@ -53,7 +55,7 @@ const CallToAction = ({
                       ? "mb-4"
                       : ""
                   }
-                  title={heading}
+                  title={title}
                   subtitle={tags}
                   alignment="center"
                   titleColor={titleColor}
@@ -71,19 +73,20 @@ const CallToAction = ({
               )}
 
               <div className="text-center">
-                {Sectiontitle && (
-                  <a
-                    class="hoverable axil-button meeting_btn   
-        btn-solid 
-          "
-                    target="_blank"
-                    href="https://calendly.com/jimmynarula/introductory-meeting"
-                  >
-                    <span class="button-text hoverable ">{buttons.label}</span>
-                    <span class="fas fa-external-link-alt"></span>
-                  </a>
-                )}
-
+                {Buttons?.length > 0 &&
+                  Buttons?.map((button, index) => {
+                    const link = button?.Link || {};
+                    const hrefCandidate =
+                      link?.story?.url ?? link?.cached_url ?? link?.url ?? '';
+                    if (!hrefCandidate) return null;
+                    return (
+                      <Button
+                        key={button?._uid || `button-${index}`}
+                        button={button}
+                        index={index}
+                      />
+                    );
+                  })}
                 {showPhone && phone?.map((ph, index) => (
                   <div className="callto-action" key={index}>
                     <span className="text">Or call us now</span>

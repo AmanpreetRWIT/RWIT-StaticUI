@@ -151,10 +151,10 @@ const HeroSection = ({
                          btn-solid 
                         btn-large  "
                           target=""
-                          href={buttons.href || "#"}
+                          href={buttons?.href || "#"}
                         >
                           <span className="button-text hoverable px-0">
-                            {buttons.label}
+                            {buttons?.label}
                           </span>
                         </a>
                       </div>
@@ -190,10 +190,10 @@ const HeroSection = ({
                          btn-solid 
                         btn-large  "
                           target=""
-                          href={buttons.href || "#"}
+                          href={buttons?.href || "#"}
                         >
                           <span className="button-text hoverable px-0">
-                            {buttons.label}
+                            {buttons?.label}
                           </span>
                         </a>
                       </div>
