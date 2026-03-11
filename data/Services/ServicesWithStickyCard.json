@@ -1,86 +1,109 @@
 {
-    "BGColor": "",
-    "Title": "How we get things done",
-    "TitleColor": "",
-    "DescriptionColor": "#757589",
-    "Description": "We work closely with our clients to identify optimal solutions that meet their requirements and align with their goals and values.",
-    "Tags": ["Our formula of success"],
-    "Button": [
-      {
-        "_uid": "services-sticky-cta",
-        "component": "Button",
-        "Label": "Book a free consultation",
-        "ButtonColor": "extra09-color",
-        "ButtonSize": "",
-        "Class": "",
-        "HideArrow": false,
-        "HideButtonLogo": false,
-        "ButtonLogo": {
-          "id": null,
-          "alt": null,
-          "name": "",
-          "focus": null,
-          "title": null,
-          "filename": ""
-        },
-        "Link": {
-          "id": "",
-          "url": "/contact",
-          "cached_url": "contact",
-          "linktype": "story",
-          "target": "",
-          "fieldtype": "multilink"
-        }
-      }
-    ],
-    "Image": null,
-    "ImageAlt": "",
-    "showImageOnRight": false,
-    "CardTitleColor": "",
-    "CardDescriptionColor": "#757589",
-    "Services": [
-      {
-        "Heading": "Agile Approach",
-        "Description": "We embrace the Agile methodology, which means we work in iterative, short cycles to continuously assess and adapt to project needs. This allows us to remain nimble and responsive.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "headless wordpress development",
-        "Link": "/services/ai-agents-development"
+  "Tags": [
+    {
+      "BGColor": "",
+      "TagName": "Our Services",
+      "TextColor": ""
+    }
+  ],
+  "Image": {
+    "alt": null,
+    "filename": null
+  },
+  "Title": "Your Reliable Tech Partner",
+  "BGColor": "",
+  "Services": [
+    {
+      "Link": {
+        "url": "service/headless-cms",
+        "name": "Headless CMS"
       },
-      {
-        "Heading": "Transparent",
-        "Description": "Our process is built on open and honest communication, ensuring complete visibility into project progress, challenges, and decisions for both clients and team members.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "prismic developer",
-        "Link": "/"
+      "Image": {
+        "alt": "Headless CMS & Commerce",
+        "filename": "https://a-us.storyblok.com/f/1016184/512x512/784f632cce/headless-cms-commerce.svg"
       },
-      {
-        "Heading": "Teamwork",
-        "Description": "Collaboration among professionals with diverse skills is key to forming agile, cross-functional teams who work collectively towards a common goal.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "Headless CMS",
-        "Link": "/"
+      "Heading": "Headless CMS & Commerce",
+      "Description": "We build flexible, fast, and scalable websites and online stores using headless CMS and commerce solutions. Our goal is to make it easy for you to manage content while delivering seamless, high-performing experiences across web and mobile platforms. Whether you’re looking to improve your website’s speed, scalability, or customer experience  we’ll create a solution that fits your goals perfectly."
+    },
+    {
+      "Link": {
+        "url": "service/web-application-development",
+        "name": "Web Application Development"
       },
-      {
-        "Heading": "Flexibility",
-        "Description": "We understand that project requirements can change quickly. Our flexible approach enables us to adapt to evolving requirements and technology shifts, ensuring that we remain aligned with your goals.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "headless website development",
-        "Link": ""
+      "Image": {
+        "alt": "custom web app development",
+        "filename": "https://a-us.storyblok.com/f/1016184/512x512/de9e6210ff/custom-web-app-development.svg"
       },
-      {
-        "Heading": "Scalability",
-        "Description": "Our process ensures your solutions remain effective and relevant as your business evolves, by considering scalability and future growth.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "headless e-commerce",
-        "Link": ""
+      "Heading": "Web App Development",
+      "Description": "We design and develop custom web applications built around your unique business needs. Our team focuses on creating powerful, secure, and user-friendly apps that simplify your operations and help your business run more efficiently. From concept to deployment, we work closely with you to ensure every feature adds real value to your business."
+    },
+    {
+      "Link": {
+        "url": "service/mobile-development",
+        "name": "Mobile Development"
       },
-      {
-        "Heading": "Quality Assurance",
-        "Description": "Rigorous quality control and testing are integrated into our process to ensure the delivery of high-quality solutions.",
-        "Image": "/images/headless-cms-commerce.svg",
-        "AltText": "Headless WordPress development company",
-        "Link": ""
-      }
-    ]
-  }
-  
+      "Image": {
+        "alt": "Mobile App Development",
+        "filename": "https://a-us.storyblok.com/f/1016184/512x512/45518e07a4/mobile-app-development.svg"
+      },
+      "Heading": "Mobile App Development",
+      "Description": "We turn your ideas into engaging mobile applications for both iOS and Android. Our apps are designed to enhance customer experience, improve engagement, and drive growth. Whether it’s an eCommerce app, a service-based platform, or a productivity tool  we’ll help you bring your vision to life with a smooth and modern mobile experience."
+    },
+    {
+      "Link": {
+        "url": "service/generative-ai-development",
+        "name": "Generative AI Development"
+      },
+      "Image": {
+        "alt": "AI & Automation",
+        "filename": "https://a-us.storyblok.com/f/1016184/128x128/df56f4c1c0/ai-automation.svg"
+      },
+      "Heading": "AI & Automation",
+      "Description": "We help you save time and boost efficiency through AI-driven automation. Our solutions reduce manual work, improve accuracy, and optimize your workflow. From intelligent chatbots to automated data handling, we build smart systems that help you focus on what truly matters growing your business."
+    },
+    {
+      "Link": {
+        "name": "Digital Marketing",
+        "url": "service/digital-marketing"
+      },
+      "Image": {
+        "alt": "Digital Marketing",
+        "filename": "https://a-us.storyblok.com/f/1016184/512x512/bb9bceb7a5/digital-marketing.svg"
+      },
+      "Heading": "Digital Marketing",
+      "Description": "We help you grow your brand and reach more customers through effective digital marketing strategies. Our team crafts personalized campaigns that improve visibility, generate leads, and strengthen your online presence. From SEO and content marketing to social media and paid ads we focus on results that move your business forward."
+    },
+    {
+      "Link": {
+        "name": "Consulting",
+        "url": "service/consulting"
+      },
+      "Image": {
+        "alt": "Consulting",
+        "filename": "https://a-us.storyblok.com/f/1016184/512x512/6767964473/consulting.svg"
+      },
+      "Heading": "Consulting",
+      "Description": "Not sure where to begin? Our technology consulting services guide you toward the right digital solutions for your goals. We help you identify opportunities, plan strategies, and choose the best technologies to support your growth. Think of us as your trusted partner ready to lead you every step of the way on your digital journey."
+    }
+  ],
+  "TitleColor": "",
+  "Description": [
+    "We take the time to understand your goals and deliver solutions that help your business grow. Whether you know exactly what you need or are still exploring your options, we’ll guide you every step of the way.",
+    "Book a free consultation to discuss your ideas and discover the best path forward."
+  ],
+  "Button": {
+    "Label": "Book a free consultation",
+    "HideArrow": false,
+    "Class": "",
+    "ButtonSize": "",
+    "ButtonColor": "",
+    "HideButtonLogo": false,
+    "Link": {
+      "linktype": "url",
+      "url": "https://calendly.com/jimmynarula/introductory-meeting",
+      "target": "_blank"
+    }
+  },
+  "CardTitleColor": "",
+  "showImageOnRight": false
+}
