@@ -23,9 +23,7 @@ const Button = ({ button, index }) => {
     ? button.ButtonColor
     : `btn-${button.ButtonColor}`
   : "btn-primary";
-  console.log('colorClass', colorClass)
   
-
   return (
     <Link
       href={href}

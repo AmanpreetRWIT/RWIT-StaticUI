@@ -44,7 +44,7 @@ export default function HomePage() {
     footer: {
       style: "three",
       ...FooterData,
-      StickyFooter: true,
+      StickyFooter: false,
     },
     settings: {...NoticeData},
   };
