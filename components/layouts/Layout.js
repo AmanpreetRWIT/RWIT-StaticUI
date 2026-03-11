@@ -1,16 +1,16 @@
-import Header from './Header';
-import { useEffect, useState } from 'react';
-import { GoogleTagManager } from '@next/third-parties/google';
-import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
-import { isProduction } from '../../helpers/utilities';
-import BacklinkPopup from '../popup/BacklinkPopup';
-import Head from 'next/head';
+import Header from "./Header";
+import { useEffect, useState } from "react";
+import { GoogleTagManager } from "@next/third-parties/google";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import { isProduction } from "../../helpers/utilities";
+import BacklinkPopup from "../popup/BacklinkPopup";
+import Head from "next/head";
 
-const Footer = dynamic(() => import('./Footer'), { loading: () => <></> });
+const Footer = dynamic(() => import("./Footer"), { loading: () => <></> });
 
 const Layout = ({
-  layoutSettings = { header: '', footer: '', settings: '', notice: '' },
+  layoutSettings = { header: "", footer: "", settings: "", notice: "" },
   children,
   showFooter = true,
 }) => {
@@ -35,33 +35,33 @@ const Layout = ({
   useEffect(() => {
     // from settings  notice data
     const NoticeFromSetting = {
-      BadgeText: layoutSettings?.settings?.BadgeText || '',
-      Content: layoutSettings?.settings?.Content || '',
-      ShowBadge: layoutSettings?.settings?.ShowBadge || '',
-      SectionBgColor: layoutSettings?.settings?.SectionBgColor || '',
-      SectionTextColor: layoutSettings?.settings?.SectionTextColor || '',
-      BadgeBgColor: layoutSettings?.settings?.BadgeBgColor || '',
-      ShowNoticeSection: layoutSettings?.settings?.ShowNoticeSection || '',
-      ShowCloseButton: layoutSettings?.settings?.ShowCloseButton || '',
+      BadgeText: layoutSettings?.settings?.BadgeText || "",
+      Content: layoutSettings?.settings?.Content || "",
+      ShowBadge: layoutSettings?.settings?.ShowBadge || "",
+      SectionBgColor: layoutSettings?.settings?.SectionBgColor || "",
+      SectionTextColor: layoutSettings?.settings?.SectionTextColor || "",
+      BadgeBgColor: layoutSettings?.settings?.BadgeBgColor || "",
+      ShowNoticeSection: layoutSettings?.settings?.ShowNoticeSection || "",
+      ShowCloseButton: layoutSettings?.settings?.ShowCloseButton || "",
     };
     setNotice(NoticeFromSetting);
   }, []);
 
   useEffect(() => {
     const currentDomain = window?.location?.hostname;
-    if (currentDomain == 'www.rwit.io') {
+    if (currentDomain == "www.rwit.io") {
       setShowGtm(true);
     } else {
       setShowGtm(false);
     }
   }, [router]);
   useEffect(() => {
-    const mainWrapper = document?.querySelector('#__next');
+    const mainWrapper = document?.querySelector("#__next");
     layoutSettings?.settings?.BackLinkModal?.forEach((modal, index) => {
       const ctaPopup = document?.getElementById(`backlink-popup${index + 1}`);
-      const formBtn = ctaPopup?.querySelector('#FormButton');
-      formBtn?.classList?.add('btn-solid');
-      formBtn?.classList?.remove('btn-transparent');
+      const formBtn = ctaPopup?.querySelector("#FormButton");
+      formBtn?.classList?.add("btn-solid");
+      formBtn?.classList?.remove("btn-transparent");
       if (mainWrapper && ctaPopup) {
         mainWrapper?.appendChild(ctaPopup);
       }
@@ -69,14 +69,14 @@ const Layout = ({
   }, []);
 
   useEffect(() => {
-    const allLinks = document.querySelectorAll('a');
+    const allLinks = document.querySelectorAll("a");
     if (allLinks?.length > 0) {
       const arr = [...allLinks];
       arr?.forEach((link) => {
-        const url = link?.getAttribute('href');
+        const url = link?.getAttribute("href");
         layoutSettings?.settings?.BackLinkModal?.forEach((modal, index) => {
           if (url === `/${modal?.BackLink}`) {
-            link.addEventListener('click', (e) => {
+            link.addEventListener("click", (e) => {
               e.preventDefault();
               setIsActive(true);
               setIsPopupVisible(true);
@@ -86,7 +86,7 @@ const Layout = ({
         });
       });
       const backlink = arr?.some((link) => {
-        const url = link?.getAttribute('href');
+        const url = link?.getAttribute("href");
         return layoutSettings?.settings?.BackLinkModal?.some((modal) => {
           return url === `/${modal?.BackLink}`;
         });
@@ -98,10 +98,16 @@ const Layout = ({
   return (
     <>
       <Head>
-        <meta name='twitter:site' content={layoutSettings?.settings?.SiteCreator || ''} />
-        <meta name='twitter:creator' content={layoutSettings?.settings?.SiteCreator || ''} />
+        <meta
+          name="twitter:site"
+          content={layoutSettings?.settings?.SiteCreator || ""}
+        />
+        <meta
+          name="twitter:creator"
+          content={layoutSettings?.settings?.SiteCreator || ""}
+        />
       </Head>
-      <div className='main-content'>
+      <div className="main-content">
         {layoutSettings?.settings?.GTMID && showGtm && isProduction && (
           <GoogleTagManager gtmId={layoutSettings?.settings?.GTMID} />
         )}
@@ -110,10 +116,12 @@ const Layout = ({
           siteSettings={layoutSettings.settings}
           noticeData={isNotice}
         />
-        <main>{children}</main>
+        <main>
+        <div className="page-wrapper">{children}</div>
+        </main>
         {showFooter && <Footer footerSetting={layoutSettings.footer} />}
         {hasBacklink && (
-          <div id='global-popup'>
+          <div id="global-popup">
             {layoutSettings?.settings?.BackLinkModal?.map((modal, index) => {
               return (
                 <BacklinkPopup

@@ -515,7 +515,7 @@ const Footer = ({ footerSetting = {} }) => {
                   >
                     <div className="footer__copyright">
                       <p> © 2012 - {getCurrentYear()} </p>
-                      {(footerSetting?.footerData?.CopyrightText)}
+                      <p>{(footerSetting?.footerData?.CopyrightText)}</p>
                     </div>
                   </div>
                 )}
