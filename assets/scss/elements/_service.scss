@@ -22,16 +22,19 @@ Service Styles
     font-size: 26px;
     line-height: 32px;
   }
+
   @media #{$sm-layout} {
     h3 {
       font-size: 20px;
       line-height: 29px;
     }
+
     @media #{$small-mobile} {
       display: none;
     }
   }
 }
+
 /*---------------------------
     Single Service  
 ---------------------------*/
@@ -73,7 +76,7 @@ Service Styles
     padding-right: 40px;
     padding-bottom: 60px;
     position: relative;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 
     @media #{$sm-layout} {
       padding: 30px 20px;
@@ -271,6 +274,7 @@ Service Styles
           margin-bottom: 20px;
           font-size: 26px;
           line-height: 32px;
+
           @media #{$sm-layout} {
             margin-bottom: 15px;
             font-size: 20px;
@@ -539,7 +543,7 @@ Service Style Three
     word-break: break-word;
     padding-top: 40px;
 
-    .custom-color p{
+    .custom-color p {
       word-break: unset;
       hyphens: none;
     }
@@ -865,9 +869,11 @@ Service Style Three
   &__container {
     position: relative;
   }
+
   &__title {
     font-size: 26px;
     line-height: 32px;
+
     @media #{$sm-layout} {
       font-size: 20px;
       line-height: 29px;
@@ -1073,19 +1079,23 @@ Service Style Three
     }
   }
 }
+
 //Section Title
 
 #Services {
   .p-inline {
     padding: 0 10%;
   }
+
   .subtitle-2 {
     padding: 0 10%;
   }
+
   @media #{$small-mobile} {
     .p-inline {
       padding: 0 0;
     }
+
     .subtitle-2 {
       padding: 0 0;
     }
@@ -1119,9 +1129,11 @@ Service Style Three
       }
     }
   }
+
   .p-inline {
     padding: 0 5%;
   }
+
   .subtitle-2 {
     padding: 0 10%;
   }
@@ -1130,9 +1142,11 @@ Service Style Three
     .p-inline {
       padding: 0 0;
     }
+
     .subtitle-2 {
       padding: 0 0;
     }
+
     .service__desc {
       display: block;
     }
