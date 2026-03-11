@@ -46,7 +46,7 @@
           "_uid": "btn1",
           "component": "Button",
           "Label": "Transform Your Business Today",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/healthcare-app-development",
             "cached_url": "industries/healthcare-app-development"
@@ -92,7 +92,7 @@
           "_uid": "btn2",
           "component": "Button",
           "Label": "Explore Fintech Solutions",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/fintech-software-development",
             "cached_url": "industries/fintech-software-development"
@@ -138,7 +138,7 @@
           "_uid": "btn3",
           "component": "Button",
           "Label": "Grow Your Online Store",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/ecommerce-development",
             "cached_url": "industries/ecommerce-development"
@@ -184,7 +184,7 @@
           "_uid": "btn4",
           "component": "Button",
           "Label": "Explore Real Estate Solutions",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/real-estate-software",
             "cached_url": "industries/real-estate-software"
@@ -230,7 +230,7 @@
           "_uid": "btn5",
           "component": "Button",
           "Label": "Enhance Travel Experiences",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/travel-hospitality-solutions",
             "cached_url": "industries/travel-hospitality-solutions"
@@ -276,7 +276,7 @@
           "_uid": "btn6",
           "component": "Button",
           "Label": "Modernize Public Services",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/public-sector-solutions",
             "cached_url": "industries/public-sector-solutions"
@@ -322,7 +322,7 @@
           "_uid": "btn7",
           "component": "Button",
           "Label": "Boost Conversions with AI",
-          "ButtonColor": "extra09-color",
+          "ButtonColor": "",
           "Link": {
             "url": "/industries/ecommerce-personalization",
             "cached_url": "industries/ecommerce-personalization"

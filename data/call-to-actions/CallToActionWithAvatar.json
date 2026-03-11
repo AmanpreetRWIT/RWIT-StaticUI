@@ -14,7 +14,7 @@
       "_uid": "cta-with-avatar-primary",
       "component": "Button",
       "Label": "Book a discovery call",
-      "ButtonColor": "extra09-color",
+      "ButtonColor": "",
       "ButtonSize": "",
       "Class": "",
       "HideArrow": false,

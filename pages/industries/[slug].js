@@ -89,7 +89,7 @@ export default function AboutPage() {
         <Services blok={ServicesData} />
         <VideoTestimonials blok={VideoTestimonialsData} />
         <Counter {...CounterData} />
-        <ServicesWithStickyCards blok={{ ...ServicesWithStickyCardsData, Button: []}} />
+        <ServicesWithStickyCards blok={{ ...ServicesWithStickyCardsData}} />
         <AwardsAndCertifications blok={AwardsAndCertificationsData} />
         <FounderSpotlightCTA blok={founderSpotlightCTA}/>
         <ClientLogoSlider data={{...clientLogoSlider, Logos: []}} />

@@ -215,8 +215,7 @@ const LatestStories = ({ data }) => {
             <div className="latestStories__btn">
               <div className="slider-button gap-4 d-flex">
                 {data?.Buttons.map((button, index) => (
-                 <Button button={button} key={index} />
-
+                 <Button blok={button} key={index} />
                 ))}
               </div>
             </div>

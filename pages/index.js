@@ -29,7 +29,7 @@ import caseStudyMedia from "../data/CaseStudyGrid/CaseStudyMedia.json";
 import clientLogoSlider from "../data/client-and-partner/ClientLogoSlider.json";
 import industriesOverviewTab from "../data/industriesOverview/IndustriesOverviewTab.json";
 import awardsAndCertifications from "../data/AwardsAndCertifications/AwardsAndCertifications.json";
-import teamSpotlightCTA from "../data/call-to-actions/teamSpotlightCTA.json";
+import teamSpotlightCTA from "@/data/call-to-actions/TeamSpotlightCTA.json";
 import videoTestimonials from "@/data/testimonials/VideoTestimonials.json";
 import clutchMultipleTestimonials from "@/data/testimonials/ClutchMultipleTestimonials.json";
 

@@ -79,8 +79,8 @@ const IndustriesOverviewTab = ({ blok }) => {
                     
                     <Button
                       key={button?._uid || `button-${index}`}
-                      button={button}
-                      index={index}
+                      blok={button}
+                      Index={index}
                     ><i className="fas fa-external-link-alt"/></Button>
                   );
                 })}

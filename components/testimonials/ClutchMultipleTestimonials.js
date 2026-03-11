@@ -254,7 +254,7 @@ const ClutchMultipleTestimonials = ({ blok }) => {
                     }
                   : undefined,
               };
-              return <Button button={processedButton} key={button._uid} index={index} />;
+              return <Button blok={processedButton} key={button._uid} Index={index} />;
             })}
           </div>
         </div>

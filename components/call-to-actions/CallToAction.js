@@ -82,7 +82,7 @@ const CallToAction = ({
                     return (
                       <Button
                         key={button?._uid || `button-${index}`}
-                        button={button}
+                        blok={button}
                         index={index}
                       />
                     );

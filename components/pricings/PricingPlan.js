@@ -122,8 +122,8 @@ const PricingPlan = ({ data }) => {
                         return (
                           <Button
                             key={button?._uid || `button-${index}`}
-                            button={button}
-                            index={index}
+                            blok={button}
+                            Index={index}
                           />
                         );
                       })}

@@ -24,7 +24,7 @@
       "component": "Button",
       "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
       "Label": "Get In Touch",
-      "ButtonColor": "extra09-color",
+      "ButtonColor": "",
       "ButtonSize": "",
       "Class": "",
       "HideArrow": true,
