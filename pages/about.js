@@ -83,7 +83,6 @@ export default function AboutPage() {
         <ClutchMultipleTestimonials blok={clutchMultipleTestimonials}/>
         <Teams {...teams}/>
         <LatestStories data={latestStories}/>
-        <AboutUs data={aboutUsData} />
       </Layout>
     </>
   );
