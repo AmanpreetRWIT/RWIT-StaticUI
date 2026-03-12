@@ -246,7 +246,13 @@ const Blogs = () => {
                     className={`sliderBox ${slug}`}
                     key={index}
                   >
-                    <CategorySlider blogs={categorySliderData} />
+                     <CategorySlider
+                      key={index}
+                      blogs={categorySliderData}
+                      categoryTitle={CategoriesToShow[index]?.name}
+                      categoryLink={full_slug}
+                      slug={slug}
+                    />
                   </div>
                 )
             )}
