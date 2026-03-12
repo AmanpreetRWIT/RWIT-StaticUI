@@ -1,142 +1,283 @@
-
 {
-    "BGColor": { "color": "#f8f9fa" },
-    "Heading": "Our Pricing Plans",
-    "Tags": "Choose the plan that fits you best",
-    "Description": "Flexible pricing options for individuals and businesses.",
-    "HeadingColor": { "color": "#111111" },
-    "DescriptionColor": { "color": "#555555" },
-    "PricingCard": [
-      {
-        "Title": "Starter",
-        "SubTitle": "Perfect for freelancers",
-        "Featured": false,
-        "FeaturedText": "",
-        "Features": [
-          { "Text": "1 Project", "IsHover": false },
-          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
-          { "Text": "Community Access", "IsHover": false },
-          { "Text": "1 Project", "IsHover": false },
-          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
-          { "Text": "Community Access", "IsHover": false },
-          { "Text": "1 Project", "IsHover": false }
-          
-        ],
-        "Button": [
-          {
-            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
-            "component": "Button",
-            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
-            "Label": "Get In Touch",
-            "ButtonColor": "extra10-color",
-            "ButtonSize": "",
-            "Class": "",
-            "HideArrow": true,
-            "HideButtonLogo": false,
-            "ButtonLogo": {
-              "id": null,
-              "alt": null,
-              "name": "",
-              "focus": null,
-              "title": null
-            },
-            "Link": {
-              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
-              "url": "",
-              "linktype": "story",
-              "fieldtype": "multilink",
-              "cached_url": "/us/contact"
-            }
-          }
-        ]
-      },
-      {
-        "Title": "Professional",
-        "SubTitle": "Best for small teams",
-        "Featured": true,
-        "FeaturedText": "Most Popular",
-        "Features": [
-          { "Text": "10 Projects", "IsHover": false },
-          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
-          { "Text": "Team Collaboration", "IsHover": false },
-          { "Text": "10 Projects", "IsHover": false },
-          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
-          { "Text": "Team Collaboration", "IsHover": false },
-          { "Text": "10 Projects", "IsHover": false },
-          { "Text": "Priority Support", "IsHover": true, "InfoText": "24/7 chat" },
-          { "Text": "Team Collaboration", "IsHover": false },
-          { "Text": "10 Projects", "IsHover": false }
-        ],
-        "Button": [
-          {
-            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
-            "component": "Button",
-            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
-            "Label": "Contact us",
-            "ButtonColor": "transparent",
-            "ButtonSize": "",
-            "Class": "",
-            "HideArrow": true,
-            "HideButtonLogo": false,
-            "ButtonLogo": {
-              "id": null,
-              "alt": null,
-              "name": "",
-              "focus": null,
-              "title": null
-            },
-            "Link": {
-              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
-              "url": "",
-              "linktype": "story",
-              "fieldtype": "multilink",
-              "cached_url": "/us/contact"
-            }
-          }
-        ]
-      },
-      {
-        "Title": "Starter",
-        "SubTitle": "Perfect for freelancers",
-        "Featured": false,
-        "FeaturedText": "",
-        "Features": [
-          { "Text": "1 Project", "IsHover": false },
-          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
-          { "Text": "Community Access", "IsHover": false },
-          { "Text": "1 Project", "IsHover": false },
-          { "Text": "Basic Support", "IsHover": true, "InfoText": "Email only" },
-          { "Text": "Community Access", "IsHover": false },
-          { "Text": "1 Project", "IsHover": false }
-          
-        ],
-        "Button": [
-          {
-            "_uid": "56d06790-a767-42af-b052-a6a978d08717",
-            "component": "Button",
-            "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
-            "Label": "Get In Touch",
-            "ButtonColor": "extra09-color",
-            "ButtonSize": "",
-            "Class": "",
-            "HideArrow": true,
-            "HideButtonLogo": false,
-            "ButtonLogo": {
-              "id": null,
-              "alt": null,
-              "name": "",
-              "focus": null,
-              "title": null
-            },
-            "Link": {
-              "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
-              "url": "",
-              "linktype": "story",
-              "fieldtype": "multilink",
-              "cached_url": "/us/contact"
-            }
-          }
-        ]
-      }]}
-      
-  
+  "Tags": "",
+  "BGColor": "",
+  "Heading": "Headless Maintenance Packages",
+  "Description": "Ensure your headless websites run smoothly with our expert maintenance services, including updates, security checks, and performance optimizations.",
+  "PricingCard": [
+    {
+      "Price": "",
+      "Title": "Essential",
+      "Button": [
+        {
+          "Link": {
+            "url": "https://www.rwit.io/contact?utm_source=www&utm_medium=button_click&utm_campaign=essential_package"
+          },
+          "Class": "",
+          "Label": "Contact us",
+          "HideArrow": true,
+          "ButtonSize": "",
+          "ButtonColor": ""
+        }
+      ],
+      "Featured": false,
+      "Features": [
+        {
+          "Text": "Monthly Hours 15 - 20",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Headless CMS Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Monthly Package Upgrades",
+          "IsHover": false,
+          "InfoText": "Hi This is a test",
+          "IsChecked": true
+        },
+        {
+          "Text": "Changes in Components",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website Optimisations",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website security audit",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "GTM Integration",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Email & Phone Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        }
+      ],
+      "SubTitle": "Suitable for smaller sites",
+      "ButtonNote": "",
+      "FeaturedText": ""
+    },
+    {
+      "Price": "",
+      "Title": "Enterprise",
+      "Button": [
+        {
+          "Link": {
+            "url": "https://www.rwit.io/contact?utm_source=www&utm_medium=button_click&utm_campaign=enterprise_package"
+          },
+          "Class": "",
+          "Label": "Contact us",
+          "HideArrow": true,
+          "component": "Button",
+          "ButtonSize": "",
+          "ButtonColor": "btn-transparent"
+        }
+      ],
+      "Featured": true,
+      "Features": [
+        {
+          "Text": "100 + Monthly Hours ",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Headless CMS Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Headless Commerce Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Multi-language Website Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Fortnightly Package Upgrades",
+          "IsHover": false,
+          "InfoText": "Hi This is a test",
+          "IsChecked": true
+        },
+        {
+          "Text": "New Feature Requests",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "New Design Requests",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Third Party API Integrations",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Typescript & Graphql Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Search Indices Integration",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website Optimisations",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website security audit",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Code Review & DevOPS Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "GTM Integration & Custom events",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Email & Phone Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        }
+      ],
+      "SubTitle": "Suitable for large sites ",
+      "ButtonNote": "",
+      "FeaturedText": "Recommended"
+    },
+    {
+      "Price": "",
+      "Title": "Advanced",
+      "Button": [
+        {
+          "Link": {
+            "url": "https://www.rwit.io/contact?utm_source=www&utm_medium=button_click&utm_campaign=advanced_package"
+          },
+          "Class": "",
+          "Label": "Contact us",
+          "HideArrow": true,
+          "component": "Button",
+          "ButtonSize": "",
+          "ButtonColor": ""
+        }
+      ],
+      "Featured": false,
+      "Features": [
+        {
+          "Text": "Monthly Hours 40 - 50",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Headless CMS Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Fortnightly Package Upgrades",
+          "IsHover": false,
+          "InfoText": "Hi This is a test",
+          "IsChecked": true
+        },
+        {
+          "Text": "New Feature Requests",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "New Design Requests",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "DevOPS Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Typescript Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website Optimisations",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Website security audit",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "GTM Integration & Custom events",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        },
+        {
+          "Text": "Email & Phone Support",
+          "IsHover": false,
+          "InfoText": "",
+          "IsChecked": true
+        }
+      ],
+      "SubTitle": "Suitable for dynamic sites",
+      "component": "PricingCard",
+      "ButtonNote": "",
+      "FeaturedText": ""
+    }
+  ],
+  "HeadingColor": "",
+  "DescriptionColor": ""
+}
