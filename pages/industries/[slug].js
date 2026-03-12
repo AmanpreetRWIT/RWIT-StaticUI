@@ -33,7 +33,7 @@ import AwardsAndCertificationsData from "@/data/AwardsAndCertifications/AwardsAn
 import founderSpotlightCTA from "@/data/call-to-actions/FounderSpotlightCTA.json";
 import clientLogoSlider from "@/data/client-and-partner/ClientLogoSlider.json";
 import caseStudyMedia from "@/data/CaseStudyGrid/CaseStudyMedia.json";
-import OurValuesData from "@/data/ourvalues/OurValues.json";
+import OurValuesData from "@/data/ourvalues/Ourvalues.json";
 import ClutchMultipleTestimonialsData from "@/data/testimonials/ClutchMultipleTestimonials.json";
 import faqData from "@/data/faq/Faq.json";
 import CallToActionWithAvatarData from "@/data/call-to-actions/CallToActionWithAvatar.json";

@@ -45,7 +45,7 @@ import NoticeData from "../../data/notice/Notice.json";
 import brandTwo from "@/data/brands/BrandTwo.json";
 import teamSpotlightCTA from "@/data/call-to-actions/TeamSpotlightCTA.json";
 import videoTestimonials from "@/data/testimonials/VideoTestimonials.json";
-import ourValues from "@/data/ourvalues/OurValues.json";
+import ourValues from "@/data/ourvalues/Ourvalues.json";
 import founderSpotlightCTA from "@/data/call-to-actions/FounderSpotlightCTA.json";
 import awardsAndCertifications from "@/data/AwardsAndCertifications/AwardsAndCertifications.json";
 import clientLogoSlider from "@/data/client-and-partner/ClientLogoSlider.json";
