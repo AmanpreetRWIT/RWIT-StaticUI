@@ -38,7 +38,7 @@ import ClutchMultipleTestimonialsData from "@/data/testimonials/ClutchMultipleTe
 import faqData from "@/data/faq/Faq.json";
 import CallToActionWithAvatarData from "@/data/call-to-actions/CallToActionWithAvatar.json";
 import ServicesData from "@/data/Services/Services.json";
-import ContentWithMediaData from "@/data/ContentWithMedia/ContentWithMedia.json";
+import ContentWithMediaData from "@/data/contentWithMedia/contentWithMedia.json";
 import CounterData from "@/data/counters/Counter.json";
 
 export default function AboutPage() {
