@@ -42,7 +42,7 @@
         "ExcludeFromSitemap": false,
         "RemoveBreadcrumb": false,
         "RobotsMetaTag": "all",
-        "full_slug": "/case-studies/alamo-tees",
+        "full_slug": "/case-study/alamo-tees",
         "Label": "Read Case Study",
 
         "BGColor": {
@@ -125,7 +125,7 @@
         "ExcludeFromSitemap": false,
         "RemoveBreadcrumb": false,
         "RobotsMetaTag": "all",
-        "full_slug": "/case-studies/case-study-two",
+        "full_slug": "/case-study/case-study-two",
         "Label": "Read Case Study",
         "Image": {
           "filename": "/images/next-js-light-icon.svg",
@@ -159,7 +159,7 @@
         "PageOption": "Regular Page",
         "PopupTitle": "Facing similar challenges?",
         "PopupDescription": "Contact us to discover our tailored solutions.",
-        "full_slug": "/case-studies/case-study-three",
+        "full_slug": "/case-study/case-study-three",
         "Label": "Read Case Study",
         "Image": {
           "filename": "/images/wordpress-icon.svg",
@@ -193,7 +193,7 @@
         "PageOption": "Regular Page",
         "PopupTitle": "Facing similar challenges?",
         "PopupDescription": "Contact us to discover our tailored solutions.",
-        "full_slug": "/case-studies/case-study-four",
+        "full_slug": "/case-study/case-study-four",
         "Label": "Read Case Study",
         "Image": {
           "filename": "/images/gsap-light-icon.svg",
@@ -227,7 +227,7 @@
         "PageOption": "Regular Page",
         "PopupTitle": "Facing similar challenges?",
         "PopupDescription": "Contact us to discover our tailored solutions.",
-        "full_slug": "/case-studies/case-study-five",
+        "full_slug": "/case-study/case-study-five",
         "Label": "Read Case Study",
         "Image": {
           "filename": "/images/builder-icon.svg",
