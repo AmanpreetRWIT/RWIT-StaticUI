@@ -17,7 +17,7 @@ import Faq from "@/components/faq/Faq";
 import CallToActionWithAvatar from "@/components/call-to-actions/CallToActionWithAvatar";
 import Services from "@/components/Services/Services";
 import ContentWithMedia from "@/components/ContentWithMedia";
-import Counter from "@/components/counters/Counter";
+import CounterTwo from "@/components/counters/CounterTwoColumn";
 
 // JSON Data
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
@@ -39,9 +39,9 @@ import faqData from "@/data/faq/Faq.json";
 import CallToActionWithAvatarData from "@/data/call-to-actions/CallToActionWithAvatar.json";
 import ServicesData from "@/data/Services/Services.json";
 import ContentWithMediaData from "@/data/contentWithMedia/contentWithMedia.json";
-import CounterData from "@/data/counters/Counter.json";
+import counterTwo from "@/data/counters/CounterTwoColumn.json";
 
-export default function AboutPage() {
+export default function Page() {
   const layoutSettings = {
     header: {
       style: "four",
@@ -88,8 +88,8 @@ export default function AboutPage() {
         <TeamSpotlightCTA blok={TeamSpotlightCTAData} />
         <Services blok={ServicesData} />
         <VideoTestimonials blok={VideoTestimonialsData} />
-        <Counter {...CounterData} />
-        <ServicesWithStickyCards blok={{ ...ServicesWithStickyCardsData, Button: []}} />
+        <CounterTwo {...counterTwo}/>
+        <ServicesWithStickyCards blok={{ ...ServicesWithStickyCardsData}} />
         <AwardsAndCertifications blok={AwardsAndCertificationsData} />
         <FounderSpotlightCTA blok={founderSpotlightCTA}/>
         <ClientLogoSlider data={{...clientLogoSlider, Logos: []}} />

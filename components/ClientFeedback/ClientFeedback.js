@@ -36,7 +36,7 @@ const ClientFeedback = ({ blok }) => {
           }}
         >
           {blok?.FeedbackText && (
-           <p
+           <div
            className="client-feedback-content subtitle-2"
            dangerouslySetInnerHTML={{ __html: blok?.FeedbackText }}
          />
