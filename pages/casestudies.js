@@ -88,7 +88,7 @@ export default function CaseStudiesPage() {
         <CounterTwo {...counterTwo} />
         <VideoTestimonials blok={videoTestimonials} />
         <ClutchMultipleTestimonials blok={clutchMultipleTestimonials} />
-        <ContentWithMedia {...contentWithMedia}/>
+        <ContentWithMedia blok={contentWithMedia} />
         {/* <CaseStudySlides {...caseStudySlides}/> */}
         <CallToActionWithAvatar {...callToActionWithAvatar} />
       </Layout>

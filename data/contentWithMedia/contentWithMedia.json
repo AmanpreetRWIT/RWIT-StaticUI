@@ -1,33 +1,75 @@
 {
-  "layoutType": "flex-row",
-  "gradientStyle": "theme-gradient-2",
-  "bgColor": "#F8F9FA",
-  "disableBgShape": false,
-  "image": {
-    "filename": "https://a-us.storyblok.com/f/1016184/62x62/673e7f61e5/sanity-1.svg",
-    "alt": "Sample image"
+  "Tags": [],
+  "Image": {
+    "alt": "headless e commerce",
+    "filename": "https://a-us.storyblok.com/f/1016184/1440x967/4698c8574a/rush-order-tees-banner.png"
   },
-  "video": {
+  "Title": "See How We Helped Rush Order Tees Grow",
+  "Video": {
+    "alt": null,
     "filename": ""
   },
-  "tags": [
-    { "name": "Design" },
-    { "name": "Development" }
-  ],
-  "title": "Beautifully Crafted UI Section",
-  "titleColor": "#222222",
-  "description": "This section showcases how media and content blend seamlessly in a responsive layout.",
-  "descriptionColor": "#555555",
-  "buttons": [
+  "Button": [
     {
-      "text": "Learn More",
-      "href": "#",
-      "style": "btn-primary"
-    },
-    {
-      "text": "Contact Us",
-      "href": "#",
-      "style": "btn-outline"
+      "Link": {
+        "name": "RushOrderTees",
+        "url": "case-study/rushordertees"
+      },
+      "type": "",
+      "Class": "",
+      "Label": "Read Full Story",
+      "HideArrow": true,
+      "ButtonLogo": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "filename": "",
+        "copyright": null,
+        "fieldtype": "asset",
+        "meta_data": {}
+      },
+      "ButtonSize": "",
+      "ButtonColor": "",
+      "HideButtonLogo": false
     }
-  ]
+  ],
+  "Layout": "flex-row",
+  "BGColor": "#EEF0FA",
+  "component": "ContentWithMedia",
+  "TitleColor": "",
+  "Description": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "textAlign": null
+        },
+        "content": [
+          {
+            "text": "Take a look at how We helped ",
+            "type": "text"
+          },
+          {
+            "text": "Rush Order Tees",
+            "type": "text",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "text": " streamline their orders, manage inventory, and grow their business faster. See the results and imagine what it can do for your business too.",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "GradientStyle": "theme-gradient-9",
+  "CaseStudyBlock": false,
+  "DisableBgShape": true,
+  "DescriptionColor": "",
+  "ImageDisplayStyle": ""
 }

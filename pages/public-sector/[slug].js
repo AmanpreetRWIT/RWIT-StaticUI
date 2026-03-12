@@ -84,7 +84,7 @@ export default function AboutPage() {
         <HeroSection {...HeroSectionData} partnersLogo={[]} />
         <HeroSection {...HeroSectionData} partnersLogo={[]} textAlignment={""} gradientStyle={""} buttons={[]} showbannerImage={true} removeExtraPadding={true} />
         <ServicesWithLeftTitle blok={ServicesWithLeftTitleData} />
-        <ContentWithMedia {...ContentWithMediaData}/>
+        <ContentWithMedia blok={ContentWithMediaData}/>
         <TeamSpotlightCTA blok={TeamSpotlightCTAData} />
         <Services blok={ServicesData} />
         <VideoTestimonials blok={VideoTestimonialsData} />

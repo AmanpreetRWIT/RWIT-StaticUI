@@ -67,7 +67,7 @@ export default function CaseStudiesPage() {
         <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
         <RepeatableItems blok={repeatableItems}/>
         <Testimonial data={testimonial}/>
-        <ContentWithMedia {...contentWithMedia}/>
+        <ContentWithMedia blok={contentWithMedia} />
         <CaseStudySlides {...caseStudySlides}/>
         <CallToActionWithAvatar {...callToActionWithAvatar}/>
       </Layout>
