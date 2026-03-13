@@ -1,14 +1,14 @@
 {
-  "bgColor": "#f9f9f9",
-  "revertColumn": false,
-  "title": "Our Clients",
-  "subtitle": "Helping clients since 2012",
-  "description": "RW Infotech is a founder-led digital agency, originally established in India. Over the years, we’ve expanded our operations across Dubai, the USA, and Australia. Today, our primary operations are based in Dubai UAE, serving clients across the globe with innovative, scalable solutions.",
-  "titleColor": "#000248",
-  "descriptionColor": "#757589",
+  "BGColor": "#f9f9f9",
+  "RevertColumn": false,
+  "Title": "Our Clients",
+  "Tags": "Helping clients since 2012",
+  "Description": "RW Infotech is a founder-led digital agency, originally established in India. Over the years, we’ve expanded our operations across Dubai, the USA, and Australia. Today, our primary operations are based in Dubai UAE, serving clients across the globe with innovative, scalable solutions.",
+  "TitleColor": "#000248",
+  "DescriptionColor": "#757589",
   "logos": [
     {
-      "src": "https://a-us.storyblok.com/f/1016184/300x212/c02c23c595/ssd.svg",
+      "src": "/images/clutch.svg",
       "alt": "Brand 1",
       "grayscale": false
     },
@@ -88,18 +88,46 @@
       "grayscale": false
     }
   ],
-  "clients": [
+  "Clients": [
     {
-      "src": "/images/client1.png",
-      "alt": "Client 1"
+      "_uid": "client-1",
+      "component": "brand",
+      "content": {
+        "Logo": {
+          "filename": "https://a-us.storyblok.com/f/1016184/220x68/7c10b5240f/frame-2.png",
+          "alt": "Google Logo"
+        }
+      }
     },
     {
-      "src": "/images/client2.png",
-      "alt": "Client 2"
+      "_uid": "client-2",
+      "component": "brand",
+      "content": {
+        "Logo": {
+          "filename": "https://a-us.storyblok.com/f/1016184/220x68/7c10b5240f/frame-2.png",
+          "alt": "Microsoft Logo"
+        }
+      }
     },
     {
-      "src": "/images/client3.png",
-      "alt": "Client 3"
+      "_uid": "client-3",
+      "component": "brand",
+      "content": {
+        "Logo": {
+          "filename": "https://a-us.storyblok.com/f/1016184/220x68/7c10b5240f/frame-2.png",
+          "alt": "Amazon Logo"
+        }
+      }
+    },
+    {
+      "_uid": "client-4",
+      "component": "brand",
+      "content": {
+        "Logo": {
+          "filename": "https://a-us.storyblok.com/f/1016184/220x68/7c10b5240f/frame-2.png",
+          "alt": "Apple Logo"
+        }
+      }
     }
   ]
 }
