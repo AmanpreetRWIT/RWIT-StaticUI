@@ -20,58 +20,6 @@ const iconMap = {
   storyblok: "storyblok.svg",
 };
 
-const blok = {
-  component: "CaseStudyGrid",
-  BGColor: {
-    _uid: "6dfe7208-16e5-41a8-ac1d-711949ba8a9f",
-    color: "",
-    plugin: "official-colorpicker",
-  },
-  Heading: "Success Stories from Our Global Clients",
-  HeadingColor: {
-    _uid: "fe3779a5-0ae5-4b54-a2d1-c975e9738889",
-    color: "",
-    plugin: "official-colorpicker",
-  },
-  Description:
-    "RW Infotech partners with businesses worldwide to build scalable, high-performance solutions. Explore our case studies to see how our expertise and innovation drive success across industries.",
-  DescriptionColor: {
-    _uid: "a440adf8-8c7c-4950-a2b0-96df2693bb17",
-    color: "",
-    plugin: "official-colorpicker",
-  },
-  GridLayout: false,
-  CaseStudies: null,
-  CategoryTab: [
-    "Next JS",
-    "Headless CMS",
-    "Prismic",
-    "Sanity",
-    "Builder.io",
-    "Wordpress",
-    "Webflow",
-    "Storyblok",
-  ],
-  Tags: [
-    {
-      component: "Tag",
-      _uid: "e1731cab-c1c6-4636-bca3-d3a79e108c3c",
-      _editable:
-        '<!--#storyblok#{"name": "Tag", "space": "1016184", "uid": "e1731cab-c1c6-4636-bca3-d3a79e108c3c", "id": "2739103"}-->',
-      TagName: "Case Studies",
-      BGColor: {
-        _uid: "31096543-04f1-4b43-b1b8-c21e6b88f931",
-        color: "",
-        plugin: "official-colorpicker",
-      },
-      TextColor: {
-        _uid: "312d4e95-f5ab-41f7-b863-ab23c7fe1e0f",
-        color: "",
-        plugin: "official-colorpicker",
-      },
-    },
-  ],
-};
 let caseStudyData = null;
 try {
   caseStudyData = require("../../public/caseStudyData.json");
@@ -79,7 +27,7 @@ try {
   console.error("caseStudyData.json not found:", error);
 }
 
-const CaseStudyGrid = ({}) => {
+const CaseStudyGrid = ({blok}) => {
   const [mouseLeaveTab, setMouseLeaveTab] = useState(null);
 
   const caseStudy = useMemo(() => {
