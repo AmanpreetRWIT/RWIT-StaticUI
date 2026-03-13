@@ -24,6 +24,7 @@ import ClientLogoSlider from "@/components/client-and-partner/ClientLogoSlider";
 import CaseStudyMedia from "@/components/CaseStudyGrid/CaseStudyMedia";
 import ClutchMultipleTestimonials from "@/components/testimonials/ClutchMultipleTestimonials";
 import Services from "@/components/Services/Services";
+import TestimonalSlider from "@/components/testimonials/TestimonalSlider";
 
 // JSON Data
 import aboutUsData from "../../data/abouts/AboutUs.json";
@@ -52,6 +53,7 @@ import clientLogoSlider from "@/data/client-and-partner/ClientLogoSlider.json";
 import caseStudyMedia from "@/data/CaseStudyGrid/CaseStudyMedia.json";
 import clutchMultipleTestimonials from "@/data/testimonials/ClutchMultipleTestimonials.json";
 import services from "@/data/Services/Services.json";
+import testimonalSlider from "@/data/testimonials/TestimonalSlider.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -117,6 +119,7 @@ export default function AboutPage() {
         <AboutUs data={aboutUsData} />
         <ClientAndPartner data={clientAndPartner} />
         <Testimonial data={testimonial} />
+        <TestimonalSlider data={testimonalSlider}/>
         <ServicesWithStickyCards blok={servicesWithStickyCards} />
         <CallToActionSlim {...callToActionSlim} />
       </Layout>
