@@ -1,5 +1,5 @@
 import SectionTitle from "../common/SectionTitle";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useMemo } from "react";
 import Image from "next/image";
 import { formatDateString } from "../../helpers/utilities";
 import { DateTime } from "luxon";
@@ -72,75 +72,75 @@ const blok = {
     },
   ],
 };
+let caseStudyData = null;
+try {
+  caseStudyData = require("../../public/caseStudyData.json");
+} catch (error) {
+  console.error("caseStudyData.json not found:", error);
+}
+
 const CaseStudyGrid = ({}) => {
-  let caseStudyData;
   const [mouseLeaveTab, setMouseLeaveTab] = useState(null);
-  try {
-    caseStudyData = require("../../public/caseStudyData.json");
-  } catch (error) {
-    console.error("caseStudyData.json not found:", error);
-    caseStudyData = null;
-  }
-  const latestData = caseStudyData
-    ? caseStudyData?.stories?.flatMap((study) =>
+
+  const caseStudy = useMemo(() => {
+    const latestData = caseStudyData
+      ? caseStudyData?.stories?.flatMap((study) =>
+          study?.content?.body
+            ?.filter((content) => content?.component === "CaseStudyDetails")
+            ?.map((caseStudyDetail) => ({
+              ...caseStudyDetail,
+              full_slug: study?.full_slug,
+              published_at: study?.first_published_at,
+            }))
+            ?.sort((a, b) => {
+              const beforeDate = DateTime.fromFormat(
+                formatDateString(a.published_at),
+                "MMMM dd yyyy",
+              ).toMillis();
+              const afterDate = DateTime.fromFormat(
+                formatDateString(b.published_at),
+                "MMMM dd yyyy",
+              ).toMillis();
+              return afterDate - beforeDate;
+            }),
+        )
+      : [];
+
+    const mapCaseStudyGridCard = (studies) => {
+      return studies?.map((study) => {
+        const matchedCaseStudy = caseStudyData?.stories?.find(
+          (caseStudy) => caseStudy?.uuid === study.CaseStudy,
+        );
+        const caseStudyDetails = matchedCaseStudy?.content.body?.find(
+          (content) => content?.component === "CaseStudyDetails",
+        );
+        return {
+          ...caseStudyDetails,
+          full_slug: matchedCaseStudy?.full_slug,
+          published_at: matchedCaseStudy?.published_at,
+        };
+      });
+    };
+
+    if (blok?.CaseStudyGridCard?.length > 0) {
+      return mapCaseStudyGridCard(blok.CaseStudyGridCard);
+    } else if (blok?.CaseStudies?.length > 0) {
+      return blok.CaseStudies.flatMap((study) =>
         study?.content?.body
           ?.filter((content) => content?.component === "CaseStudyDetails")
           ?.map((caseStudyDetail) => ({
             ...caseStudyDetail,
             full_slug: study?.full_slug,
             published_at: study?.first_published_at,
-          }))
-          ?.sort((a, b) => {
-            const beforeDate = DateTime.fromFormat(
-              formatDateString(a.published_at),
-              "MMMM dd yyyy",
-            ).toMillis();
-            const afterDate = DateTime.fromFormat(
-              formatDateString(b.published_at),
-              "MMMM dd yyyy",
-            ).toMillis();
-            return afterDate - beforeDate;
-          }),
-      )
-    : [];
-  const mapCaseStudyGridCard = (studies) => {
-    return studies?.map((study) => {
-      const matchedCaseStudy = caseStudyData?.stories?.find(
-        (caseStudy) => caseStudy?.uuid === study.CaseStudy,
+          })),
       );
-      const caseStudyDetails = matchedCaseStudy?.content.body?.find(
-        (content) => content?.component === "CaseStudyDetails",
-      );
-      return {
-        ...caseStudyDetails,
-        full_slug: matchedCaseStudy?.full_slug,
-        published_at: matchedCaseStudy?.published_at,
-      };
-    });
-  };
-
-  let caseStudy = [];
-
-  if (blok?.CaseStudyGridCard?.length > 0) {
-    caseStudy = mapCaseStudyGridCard(blok.CaseStudyGridCard);
-  } else if (blok?.CaseStudies?.length > 0) {
-    caseStudy = blok.CaseStudies.flatMap((study) =>
-      study?.content?.body
-        ?.filter((content) => content?.component === "CaseStudyDetails")
-        ?.map((caseStudyDetail) => ({
-          ...caseStudyDetail,
-          full_slug: study?.full_slug,
-          published_at: study?.first_published_at,
-        })),
-    );
-  } else {
-    caseStudy = latestData;
-  }
+    } else {
+      return latestData;
+    }
+  }, []);
 
   const [activeTab, setActiveTab] = useState("All");
-  const [activeCards, setActiveCards] = useState([]);
   const [visibleCount, setVisibleCount] = useState(6);
-  const [labels, setLabels] = useState([]);
   const loadMoreRef = useRef(null);
 
   // Function to get all case study labels
@@ -160,6 +160,8 @@ const CaseStudyGrid = ({}) => {
     return Array?.from(labelSet);
   };
 
+  const labels = useMemo(() => getAllCaseStudyLabels(caseStudy), [caseStudy]);
+
   const filterCaseStudiesByLabel = (caseStudies, selectedLabel) => {
     if (!selectedLabel || selectedLabel === "All") {
       return caseStudies || [];
@@ -173,18 +175,16 @@ const CaseStudyGrid = ({}) => {
     );
   };
 
-  useEffect(() => {
-    const allLabels = getAllCaseStudyLabels(caseStudy);
-    setLabels(allLabels);
-  }, [caseStudy]);
+  const activeCards = useMemo(() => filterCaseStudiesByLabel(caseStudy, activeTab), [caseStudy, activeTab]);
 
   useEffect(() => {
-    const filteredCaseStudies = filterCaseStudiesByLabel(caseStudy, activeTab);
-    setActiveCards(filteredCaseStudies);
     setVisibleCount(6);
-  }, [activeTab, caseStudy]);
+  }, [activeTab]);
 
   useEffect(() => {
+    if (!activeCards || activeCards.length === 0) return;
+    if (visibleCount >= activeCards.length) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -194,16 +194,18 @@ const CaseStudyGrid = ({}) => {
       { threshold: 0.1 },
     );
 
-    if (loadMoreRef.current) {
-      observer.observe(loadMoreRef.current);
+    const currentRef = loadMoreRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (loadMoreRef.current) {
-        observer.unobserve(loadMoreRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
+      observer.disconnect();
     };
-  }, [activeCards]);
+  }, [activeCards, visibleCount]);
 
   return (
     <div className="caseStudyGrid">
