@@ -38,10 +38,10 @@
       },
       "Link": {
         "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
-        "url": "",
+        "url": "/contact",
         "linktype": "story",
         "fieldtype": "multilink",
-        "cached_url": "/us/contact"
+        "cached_url": "/contact"
       }
     }
   ],

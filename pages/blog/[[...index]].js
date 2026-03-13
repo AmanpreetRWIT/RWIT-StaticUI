@@ -8,6 +8,8 @@ import Layout from "@/components/layouts/Layout";
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import NoticeData from "../../data/notice/Notice.json";
+import BlogTable from "@/components/blogs/singlePageBlok/BlogTable";
+import blogTable from "@/data/blogs/singlePageBlok/BlogTable.json";
 
 const Blog = ({ blogArchive, headerMenus, settings }) => {
   
@@ -947,6 +949,7 @@ const Blog = ({ blogArchive, headerMenus, settings }) => {
             blogItems={blogItems}
           />
         </main>
+        <BlogTable {...blogTable}/>
       </Layout>
     </>
   );

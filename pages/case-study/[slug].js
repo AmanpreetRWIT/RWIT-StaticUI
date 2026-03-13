@@ -9,6 +9,7 @@ import CaseStudySlides from "../../components/MultiImageSlider/CaseStudySlides";
 import HeroWithVerticalImage from "../../components/banner/HeroWithVerticalImage";
 import CallToActionWithAvatar from "../../components/call-to-actions/CallToActionWithAvatar";
 import RepeatableItems from "../../components/content/RepeatableItems";
+import ClientFeedback from "@/components/ClientFeedback/ClientFeedback";
 // JSON Data
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
@@ -21,7 +22,7 @@ import testimonial from "../../data/testimonials/Testimonial.json";
 import callToActionWithAvatar from "../../data/call-to-actions/CallToActionWithAvatar.json";
 import repeatableItems from "../../data/content/RepeatableItems.json";
 import NoticeData from "../../data/notice/Notice.json";
-
+import clientFeedback from "@/data/ClientFeedback/ClientFeedback.json";
 
 export default function CaseStudiesPage() {
   const layoutSettings = {
@@ -66,6 +67,7 @@ export default function CaseStudiesPage() {
         <HeroWithoutImage {...heroWithoutImage.Default}/>
         <HeroWithVerticalImage {...heroWithVerticalImage.Default} />
         <RepeatableItems blok={repeatableItems}/>
+        <ClientFeedback blok={clientFeedback}/>
         <Testimonial data={testimonial}/>
         <ContentWithMedia blok={contentWithMedia} />
         <CaseStudySlides {...caseStudySlides}/>
