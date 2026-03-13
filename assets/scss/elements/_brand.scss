@@ -20,6 +20,8 @@
 #brand__container {
   @media #{$small-mobile} {
     padding-inline: 0;
+    max-width: 100vw;
+    overflow: hidden;
 
     .brand {
       &__wrap {
