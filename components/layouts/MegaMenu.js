@@ -1,22 +1,60 @@
+import { renderRichText } from '../../helpers/utilities';
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => {
-  const updatelist = (menu) => {
-    const menulist = menu[0];
-    if (!menulist || !Array.isArray(menu)) return 'submenu-lists';
-    if (
-      menulist?.ChildMenus4?.length > 0 &&
-      menulist?.ChildMenus3?.length > 0 &&
-      menulist?.ChildMenus2?.length > 0
-    ) return 'submenu-lists4';
-    if (menulist?.ChildMenus3?.length > 0 && menulist?.ChildMenus2?.length > 0)
-      return 'submenu-lists3';
-    if (menulist?.ChildMenus2?.length > 0) return 'submenu-lists2';
-    return 'submenu-lists';
-  };
+const SubMenuList = ({ items, title, listClass }) => {
+  if (!items || items.length === 0) return null;
 
+  return (
+    <ul className={`${listClass}-container`}>
+      {title && (
+        <li className='submenu-list-title'>
+          <span className={`submenu-list-title-span-${listClass}`}>{title}</span>
+        </li>
+      )}
+
+      {items.map((submenuItem, submenuIndex) => (
+        <li key={`submenu-item-${submenuIndex}`}>
+          <Link
+            href={
+              submenuItem?.MenuLink?.story?.url !== undefined
+                ? '/' + submenuItem?.MenuLink?.story?.url
+                : submenuItem?.MenuLink?.url
+            }
+            prefetch={false}
+          >
+            {submenuItem?.MenuLabel}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+const updatelist = (menu) => {
+  const menulist = menu[0];
+  if (!menulist || !Array.isArray(menu)) {
+    return 'submenu-lists';
+  }
+  if (
+    menulist?.ChildMenus4?.length > 0 &&
+    menulist?.ChildMenus3?.length > 0 &&
+    menulist?.ChildMenus2?.length > 0
+  ) {
+    return 'submenu-lists4';
+  }
+  if (menulist?.ChildMenus3?.length > 0 && menulist?.ChildMenus2?.length > 0) {
+    return 'submenu-lists3';
+  }
+  if (menulist?.ChildMenus2?.length > 0) {
+    return 'submenu-lists2';
+  }
+  return 'submenu-lists';
+};
+
+const MegaMenu = ({ menu, activeMenu, index }) => {
   const submenu = useRef(null);
+  const listClass = updatelist(menu?.MegaMenu);
 
   useEffect(() => {
     if (submenu?.current?.style?.maxHeight) {
@@ -30,110 +68,61 @@ const MegaMenu = ({ menu, activeMenu, index, DescriptionColor = "#757589" }) => 
 
   return (
     <div
-      id="submenu"
+      id='submenu'
       ref={submenu}
       className={`submenu submenu-collapse ${activeMenu === index ? 'submenu-show' : ''}`}
     >
       {menu?.MegaMenu?.length > 0 && (
-        <ul className="axil-submenu">
-          <li className="submenu-container">
-            {menu.MegaMenu.map((item, index) => (
-              <div className="submenu-content" key={`submenu-content-${index}-${item?.Title || index}`}>
+        <ul className='axil-submenu'>
+          <li className='submenu-container'>
+            {menu?.MegaMenu.map((item, idx) => (
+              <div className='submenu-content' key={idx}>
                 {item?.Description && (
                   <>
-                    <p className="submenu-content-title">{item?.Title}</p>
-                    <div className="submenu-content-desc" style={{color: DescriptionColor}}>{item?.Description}</div>
+                    <p className='submenu-content-title'>{item?.Title}</p>
+                    <div className='submenu-content-desc'>{renderRichText(item?.Description)}</div>
                   </>
                 )}
               </div>
             ))}
 
-            <div className={`${updatelist(menu?.MegaMenu)}`}>
-              {menu.MegaMenu.map((Item, Index) => (
-                <React.Fragment key={`submenu-column-${Index}-${Item?.ChildMenusTitle || Index}`}>
-                  {Item?.ChildMenus?.length > 0 && (
-                    <ul className={`${updatelist(menu?.MegaMenu)}-container`}>
-                      {Item?.ChildMenusTitle && (
-                        <li className="submenu-list-title">
-                          <span className={`submenu-list-title-span-${updatelist(menu?.MegaMenu)}`}>
-                            {Item?.ChildMenusTitle}
-                          </span>
-                        </li>
-                      )}
-                      {Item.ChildMenus.map((submenuItem, submenuIndex) => (
-                        <li key={`submenu-item-${submenuIndex}`}>
-                          <Link href={submenuItem?.MenuLink?.url} prefetch={false}>
-                            {submenuItem?.MenuLabel}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+            <div className={listClass}>
+              {menu?.MegaMenu.map((Item, Index) => {
+                const childMenus = [
+                  { items: Item?.ChildMenus, title: Item?.ChildMenusTitle },
+                  { items: Item?.ChildMenus2, title: Item?.ChildMenus2Title },
+                  { items: Item?.ChildMenus3, title: Item?.ChildMenus3Title },
+                  { items: Item?.ChildMenus4, title: Item?.ChildMenus4Title },
+                ];
 
-                  {Item?.ChildMenus2?.length > 0 && (
-                    <ul className={`${updatelist(menu?.MegaMenu)}-container`}>
-                      {Item?.ChildMenus2Title && (
-                        <li className="submenu-list-title">
-                          <span className={`submenu-list-title-span-${updatelist(menu?.MegaMenu)}`}>
-                            {Item?.ChildMenus2Title}
-                          </span>
-                        </li>
-                      )}
-                      {Item.ChildMenus2.map((submenuItem, submenuIndex) => (
-                        <li key={`submenu-item-${submenuIndex}`}>
-                          <Link href={submenuItem?.MenuLink?.url} prefetch={false}>
-                            {submenuItem?.MenuLabel}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                return (
+                  <React.Fragment key={Index}>
+                    {childMenus.map((menuItem, idx) => (
+                      <SubMenuList
+                        key={idx}
+                        items={menuItem.items}
+                        title={menuItem.title}
+                        listClass={listClass}
+                      />
+                    ))}
+                  </React.Fragment>
+                );
+              })}
 
-                  {Item?.ChildMenus3?.length > 0 && (
-                    <ul className={`${updatelist(menu?.MegaMenu)}-container`}>
-                      {Item?.ChildMenus3Title && (
-                        <li className="submenu-list-title">
-                          <span className={`submenu-list-title-span-${updatelist(menu?.MegaMenu)}`}>
-                            {Item?.ChildMenus3Title}
-                          </span>
-                        </li>
-                      )}
-                      {Item.ChildMenus3.map((submenuItem, submenuIndex) => (
-                        <li key={`submenu-item-${submenuIndex}`}>
-                          <Link href={submenuItem?.MenuLink?.url} prefetch={false}>
-                            {submenuItem?.MenuLabel}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {Item?.ChildMenus4?.length > 0 && (
-                    <ul className={`${updatelist(menu?.MegaMenu)}-container`}>
-                      {Item?.ChildMenus4Title && (
-                        <li className="submenu-list-title">
-                          <span className={`submenu-list-title-span-${updatelist(menu?.MegaMenu)}`}>
-                            {Item?.ChildMenus4Title}
-                          </span>
-                        </li>
-                      )}
-                      {Item.ChildMenus4.map((submenuItem, submenuIndex) => (
-                        <li key={`submenu-item-${submenuIndex}`}>
-                          <Link href={submenuItem?.MenuLink?.url} prefetch={false}>
-                            {submenuItem?.MenuLabel}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </React.Fragment>
-              ))}
-
-              {menu.MegaMenu.map((item, index) => (
-                <div className="submenu-lists-btnwrapper" key={`submenu-btn-${index}-${item?.LinkText || index}`}>
+              {/* ---------- Button Section ---------- */}
+              {menu?.MegaMenu.map((item, idx) => (
+                <div className='submenu-lists-btnwrapper' key={idx}>
                   {item?.LinkText && (
-                    <Link className="allbtn" href={item?.Link?.url} prefetch={false}>
-                      <p className="submenu-lists-btn">{item?.LinkText}</p>
+                    <Link
+                      className='allbtn'
+                      href={`/${
+                        item?.Link?.story?.url !== undefined
+                          ? item?.Link?.story?.url
+                          : item?.Link?.url
+                      }`}
+                      prefetch={false}
+                    >
+                      {item?.LinkText && <p className='submenu-lists-btn'>{item?.LinkText}</p>}
                     </Link>
                   )}
                 </div>

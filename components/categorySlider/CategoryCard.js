@@ -1,24 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-// Utility functions for placeholder and image dimensions
-const placeholderLight = '/placeholder-light.png'; // replace with your placeholder path
-
-const getImageDimension = (src) => {
-  // Dummy function: adjust if you need dynamic dimensions
-  return { width: 585, height: 203 };
-};
-
-const getImageSrc = (author) => {
-  // Replace with actual author image source if available
-  return '/author-placeholder.png';
-};
-
-const formatDateString = (dateString) => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-};
+import { formatDateString } from '../../helpers/utilities';
+import { placeholderLight } from '../../helpers/utilities';
+import { getImageDimension } from '../../helpers/utilities';
+import { getImageSrc } from '../../helpers/utilities';
 
 const CategoryCard = ({ blog }) => {
   return (
@@ -29,7 +15,7 @@ const CategoryCard = ({ blog }) => {
           blurDataURL={placeholderLight}
           src={blog?.content?.FeaturedImage?.filename}
           width={getImageDimension(blog?.content?.FeaturedImage?.filename).width}
-          height={getImageDimension(blog?.content?.FeaturedImage?.filename).height}
+          height={203}
           alt={blog?.content?.FeaturedImage?.alt || 'Blog image'}
           className="selectDisable"
         />
@@ -56,7 +42,7 @@ const CategoryCard = ({ blog }) => {
                   blurDataURL={placeholderLight}
                   width={50}
                   height={50}
-                  src={(blog?.content?.img)}
+                  src={getImageSrc(blog?.content?.img)}
                   alt={`Blog Author: ${blog?.content?.Author}`}
                 />
               </div>

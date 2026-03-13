@@ -68,7 +68,7 @@
       },
       "ButtonColor": "btn-primary",
       "ButtonSize": "btn-large",
-      "HideArrow": false,
+      "HideArrow": true,
       "HideButtonLogo": false,
       "ButtonLogo": {
         "alt": "Arrow Icon"

@@ -1,0 +1,63 @@
+{
+  "TechnologiesLogos": [
+    {
+      "RowHeading": "Headless CMS",
+      "RowImage": [
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x538/a6a9d91937/storyblok_logo-dark.svg",
+            "alt": "storyblok headless cms",
+            "title": "Storyblok"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x77/1005293cf0/strapi_svgrepo_com-cropped-dark.svg",
+            "alt": "Strapi Development",
+            "title": "Strapi"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/588x157/7f8f04a153/prismic-dark.svg",
+            "alt": "Prismic Development",
+            "title": "Prismic"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/2500x502/7fcd5d58ac/sanity-dark.svg",
+            "alt": "Sanity web development",
+            "title": "Sanity"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/300x61/406019815f/contentful_logo_vector-cropped-dark.svg",
+            "alt": "contentful cms",
+            "title": "Contentful"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        },
+        {
+          "Image": {
+            "filename": "https://a-us.storyblok.com/f/1016184/512x110/d1614c5429/builder_seeklogo_com-dark.svg",
+            "alt": "builder.io cms",
+            "title": "Builder"
+          },
+          "Grayscale": false,
+          "ImageLink": ""
+        }
+      ]
+    }
+  ]
+}

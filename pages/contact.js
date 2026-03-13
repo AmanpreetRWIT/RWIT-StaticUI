@@ -4,14 +4,16 @@ import Contact from "../components/contact/Contact";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import OurOffice from "../components/ouroffice/OurOffice";
 import CallToAction from "../components/call-to-actions/CallToAction";
+import AwardsAndCertifications from "@/components/AwardsAndCertifications/AwardsAndCertifications";
 // JSON Data
 import heroData from "../data/banner/Hero.json";
+import NoticeData from "../data/notice/Notice.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import contact from "../data/contact/Contact.json";
 import ourOffice from "../data/ouroffice/Ouroffice.json";
 import callToAction from "../data/call-to-actions/CallToAction.json";
-
+import awardsAndCertifications from "@/data/AwardsAndCertifications/AwardsAndCertifications.json";
 
 export default function ContactPage() {
   const layoutSettings = {
@@ -26,7 +28,7 @@ export default function ContactPage() {
       ...FooterData,
       StickyFooter: true,
     },
-    settings: {},
+    settings: { ...NoticeData },
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
@@ -43,10 +45,11 @@ export default function ContactPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <Breadcrumb/>
-          <Contact {...contact}/>
-          <OurOffice {...ourOffice}/>
-          <CallToAction {...callToAction}/>
+        <Breadcrumb />
+        <Contact {...contact} />
+        <AwardsAndCertifications blok={awardsAndCertifications} />
+        <OurOffice {...ourOffice} />
+        <CallToAction {...callToAction} />
       </Layout>
     </>
   );

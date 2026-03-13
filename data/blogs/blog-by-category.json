@@ -70,18 +70,18 @@
       }
     },
     "GetCategory": [
-      { "slug": "commerce", "name": "headless CMS", "full_slug": "/category/commerce" },
-      { "slug": "react", "name": "Digital Marketing", "full_slug": "/category/react" },
-      { "slug": "commerce", "name": "Headless Commerce", "full_slug": "/category/commerce" },
-      { "slug": "react", "name": "Frontend", "full_slug": "/category/react" }
+      { "slug": "Headless-cms", "name": "Headless CMS", "full_slug": "/category/headless-cms" },
+      { "slug": "digital-marketing", "name": "Digital Marketing", "full_slug": "/category/digital-marketing" },
+      { "slug": "headless-commerce", "name": "Headless Commerce", "full_slug": "/category/headless-commerce" },
+      { "slug": "frontend", "name": "Frontend", "full_slug": "/category/frontend" }
     ],
     "PageData": {
       "content": {
         "CategoriesToShow": [
-          { "slug": "commerce", "name": "headless CMS", "full_slug": "/category/commerce" },
-      { "slug": "react", "name": "Digital Marketing", "full_slug": "/category/react" },
-      { "slug": "commerce", "name": "Headless Commerce", "full_slug": "/category/commerce" },
-      { "slug": "react", "name": "Frontend", "full_slug": "/category/react" }
+          { "slug": "Headless-cms", "name": "Headless CMS", "full_slug": "/category/headless-cms" },
+      { "slug": "digital-marketing", "name": "Digital Marketing", "full_slug": "/category/digital-marketing" },
+      { "slug": "headless-commerce", "name": "Headless Commerce", "full_slug": "/category/headless-commerce" },
+      { "slug": "frontend", "name": "Frontend", "full_slug": "/category/frontend" }
         ],
         "CategoryTabColor": { "color": "#f3f3f3" },
         "blogs": []

@@ -3,11 +3,11 @@
   "Description": "Our expertise is in developing cutting-edge technology solutions. We utilize modern technology and focus on the details of each project to achieve outstanding outcomes.",
   "Tags": "What we do",
   "TextAlign": "center",
-  "BGColor": "#ffffff",
+  "BGColor": "#EEF0FA",
   "TitleColor": "",
   "DescriptionColor": "",
   "RemoveAnimations": false,
-  "RemoveBorders": false,
+  "RemoveBorders": true,
   "ServiceCardTextColor": "",
   "ServiceCard": [
     {
@@ -18,7 +18,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "",
       "Link": "/services/consulting",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     },
     {
@@ -29,7 +29,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
       "Link": "/services/web-development",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     },
     {
@@ -40,7 +40,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
       "Link": "/services/headless-commerce",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     },
     {
@@ -51,7 +51,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
       "Link": "/services/ai-agent-development",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     },
     {
@@ -62,7 +62,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
       "Link": "/services/generative-ai-development",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     },
     {
@@ -73,7 +73,7 @@
       "IconBgColor": "#f3f3f3",
       "GradientStyle": "gradient-color-02",
       "Link": "/services/digital-marketing",
-      "HideBG": true,
+      "HideBG": false,
       "HideBorder": false
     }
   ]

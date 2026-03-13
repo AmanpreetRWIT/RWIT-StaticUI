@@ -5,34 +5,33 @@ import Layout from "../components/layouts/Layout";
 import HeroSection from "../components/banner/Hero";
 import BrandTwo from "../components/brands/BrandTwo";
 import BrandThree from "../components/brands/BrandThree";
-import CallToAction from "../components/call-to-actions/CallToAction";
-import CaseStudySlider from "../components/CaseStudySlider/CaseStudySlider";
-import ClientAndPartner from "../components/client-and-partner/ClientAndPartner";
-import Services from "../components/Services/Services";
 import ServicesWithStickyCards from "../components/Services/ServicesWithStickyCards";
-import CounterTwo from "../components/counters/CounterTwoColumn";
-import Comparison from "../components/Comparison/Comparison";
-import Testimonial from "../components/testimonials/Testimonial";
 import Newsletter from "../components/newsletter/Newsletter";
-
+import CaseStudyMedia from "../components/CaseStudyGrid/CaseStudyMedia";
+import ClientLogoSlider from "../components/client-and-partner/ClientLogoSlider";
+import IndustriesOverviewTab from "../components/industriesOverview/IndustriesOverviewTab";
+import AwardsAndCertifications from "../components/AwardsAndCertifications/AwardsAndCertifications";
+import TeamSpotlightCTA from "../components/call-to-actions/TeamSpotlightCTA";
+import VideoTestimonials from "../components/testimonials/VideoTestimonials";
+import ClutchMultipleTestimonials from "../components/testimonials/ClutchMultipleTestimonials";
 
 // JSON Data
 import heroData from "../data/banner/Hero.json";
 import brandTwo from "../data/brands/BrandTwo.json";
 import brandThree from "../data/brands/BrandThree.json";
-import callToAction from "../data/call-to-actions/CallToAction.json";
-import caseStudySlider from "../data/CaseStudySlider/CaseStudySlider.json";
-import clientAndPartner from "../data/client-and-partner/ClientAndPartner.json";
-import services from "../data/Services/Services.json";
 import servicesWithStickyCards from "../data/Services/ServicesWithStickyCard.json";
-import counterTwo from "../data/counters/CounterTwoColumn.json";
-import comparison from "../data/Comparison/Comparison.json";
-import testimonial from "../data/testimonials/Testimonial.json";
 import newsletter from "../data/newsletter/Newsletter.json";
+import NoticeData from "../data/notice/Notice.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import NavigationSchema from "../schemas/NavigationSchemas.json";
-
+import caseStudyMedia from "../data/CaseStudyGrid/CaseStudyMedia.json";
+import clientLogoSlider from "../data/client-and-partner/ClientLogoSlider.json";
+import industriesOverviewTab from "../data/industriesOverview/IndustriesOverviewTab.json";
+import awardsAndCertifications from "../data/AwardsAndCertifications/AwardsAndCertifications.json";
+import teamSpotlightCTA from "@/data/call-to-actions/TeamSpotlightCTA.json";
+import videoTestimonials from "@/data/testimonials/VideoTestimonials.json";
+import clutchMultipleTestimonials from "@/data/testimonials/ClutchMultipleTestimonials.json";
 
 export default function HomePage() {
   const layoutSettings = {
@@ -45,9 +44,9 @@ export default function HomePage() {
     footer: {
       style: "three",
       ...FooterData,
-      StickyFooter: true,
+      StickyFooter: false,
     },
-    settings: {},
+    settings: {...NoticeData},
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
@@ -65,11 +64,23 @@ export default function HomePage() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={site_url} />
-        <meta property="og:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta
+         
+          property="og:image"
+         
+          content={`${site_url}/images/meta-image.jpg`}
+       
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={`${site_url}/images/meta-image.jpg`} />
+        <meta
+         
+          name="twitter:image"
+         
+          content={`${site_url}/images/meta-image.jpg`}
+       
+        />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <link rel="canonical" href={site_url} />
 
@@ -99,15 +110,15 @@ export default function HomePage() {
       <Layout layoutSettings={layoutSettings}>
         <HeroSection {...heroData} />
         <BrandTwo {...brandTwo} />
-        <CaseStudySlider data={caseStudySlider} />
-        <Services blok={services} />
-        <ClientAndPartner data={clientAndPartner} />
-        <CallToAction {...callToAction} />
-        <BrandThree {...brandThree} />
-        <CounterTwo {...counterTwo} />
-        <Comparison data={comparison} />
+        <ClientLogoSlider data={clientLogoSlider} />
+        <CaseStudyMedia blok={caseStudyMedia} />
         <ServicesWithStickyCards blok={servicesWithStickyCards} />
-        <Testimonial data={testimonial} />
+        <IndustriesOverviewTab blok={industriesOverviewTab} />
+        <AwardsAndCertifications blok={awardsAndCertifications} />
+        <TeamSpotlightCTA blok={teamSpotlightCTA} />
+        <BrandThree blok={brandThree} />
+        <VideoTestimonials blok={videoTestimonials} />
+        <ClutchMultipleTestimonials blok={clutchMultipleTestimonials} />
         <Newsletter data={newsletter} />
       </Layout>
     </>

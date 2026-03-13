@@ -1,0 +1,68 @@
+{
+    "component": "FounderSpotlightCta",
+    "_uid": "9da24a73-0c9c-4529-8ef7-71158fa5393d",
+    "Heading": "Where Technology Meets Business Growth",
+    "Description": "We partner with businesses to build secure, scalable, and future ready digital solutions.",
+    "FounderName": "Jaswinder Singh",
+    "Designation": "CEO & Founder, RW Infotech",
+    "BgColor": {
+      "_uid": "12707c4e-47ad-44a6-9aa7-6e7317a0c610",
+      "color": "",
+      "plugin": "official-colorpicker"
+    },
+        "FounderImage": {
+          "id": 147034364453516,
+          "alt": "jaswinder-spotlight-image",
+          "filename": "https://a-us.storyblok.com/f/1016184/292x352/0e665db231/jaswinder-spotlight.webp",
+          "fieldtype": "asset",
+          "focus": "",
+          "copyright": "",
+          "is_external_url": false
+        }
+      ,
+    "FounderQuote": 
+        "<p textalign=null><span style=color: >Our</span><strong><span style=\"color:#2690D4\"> seasoned developers</span></strong><strong><span style=color: > </span></strong><span style=color: >build innovative, efficient, and high performance solutions.</span></p>"
+    ,
+    "Tags": [
+      {
+        "component": "Tag",
+        "_uid": "22b52c1d-8da5-4d93-b883-eb794cd83c66",
+        "_editable": "<!--#storyblok#{\"name\": \"Tag\", \"space\": \"1016184\", \"uid\": \"22b52c1d-8da5-4d93-b883-eb794cd83c66\", \"id\": \"147032833237860\"}-->",
+        "TagName": "founder spotlight",
+        "BGColor": "",
+        "TextColor": ""
+      }
+    ],
+    "Button": [
+      {
+        "component": "Button",
+        "_uid": "5fe3b112-c482-4939-b787-452d4e3498e6",
+        "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"5fe3b112-c482-4939-b787-452d4e3498e6\", \"id\": \"147032833237860\"}-->",
+        "Label": "Book a Discovery Call",
+        "ButtonColor": "",
+        "ButtonSize": "",
+        "Class": "",
+        "HideArrow": false,
+        "HideButtonLogo": false,
+        "ButtonLogo": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "title": "Book",
+          "filename": "",
+          "fieldtype": "asset",
+          "focus": null,
+          "copyright": null,
+          "meta_data": {},
+          "source": null
+        },
+        "Link": {
+          "id": "",
+          "url": "https://calendly.com/jimmynarula/introductory-meeting",
+          "target": "_blank",
+          "linktype": "url",
+          "fieldtype": "multilink"
+        }
+      }
+    ]
+  }

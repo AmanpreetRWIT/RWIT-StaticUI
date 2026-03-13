@@ -1,0 +1,152 @@
+{
+    "component": "ServiceswithFeaturedImage",
+    "BGColor": {
+      "_uid": "43219d58-41a7-4250-a176-bbd08100b277",
+      "color": "white",
+      "plugin": "official-colorpicker"
+    },
+    "ColumnCount": "ColumnCount-2",
+    "Title": "Our Headless SEO Best Practices",
+    "TitleColor": {
+      "_uid": "bee8f34d-dc7a-424c-be13-56f617ba944b",
+      "color": "",
+      "plugin": "official-colorpicker"
+    },
+    "Description": "Headless CMS offers significant SEO benefits, including flexible content presentation across multiple platforms, faster page load times that reduce bounce rates, and seamless integration with modern SEO tools. Additionally, its scalability supports growing content needs without compromising performance, ensuring sustained SEO effectiveness.",
+    "DescriptionColor": {
+      "_uid": "075bba7a-0a82-4a71-8938-3aa8ba119a25",
+      "color": "black",
+      "plugin": "official-colorpicker"
+    },
+    "Image": {
+      "id": null,
+      "alt": null,
+      "name": "",
+      "focus": null,
+      "title": null
+    },
+    "showImageOnRight": false,
+    "Tags": [
+      {
+        "_uid": "d6d399cc-0b90-4cad-959b-5fe88b523611",
+        "component": "Tag",
+        "TagName": "How we work",
+        "BGColor": "",
+        "TextColor": ""
+      }
+    ],
+    "Services": [
+      {
+        "_uid": "8d71c1e9-291e-4f44-82cb-e4e1a8d80d9c",
+        "component": "ServiceCard",
+        "Heading": "Content presentation flexibility",
+        "GradientStyle": "",
+        "HideBG": false,
+        "HideBorder": false,
+        "IconBgColor": {
+          "_uid": "8803e1e4-34c7-4d88-9360-f13467aaaf60",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+        "Description": "The headless CMS approach virtually cuts the presentation layer from the content to deliver the latter over all platforms. At the same time, remaining structured at its core. In other words, that will be useful for optimizing your content on several devices and for several user experiences, thereby improving SEO.",
+        "Image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null
+        },
+        "Link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        }
+      },
+      {
+        "_uid": "8d71c1e9-291e-4f44-82cb-e4e1a8d80d9c",
+        "component": "ServiceCard",
+        "Heading": "Content presentation flexibility",
+        "GradientStyle": "",
+        "HideBG": false,
+        "HideBorder": false,
+        "IconBgColor": {
+          "_uid": "8803e1e4-34c7-4d88-9360-f13467aaaf60",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+        "Description": "The headless CMS approach virtually cuts the presentation layer from the content to deliver the latter over all platforms. At the same time, remaining structured at its core. In other words, that will be useful for optimizing your content on several devices and for several user experiences, thereby improving SEO.",
+        "Image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null
+        },
+        "Link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        }
+      },
+      {
+        "_uid": "8d71c1e9-291e-4f44-82cb-e4e1a8d80d9c",
+        "component": "ServiceCard",
+        "Heading": "Content presentation flexibility",
+        "GradientStyle": "",
+        "HideBG": false,
+        "HideBorder": false,
+        "IconBgColor": {
+          "_uid": "8803e1e4-34c7-4d88-9360-f13467aaaf60",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+        "Description": "The headless CMS approach virtually cuts the presentation layer from the content to deliver the latter over all platforms. At the same time, remaining structured at its core. In other words, that will be useful for optimizing your content on several devices and for several user experiences, thereby improving SEO.",
+        "Image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null
+        },
+        "Link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        }
+      },
+      {
+        "_uid": "8d71c1e9-291e-4f44-82cb-e4e1a8d80d9c",
+        "component": "ServiceCard",
+        "Heading": "Content presentation flexibility",
+        "GradientStyle": "",
+        "HideBG": false,
+        "HideBorder": false,
+        "IconBgColor": {
+          "_uid": "8803e1e4-34c7-4d88-9360-f13467aaaf60",
+          "color": "",
+          "plugin": "official-colorpicker"
+        },
+        "Description": "The headless CMS approach virtually cuts the presentation layer from the content to deliver the latter over all platforms. At the same time, remaining structured at its core. In other words, that will be useful for optimizing your content on several devices and for several user experiences, thereby improving SEO.",
+        "Image": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null
+        },
+        "Link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        }
+      }
+    ]
+  }

@@ -2,57 +2,49 @@ import Link from 'next/link';
 import { getButtonClassNames } from '../../helpers/utilities';
 import Image from 'next/image';
 
-const Button = ({ button, index }) => {
+const Button = ({ blok, Index }) => {
+
+
   return (
     <Link
-      href={
-        button?.Link?.story?.url !== undefined
-          ? '/' + button?.Link?.story?.url
-          : button?.Link?.url || '/'
-      }
-      key={'button' + index}
+      href={blok?.Link?.url || ""}
+      key={'button' + Index}
       legacyBehavior
     >
       <a
-        className={`${getButtonClassNames(button)} 
-          ${button?.Class || ''} 
-          ${button?.ButtonColor || ''} 
-          ${
-            button?.ButtonColor !== 'btn-transparent' &&
-            button?.ButtonColor !== 'axil-link-button'
-              ? 'btn-solid'
-              : ''
-          } 
-          ${button?.ButtonSize || ''}`}
-        target={button?.Link?.target || ''}
+        className={`${getButtonClassNames(blok)} ${blok?.Class ? blok?.Class : ''} ${
+          blok?.ButtonColor ? blok?.ButtonColor : ''
+        } 
+        ${
+          blok?.ButtonColor != 'btn-transparent' && blok?.ButtonColor != 'axil-link-button'
+            ? 'btn-solid'
+            : ''
+        } 
+        ${blok?.ButtonSize ? blok?.ButtonSize : ''}  `}
+        target={blok?.Link?.target || ''}
       >
         <span
           className={`button-text hoverable ${
-            button?.HideArrow &&
-            (!button?.ButtonLogo?.filename || button?.HideButtonLogo)
-              ? 'px-0'
-              : ''
+            blok?.HideArrow && (!blok?.ButtonLogo?.filename || blok?.HideButtonLogo) ? 'px-0' : ''
           }`}
         >
-          {button?.Label}
+          {blok?.Label}
         </span>
 
-        {button?.ButtonLogo?.filename && !button?.HideButtonLogo && (
-          <div className="button-logo-wrap">
+        {blok?.ButtonLogo?.filename && !blok?.HideButtonLogo && (
+          <div className='button-logo-wrap'>
             <Image
-              src={button?.ButtonLogo?.filename}
+              src={blok?.ButtonLogo?.filename}
               width={24}
               height={24}
-              alt={button?.ButtonLogo?.alt || 'Button Logo'}
-              className="button-logo"
+              alt={blok?.ButtonLogo?.alt || 'Button Logo'}
+              className='button-logo'
             />
           </div>
         )}
-
-        {(!button?.ButtonLogo?.filename || button?.HideButtonLogo) &&
-          !button?.HideArrow && (
-            <span className="fas fa-external-link-alt"></span>
-          )}
+        {(!blok?.ButtonLogo?.filename || blok?.HideButtonLogo) && !blok?.HideArrow && (
+          <span className='fas fa-external-link-alt'></span>
+        )}
       </a>
     </Link>
   );
