@@ -3,12 +3,12 @@
   "titleColor": "#1b90dc",
   "heading": "We create scalable solutions designed to empower growth",
   "headingColor": "#000248",
-  "useH2Heading": true,
+  "useH2Heading": false,
   "description": "A Dubai-based digital agency with a global footprint, specializing in custom web development and headless application solutions.",
   "descriptionColor": "#555555",
   "gradientStyle": "theme-gradient-7",
   "bgColor": "",
-  "removeExtraPadding": false,
+  "removeExtraPadding": true,
   "textAlignment": "centre",
   "buttons": [
     {

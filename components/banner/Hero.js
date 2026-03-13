@@ -102,7 +102,7 @@ const HeroSection = ({
             {/* LEFT SIDE CONTENT */}
             <div
               className={`col-lg-7 col-12 order-2 order-lg-1 mt_md--40 mt_sm--30 ${
-                bannerImage?.src ? "hero-content" : ""
+                bannerImage?.src ? "" : "hero-content"
               } hero-align-content`}
             >
               <div className="content">
@@ -285,7 +285,7 @@ const HeroSection = ({
                   <h2 className="partner-title">{partnerTitle}</h2>
                 )}
 
-                <ul className="partner-logos d-flex">
+                <ul className="partner-logos ">
                   {partnersLogo.map((partner, idx) => (
                     <li className="partner-logo d-flex" key={idx}>
                       {partner.href ? (
