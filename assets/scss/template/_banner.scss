@@ -209,11 +209,7 @@ Slider Style One
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-          180deg,
-          #a7fff5 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
+        background: linear-gradient(180deg, #a7fff5 0%, rgba(255, 255, 255, 0) 100%);
         content: '';
       }
     }
@@ -246,11 +242,7 @@ Slider Style One
     }
 
     &::before {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        #ffffff 100%
-      );
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
       position: absolute;
       bottom: 0;
       height: 718px;
@@ -624,8 +616,7 @@ Slider Style One
                 -webkit-transform-origin: 50% 50%;
                 -ms-transform-origin: 50% 50%;
                 transform-origin: 50% 50%;
-                -webkit-transition: all 0.3s
-                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 position: absolute;
@@ -757,11 +748,7 @@ Slider Style One
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-          180deg,
-          #a7fff5 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
+        background: linear-gradient(180deg, #a7fff5 0%, rgba(255, 255, 255, 0) 100%);
         content: '';
         z-index: -1;
       }
@@ -918,11 +905,7 @@ Hero With Badges
     position: absolute;
     top: 0;
     right: -1px;
-    background: linear-gradient(
-      270deg,
-      #edf4fb 0%,
-      rgba(237, 244, 251, 0) 100%
-    );
+    background: linear-gradient(270deg, #edf4fb 0%, rgba(237, 244, 251, 0) 100%);
   }
 
   &-container {
@@ -1074,12 +1057,14 @@ Hero With Partner
     width: 100%;
   }
 
-  .grid-images, .grid-colors {
+  .grid-images,
+  .grid-colors {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
-    &-img, &-flat {
+    &-img,
+    &-flat {
       max-width: 193px;
       width: 100%;
       aspect-ratio: 1/1;
@@ -1109,12 +1094,12 @@ Hero With Partner
     }
   }
 
-  &.hero{
+  &.hero {
     &-centre {
       text-align: center;
 
       .hero-align {
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
           padding-bottom: 3.75rem;
         }
       }
@@ -1128,14 +1113,14 @@ Hero With Partner
           .partner {
             padding-top: 2.5rem;
 
-            @media #{$md-layout} { 
+            @media #{$md-layout} {
               padding-bottom: 0;
             }
 
-            &-title { 
+            &-title {
               margin-bottom: 1.25rem;
             }
-            
+
             &-logos {
               margin-bottom: 0;
             }
@@ -1147,7 +1132,7 @@ Hero With Partner
                 justify-content: space-evenly;
                 gap: 2rem;
               }
-              &-logo{
+              &-logo {
                 max-width: 150px;
               }
             }
@@ -1161,7 +1146,7 @@ Hero With Partner
           }
 
           .hero-align-content {
-            @media (min-width: 768px){
+            @media (min-width: 768px) {
               width: 80%;
             }
             .axil-display-1 {
@@ -1182,7 +1167,7 @@ Hero With Partner
       }
 
       .hero-align {
-        @media (min-width: 768px) { 
+        @media (min-width: 768px) {
           padding-bottom: 3.75rem;
         }
       }
@@ -1190,14 +1175,14 @@ Hero With Partner
       .align {
         &-container {
           .partner {
-            @media #{$md-layout} { 
+            @media #{$md-layout} {
               padding-bottom: 0;
             }
 
-            &-title { 
+            &-title {
               margin-bottom: 1.25rem;
             }
-            
+
             &-logos {
               margin-bottom: 0;
             }
@@ -1206,7 +1191,7 @@ Hero With Partner
                 display: flex;
                 justify-content: flex-end;
               }
-              &-logo{
+              &-logo {
                 max-width: 150px;
               }
             }
@@ -1229,4 +1214,20 @@ Hero With Partner
       }
     }
   }
+}
+
+#PartnerLogo {
+  // .partner{
+  padding-top: 64px;
+  @media (min-width: 768px) {
+    .partner-logos {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+    }
+  }
+  @media #{$sm-layout} {
+    padding-top: 40px;
+  }
+  // }
 }

@@ -62,12 +62,13 @@
     a {
       display: block;
       img {
-        object-fit: contain;
         max-height: 100px !important;
       }
     }
     img {
       object-fit: contain;
+      aspect-ratio: 3/2;
+      width: 70%;
     }
   }
 
@@ -89,9 +90,16 @@
   @media #{$small-mobile} {
     gap: 24px;
     padding: 36px 10px;
+    &__carousel {
+      .keen-slider__slide {
+        min-width: 50%;
+        max-width: 50%;
+      }
+    }
+
     &__image {
       img {
-        height: 26px;
+        height: auto;
       }
     }
   }
