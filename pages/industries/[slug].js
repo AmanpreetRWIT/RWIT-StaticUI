@@ -3,6 +3,7 @@ import Head from "next/head";
 // Components
 import Layout from "@/components/layouts/Layout";
 import HeroSection from "@/components/banner/Hero";
+import IndustriesOverview from "@/components/industriesOverview/IndustriesOverview";
 import ServicesWithLeftTitle from "@/components/Services/ServicesWithLeftTitle";
 import TeamSpotlightCTA from "@/components/call-to-actions/TeamSpotlightCTA";
 import VideoTestimonials from "@/components/testimonials/VideoTestimonials";
@@ -25,6 +26,7 @@ import NoticeData from "@/data/notice/Notice.json";
 import HeaderData from "@/data/layouts/Header.json";
 import FooterData from "@/data/layouts/Footer.json";
 import HeroSectionData from "@/data/banner/Hero.json";
+import industriesOverview from "@/data/industriesOverview/IndustriesOverview.json";
 import ServicesWithLeftTitleData from "@/data/Services/ServicesWithLeftTitle.json";
 import TeamSpotlightCTAData from "@/data/call-to-actions/TeamSpotlightCTA";
 import VideoTestimonialsData from "@/data/testimonials/VideoTestimonials.json";
@@ -83,6 +85,7 @@ export default function AboutPage() {
       <Layout layoutSettings={layoutSettings}>  
         <HeroSection {...HeroSectionData} partnersLogo={[]} />
         <HeroSection {...HeroSectionData} partnersLogo={[]} textAlignment={""} gradientStyle={""} buttons={[]} showbannerImage={true} removeExtraPadding={true} />
+        <IndustriesOverview  blok={industriesOverview}/>
         <ServicesWithLeftTitle blok={ServicesWithLeftTitleData} />
         <ContentWithMedia blok={ContentWithMediaData} />
         <TeamSpotlightCTA blok={TeamSpotlightCTAData} />

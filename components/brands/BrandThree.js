@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import { getAutoSliderOptions } from '../../helpers/slider';
 
 const BrandsThree = ({ blok }) => {
-  console.log('BrandsThree', blok)
   const isMobile = useMobile();
   const [loaded, setLoaded] = useState(false);
   const [sliderRef] = useKeenSlider(
@@ -37,7 +36,7 @@ const BrandsThree = ({ blok }) => {
         >
           <div
             className={`${
-              blok?.logos.length > 0 || blok?.Clients.length > 0
+              blok?.Logos.length > 0 || blok?.Clients.length > 0
                 ? 'col-xl-5 col-lg-5 col-md-12 col-12'
                 : 'col-12'
             }`}
@@ -51,7 +50,7 @@ const BrandsThree = ({ blok }) => {
               alignment='left'
             />
           </div>
-          {(blok?.logos.length > 0 || blok?.Clients.length > 0) && (
+          {(blok?.Logos.length > 0 || blok?.Clients.length > 0) && (
             <div className='brand__grid col-xl-7 col-lg-7 mt_md--40 mt_sm--40'>
               <>
                 {!(isMobile && loaded) ? (
