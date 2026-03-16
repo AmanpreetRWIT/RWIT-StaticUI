@@ -2,17 +2,35 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Grid, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/grid';
 import SectionTitle from '../common/SectionTitle';
 
 const AwardsAndCertifications = ({ blok }) => {
+    const [swiperInstance, setSwiperInstance] = useState(null);
+  const { ref, inView } = useInView({
+    threshold: 0.2, // Trigger when 20% visible
+  });
+
+  useEffect(() => {
+    if (swiperInstance && swiperInstance.autoplay) {
+      if (inView) {
+        swiperInstance.autoplay.start();
+      } else {
+        swiperInstance.autoplay.stop();
+      }
+    }
+  }, [inView, swiperInstance]);
+
   const tagsSubtitle =
     blok?.Tags?.map((tag) => tag?.TagName).filter(Boolean).join(', ') || '';
 
   return (
     <section
+      ref={ref}
       className='awards'
       style={blok?.BGColor?.color ? { background: blok.BGColor.color } : {}}
     >
@@ -28,6 +46,10 @@ const AwardsAndCertifications = ({ blok }) => {
         {/* Slider */}
         {blok?.Logos?.length > 0 && (
           <Swiper
+            onSwiper={(swiper) => {
+              swiper.autoplay.stop();
+              setSwiperInstance(swiper);
+            }}
             modules={[Pagination, Grid, Autoplay]}
             spaceBetween={40}
             slidesPerView={4}

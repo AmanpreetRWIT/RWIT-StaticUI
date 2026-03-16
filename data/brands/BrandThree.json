@@ -6,9 +6,9 @@
   "Description": "RW Infotech is a founder-led digital agency, originally established in India. Over the years, we’ve expanded our operations across Dubai, the USA, and Australia. Today, our primary operations are based in Dubai UAE, serving clients across the globe with innovative, scalable solutions.",
   "TitleColor": "#000248",
   "DescriptionColor": "#757589",
-  "logos": [
+  "Logos": [
     {
-      "src": "/images/clutch.svg",
+      "src": "https://a-us.storyblok.com/f/1016184/667x433/82bccd9495/mountain-tacticle.svg",
       "alt": "Brand 1",
       "grayscale": false
     },
