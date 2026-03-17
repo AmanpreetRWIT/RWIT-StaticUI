@@ -214,7 +214,7 @@ const Blogs = () => {
           title="Articles & Resources"
           description="Insights, tips, and strategies from our headless commerce experts."
         />
-       <LatestStories data={latestStories}/>
+       <LatestStories data={{...latestStories, Tags:"", Title:"", Description:"", BGColor:"#fff"}} />
         <div className="axil-blog-area bg-color-white ax-section-gap all-blogs-categories">
           <div id="allBlogArea">
             <div className="categoryTab-wrapper">
