@@ -204,21 +204,9 @@
             top: 0;
             height: 100%;
             width: 100px;
-            background: -moz-linear-gradient(
-              left,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: -webkit-linear-gradient(
-              left,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
+            background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);
           }
 
@@ -229,21 +217,9 @@
             top: 0;
             height: 100%;
             width: 100px;
-            background: -moz-linear-gradient(
-              right,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: -webkit-linear-gradient(
-              right,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: linear-gradient(
-              to left,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0) 100%
-            );
+            background: -moz-linear-gradient(right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-linear-gradient(right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);
           }
         }
@@ -320,6 +296,11 @@
 
   &__cardimg {
     margin-bottom: 1.875rem;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__content {

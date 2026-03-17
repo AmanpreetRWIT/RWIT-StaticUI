@@ -24,7 +24,7 @@ import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
 import Faq from "@/components/faq/Faq";
 import LatestStories from "@/components/blogs/LatestStories";
-import latestStories from "../../data/blogs/LatestStories.json";
+import latestStoriesData from "../../data/blogs/LatestStories.json";
 import NewsletterModal from "@/components/newsletter/NewsletterModal";
 import newsletterModal from "../../data/newsletter/NewsletterModal.json";
 import NoticeData from "../../data/notice/Notice.json";
@@ -333,7 +333,7 @@ const BlogDetails = ({ Slug }) => {
             </div>
           </div>
           <Faq {...faqData} />
-          <LatestStories data={latestStories} />
+          <LatestStories data={latestStoriesData} />
         </main>
       </Layout>
       <NewsletterModal data={newsletterModal} />
