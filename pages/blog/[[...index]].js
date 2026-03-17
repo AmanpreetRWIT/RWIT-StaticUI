@@ -349,10 +349,10 @@ export async function getStaticProps({ params }) {
         : 1
       : 1;
 
-    const filePath = path.join(process.cwd(), "public/blogData.json");
+    const filePath = path.join(process.cwd(), "public/allBlogData.json");
     const jsonData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-    const allBlogs = jsonData?.stories || [];
+    const allBlogs = jsonData || [];
 
     const isFirstPage = pageIndex === 1;
     const perPage = isFirstPage ? 16 : 15;
@@ -387,10 +387,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const filePath = path.join(process.cwd(), "public/blogData.json");
+  const filePath = path.join(process.cwd(), "public/allBlogData.json");
   const jsonData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-  const totalItems = jsonData?.stories?.length || 0;
+  const totalItems = jsonData?.length || 0;
   const pageCounts = Math.ceil(totalItems / POST_PER_PAGE);
 
   const pagePaths = [

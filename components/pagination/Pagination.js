@@ -3,27 +3,24 @@ import { useMobile } from '../../helpers/utilities';
 
 const Pagination = ({ postPerpage, totalPages, currentpage, handleClick }) => {
   const isMobile = useMobile();
-  // `totalPages` is expected to be the number of pages (not total items).
-  // Ensure it's numeric and at least 1.
-  const pageCount = Math.max(1, Number(totalPages) || 1);
+  const pageCount = Math.ceil(totalPages / postPerpage);
   const pages = [...Array(pageCount).keys()].map((num) => num + 1);
-  const current = Number(currentpage) || 1;
   return (
-    <div className="post-pagination">
-      <nav className="navigation pagination">
-        <div className="nav-links">
-          <ul className="page-numbers">
+    <div className='post-pagination'>
+      <nav className='navigation pagination'>
+        <div className='nav-links'>
+          <ul className='page-numbers'>
             {/* Show previous button */}
-            <li className="page-numbers">
+            <li className='page-numbers'>
               <Link
-                href={current > 2 ? `/blog/page/${current - 1}` : '/blog'}
+                href={currentpage > 2 ? `/blog/page/${currentpage - 1}` : '/blog'}
                 legacyBehavior
               >
                 <a
-                  className={`page-numbers ${current === 1 ? 'disabled' : ''}`}
-                  onClick={() => handleClick(current > 1 ? current - 1 : 1)}
+                  className={`page-numbers ${currentpage === 1 ? 'disabled' : ''}`}
+                  onClick={() => handleClick(currentpage > 1 ? currentpage - 1 : 1)}
                 >
-                  <i className="fas fa-angle-left"></i>
+                  <i className='fas fa-angle-left'></i>
                 </a>
               </Link>
             </li>
@@ -31,12 +28,9 @@ const Pagination = ({ postPerpage, totalPages, currentpage, handleClick }) => {
             {pages?.length <= (isMobile ? 7 : 8) &&
               pages?.map((num) => (
                 <li key={num}>
-                  <Link
-                    href={num === 1 ? '/blog' : `/blog/page/${num}`}
-                    legacyBehavior
-                  >
+                  <Link href={num === 1 ? '/blog' : `/blog/page/${num}`} legacyBehavior>
                     <a
-                      className={`${num === current ? 'active' : ''}`}
+                      className={`${num === Number(currentpage) ? 'active' : ''}`}
                       onClick={() => handleClick(num)}
                     >
                       {num}
@@ -48,14 +42,11 @@ const Pagination = ({ postPerpage, totalPages, currentpage, handleClick }) => {
             {/* Show pagination when total pages are greater than 8 */}
             {pages?.length > (isMobile ? 7 : 8) && (
               <>
-                {pages?.slice(0, current < 4 ? 4 : 1).map((num) => (
+                {pages?.slice(0, currentpage < 4 ? 4 : 1).map((num) => (
                   <li key={num}>
-                    <Link
-                      href={num === 1 ? '/blog' : `/blog/page/${num}`}
-                      legacyBehavior
-                    >
+                    <Link href={num === 1 ? '/blog' : `/blog/page/${num}`} legacyBehavior>
                       <a
-                        className={`${num === current ? 'active' : ''}`}
+                        className={`${num === Number(currentpage) ? 'active' : ''}`}
                         onClick={() => handleClick(num)}
                       >
                         {num}
@@ -63,72 +54,69 @@ const Pagination = ({ postPerpage, totalPages, currentpage, handleClick }) => {
                     </Link>
                   </li>
                 ))}
-                <li className="page">
-                  <span className="linkspan">...</span>
+                <li className='page'>
+                  <span className='linkspan'>...</span>
                 </li>
 
                 {/* Show middle pages */}
-                {current > 3 && current <= pages?.length - 3 && (
+                {currentpage > 3 && currentpage <= pages?.length - 3 && (
                   <>
                     <li>
                       <Link
-                        href={
-                          current - 1 === 1 ? '/blog' : `/blog/page/${current - 1}`
-                        }
+                        href={currentpage - 1 === 1 ? '/blog' : `/blog/page/${currentpage - 1}`}
                         legacyBehavior
                       >
                         <a
-                          className={`${current - 1 === current ? 'active' : ''}`}
-                          onClick={() => handleClick(current - 1)}
+                          className={`${currentpage - 1 === Number(currentpage) ? 'active' : ''}`}
+                          onClick={() => handleClick(currentpage - 1)}
                         >
-                          {current - 1}
+                          {currentpage - 1}
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href={current === 1 ? '/blog' : `/blog/page/${current}`}
+                        href={currentpage === 1 ? '/blog' : `/blog/page/${currentpage}`}
                         legacyBehavior
                       >
                         <a
-                          className={`${current === current ? 'active' : ''}`}
-                          onClick={() => handleClick(current)}
+                          className={`${currentpage === currentpage ? 'active' : ''}`}
+                          onClick={() => handleClick(currentpage)}
                         >
-                          {current}
+                          {currentpage}
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href={`/blog/page/${Number(current) + 1}`}
-                        legacyBehavior
-                      >
+                      <Link href={`/blog/page/${Number(currentpage) + 1}`} legacyBehavior>
                         <a
-                          className={`${Number(current) + 1 === Number(current) ? 'active' : ''}`}
-                          onClick={() => handleClick(Number(current) + 1)}
+                          className={`${
+                            Number(currentpage) + 1 === Number(currentpage) ? 'active' : ''
+                          }`}
+                          onClick={() => handleClick(Number(currentpage) + 1)}
                         >
-                          {Number(current) + 1}
+                          {Number(currentpage) + 1}
                         </a>
                       </Link>
                     </li>
 
-                    <li className="page">
-                      <span className="linkspan">...</span>
+                    <li className='page'>
+                      <span className='linkspan'>...</span>
                     </li>
                   </>
                 )}
 
                 {/* Show last page */}
                 {pages
-                  ?.slice(current > pages?.length - 3 ? pages?.length - 4 : pages?.length - 1, pages?.length)
+                  ?.slice(
+                    currentpage > pages?.length - 3 ? pages?.length - 4 : pages?.length - 1,
+                    pages?.length
+                  )
                   .map((num) => (
                     <li key={num}>
-                      <Link
-                        href={num === 1 ? '/blog' : `/blog/page/${num}`}
-                        legacyBehavior
-                      >
+                      <Link href={num === 1 ? '/blog' : `/blog/page/${num}`} legacyBehavior>
                         <a
-                          className={`${num === current ? 'active' : ''}`}
+                          className={`${num === Number(currentpage) ? 'active' : ''}`}
                           onClick={() => handleClick(num)}
                         >
                           {num}
@@ -139,16 +127,26 @@ const Pagination = ({ postPerpage, totalPages, currentpage, handleClick }) => {
               </>
             )}
             {/* Show Next button */}
-            <li className="page-numbers">
+            <li className='page-numbers'>
               <Link
-                href={current < pages?.length ? (current + 1 === 1 ? '/blog' : `/blog/page/${parseInt(current) + 1}`) : `/blog/page/${pages?.length}`}
+                href={
+                  currentpage < pages?.length
+                    ? currentpage + 1 === 1
+                      ? '/blog'
+                      : `/blog/page/${parseInt(currentpage) + 1}`
+                    : `/blog/page/${pages?.length}`
+                }
                 legacyBehavior
               >
                 <a
-                  className={`page-number ${current === pages?.length ? 'disabled' : ''}`}
-                  onClick={() => handleClick(current < pages?.length ? current + 1 : pages?.length)}
+                  className={`page-number ${
+                    Number(currentpage) === pages?.length ? 'disabled' : ''
+                  }`}
+                  onClick={() =>
+                    handleClick(currentpage < pages?.length ? currentpage + 1 : pages?.length)
+                  }
                 >
-                  <i className="fas fa-angle-right"></i>
+                  <i className='fas fa-angle-right'></i>
                 </a>
               </Link>
             </li>
