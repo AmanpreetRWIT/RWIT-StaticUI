@@ -1,13 +1,14 @@
 import React from 'react';
 
-const BlogTable = ({
-  TableStyle,
-  Alignment = 'left',
-  HeadingBgColor = '#A0D2E7',
-  HeadingColor = '#000',
-  isBlogPage = false,
-  Table
-}) => {
+const BlogTable = ({ blok }) => {
+  const {
+    Table,
+    TableStyle,
+    Alignment = 'left',
+    HeadingBgColor,
+    HeadingColor,
+    isBlogPage
+  } = blok || {};
   const TableLayout = (layout) => {
     switch (layout) {
       case 'table1':
