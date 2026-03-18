@@ -25,7 +25,7 @@ import FooterData from "../../data/layouts/Footer.json";
 import BlogContentTable from "../../components/blogs/BlogContentTable";
 import Faq from "@/components/faq/Faq";
 import LatestStories from "@/components/blogs/LatestStories";
-import latestStoriesData from "@/components/blogs/LatestStories";
+import latestStoriesData from "@/data/blogs/LatestStories";
 import BlogDescription from "@/components/blogs/singlePageBlok/BlogDescription";
 const NewsletterModal = dynamic(
   () => import("../../components/newsletter/NewsletterModal"),
