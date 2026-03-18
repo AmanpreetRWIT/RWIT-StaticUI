@@ -3,7 +3,7 @@ Breadcrumb Styles
 ======================*/
 
 .axil-breadcrumb-area {
- .inner {
+  .inner {
     position: relative;
     z-index: 1;
   }
@@ -417,9 +417,9 @@ Breadcrumb Styles
 Axil Default Breadcrumb
 -----------------------------*/
 ul {
-   &.axil-breadcrumb {
+  &.axil-breadcrumb {
     margin: -10px;
-    
+
     li {
       &.axil-breadcrumb-item {
         font-size: 15px;

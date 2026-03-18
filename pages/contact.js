@@ -45,7 +45,7 @@ export default function ContactPage() {
       </Head>
 
       <Layout layoutSettings={layoutSettings}>
-        <Breadcrumb />
+        <Breadcrumb title="Contact" current="contact" showSpan={false} />
         <Contact {...contact} />
         <AwardsAndCertifications blok={awardsAndCertifications} />
         <OurOffice {...ourOffice} />
