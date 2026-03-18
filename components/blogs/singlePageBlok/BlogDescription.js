@@ -1,5 +1,14 @@
 import { useEffect } from "react";
 import Image from "next/legacy/image";
+import CodeSyntax from "../CodeSyntax";
+import BlogTable from "./BlogTable";
+import CodeView from "./CodeView";
+
+const componentMap = {
+  CodeSyntax,
+  BlogTable,
+  CodeView,
+};
 
 const getNodeText = (node) => {
   if (!node) return "";
@@ -171,6 +180,24 @@ const renderNode = (node, key) => {
       </div>
     );
   }
+
+
+  
+  if (node?.type === "blok" && Array.isArray(node?.attrs?.body)) {
+    return node.attrs.body.map((blokItem) => {
+      const Component = componentMap?.[blokItem?.component];
+
+      if (!Component) return null;
+
+      return (
+        <Component
+          key={blokItem._uid}
+          blok={blokItem}
+        />
+      );
+    });
+  }
+
 
   if (Array.isArray(node.content)) {
     return node.content.map((child, index) =>
