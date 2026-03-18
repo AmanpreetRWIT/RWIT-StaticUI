@@ -116,9 +116,23 @@ const BlogDetails = ({
   });
 
   const categoryList2 =
-    Post?.content?.Categories?.map((item) => item?.slug)?.filter(Boolean) || [];
+    Post?.content?.Categories?.map((item) => {
+      if (typeof item === "string") return item;
+      return item?.slug || null;
+    })?.filter(Boolean) || [];
 
   const updatedCategory = [...new Set([...categoryList1, ...categoryList2])];
+
+  const slugifyCategory = (value = "") =>
+    value
+      .toString()
+      .trim()
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "")
+      .replace(/--+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
   useEffect(() => {
     if (process) {
@@ -446,7 +460,7 @@ const BlogDetails = ({
             }}
           />
         </Head>
-        
+
         <div style={{ position: "absolute", left: "-9999px" }}>
           <h2 className="speak-headline">
             {Post?.content?.Seo?.title || Post?.content?.Title || ""}
@@ -506,13 +520,16 @@ const BlogDetails = ({
                               {updatedCategory?.map((category, i) => {
                                 if (!category) return null;
 
+                                const categoryName = typeof category === "string" ? category : category?.slug || "";
+                                const categorySlug = slugifyCategory(categoryName);
+
                                 return (
                                   <li
                                     className="post-meta-categories"
                                     key={`cat-list-${i}`}
                                   >
-                                    <Link href={`/category/${category}`}>
-                                      {String(category).replace(/-/g, " ")}
+                                    <Link href={`/category/${categorySlug}`}>
+                                      {categoryName}
                                     </Link>
                                   </li>
                                 );
