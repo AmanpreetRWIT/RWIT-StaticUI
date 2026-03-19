@@ -27,7 +27,7 @@ It serves as a **CMS-agnostic frontend foundation**, making it easier to experim
 
 ### Framework & UI
 
-- **Framework**: Next.js 15.5.9 (Pages Router)
+- **Framework**: Next.js 16 (Pages Router)
 - **UI & Styling**: React 19, Bootstrap 5.3, SASS
 - **Icons & Media**: React Player, React CountUp, React Parallax Tilt
 
