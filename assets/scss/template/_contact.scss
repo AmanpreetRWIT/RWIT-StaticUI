@@ -43,7 +43,7 @@
       }
     }
 
-    &+.axil-address {
+    & + .axil-address {
       margin-top: 30px;
 
       @media #{$small-mobile} {

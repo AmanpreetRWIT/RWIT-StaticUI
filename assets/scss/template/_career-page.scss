@@ -1,286 +1,284 @@
 .career-page {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+
+  button {
+    font-family: $primary-font;
+  }
+
+  .hero {
+    padding-top: 14.6875rem;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    &__details {
+      max-width: 52rem;
+    }
 
     button {
-        font-family: $primary-font;
+      max-width: 21rem;
+      width: 100%;
     }
 
+    &-tags {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 8.125rem;
+
+      @media (max-width: 768px) {
+        gap: 0.75rem;
+      }
+
+      span.sub-title {
+        margin-bottom: 0;
+        min-width: 8.625rem;
+        text-align: center;
+      }
+    }
+  }
+
+  ul {
+    list-style: disc;
+
+    li {
+      margin-bottom: 0.875rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::marker {
+        color: #2690d4;
+      }
+    }
+  }
+
+  .career-content {
+    max-width: 72rem;
+
+    .blog-desc {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 3.125rem;
+
+        @media #{$sm-layout} {
+          margin-top: 2rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      ul > li {
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .apply-btn {
+    max-width: 26.25rem;
+    width: 100%;
+  }
+
+  @media (max-width: 1199px) {
     .hero {
-        padding-top: 14.6875rem;
+      padding-top: 10rem;
 
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-        }
+      .content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.875rem;
+      }
 
-        &__details {
-            max-width: 52rem;
-        }
-
-        button {
-            max-width: 21rem;
-            width: 100%;
-        }
-
-        &-tags {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 8.125rem;
-
-            @media (max-width: 768px) {
-                gap: 0.75rem;
-            }
-
-            span.sub-title {
-                margin-bottom: 0;
-                min-width: 8.625rem;
-                text-align: center;
-            }
-        }
+      &-tags {
+        margin-top: 5rem;
+      }
     }
+  }
 
-    ul {
-        list-style: disc;
-
-        li {
-            margin-bottom: 0.875rem;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            &::marker {
-                color: #2690D4;
-            }
-        }
+  @media (max-width: 768px) {
+    .ax-section-gap {
+      padding: 60px 0;
     }
 
     .career-content {
-        max-width: 72rem;
+      .blog-desc {
+        margin-bottom: 2rem !important;
 
-        .blog-desc {
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                margin-top: 3.125rem;
-
-                @media #{$sm-layout} {
-                    margin-top: 2rem;
-                    margin-bottom: 1.25rem;
-                }
-            }
-
-            ul>li {
-                margin-bottom: 12px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+        p,
+        li {
+          font-size: 14px;
+          line-height: 24px;
         }
+      }
     }
 
-    .apply-btn {
-        max-width: 26.25rem;
-        width: 100%;
+    .hero {
+      padding-top: 7rem;
+
+      .content {
+        .layer2.custom-color {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-tags {
+        margin-top: 3.25rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      &-tags {
+        .sub-title.extra11-color {
+          flex-grow: 1;
+          min-width: 6.25rem;
+        }
+      }
     }
 
-    @media (max-width: 1199px) {
-        .hero {
-            padding-top: 10rem;
-
-            .content {
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 1.875rem;
-            }
-
-            &-tags {
-                margin-top: 5rem;
-            }
-        }
+    button.axil-button.btn-large.apply-btn {
+      max-width: 100%;
     }
-
-    @media (max-width: 768px) {
-
-        .ax-section-gap {
-            padding: 60px 0;
-        }
-
-        .career-content {
-            .blog-desc {
-                margin-bottom: 2rem !important;
-
-                p,
-                li {
-                    font-size: 14px;
-                    line-height: 24px;
-                }
-            }
-        }
-
-        .hero {
-            padding-top: 7rem;
-
-            .content {
-                .layer2.custom-color {
-                    p {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-
-            &-tags {
-                margin-top: 3.25rem;
-            }
-        }
-    }
-
-    @media (max-width: 480px) {
-        .hero {
-            &-tags {
-                .sub-title.extra11-color {
-                    flex-grow: 1;
-                    min-width: 6.25rem;
-                }
-            }
-        }
-
-        button.axil-button.btn-large.apply-btn {
-            max-width: 100%;
-        }
-    }
+  }
 }
 
 #careerArea {
-    .working {
-        &__details {
-            display: flex;
-            justify-content: space-between;
+  .working {
+    &__details {
+      display: flex;
+      justify-content: space-between;
 
-            .share {
-                &-btn {
-                    flex: none;
-                    max-width: 18.75rem;
-                    width: 100%;
-                    height: fit-content;
-                    position: relative;
+      .share {
+        &-btn {
+          flex: none;
+          max-width: 18.75rem;
+          width: 100%;
+          height: fit-content;
+          position: relative;
 
-                    button {
-                        width: 100%;
-                    }
-                }
-
-                &-options {
-                    left: 50%;
-                    transform: translate(-50%, 0.6rem);
-
-                    &::before {
-                        right: 50%;
-                    }
-
-                    &::after {
-                        right: 50%;
-                    }
-                }
-
-                &-list {
-                    list-style: none;
-                    color: #050148;
-
-                    li {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-
-        &__timings {
-            display: flex;
+          button {
             width: 100%;
-
-            ul {
-                max-width: 405px;
-                width: 100%;
-                padding: 0;
-                margin-bottom: 0;
-
-                li {
-                    margin-left: 18px;
-
-                    &::marker {
-                        color: #2690D4;
-                    }
-                }
-            }
+          }
         }
+
+        &-options {
+          left: 50%;
+          transform: translate(-50%, 0.6rem);
+
+          &::before {
+            right: 50%;
+          }
+
+          &::after {
+            right: 50%;
+          }
+        }
+
+        &-list {
+          list-style: none;
+          color: #050148;
+
+          li {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 
-    @media (max-width: 1199px) {
-        .working {
-            &__details {
-                align-items: flex-start;
-                flex-direction: column-reverse;
-                gap: 1.5rem;
-            }
+    &__timings {
+      display: flex;
+      width: 100%;
 
-            &__timings {
-                flex-direction: column;
+      ul {
+        max-width: 405px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
 
-                &>ul {
-                    max-width: 50%;
-                    margin-bottom: 1.25rem;
+        li {
+          margin-left: 18px;
 
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
+          &::marker {
+            color: #2690d4;
+          }
         }
+      }
     }
+  }
 
-    @media (max-width: 768px) {
-        .working {
-            &__timings {
-                ul>li {
-                    width: 100%;
-                }
+  @media (max-width: 1199px) {
+    .working {
+      &__details {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+      }
 
-                li,
-                p {
-                    font-size: 18px;
-                    line-height: 28px;
-                }
-            }
+      &__timings {
+        flex-direction: column;
+
+        & > ul {
+          max-width: 50%;
+          margin-bottom: 1.25rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
+      }
     }
+  }
 
-    @media (max-width: 480px) {
-        .working {
-            &__details {
-                .share-btn {
-                    max-width: 100%;
-
-                    button {
-                        max-width: 100%;
-                    }
-                }
-            }
-
-            &__timings {
-                ul {
-                    text-align: start;
-                    max-width: unset;
-                }
-            }
+  @media (max-width: 768px) {
+    .working {
+      &__timings {
+        ul > li {
+          width: 100%;
         }
+
+        li,
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
     }
+  }
+
+  @media (max-width: 480px) {
+    .working {
+      &__details {
+        .share-btn {
+          max-width: 100%;
+
+          button {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &__timings {
+        ul {
+          text-align: start;
+          max-width: unset;
+        }
+      }
+    }
+  }
 }

@@ -288,7 +288,7 @@
         }
       }
 
-      &+.comment {
+      & + .comment {
         margin-top: 30px;
       }
 
@@ -482,19 +482,24 @@
   }
 }
 
-.blog_table, #blogTable2 .blog_table {
+.blog_table,
+#blogTable2 .blog_table {
   &.align {
     &-right {
       th {
         padding-inline: 6px;
       }
-      th, td, tbody tr td:first-child {
+      th,
+      td,
+      tbody tr td:first-child {
         text-align: right;
       }
     }
 
     &-center {
-      th, td, tbody tr td:first-child {
+      th,
+      td,
+      tbody tr td:first-child {
         text-align: center;
       }
     }
@@ -503,7 +508,9 @@
       th {
         padding-inline: 6px;
       }
-      th, td, tbody tr td:first-child {
+      th,
+      td,
+      tbody tr td:first-child {
         text-align: left;
       }
     }
@@ -511,7 +518,8 @@
 }
 
 #blogTable2 .blog_table.align {
-  &-right, &-left {
+  &-right,
+  &-left {
     th:first-child {
       padding-inline-start: 0;
     }

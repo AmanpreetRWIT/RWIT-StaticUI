@@ -68,6 +68,9 @@
   }
 
   li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
       text-align: center;
       @extend %transition;
@@ -79,7 +82,7 @@
       img {
         @extend %transition;
         height: 110px !important;
-        max-width: 110px !important;
+        max-width: 100px !important;
         aspect-ratio: 1/1;
         object-fit: contain;
       }
@@ -96,7 +99,7 @@
       img {
         @extend %transition;
         height: 110px !important;
-        max-width: 110px !important;
+        max-width: 100px !important;
         aspect-ratio: 1/1;
         object-fit: contain;
 
@@ -111,7 +114,7 @@
     img {
       @extend %transition;
       height: 110px !important;
-      max-width: 110px !important;
+      max-width: 100px !important;
       aspect-ratio: 1/1;
       object-fit: contain;
 

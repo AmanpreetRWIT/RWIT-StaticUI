@@ -1,16 +1,25 @@
 .newsletter {
   padding: 3rem 1rem;
   overflow: hidden;
-
   &__cont {
     padding: 3.75rem 3.125rem;
     margin-inline: auto;
     position: relative;
   }
+  &__CatchaWrapper {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  & .recaptcha-v2-widget-newsletter {
+    justify-self: last baseline;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
     position: relative;
+    gap: 10rem;
   }
   &__title {
     h2 {
@@ -37,7 +46,7 @@
       line-height: 1.75rem;
       font-weight: 400;
       border: 1px solid #fff;
-      font-family: 'DM Sans', sans-serif;
+      font-family: $primary-font;
       border-right: none;
       outline: none;
       width: 100%;
@@ -51,7 +60,7 @@
     button {
       height: 100%;
       min-height: 54px;
-      font-family: 'DM Sans', sans-serif;
+      font-family: $primary-font;
     }
   }
 
@@ -74,6 +83,7 @@
     }
     &__form {
       max-width: 27.5rem;
+      min-width: 24.3rem;
     }
     &__btn {
       min-width: 9.375rem;
@@ -232,7 +242,7 @@
       background-color: #fff;
       outline: none;
       height: 4rem;
-      font-family: 'DM Sans', sans-serif;
+      font-family: $primary-font;
       color: #000000;
     }
   }
@@ -246,7 +256,7 @@
       font-size: 1rem;
       height: 100%;
       min-height: 54px;
-      font-family: 'DM Sans', sans-serif;
+      font-family: $primary-font;
     }
   }
 
@@ -333,4 +343,10 @@
 }
 .modal-hide {
   display: none;
+}
+.applyFormMessage {
+  text-align: center;
+  width: 100%;
+  padding-top: 1.25rem;
+  color: $secondary-color;
 }

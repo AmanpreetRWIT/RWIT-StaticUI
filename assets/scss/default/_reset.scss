@@ -99,7 +99,7 @@ pre {
     color: #d63384;
     font-size: 1.125rem;
     line-height: 2.5rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: $primary-font;
     font-weight: 500;
     @media #{$sm-layout} {
       font-size: 14px;

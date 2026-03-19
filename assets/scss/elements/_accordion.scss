@@ -191,7 +191,7 @@ Accourdion Style Two
 }
 
 .axil-faq-area {
-  .axil-accordion--2  {
+  .axil-accordion--2 {
     .card {
       .collapsed {
         max-height: 0;
@@ -201,7 +201,7 @@ Accourdion Style Two
       svg {
         transition: 0.25s all ease-in-out;
       }
-      
+
       &.activefaq {
         box-shadow: 0px 0px 24px 0px rgba(0, 2, 72, 0.1);
         border: none !important;

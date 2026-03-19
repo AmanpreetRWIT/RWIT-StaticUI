@@ -90,11 +90,18 @@
   }
 
   @media #{$small-mobile} {
+    &.container {
+      padding-inline: 0;
+      max-width: 100vw;
+      overflow: hidden;
+    }
+
     .client-and-partner {
       padding-block: 3.75rem;
     }
 
     .section-title {
+      padding-inline: 1.25rem;
       p {
         display: none;
       }
