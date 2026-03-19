@@ -51,12 +51,6 @@
   &__buttons {
     display: flex;
     gap: 16px;
-    
-      .axil-button {
-        .fa-external-link-alt {
-          margin-left: 20px;
-        }
-    }
   }
 
   @media #{$lg-layout} {

@@ -148,10 +148,7 @@ body.active-dark-mode .haeder-default.sticky {
   background: #242526;
 }
 
-body.active-dark-mode
-  .axil-slide.slide-style-default
-  .topskew-thumbnail-group
-  .thumbnail::before {
+body.active-dark-mode .axil-slide.slide-style-default .topskew-thumbnail-group .thumbnail::before {
   border: 4px solid #18191a;
 }
 
@@ -163,19 +160,11 @@ body.active-dark-mode .axil-service .inner .content a.axil-button::after {
   background: #d3d3d4;
 }
 
-body.active-dark-mode
-  .axil-contact-form.contact-form-style-1
-  .callto-action-wrapper
-  span
-  i {
+body.active-dark-mode .axil-contact-form.contact-form-style-1 .callto-action-wrapper span i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .axil-contact-form.contact-form-style-1
-  .callto-action-wrapper
-  span
-  a {
+body.active-dark-mode .axil-contact-form.contact-form-style-1 .callto-action-wrapper span a {
   color: #d3d3d4;
 }
 
@@ -215,12 +204,7 @@ body.active-dark-mode a.axil-button.btn-solid:hover {
   color: #fff;
 }
 
-body.active-dark-mode
-  .axil-pricing-table
-  .pricing-body
-  .inner
-  ul.list-style
-  li {
+body.active-dark-mode .axil-pricing-table .pricing-body .inner ul.list-style li {
   color: #d3d3d4;
 }
 
@@ -323,10 +307,7 @@ body.active-dark-mode .axil-service .inner {
   background: #242526;
 }
 
-body.active-dark-mode
-  .axil-service-area.bg-color-lightest
-  .axil-service
-  .inner {
+body.active-dark-mode .axil-service-area.bg-color-lightest .axil-service .inner {
   background: #18191a;
 }
 
@@ -418,12 +399,7 @@ body.active-dark-mode .axil-scroll-navigation .nav::after {
   background: #4e4e4e;
 }
 
-body.active-dark-mode
-  .axil-accordion
-  .card
-  .card-header
-  h5
-  .btn.btn-link.collapsed {
+body.active-dark-mode .axil-accordion .card .card-header h5 .btn.btn-link.collapsed {
   color: #d3d3d4;
 }
 
@@ -431,11 +407,7 @@ body.active-dark-mode .axil-single-widget.search .blog-search .search-button i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .axil-single-widget.category
-  ul.category-list
-  li
-  a::after {
+body.active-dark-mode .axil-single-widget.category ul.category-list li a::after {
   border-color: transparent transparent transparent #d3d3d4;
 }
 
@@ -480,22 +452,11 @@ body.active-dark-mode .close-sidenav button.close-button i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .side-nav
-  .side-nav-inner
-  .side-nav-content
-  ul.main-navigation
-  li
-  a {
+body.active-dark-mode .side-nav .side-nav-inner .side-nav-content ul.main-navigation li a {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .side-nav
-  .side-nav-inner
-  .side-nav-content
-  .axil-contact-info-inner
-  h5.title,
+body.active-dark-mode .side-nav .side-nav-inner .side-nav-content .axil-contact-info-inner h5.title,
 body.active-dark-mode
   .side-nav
   .side-nav-inner
@@ -518,10 +479,7 @@ body.active-dark-mode .axil-pricing-table.active a.axil-button {
   color: #ffffff;
 }
 
-body.active-dark-mode
-  .axil-pricing-table.active
-  a.axil-button.btn-transparent
-  span.button-icon,
+body.active-dark-mode .axil-pricing-table.active a.axil-button.btn-transparent span.button-icon,
 body.active-dark-mode
   .axil-pricing-table.active
   button.axil-button.btn-transparent
@@ -538,19 +496,11 @@ body.active-dark-mode .axil-accordion--2 .card {
   border: 1px solid #4e4e4e;
 }
 
-body.active-dark-mode
-  .axil-accordion--2
-  .card
-  .card-header
-  .btn.btn-link.collapsed {
+body.active-dark-mode .axil-accordion--2 .card .card-header .btn.btn-link.collapsed {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .axil-accordion--2
-  .card
-  .card-header
-  .btn.btn-link.collapsed::after {
+body.active-dark-mode .axil-accordion--2 .card .card-header .btn.btn-link.collapsed::after {
   border-color: #d3d3d4 transparent transparent;
 }
 
@@ -592,10 +542,7 @@ body.active-dark-mode .axil-counterup::before,
 body.active-dark-mode .axil-testimonial .inner::before,
 body.active-dark-mode .axil-blog.active .content .content-wrap::before,
 body.active-dark-mode .contact-form-style-2::before,
-body.active-dark-mode
-  .axil-blog-details-area
-  .axil-comment-form
-  .inner::before {
+body.active-dark-mode .axil-blog-details-area .axil-comment-form .inner::before {
   display: none;
 }
 
@@ -616,12 +563,7 @@ body.active-dark-mode .axil-pricing-table .pricing-header {
   border-bottom: 1px solid #303031;
 }
 
-body.active-dark-mode
-  .axil-pricing-table
-  .pricing-header
-  .price-wrapper
-  .date-option
-  select {
+body.active-dark-mode .axil-pricing-table .pricing-header .price-wrapper .date-option select {
   border-bottom: 1px solid #303031;
 }
 
@@ -699,10 +641,7 @@ body.active-dark-mode .axil-single-widget.category ul.category-list li a {
   color: #d3d3d4;
 }
 
-body.active-dark-mode
-  .axil-single-widget.search
-  .blog-search
-  .search-button::before {
+body.active-dark-mode .axil-single-widget.search .blog-search .search-button::before {
   background: #4e4e4e;
 }
 
@@ -738,10 +677,7 @@ body.active-dark-mode .axil-team .inner .thumbnail::before {
   border: 2px solid #18191a;
 }
 
-body.active-dark-mode
-  .axil-breadcrumb-area.breadcrumb-style-2
-  .thumbnail
-  .image-group::before {
+body.active-dark-mode .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group::before {
   border: 4px solid #4e4e4e;
 }
 
@@ -781,12 +717,7 @@ body.active-dark-mode .axil-website img.light-image {
   display: none;
 }
 
-body.active-dark-mode
-  .axil-single-widget.small-post-wrapper
-  .small-post
-  .content
-  ul.blog-meta
-  li {
+body.active-dark-mode .axil-single-widget.small-post-wrapper .small-post .content ul.blog-meta li {
   color: #d3d3d4;
 }
 
@@ -796,9 +727,7 @@ body.active-dark-mode button.axil-button:hover {
 }
 
 body.active-dark-mode a.axil-button.btn-transparent:hover span.button-icon,
-body.active-dark-mode
-  button.axil-button.btn-transparent:hover
-  span.button-icon {
+body.active-dark-mode button.axil-button.btn-transparent:hover span.button-icon {
   border-color: transparent transparent transparent #ffffff;
 }
 

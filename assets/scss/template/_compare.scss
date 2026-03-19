@@ -615,10 +615,7 @@
         thead {
           tr {
             display: grid;
-            grid-template-columns: minmax(300px, 418px) minmax(300px, 418px) minmax(
-                300px,
-                418px
-              );
+            grid-template-columns: minmax(300px, 418px) minmax(300px, 418px) minmax(300px, 418px);
 
             & th:first-child {
               text-align: left;
@@ -642,10 +639,7 @@
           tr {
             display: grid;
             background-color: #fff;
-            grid-template-columns: minmax(300px, 418px) minmax(300px, 418px) minmax(
-                300px,
-                418px
-              );
+            grid-template-columns: minmax(300px, 418px) minmax(300px, 418px) minmax(300px, 418px);
 
             & td:first-child {
               font-weight: 500;
@@ -758,7 +752,7 @@
       font-style: italic;
     }
   }
-  
+
   .subtitle {
     font-size: 24px;
     line-height: 38px;
@@ -774,9 +768,12 @@
     border-bottom: 5px solid transparent !important;
   }
   .__rcs-handle-button {
+    overflow: visible;
+    position: relative;
     &::after {
       content: 'DRAG';
       color: black;
+      display: block;
       width: 36px;
       font-size: 10px;
       line-height: 12px;
@@ -786,6 +783,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       margin-top: 0.5px;
+      z-index: 1;
+      pointer-events: none;
+      white-space: nowrap;
     }
   }
   @media #{$sm-layout} {

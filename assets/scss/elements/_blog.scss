@@ -189,7 +189,6 @@
 
 .axil-blog-details-area {
   .content {
-
     h1,
     h2,
     h3,
@@ -232,14 +231,10 @@
         padding-left: 20px;
         margin: 14px 0;
 
-        @media #{$small-mobile} {
-          margin-block: 1.25rem;
-        }
-
         &::after {
           content: '';
           position: absolute;
-          top: 50%;
+          top: 15px;
           left: 0;
           width: 6px;
           height: 6px;
@@ -249,10 +244,36 @@
           transform: translateY(-50%);
         }
 
-        &>p {
-          font-size: inherit;
-          line-height: inherit;
+        & > p {
           margin: inherit;
+        }
+
+        @media #{$md-layout} {
+          &::after {
+            top: 12px;
+          }
+        }
+
+        @media #{$sm-layout} {
+          &::after {
+            top: 13px;
+          }
+        }
+
+        @media #{$large-mobile} {
+          &::after {
+            top: 13px;
+          }
+        }
+
+        @media #{$small-mobile} {
+          &::after {
+            top: 13px;
+            width: 5px;
+            height: 5px;
+          }
+
+          margin-block: 1.25rem;
         }
       }
     }
@@ -342,7 +363,7 @@ pre {
       color: inherit;
       font-size: 18px;
       line-height: 2.5rem;
-      font-family: 'DM Sans', sans-serif;
+      font-family: $primary-font;
       font-weight: 700;
     }
   }
@@ -476,7 +497,6 @@ pre {
       font-size: 28px;
     }
   }
-
 }
 
 #all-blogs,

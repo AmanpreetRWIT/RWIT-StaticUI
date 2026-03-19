@@ -8,8 +8,7 @@
   overflow: hidden;
 
   @media #{$small-mobile} {
-
-    .content__wrap{
+    .content__wrap {
       margin-top: 30px;
     }
 
@@ -25,7 +24,7 @@
       text-align: center;
 
       .desc {
-        display: none
+        display: none;
       }
 
       .axil-button-group {
@@ -157,4 +156,3 @@
     }
   }
 }
-

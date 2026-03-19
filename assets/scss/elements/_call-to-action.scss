@@ -916,21 +916,19 @@
       }
     }
   }
-  .newsletterModal{
-
+  .newsletterModal {
     &__cont {
       padding: 3.625rem 3.8rem;
       @media #{$sm-layout} {
         padding: 4.5rem 1.25rem;
       }
     }
-    &__subtitle{
-      p{
+    &__subtitle {
+      p {
         font-size: 1.375rem;
         @media #{$sm-layout} {
           font-size: 1.125rem;
         }
-      
       }
     }
   }

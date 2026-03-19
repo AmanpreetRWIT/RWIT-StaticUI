@@ -48,7 +48,8 @@
       }
     }
   }
-  h2, h3 {
+  h2,
+  h3 {
     &.title {
       margin-bottom: 20px;
       @media #{$lg-layout} {

@@ -24,7 +24,7 @@
           transition: all 0.8s ease-out;
           transform: translateX(15%);
         }
-        
+
         &_style3 {
           transition: all 1.3s ease-out;
           transform: translateX(20%);
@@ -75,7 +75,7 @@
     position: relative;
     scroll-behavior: smooth;
     pointer-events: none;
-    
+
     @media #{$sm-layout},
     #{$md-layout} {
       pointer-events: all;
@@ -502,8 +502,6 @@
 
 @media #{$md-layout} {
   #gallery {
-    .swiper {
-    }
     .swiper-slide {
       height: 300px;
       margin-right: 20px;

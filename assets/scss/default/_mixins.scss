@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 @mixin clearfix() {
   &::after {
     content: '';
@@ -8,8 +10,8 @@
 
 @mixin config-bg-colors($prefix, $bg-color-...) {
   @each $i in $bg-color- {
-    .#{$prefix}#{nth($i, 1)} {
-      background: nth($i, 2);
+    .#{$prefix}#{list.nth($i, 1)} {
+      background: list.nth($i, 2);
     }
   }
 }
@@ -32,36 +34,11 @@
 // Gradient color
 @mixin gradient-color($value, $deg) {
   @if $value==a {
-    background: -webkit-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -moz-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -ms-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -o-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: linear-gradient(
-      $deg#{deg},
-      #f71595 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
+    background: -webkit-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -moz-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -ms-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -o-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: linear-gradient($deg#{deg}, #f71595 0%, #ed560e 62%, #ff9600 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -ms-background-clip: text;
@@ -187,36 +164,11 @@
 // Gradient Background
 @mixin gradient-bg($value, $deg) {
   @if $value==a {
-    background: -webkit-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -moz-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -ms-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: -o-linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
-    background: linear-gradient(
-      $deg#{deg},
-      #fe0190 0%,
-      #ed560e 62%,
-      #ff9600 100%
-    );
+    background: -webkit-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -moz-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -ms-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: -o-linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
+    background: linear-gradient($deg#{deg}, #fe0190 0%, #ed560e 62%, #ff9600 100%);
   } @else if $value==b {
     background: -webkit-linear-gradient(
       $deg#{deg},

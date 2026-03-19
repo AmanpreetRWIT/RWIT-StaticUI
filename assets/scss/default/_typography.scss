@@ -75,30 +75,30 @@ h6 {
   }
 }
 
-  .custom-h2 {
-    font-size: $h2;
+.custom-h2 {
+  font-size: $h2;
+  line-height: 62px;
+  font-weight: 700;
+
+  @media #{$laptop-device} {
+    font-size: 50px;
     line-height: 62px;
-    font-weight: 700;
+  }
 
-    @media #{$laptop-device} {
-      font-size: 50px;
-      line-height: 62px;
-    }
+  @media #{$lg-layout} {
+    font-size: 40px;
+    line-height: 52px;
+  }
 
-    @media #{$lg-layout} {
-      font-size: 40px;
-      line-height: 52px;
-    }
+  @media #{$md-layout} {
+    font-size: 35px;
+    line-height: 42px;
+  }
 
-    @media #{$md-layout} {
-      font-size: 35px;
-      line-height: 42px;
-    }
-
-    @media #{$sm-layout} {
-      font-size: 30px;
-      line-height: 40px;
-    }
+  @media #{$sm-layout} {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .custom-h1 {

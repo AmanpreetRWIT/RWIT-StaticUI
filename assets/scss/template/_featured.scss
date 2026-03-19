@@ -92,7 +92,7 @@
         .single-counterup {
           position: relative;
           @media #{$large-mobile} {
-            width: 100%
+            width: 100%;
           }
 
           & + .single-counterup {
@@ -205,34 +205,29 @@
 
     .inner {
       span {
-        -webkit-animation: 1000ms ease-in-out 0s normal none 1 running
-          fadeInRight;
+        -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInRight;
         animation: 1000ms ease-in-out 0s normal none 1 running fadeInRight;
       }
 
       h2 {
-        -webkit-animation: 1200ms ease-in-out 0s normal none 1 running
-          fadeInRight;
+        -webkit-animation: 1200ms ease-in-out 0s normal none 1 running fadeInRight;
         animation: 1200ms ease-in-out 0s normal none 1 running fadeInRight;
       }
 
       p {
-        -webkit-animation: 1500ms ease-in-out 0s normal none 1 running
-          fadeInRight;
+        -webkit-animation: 1500ms ease-in-out 0s normal none 1 running fadeInRight;
         animation: 1500ms ease-in-out 0s normal none 1 running fadeInRight;
       }
 
       a {
         &.axil-button {
-          -webkit-animation: 1700ms ease-in-out 0s normal none 1 running
-            fadeInRight;
+          -webkit-animation: 1700ms ease-in-out 0s normal none 1 running fadeInRight;
           animation: 1700ms ease-in-out 0s normal none 1 running fadeInRight;
         }
       }
 
       .single-counterup {
-        -webkit-animation: 1800ms ease-in-out 0s normal none 1 running
-          fadeInRight;
+        -webkit-animation: 1800ms ease-in-out 0s normal none 1 running fadeInRight;
         animation: 1800ms ease-in-out 0s normal none 1 running fadeInRight;
       }
     }

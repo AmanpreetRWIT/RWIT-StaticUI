@@ -612,7 +612,6 @@
         padding-top: 0;
       }
 
-      
       &__bottom {
         padding-block: 20px;
       }
@@ -764,14 +763,8 @@
 
     .axil-case-study .thumbnail a img,
     .axil-blog.active .content .content-wrap,
-    .axil-breadcrumb-area.breadcrumb-style-2
-      .thumbnail
-      .image-group
-      img.image-2,
-    .axil-breadcrumb-area.breadcrumb-style-2
-      .thumbnail
-      .image-group
-      img.image-1,
+    .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group img.image-2,
+    .axil-breadcrumb-area.breadcrumb-style-2 .thumbnail .image-group img.image-1,
     .axil-team-details-wrapper .thumbnail img {
       transform: none !important;
     }

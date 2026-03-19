@@ -1,7 +1,7 @@
 # RWIT StaticUI
 
-![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js&style=for-the-badge)
-![React](https://img.shields.io/badge/React-19.1-blue?logo=react&style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js&style=for-the-badge)
+![React](https://img.shields.io/badge/React-19.2-blue?logo=react&style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?logo=bootstrap&style=for-the-badge)
 ![Sass](https://img.shields.io/badge/Sass-1.53-pink?logo=sass&style=for-the-badge)
 
