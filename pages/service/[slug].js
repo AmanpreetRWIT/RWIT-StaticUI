@@ -22,6 +22,7 @@ import CounterTwo from "@/components/counters/CounterTwoColumn";
 import AwardsAndCertifications from "@/components/AwardsAndCertifications/AwardsAndCertifications";
 import ServiceswithFeaturedImage from "@/components/Services/ServiceswithFeaturedImage";
 import PricingPlan from "@/components/pricings/PricingPlan";
+import BrandsThree from "@/components/brands/BrandThree";
 
 
 
@@ -50,6 +51,7 @@ import counterTwo from "@/data/counters/CounterTwoColumn.json";
 import awardsAndCertifications from "@/data/AwardsAndCertifications/AwardsAndCertifications.json";
 import serviceswithFeaturedImage from "@/data/Services/ServiceswithFeaturedImage.json";
 import pricingPlan from "@/data/pricings/PricingPlan.json";
+import BrandsThreeData from "@/data/brands/BrandThree.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -97,6 +99,7 @@ export default function AboutPage() {
       <Layout layoutSettings={layoutSettings}>
         <HeroWithForm {...heroWithForm} />
         <BrandTwo {...brandTwo}/>
+        <BrandsThree blok={BrandsThreeData} />
         <ServicesWithLeftTitle blok={servicesWithLeftTitle} />
         <TeamSpotlightCTA blok={teamSpotlightCTA} />
         <ServicesWithStickyCards blok={servicesWithStickyCards} />
