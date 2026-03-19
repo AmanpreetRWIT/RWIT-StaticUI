@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 import MenuIcon from '../Icons/MenuIcon';
 import dynamic from 'next/dynamic';
 const MegaMenu = dynamic(() => import('./MegaMenu'));
+const DesktopMegaMenu = dynamic(() => import('./DesktopMegaMenu'));
 
 const MainMenu = ({ menus }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const handleDropdownToggle = (index) => {
     setSelectedIndex(selectedIndex === index ? null : index);
   };
-
   useEffect(() => {
     const links = document.querySelectorAll('.has-dropdown');
     links?.forEach((link) => {
@@ -22,10 +22,25 @@ const MainMenu = ({ menus }) => {
       }
     });
   }, [selectedIndex]);
+  const [isDesktop, setIsDesktop] = useState(undefined);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 992);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
-    <ul className="mainmenu">
+    <ul className='mainmenu'>
       {menus?.map((menu, menuIndex) => {
+        const menuHref = menu?.MenuLink?.url;
+        const isInternalLink = typeof menuHref === 'string' && menuHref.startsWith('/');
+        const isForcedNoLocale =
+          isInternalLink && /\/(blog|category|case-study|casestudies)(\/|$)/.test(menuHref);
         return (
           <li
             className={
@@ -33,25 +48,40 @@ const MainMenu = ({ menus }) => {
                 ? `has-dropdown ${menuIndex === selectedIndex ? 'active-menu' : ''}`
                 : ''
             }
-            key={`menu-item-${menu?.MenuLabel?.toString().replace(/\s+/g, '-').toLowerCase() || menu?.MenuLink?.url || menuIndex}`}
+            key={`menu-item-${menuIndex}`}
             onClick={() => handleDropdownToggle(menuIndex)}
           >
-            {menu?.MenuLink?.url ? (
-              <Link href={menu.MenuLink.url} prefetch={false} className="menulink">
+            {menu?.MenuLink?.story?.url || menu?.MenuLink?.url ? (
+              <Link
+                href={menuHref}
+                prefetch={false}
+                locale={isForcedNoLocale ? false : undefined}
+                className='menulink'
+              >
                 {menu?.MenuLabel}
-                {menu?.MegaMenu?.length > 0 && <MenuIcon />}
+                {menu?.MegaMenu?.length > 0 && (
+                  <>
+                    <MenuIcon />
+                  </>
+                )}
               </Link>
             ) : (
               <span
-                className="menulink nolink"
+                className='menulink nolink'
                 style={{ cursor: 'default', textDecoration: 'none' }}
               >
                 {menu?.MenuLabel}
                 {menu?.MegaMenu?.length > 0 && <MenuIcon />}
               </span>
             )}
-            {menu?.MegaMenu?.length > 0 && (
-              <MegaMenu menu={menu} activeMenu={selectedIndex} index={menuIndex} />
+            {menu?.MegaMenu?.length > 0 && isDesktop !== undefined && (
+              <>
+                {isDesktop ? (
+                  <DesktopMegaMenu menu={menu} activeMenu={selectedIndex} index={menuIndex} />
+                ) : (
+                  <MegaMenu menu={menu} activeMenu={selectedIndex} index={menuIndex} />
+                )}
+              </>
             )}
           </li>
         );

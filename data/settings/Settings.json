@@ -1,0 +1,115 @@
+{
+  "SiteName": "RW Infotech",
+  "WebsiteURL": "https://www.rwinfotech.com",
+
+  "Logo": {
+    "filename": "/images/rwit-logo.svg",
+    "alt": "RW Infotech Logo"
+  },
+
+  "FavIcon": {
+    "filename": "/favicon.ico"
+  },
+
+  "DefaultSEO": {
+    "title": "RW Infotech - IT Solutions Company",
+    "description": "RW Infotech provides modern web development and IT solutions.",
+    "og_image": "/images/meta-image.jpg"
+  },
+
+  "SocialLinks": [
+    {
+      "platform": "Facebook",
+      "url": "https://facebook.com"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com"
+    }
+  ],
+
+  "ContactInfo": {
+    "email": "info@example.com",
+    "phone": "+91-1234567890",
+    "address": "New Delhi, India"
+  },
+
+  "ApplyPopup": {
+    "ShowORHide": true,
+    "PopupTitle": "Apply Now",
+    "PopupDescription": "Fill the form below to apply for this position.",
+    "PopupHeadingColor": {
+      "color": "#000248"
+    },
+    "PopupDescriptionColor": {
+      "color": "#4B4B4B"
+    },
+    "ModalBgColor": {
+      "color": "#EEF0FA"
+    },
+    "Form": [
+      {
+        "FormTitle": "Job Application",
+        "SubmitButtonText": "Submit Application",
+        "Inputs": [
+          {
+            "Name": "Full Name",
+            "Type": "text",
+            "Placeholder": "Enter your full name",
+            "Required": true
+          },
+          {
+            "Name": "Email",
+            "Type": "email",
+            "Placeholder": "Enter your email",
+            "Required": true
+          },
+          {
+            "Name": "Phone",
+            "Type": "tel",
+            "Placeholder": "Enter your phone number",
+            "Required": true
+          },
+          {
+            "Name": "Resume",
+            "Type": "file",
+            "Placeholder": "Upload your resume",
+            "Required": true
+          }
+        ]
+      }
+    ]
+  },
+
+  "NewsletterModal": {
+    "ShowORHide": true,
+    "Title": "Subscribe to our Newsletter",
+    "Desc": "Stay updated with our latest news and updates.",
+    "TitleColor": "#000248",
+    "BgColor": "#EEF0FA",
+    "ButtonName": "Subscribe",
+    "SuccessMessage": "Thank you for subscribing!",
+
+    "EnableAutoPopup": true,
+    "EnableScrollTrigger": true,
+    "ShowOnce": true,
+    "ResetAfterDays": 30,
+
+    "ShowCloseButton": true,
+    "CloseOnOutsideClick": true,
+
+    "EnableValidation": true,
+    "ShowErrorMessages": true
+  },
+
+  "Notice": {
+    "ShowORHide": false,
+    "Message": "We are hiring! Join our team today.",
+    "BgColor": "#000248",
+    "TextColor": "#ffffff"
+  }
+}

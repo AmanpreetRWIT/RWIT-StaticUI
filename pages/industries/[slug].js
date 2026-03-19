@@ -1,26 +1,47 @@
 import Head from "next/head";
 
 // Components
-import Layout from "../../components/layouts/Layout";
-import HeroWithVerticalImage from "../../components/banner/HeroWithVerticalImage";
-import HeroSection from "../../components/banner/Hero";
-import AboutUs from "../../components/abouts/AboutUs";
-import CallToAction from "../../components/call-to-actions/CallToAction";
-import ClientAndPartner from "../../components/client-and-partner/ClientAndPartner";
-import Services from "../../components/Services/Services";
-
+import Layout from "@/components/layouts/Layout";
+import HeroSection from "@/components/banner/Hero";
+import IndustriesOverview from "@/components/industriesOverview/IndustriesOverview";
+import ServicesWithLeftTitle from "@/components/Services/ServicesWithLeftTitle";
+import TeamSpotlightCTA from "@/components/call-to-actions/TeamSpotlightCTA";
+import VideoTestimonials from "@/components/testimonials/VideoTestimonials";
+import ServicesWithStickyCards from "@/components/Services/ServicesWithStickyCards";
+import AwardsAndCertifications from "@/components/AwardsAndCertifications/AwardsAndCertifications";
+import FounderSpotlightCTA from "@/components/call-to-actions/FounderSpotlightCTA";
+import ClientLogoSlider from "@/components/client-and-partner/ClientLogoSlider";
+import CaseStudyMedia from "@/components/CaseStudyGrid/CaseStudyMedia";
+import OurValues from "@/components/ourvalues/OurValues";
+import ClutchMultipleTestimonials from "@/components/testimonials/ClutchMultipleTestimonials";
+import Faq from "@/components/faq/Faq";
+import CallToActionWithAvatar from "@/components/call-to-actions/CallToActionWithAvatar";
+import Services from "@/components/Services/Services";
+import ContentWithMedia from "@/components/ContentWithMedia";
+import CounterTwo from "@/components/counters/CounterTwoColumn";
 
 // JSON Data
-import heroData from "../../data/banner/Hero.json";
-import aboutUsData from "../../data/abouts/AboutUs.json";
-import callToAction from "../../data/call-to-actions/CallToAction.json";
-import clientAndPartner from "../../data/client-and-partner/ClientAndPartner.json";
-import HeaderData from "../../data/layouts/Header.json";
-import FooterData from "../../data/layouts/Footer.json";
 import NavigationSchema from "../../schemas/NavigationSchemas.json";
-import services from "../../data/Services/Services.json";
-import heroWithVerticalImage from "../../data/banner/HeroWithVerticalImage.json";
-
+import NoticeData from "@/data/notice/Notice.json";
+import HeaderData from "@/data/layouts/Header.json";
+import FooterData from "@/data/layouts/Footer.json";
+import HeroSectionData from "@/data/banner/Hero.json";
+import industriesOverview from "@/data/industriesOverview/IndustriesOverview.json";
+import ServicesWithLeftTitleData from "@/data/Services/ServicesWithLeftTitle.json";
+import TeamSpotlightCTAData from "@/data/call-to-actions/TeamSpotlightCTA";
+import VideoTestimonialsData from "@/data/testimonials/VideoTestimonials.json";
+import ServicesWithStickyCardsData from "@/data/Services/ServicesWithStickyCard.json";
+import AwardsAndCertificationsData from "@/data/AwardsAndCertifications/AwardsAndCertifications.json";
+import founderSpotlightCTA from "@/data/call-to-actions/FounderSpotlightCTA.json";
+import clientLogoSlider from "@/data/client-and-partner/ClientLogoSlider.json";
+import caseStudyMedia from "@/data/CaseStudyGrid/CaseStudyMedia.json";
+import OurValuesData from "@/data/ourvalues/Ourvalues.json";
+import ClutchMultipleTestimonialsData from "@/data/testimonials/ClutchMultipleTestimonials.json";
+import faqData from "@/data/faq/Faq.json";
+import CallToActionWithAvatarData from "@/data/call-to-actions/CallToActionWithAvatar.json";
+import ServicesData from "@/data/Services/Services.json";
+import ContentWithMediaData from "@/data/contentWithMedia/contentWithMedia.json";
+import counterTwo from "@/data/counters/CounterTwoColumn.json";
 
 export default function AboutPage() {
   const layoutSettings = {
@@ -35,7 +56,7 @@ export default function AboutPage() {
       ...FooterData,
       StickyFooter: true,
     },
-    settings: {},
+    settings: {...NoticeData},
   };
 
   const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
@@ -61,12 +82,25 @@ export default function AboutPage() {
         />
       </Head>
 
-      <Layout layoutSettings={layoutSettings}>
-        <HeroWithVerticalImage {...heroWithVerticalImage.Default}/>
-        <AboutUs data={aboutUsData} />
-        <CallToAction {...callToAction} />
-        <Services blok={services}/>
-        <ClientAndPartner data={clientAndPartner} />
+      <Layout layoutSettings={layoutSettings}>  
+        <HeroSection {...HeroSectionData} partnersLogo={[]} />
+        <HeroSection {...HeroSectionData} partnersLogo={[]} textAlignment={""} gradientStyle={""} buttons={[]} showbannerImage={true} removeExtraPadding={true} />
+        <IndustriesOverview  blok={industriesOverview}/>
+        <ServicesWithLeftTitle blok={ServicesWithLeftTitleData} />
+        <ContentWithMedia blok={ContentWithMediaData} />
+        <TeamSpotlightCTA blok={TeamSpotlightCTAData} />
+        <Services blok={ServicesData} />
+        <VideoTestimonials blok={VideoTestimonialsData} />
+        <CounterTwo {...counterTwo}/>
+        <ServicesWithStickyCards blok={{ ...ServicesWithStickyCardsData}} />
+        <AwardsAndCertifications blok={AwardsAndCertificationsData} />
+        <FounderSpotlightCTA blok={founderSpotlightCTA}/>
+        <ClientLogoSlider data={{...clientLogoSlider, Logos: []}} />
+        <CaseStudyMedia blok={caseStudyMedia} />
+        <OurValues {...OurValuesData} Tags={""}/>
+        <ClutchMultipleTestimonials blok={ClutchMultipleTestimonialsData} />
+        <Faq {...faqData} />
+        <CallToActionWithAvatar {...CallToActionWithAvatarData} />
       </Layout>
     </>
   );

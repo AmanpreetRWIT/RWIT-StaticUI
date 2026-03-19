@@ -26,9 +26,18 @@ const SectionTitle = ({
       className={`section-title ${textAlignment} ${styleClass}`}
       style={color ? { color: color } : {}}
     >
-      {showTags && subtitle &&
-        <span class="sub-title extra11-color" style={{color: "#2690D4", border: "1px solid #2690D4", background: "#D4E9F6"}}>{subtitle}</span>
-        }
+      {showTags && subtitle && (
+        <span className="sub-title extra11-color" style={{ color: '#2690D4', border: '1px solid #2690D4', background: '#D4E9F6' }}>
+          {Array.isArray(subtitle)
+            ? subtitle
+                .map((tag) => (tag && typeof tag === 'object' && tag.TagName != null ? tag.TagName : tag))
+                .filter((t) => t != null && typeof t !== 'object')
+                .join(', ')
+            : typeof subtitle === 'object' && subtitle !== null && 'TagName' in subtitle
+              ? subtitle.TagName
+              : subtitle}
+        </span>
+      )}
 
       {showTitle && title && (
         <>

@@ -59,17 +59,17 @@ const HeroWithVerticalImage = ({
                   </div>
                 )}
 
-                {showButtons && buttons.length > 0 && (
+                {showButtons && buttons?.length > 0 && (
                   <div className="slider-button gap-4 d-flex justify-content-center">
                        <a
                        className="hoverable axil-button  axil-button btn-solid 
                   btn-solid 
                   btn-large "
                        target=""
-                       href={buttons.href || "#"}
+                       href={buttons?.href || "#"}
                      >
                        <span className="button-text hoverable px-0">
-                         {buttons.label}
+                         {buttons?.label}
                        </span>
                      </a>
                   </div>

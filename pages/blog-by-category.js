@@ -10,7 +10,8 @@ import  NavigationSchema from "../schemas/NavigationSchemas.json";
 import HeaderData from "../data/layouts/Header.json";
 import FooterData from "../data/layouts/Footer.json";
 import LatestStories from "../components/blogs/LatestStories";
-import latestStories from "../data/blogs/LatestStories.json";
+import latestStoriesData from "../data/blogs/LatestStories.json";
+import NoticeData from "../data/notice/Notice.json";
 
 const site_url = process.env.NEXT_PUBLIC_RWIT_LIVE_URL || "https://rwit.io";
 
@@ -54,7 +55,7 @@ const Blogs = () => {
       ...FooterData,
       StickyFooter: true,
     },
-    settings: {},
+    settings: {...NoticeData},
   };
 
   const {
@@ -213,7 +214,7 @@ const Blogs = () => {
           title="Articles & Resources"
           description="Insights, tips, and strategies from our headless commerce experts."
         />
-       <LatestStories data={latestStories}/>
+       <LatestStories blok={latestStoriesData} />
         <div className="axil-blog-area bg-color-white ax-section-gap all-blogs-categories">
           <div id="allBlogArea">
             <div className="categoryTab-wrapper">
@@ -245,7 +246,13 @@ const Blogs = () => {
                     className={`sliderBox ${slug}`}
                     key={index}
                   >
-                    <CategorySlider blogs={categorySliderData} />
+                     <CategorySlider
+                      key={index}
+                      blogs={categorySliderData}
+                      categoryTitle={CategoriesToShow[index]?.name}
+                      categoryLink={full_slug}
+                      slug={slug}
+                    />
                   </div>
                 )
             )}

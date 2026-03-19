@@ -4,16 +4,18 @@
   "heading": "We create scalable solutions designed to empower growth",
   "headingColor": "#000248",
   "useH2Heading": false,
-  "description": "A Dubai-based digital agency with a global footprint, specializing in custom web development and headless application solutions.",
-  "descriptionColor": "#555555",
+  "description": "A digital agency with a global footprint, specializing in custom web development and headless application solutions.",
+  "descriptionColor": "#757589",
   "gradientStyle": "theme-gradient-7",
   "bgColor": "",
-  "removeExtraPadding": false,
+  "removeExtraPadding": true,
   "textAlignment": "centre",
-  "buttons": {
-    "label": "Get in touch",
-    "href": "/contact"
-  },
+  "buttons": [
+    {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
+  ],
   "showBadges": false,
   "logos": [
     {
@@ -31,7 +33,7 @@
   ],
   "showbannerImage": false,
   "bannerImage": {
-    "src": "/images/hero-banner.png",
+    "src": "/images/meta-image.jpg",
     "alt": "Hero Banner"
   },
   "gridImages": [

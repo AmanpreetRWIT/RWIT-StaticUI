@@ -1,0 +1,66 @@
+{
+  "component": "TeamSpotlightCta",
+  "_uid": "590d0b25-502e-44d9-a646-ce5b346a7b55",
+  "_editable": "<!--#storyblok#{\"name\": \"TeamSpotlightCta\", \"space\": \"1016184\", \"uid\": \"590d0b25-502e-44d9-a646-ce5b346a7b55\", \"id\": \"147033067275141\"}-->",
+  "BgColor": {
+    "_uid": "5f6dfb14-2152-45b9-9632-a31e46d6bf22",
+    "color": "",
+    "plugin": "official-colorpicker"
+  },
+  "Heading": "<p style=\"text-align:left\">Turn Your Idea Into a <span style=\"color:#2690D4\"><strong>Production Ready</strong></span> Platform </p>",
+  "Tags": [
+    {
+      "_uid": "faeac668-42bc-489f-8cae-ffdb41d52191",
+      "component": "Tag",
+      "_editable": "<!--#storyblok#{\"name\": \"Tag\", \"space\": \"1016184\", \"uid\": \"faeac668-42bc-489f-8cae-ffdb41d52191\", \"id\": \"147033067275141\"}-->",
+      "TagName": "Team spotlight",
+      "BGColor": "",
+      "TextColor": ""
+    }
+  ],
+  "Button": [
+    {
+      "_uid": "56d06790-a767-42af-b052-a6a978d08717",
+      "component": "Button",
+      "_editable": "<!--#storyblok#{\"name\": \"Button\", \"space\": \"1016184\", \"uid\": \"56d06790-a767-42af-b052-a6a978d08717\", \"id\": \"147033067275141\"}-->",
+      "Label": "Get In Touch",
+      "ButtonColor": "",
+      "ButtonSize": "",
+      "Class": "",
+      "HideArrow": true,
+      "HideButtonLogo": false,
+      "ButtonLogo": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null
+      },
+      "Link": {
+        "id": "5855a360-8013-4060-bb8f-5ff7b12287b9",
+        "url": "/contact",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "/contact"
+      }
+    }
+  ],
+  "TeamImage": {
+    "id": 148412028802644,
+    "alt": "anupam-image",
+    "name": "",
+    "title": "",
+    "focus": "",
+    "copyright": "",
+    "fieldtype": "asset",
+    "filename": "https://a-us.storyblok.com/f/1016184/668x450/cfaec8aec4/anupam.webp",
+    "is_external_url": false,
+    "meta_data": {
+      "alt": "anupam-image",
+      "title": "",
+      "source": "",
+      "copyright": ""
+    },
+    "source": ""
+  }
+}

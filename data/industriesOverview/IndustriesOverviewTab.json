@@ -1,0 +1,337 @@
+{
+  "BGColor": "",
+  "Title": "Industries We Serve",
+  "TitleColor": "",
+  "Description": "Custom web solutions and headless CMS frameworks built to solve the unique operational challenges of your sector.",
+  "DescriptionColor": "",
+  "OurValueCardTitleColor": "",
+  "OurValueCardDescriptionColor": "",
+  "OurValueCardTextAlignment": "text-left",
+  "component": "IndustriesOverviewTab",
+  "_uid": "cfca3583-c125-4db4-8a85-aab0e7ca2c77",
+  "IndustriesOverviewCards": [
+    {
+      "_uid": "5f2e4711-da6b-4a4c-b30f-dd6eec7b6189",
+      "component": "IndustriesOverviewCard",
+      "Title": "Healthcare",
+      "Heading": "Transforming Patient Care with Secure and Scalable Solutions",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "Custom healthcare solutions that improve patient outcomes through secure, scalable platforms and streamlined workflows.",
+      "Cards": [
+        {
+          "_uid": "1",
+          "component": "root",
+          "title": "Better patient care and personalized treatments.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "2",
+          "component": "root",
+          "title": "Secure platforms to protect sensitive data.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "3",
+          "component": "root",
+          "title": "Automated workflows and improved efficiency.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn1",
+          "component": "Button",
+          "Label": "Transform Your Business Today",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/healthcare-app-development",
+            "cached_url": "industries/healthcare-app-development"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "61b8ade4-676f-4e18-a875-3ebd818081ba",
+      "component": "IndustriesOverviewCard",
+      "Title": "Fintech",
+      "Heading": "Building Secure and Innovative Financial Technology Platforms",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "Modern fintech solutions designed to enhance digital payments, banking services, and financial data security.",
+      "Cards": [
+        {
+          "_uid": "4",
+          "component": "root",
+          "title": "Secure payment gateways and digital wallets.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "5",
+          "component": "root",
+          "title": "Advanced fraud detection and compliance tools.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "6",
+          "component": "root",
+          "title": "Seamless digital banking experiences.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn2",
+          "component": "Button",
+          "Label": "Explore Fintech Solutions",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/fintech-software-development",
+            "cached_url": "industries/fintech-software-development"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "4edb9505-2c5e-4d31-8b8a-712941c85de3",
+      "component": "IndustriesOverviewCard",
+      "Title": "E-commerce",
+      "Heading": "Powering Digital Commerce with Scalable Platforms",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "End-to-end e-commerce development services that help brands deliver seamless shopping experiences.",
+      "Cards": [
+        {
+          "_uid": "7",
+          "component": "root",
+          "title": "High-performance online stores and marketplaces.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "8",
+          "component": "root",
+          "title": "Secure payment and order management systems.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "9",
+          "component": "root",
+          "title": "Personalized shopping experiences using AI.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn3",
+          "component": "Button",
+          "Label": "Grow Your Online Store",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/ecommerce-development",
+            "cached_url": "industries/ecommerce-development"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "701b3c5a-aa5c-42b5-813c-499067c71bcd",
+      "component": "IndustriesOverviewCard",
+      "Title": "Real Estate",
+      "Heading": "Digital Platforms for Modern Property Management",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "Innovative real estate technology solutions for property listings, virtual tours, and digital transactions.",
+      "Cards": [
+        {
+          "_uid": "10",
+          "component": "root",
+          "title": "Smart property listing and management systems.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "11",
+          "component": "root",
+          "title": "Virtual tours and interactive property showcases.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "12",
+          "component": "root",
+          "title": "Automated workflows for agents and buyers.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn4",
+          "component": "Button",
+          "Label": "Explore Real Estate Solutions",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/real-estate-software",
+            "cached_url": "industries/real-estate-software"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "fc7cd412-40e0-4456-ac65-fa736d13f733",
+      "component": "IndustriesOverviewCard",
+      "Title": "Travel & Hospitality",
+      "Heading": "Delivering Seamless Travel Experiences with Technology",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "Technology solutions that enhance booking systems, guest experiences, and travel operations.",
+      "Cards": [
+        {
+          "_uid": "13",
+          "component": "root",
+          "title": "Online booking and reservation systems.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "14",
+          "component": "root",
+          "title": "Smart travel planning and itinerary management.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "15",
+          "component": "root",
+          "title": "Enhanced guest experiences with digital tools.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn5",
+          "component": "Button",
+          "Label": "Enhance Travel Experiences",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/travel-hospitality-solutions",
+            "cached_url": "industries/travel-hospitality-solutions"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "6ae23818-110d-4705-a620-8fc2c7b6c962",
+      "component": "IndustriesOverviewCard",
+      "Title": "Public Sector",
+      "Heading": "Empowering Government Services with Digital Transformation",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "Secure and scalable solutions designed to modernize government systems and public services.",
+      "Cards": [
+        {
+          "_uid": "16",
+          "component": "root",
+          "title": "Digital citizen services and portals.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "17",
+          "component": "root",
+          "title": "Secure data management and governance systems.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "18",
+          "component": "root",
+          "title": "Efficient public service delivery platforms.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn6",
+          "component": "Button",
+          "Label": "Modernize Public Services",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/public-sector-solutions",
+            "cached_url": "industries/public-sector-solutions"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    },
+    {
+      "_uid": "44bcf1f8-437d-4e2a-ae30-db2eabaaefc5",
+      "component": "IndustriesOverviewCard",
+      "Title": "E-commerce Personalization",
+      "Heading": "AI-Driven Personalization for Smarter Online Shopping",
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Image": {
+        "filename": "/images/Healthcare.webp"
+      },
+      "Description": "AI-powered personalization solutions that increase conversions and improve customer engagement.",
+      "Cards": [
+        {
+          "_uid": "19",
+          "component": "root",
+          "title": "AI-powered product recommendations.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "20",
+          "component": "root",
+          "title": "Personalized marketing and promotions.",
+          "image": "/images/CheckCircle.svg"
+        },
+        {
+          "_uid": "21",
+          "component": "root",
+          "title": "Behavior-based customer insights.",
+          "image": "/images/CheckCircle.svg"
+        }
+      ],
+      "Button": [
+        {
+          "_uid": "btn7",
+          "component": "Button",
+          "Label": "Boost Conversions with AI",
+          "ButtonColor": "",
+          "Link": {
+            "url": "/industries/ecommerce-personalization",
+            "cached_url": "industries/ecommerce-personalization"
+          },
+          "HideArrow": true,
+          "HideButtonLogo": false
+        }
+      ]
+    }
+  ],
+  "Tags": "Industries"
+}

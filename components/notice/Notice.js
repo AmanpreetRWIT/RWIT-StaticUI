@@ -1,58 +1,88 @@
+import Link from 'next/link';
 import { useState } from 'react';
 
-const Notice = ({
-  ShowNoticeSection = true,
-  HideNavigationNotice = false,
-  SectionBgColor = { color: 'rgb(5, 1, 72)' },
-  SectionTextColor = { color: '#ffffff' },
-  ShowBadge = true,
-  BadgeText = 'Sanity CMS Contact Form Integration in 2025 – Read More',
-  BadgeBgColor = { color: 'rgb(5, 1, 72)' },
-  Content = '',
-  ShowCloseButton = false
-}) => {
-  const [HideNotice, setNotice] = useState(true);
+const Notice = ({ noticeData }) => {
+  const [_HideNotice, setNotice] = useState(true);
   const CloseNotice = () => {
     setNotice(false);
   };
-  if (!ShowNoticeSection || HideNavigationNotice || !HideNotice) return null;
+
   return (
-    <div>
-      <div
-        className="notice__container"
-        style={SectionBgColor.color ? { backgroundColor: SectionBgColor.color } : {}}
-      >
-        <div className="container">
+    <>
+      <div>
+        {noticeData?.ShowNoticeSection && (
           <div
-            className="notice__wrap"
-            style={SectionTextColor.color ? { color: SectionTextColor.color } : {}}
+            className="notice__container"
+            style={
+              noticeData?.SectionBgColor
+                ? { backgroundColor: noticeData?.SectionBgColor }
+                : {}
+            }
           >
-            {ShowBadge && (
-              <div className="notice__item">
-                {BadgeText && (
-                  <span
-                    className="notice"
-                    style={BadgeBgColor.color ? { backgroundColor: BadgeBgColor.color } : {}}
-                  >
-                    {BadgeText}
-                  </span>
+            <div className="container">
+              <div
+                className="notice__wrap"
+                style={
+                  noticeData?.SectionTextColor
+                    ? { color: noticeData?.SectionTextColor }
+                    : {}
+                }
+              >
+                {noticeData?.ShowBadge && (
+                  <div className="notice__item">
+                    {noticeData?.BadgeText && (
+                      <span
+                        className="notice"
+                        style={
+                          noticeData?.BadgeBgColor
+                            ? {
+                                backgroundColor: noticeData?.BadgeBgColor,
+                              }
+                            : {}
+                        }
+                      >
+                        {noticeData?.BadgeText}
+                      </span>
+                    )}
+                  </div>
+                )}
+                {noticeData?.Content && (
+                  <div className="notice__content">
+                    <p>
+                      {noticeData?.Content?.map((item, index) => {
+                        if (item.type === 'text') {
+                          return item.text;
+                        }
+
+                        if (item.type === 'link') {
+                          return (
+                            <Link
+                              key={index}
+                              href={item.attrs.href}
+                              target={item.attrs.target}
+                              rel="noopener noreferrer"
+                            >
+                              {item.text}
+                            </Link>
+                          );
+                        }
+
+                        return null;
+                      })}
+                    </p>
+                  </div>
                 )}
               </div>
-            )}
-            {Content && (
-              <div className="notice__content">
-                <p>{Content}</p>
+            </div>
+            {noticeData?.ShowCloseButton && (
+              <div className="notice__close-btn" onClick={CloseNotice}>
+                {' '}
               </div>
             )}
-          </div>
-        </div>
-        {ShowCloseButton && (
-          <div className="notice__close-btn" onClick={CloseNotice}>
-            {' '}
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 export default Notice;

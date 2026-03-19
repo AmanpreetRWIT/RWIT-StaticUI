@@ -1,0 +1,296 @@
+.founderSpotlight {
+  padding: 60px 20px;
+
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 0 44px;
+    gap: 64px;
+    display: flex;
+    background-color: #E0E6FF;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__image-wrapper{
+    align-self: self-end;
+  }
+
+  &__no-image {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__left {
+    flex: 1;
+    max-width: 376px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000248;
+    margin-bottom: 16px;
+    line-height: 42px;
+    letter-spacing: 0px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-bottom: 64px;
+    line-height: 28px;
+  }
+
+  &__icon {
+    font-size: 14px;
+  }
+
+  &__quote-text {
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      color: #000248;
+      line-height: 32px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 53px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+      max-width: 320px;
+    }
+
+    &__content {
+      max-width: 387px;
+      display: grid;
+      gap: 64px;
+
+      &__quote {
+        font-size: 16px;
+        color: #1c2b5a;
+        line-height: 1.6;
+
+
+        &__icon {
+          margin-bottom: 16px;
+        }
+      }
+
+      &__author {
+        text-align: right;
+
+        &__name {
+          font-size: 20px;
+          font-weight: 700;
+          color: #000248;
+          margin-bottom: 0px;
+        }
+
+        &__role {
+          font-size: 16px;
+          line-height: 32px;
+          color: #757589;
+        }
+      }
+    }
+  }
+
+  &__right.founderSpotlight__no-image {
+    justify-content: flex-end;
+  }
+
+  /* =========================
+     Responsive
+  ========================== */
+
+  @media #{$lg-layout} {
+    &__container {
+      gap: 20px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+      line-height: 25px;
+    }
+
+    &__left {
+      max-width: 300px;
+    }
+
+    &__right {
+      gap: 0px;
+
+      &__content {
+        gap: 40px;
+
+        &__quote {
+          font-size: 14px;
+          padding-bottom: 20px;
+
+        }
+      }
+    }
+  }
+
+  @media #{$md-layout},
+  #{$sm-layout} {
+    &__container {
+      max-width: 690px;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 0px 0;
+      gap: 48px;
+    }
+
+    &__no-image {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    &__left {
+      max-width: 100%;
+      padding: 0px 32px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__right {
+      gap: 24px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      &.founderSpotlight__no-image {
+        justify-content: center;
+      }
+
+      &__image {
+        max-width: 260px;
+        height: auto;
+      }
+
+      &__content {
+        max-width: 430px;
+        width: 100%;
+        gap: 32px;
+        padding-top: 13px;
+        padding-left: 12px;
+        padding-right: 32px;
+        padding-bottom: 13px;
+
+        &__quote {
+          text-align: left;
+
+          p {
+            font-size: 24px;
+            line-height: 32px;
+          }
+
+          &__icon {
+            margin-bottom: 10px;
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        &__author {
+          &__name {
+            font-size: 16px;
+          }
+
+          &__role {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$large-mobile} {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 0px 0;
+      gap: 32px;
+    }
+
+    &__left {
+      max-width: 100%;
+      padding: 0px 16px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__right {
+      gap: 0px;
+      max-width: 100%;
+      align-items: end;
+      justify-content: space-between;
+
+      &.founderSpotlight__no-image {
+        justify-content: center;
+      }
+      &__image {
+        max-width: 152px;
+        height: auto;
+      }
+
+      &__content {
+        gap: 20px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+
+        &__quote {
+          text-align: left;
+
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          &__icon {
+            margin-bottom: 4px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        &__author {
+          &__name {
+            font-size: 12px;
+          }
+
+          &__role {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}

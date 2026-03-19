@@ -184,7 +184,8 @@ export function trimArticleKeywords(inputString) {
 const getButtonClassNames = (blok) => {
   let classNames = 'hoverable axil-button';
 
-  const url = blok?.Link?.story?.url || blok?.Link?.url || '';
+  const url =
+    blok?.Link?.story?.url || blok?.Link?.cached_url || blok?.Link?.url || '';
 
   if (url.includes('case-study/')) {
     classNames += ' casestudy_btn';
@@ -378,7 +379,24 @@ const replaceDashWithSpace = (text) => {
 
 
 
+const renderRichText = (data) => {
+  if (!data) return '';
+  if (typeof data === 'string') return data;
+  if (data.type === 'doc' && Array.isArray(data.content)) {
+    return data.content
+      .map((node) => {
+        if (node.type === 'paragraph' && Array.isArray(node.content)) {
+          return node.content.map((child) => child.text || '').join('');
+        }
+        return '';
+      })
+      .join('\n');
+  }
+  return '';
+};
+
 export {
+  renderRichText,
   camelCaseToDashed,
   flatDeep,
   slugify,

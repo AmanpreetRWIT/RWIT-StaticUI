@@ -45,6 +45,7 @@ $white-color: #ffffff;
 $tealLight-color: #d1eaed;
 $tealLighter-color: #dcf7fe;
 $blue-color:#007AFF;
+$cyan-color: #2690d4;
 
 // Main Color
 $action-color: #007aff;
@@ -67,12 +68,12 @@ $border-color: #d3d3d3;
 $radius: 4px;
 
 /*====== Ncc Font Family =====*/
-$primary-font: 'DM Sans', sans-serif;
-$secondary-font: 'Lato', sans-serif;
+$primary-font: var(--font-dm-sans), 'DM Sans', sans-serif;
+$secondary-font: var(--font-lato), 'Lato', sans-serif;
 
 /*====== Ncc Font Family Variation List =====*/
-$font-1: 'DM Sans', sans-serif;
-$font-2: 'Lato', sans-serif;
+$font-1: var(--font-dm-sans), 'DM Sans', sans-serif;
+$font-2: var(--font-lato), 'Lato', sans-serif;
 $fontList: $font-1, $font-2;
 
 //===== Line Height =====//

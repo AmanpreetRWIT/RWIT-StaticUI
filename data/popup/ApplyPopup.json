@@ -34,6 +34,13 @@
           "Required": true
         },
         {
+          "Name": "Position",
+          "Type": "select",
+          "Placeholder": "Select position",
+          "Required": true,
+          "Select": []
+        },
+        {
           "Name": "Resume",
           "Type": "file",
           "Placeholder": "Upload your resume",

@@ -102,7 +102,7 @@ const HeroSection = ({
             {/* LEFT SIDE CONTENT */}
             <div
               className={`col-lg-7 col-12 order-2 order-lg-1 mt_md--40 mt_sm--30 ${
-                bannerImage?.src ? "hero-content" : ""
+                bannerImage?.src ? "" : "hero-content"
               } hero-align-content`}
             >
               <div className="content">
@@ -151,10 +151,10 @@ const HeroSection = ({
                          btn-solid 
                         btn-large  "
                           target=""
-                          href={buttons.href || "#"}
+                          href={buttons?.href || "#"}
                         >
                           <span className="button-text hoverable px-0">
-                            {buttons.label}
+                            {buttons?.label}
                           </span>
                         </a>
                       </div>
@@ -183,21 +183,21 @@ const HeroSection = ({
                   </div>
                 ) : (
                   <>
-                    {
-                      <div className="slider-button gap-4 d-flex">
-                        <a
-                          className="hoverable axil-button  axil-button btn-solid 
-                         btn-solid 
-                        btn-large  "
-                          target=""
-                          href={buttons.href || "#"}
-                        >
-                          <span className="button-text hoverable px-0">
-                            {buttons.label}
-                          </span>
-                        </a>
+                    {buttons?.length > 0 && (
+                      <div className='slider-button gap-4 d-flex'>
+                        {buttons.map((button) => (
+                          <a
+                            key={button.label}
+                            href={button.href || "#"}
+                            className="hoverable axil-button btn-solid btn-large"
+                          >
+                            <span className="button-text hoverable px-0">
+                              {button.label}
+                            </span>
+                          </a>
+                        ))}
                       </div>
-                    }
+                    )}
                   </>
                 )}
               </div>
@@ -285,7 +285,7 @@ const HeroSection = ({
                   <h2 className="partner-title">{partnerTitle}</h2>
                 )}
 
-                <ul className="partner-logos d-flex">
+                <ul className="partner-logos ">
                   {partnersLogo.map((partner, idx) => (
                     <li className="partner-logo d-flex" key={idx}>
                       {partner.href ? (

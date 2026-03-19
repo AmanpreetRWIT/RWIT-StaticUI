@@ -1,37 +1,42 @@
-import SectionTitle from '../common/SectionTitle';
-import Image from 'next/legacy/image';
-import { placeholder } from '../../helpers/utilities';
+import SectionTitle from "../common/SectionTitle";
+import Image from "next/legacy/image";
+import { placeholder } from "../../helpers/utilities";
+import Button from "@/components/buttons/Button";
 
 const CallToActionWithAvatar = ({
   isSlim = false,
   isBlogPage = false,
-  bgColor = '',
-  avatar = '',
-  heading = 'Your CTA Heading',
-  tags = 'Subtitle text',
-  description = 'This is a short description for the call to action section.',
-  headingColor = '',
-  descriptionColor = '',
-  buttons = [],
+  bgColor = "",
+  avatar = "https://a-us.storyblok.com/f/1016184/397x462/0f47330420/jim-sir.png",
+  heading = "Your CTA Heading",
+  tags = "Subtitle text",
+  description = "This is a short description for the call to action section.",
+  headingColor = "",
+  descriptionColor = "",
+  Button: ctaButtons = [],
+  HideArrow = false,
+  HideButtonLogo = false,
   showTags,
 }) => {
+
+
   return (
     <div
-      id={`${isBlogPage ? 'CtaWithAvatar2' : 'CtaWithAvatar'}`}
+      id={`${isBlogPage ? "CtaWithAvatar2" : "CtaWithAvatar"}`}
       className="cta-with-avatar"
       style={bgColor && !isSlim ? { backgroundColor: bgColor } : {}}
     >
       <div
         className={`cta-with-avatar-container container ${
-          isSlim ? 'cta-with-avatar-container2' : ''
+          isSlim ? "cta-with-avatar-container2" : ""
         }`}
         style={bgColor ? { backgroundColor: bgColor } : {}}
       >
         <div
           className={`cta-with-avatar-wrapper ${
-            isSlim ? 'cta-with-avatar-wrapper2' : ''
+            isSlim ? "cta-with-avatar-wrapper2" : ""
           }`}
-          style={!avatar ? { justifyContent: 'center' } : {}}
+          style={!avatar ? { justifyContent: "center" } : {}}
         >
           {avatar && (
             <div className="cta-with-avatar-image">
@@ -58,9 +63,21 @@ const CallToActionWithAvatar = ({
               showTags={showTags}
             />
             <div className="cta-with-avatar-btn slider-button gap-4 d-flex">
-            <a class="hoverable axil-button meeting_btn   
-        btn-solid 
-          " target="_blank" href="https://calendly.com/jimmynarula/introductory-meeting"><span class="button-text hoverable ">{buttons.label}</span><span class="fas fa-external-link-alt"></span></a>
+            {ctaButtons?.length > 0 &&
+                  ctaButtons.map((button, index) => {
+                    const link = button?.Link || {};
+                    const hrefCandidate =
+                      link?.story?.url ?? link?.cached_url ?? link?.url ?? '';
+                    if (!hrefCandidate) return null;
+
+                    return (
+                      <Button
+                        key={button?._uid || `button-${index}`}
+                        blok={button}
+                        Index={index}
+                      />
+                    );
+                  })}
             </div>
           </div>
         </div>

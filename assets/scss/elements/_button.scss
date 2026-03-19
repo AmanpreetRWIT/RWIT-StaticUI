@@ -65,6 +65,12 @@ button {
     }
     span {
       display: inline-block;
+      &.button-text {
+        padding-right: 25px;
+        @media #{$sm-layout} {
+          padding-right: 12px;
+        }
+      }
       &.button-icon {
         width: 0;
         height: 0;
@@ -154,8 +160,8 @@ button {
         line-height: 52px;
       }
       @media #{$small-mobile} {
-       width: 100%;
-       max-width: 335px;
+        width: 100%;
+        max-width: 335px;
         margin: auto;
       }
     }
@@ -163,7 +169,7 @@ button {
     &.btn-extra-large {
       height: 56px;
       line-height: 56px;
-      padding: 0 92px;
+      padding: 0 1.5rem;
       @media #{$sm-layout} {
         padding: 0 20px;
         height: 52px;

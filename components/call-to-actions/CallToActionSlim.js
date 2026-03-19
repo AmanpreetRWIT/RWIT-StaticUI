@@ -77,7 +77,7 @@ const CallToActionSlim = ({
                 <div className="text-center">
                 <a class="hoverable axil-button meeting_btn   
         btn-solid 
-          " target="_blank" href="https://calendly.com/jimmynarula/introductory-meeting"><span class="button-text hoverable ">{buttons.label}</span><span class="fas fa-external-link-alt"></span></a>
+          " target="_blank" href="https://calendly.com/jimmynarula/introductory-meeting"><span class="button-text hoverable ">{buttons?.label}</span><span class="fas fa-external-link-alt"></span></a>
             
 
                   {showPhone && phones.map((phone, index) => (

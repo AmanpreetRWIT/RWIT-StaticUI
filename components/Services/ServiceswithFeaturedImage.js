@@ -1,6 +1,5 @@
 import Image from "next/legacy/image";
 import React from 'react';
-
 import { getImageDimension } from '../../helpers/utilities';
 import SectionTitle from '../common/SectionTitle';
 
@@ -57,7 +56,7 @@ export const ServiceswithFeaturedImage = ({ blok }) => {
                     <h4 className="ax__service__title"> {service?.Heading}</h4>
                     {service?.Description && (
                       <div className="ax__service__desc">
-                        {render(service?.Description)}
+                        {(service?.Description)}
                       </div>
                     )}
                   </div>

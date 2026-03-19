@@ -1,0 +1,123 @@
+{
+  "BGColor": "",
+  "Title": "Industries We Serve",
+  "Tags": "industries",
+  "Description": "Custom web solutions and headless CMS frameworks built to solve the unique operational challenges of your sector.",
+  "DescriptionColor": "",
+  "IndustriesCards": [
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Description": "<p><span>AI-powered digital solutions improving patient care through data-driven insights and seamless care coordination.<p><span>",
+      "Heading": "Healthcare",
+      "Link": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "cached_url": ""
+      },
+      "Logo": {
+        "id": 148087758406304,
+        "alt": "healthcare",
+        "title": "",
+        "name": "",
+        "filename": "/images/healthcare-icon.svg"
+      }
+    },
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+       "Description": "<p><span>Intelligent financial solutions enabling secure transactions, fraud detection, real-time analytics, and personalized digital banking experiences.</span></p>",
+      "Heading": "Fintech",
+      "Link": {
+        "id": "c13fa88f-32e5-48fb-9f28-4f040033e2ef",
+        "url": "",
+        "linktype": "story",
+        "cached_url": "industries/fintech-app-development"
+      },
+      "Logo": {
+        "id": 148087758369439,
+        "alt": "fintech",
+        "title": "",
+        "name": "",
+        "filename": "/images/fintech-icon.svg"
+      }
+    },
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Description": "<p><span>AI-powered commerce solutions enabling personalized shopping, smart product discovery, customer insights, and conversion-focused user experiences.</span></p>",
+      "Heading": "E-commerce",
+      "Link": {
+        "id": "5bce9100-d680-45b8-8add-656e76e17e8b",
+        "url": "",
+        "linktype": "story",
+        "cached_url": "industries/ecommerce-app-development"
+      },
+      "Logo": {
+        "id": 148087758525091,
+        "alt": "e commerce",
+        "title": "",
+        "name": "",
+        "filename": "/images/ecommerce-icon.svg"
+      }
+    },
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Description": "<p><span>Smart digital platforms enhancing property discovery, lead management, virtual tours, and data-driven decision-making for buyers and agents.</span></p>",
+      "Heading": "Real Estate",
+      "Link": {
+        "id": "70855248-84db-486a-a957-052d9010dbd0",
+        "url": "",
+        "linktype": "story",
+        "cached_url": "industries/real-estate-app-development"
+      },
+      "Logo": {
+        "id": 148087758406305,
+        "alt": "real estate",
+        "title": "",
+        "name": "",
+        "filename": "/images/realestate-icon.svg"
+      }
+    },
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Description": "<p><span>Technology-driven solutions elevating guest experiences through personalized bookings, seamless journeys, smart recommendations, and operational efficiency.</span></p>",
+      "Heading": "Travel & Hospitality",
+      "Link": {
+        "id": "d0ec2b1d-cce4-490b-bc77-689e59925f12",
+        "url": "",
+        "linktype": "story",
+        "cached_url": "industries/travel-hospitality-app-development"
+      },
+      "Logo": {
+        "id": 148087758693028,
+        "alt": "travel hospitality",
+        "title": "",
+        "name": "",
+        "filename": "/images/travelhospitality-icon.svg"
+      }
+    },
+    {
+      "CounterBgColor": "",
+      "CounterColor": "",
+      "Description": "<p><span>AI-driven solutions delivering personalized shopping experiences through smart recommendations, user behavior insights, dynamic content, and data-powered customer engagement.</span></p>",
+      "Heading": "E-commerce Personalization",
+      "Link": {
+        "id": "1dde3374-4985-416a-b35b-92fa03efdc8a",
+        "url": "",
+        "linktype": "story",
+        "cached_url": "industries/ecommerce-personalization"
+      },
+      "Logo": {
+        "id": 148087758471842,
+        "alt": "E-commerce Personlization",
+        "title": "",
+        "name": "",
+        "filename": "/images/ecommercepersonlization-icon.svg"
+      }
+    }
+  ]
+}

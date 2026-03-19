@@ -1,11 +1,26 @@
 {
   "ShowNoticeSection": true,
-  "HideNavigationNotice": false,
-  "SectionBgColor": { "color": "#050148" },
-  "SectionTextColor": { "color": "#ffffff" },
+  "ShowCloseButton": false,
+
+  "SectionBgColor": "#050148",
+  "SectionTextColor": "#ffffff",
+
   "ShowBadge": false,
-  "BadgeText": "New",
-  "BadgeBgColor": { "color": "#050148" },
-  "Content": "How Headless Architecture Simplifies Maintenance & Reduces Costs – Read More",
-  "ShowCloseButton": false
+  "BadgeText": "news setting",
+  "BadgeBgColor": "#050148",
+
+  "Content": [
+    {
+      "text": "Shopify vs Headless Shopify: Which Is Better for Modern eCommerce in 2026? – ",
+      "type": "text"
+    },
+    {
+      "text": "Read More",
+      "type": "link",
+      "attrs": {
+        "href": "/blog/shopify-vs-headless-shopify-comparison",
+        "target": "_self"
+      }
+    }
+  ]
 }

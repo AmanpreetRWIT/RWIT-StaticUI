@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.rwit.io',
+        port: '',
+        pathname: '/blog/**',
+      },
     ],
   },
 };

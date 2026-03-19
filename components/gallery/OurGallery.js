@@ -10,7 +10,7 @@ import SectionTitle from '../common/SectionTitle';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
-const OurGallery = ({ blok }) => {
+const OurGalleryComponent = ({ blok }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const cursorSize = 15;
@@ -25,12 +25,6 @@ const OurGallery = ({ blok }) => {
 
   const smoothOptions = { damping: 40, stiffness: 300, mass: 1 };
   const delayOptions = { damping: 20, stiffness: 300, mass: 0.5 };
-  const delaySmallOptions = { damping: 60, stiffness: 300, mass: 1.5 };
-
-  const delaySmallMouse = {
-    x: useSpring(mouse.x, delaySmallOptions),
-    y: useSpring(mouse.y, delaySmallOptions),
-  };
 
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),
@@ -42,11 +36,11 @@ const OurGallery = ({ blok }) => {
     y: useSpring(mouse.y, delayOptions),
   };
 
-  const manageMouseMove = ((e) => {
+  const manageMouseMove = (e) => {
     const { clientX, clientY } = e;
     mouse.x.set(clientX - cursorSize / 2);
     mouse.y.set(clientY - cursorSize / 2);
-  },[mouse.x, mouse.y]);
+  };
 
   useEffect(() => {
     let timeoutId;
@@ -59,13 +53,14 @@ const OurGallery = ({ blok }) => {
       lastMoveTime = Date.now();
 
       const customCursors = document.querySelectorAll('.cursor');
-      customCursors?.forEach((cursor, index) => {
+      customCursors?.forEach((cursor) => {
         cursor.classList.remove('cursor-bounce');
         gsap.killTweensOf(cursor);
+        // Reset cursor position when moving
         if (isMoving) {
           gsap.to(cursor, {
-            duration: 0.3,
-            scale: 1,
+            duration: 0.3, // Faster return to origin scale
+            scale: 1, // Return to origin scale
             ease: 'power2.inOut',
           });
         }
@@ -74,6 +69,7 @@ const OurGallery = ({ blok }) => {
       clearTimeout(timeoutId);
 
       timeoutId = setTimeout(() => {
+        // Check if mouse hasn't moved for 1.5 seconds
         if (Date.now() - lastMoveTime >= 1500) {
           isMoving = false;
 
@@ -99,16 +95,19 @@ const OurGallery = ({ blok }) => {
       clearTimeout(timeoutId);
       gsap.killTweensOf('.cursor-bounce');
     };
-  }, [manageMouseMove]);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
     };
     window.addEventListener('resize', handleResize);
-    handleResize();
     return () => window.removeEventListener('resize', handleResize);
-  }, [manageMouseMove]);
+  }, [isMobile]);
 
   const ImageLimit = (layout) => {
     switch (layout) {
@@ -129,16 +128,20 @@ const OurGallery = ({ blok }) => {
     }
   };
 
-  const [isScrolling, setIsScrolling] = useState(false);
+  const [_isScrolling, setIsScrolling] = useState(false);
+
   const swiperRef = useRef(null);
 
-  const handleSlideChangeTransitionStart = () => setIsScrolling(true);
-  const handleSlideChangeTransitionEnd = () => setIsScrolling(false);
+  const handleSlideChangeTransitionStart = () => {
+    setIsScrolling(true);
+  };
+
+  const handleSlideChangeTransitionEnd = () => {
+    setIsScrolling(false);
+  };
 
   useEffect(() => {
-    const swiperWrapper = document.querySelector(
-      '.watery-container > .swiper-wrapper'
-    );
+    const swiperWrapper = document.querySelector('.watery-container > .swiper-wrapper');
     const totalWidth = swiperWrapper?.scrollWidth + swiperWrapper?.clientWidth / 2;
     swiperRef?.current?.swiper?.slideTo(0);
 
@@ -161,34 +164,44 @@ const OurGallery = ({ blok }) => {
         },
       });
 
-      return () => scrollTrigger.kill();
+      return () => {
+        scrollTrigger.kill();
+      };
     }
-  }, [isMobile,manageMouseMove]);
+  }, [isMobile]);
 
   return (
     <div
-      className="axil-call-to-action-area shape-position gl-section-gap d-flex align-items-center"
+      className='axil-call-to-action-area shape-position gl-section-gap d-flex align-items-center'
       style={
         blok?.BgColor?.color
-          ? { backgroundColor: blok.BgColor.color, zIndex: '1', cursor: 'none' }
+          ? {
+              backgroundColor: blok?.BgColor?.color,
+              zIndex: '1',
+              cursor: 'none',
+            }
           : { cursor: 'none' }
       }
-      onMouseEnter={() => setIsHovered(true)}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="container" id="gallery">
+      <div className='container' id='gallery'>
         <SectionTitle
           subtitle={blok?.Tags}
           title={blok?.Title || ''}
           titleColor={blok?.TitleColor?.color || ''}
-          alignment="center"
-          showTitle={blok?.showTitle}
+          alignment='center'
         />
 
-        <div className="slider-container">
+        <div className='slider-container'>
           <Swiper
             slidesPerView={'auto'}
-            pagination={{ clickable: false, el: null }}
+            pagination={{
+              clickable: false,
+              el: null,
+            }}
             speed={1200}
             loop={blok?.Loop ? true : false}
             watchSlidesProgress={true}
@@ -212,7 +225,7 @@ const OurGallery = ({ blok }) => {
                   width: '20px',
                   transform: 'translate(12%, -40%)',
                 }}
-                className="cursor"
+                className='cursor'
               ></motion.div>
               <motion.div
                 style={{
@@ -225,67 +238,70 @@ const OurGallery = ({ blok }) => {
                   zIndex: 1,
                   transform: 'translate(-20%, -45%)',
                 }}
-                className="cursor cursor-large"
+                className='cursor cursor-large'
               ></motion.div>
             </>
 
-            {blok?.Slide?.map((item, index) => (
-              <SwiperSlide
-                style={{ overflow: 'hidden' }}
-                key={index}
-                className={item?.Layout ? `layout_${item.Layout}` : `layout_4`}
-              >
-                <div className="img_wrap" style={{ width: '100%' }}>
-                  <div className={`img_style1`}>
-                    {item?.ImageA?.filename && (
-                      <Image
-                        src={item.ImageA.filename}
-                        alt="Shape image"
-                        width={getImageDimension(item.ImageA.filename).width}
-                        height={getImageDimension(item.ImageA.filename).height}
-                      />
-                    )}
+            {blok?.Slide &&
+              blok?.Slide?.map((item, index) => (
+                <SwiperSlide
+                  key={index}
+                  className={item?.Layout ? `layout_${item?.Layout}` : `layout_4`}
+                >
+                  <div className='img_wrap' style={{ width: '100%' }}>
+                    <div className={`img_style1`}>
+                      {item?.ImageA?.filename && (
+                        <Image
+                          src={item?.ImageA?.filename}
+                          alt='Shape image'
+                          width={getImageDimension(item?.ImageA?.filename).width}
+                          height={getImageDimension(item?.ImageA?.filename).height}
+                        />
+                      )}
 
-                    {item?.ImageB?.filename && ImageLimit(item.Layout) >= '2' && (
-                      <div className={`img_style2`}>
-                        <Image
-                          src={item.ImageB.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageB.filename).width}
-                          height={getImageDimension(item.ImageB.filename).height}
-                        />
-                      </div>
-                    )}
-
-                    {item?.ImageC?.filename && ImageLimit(item.Layout) == '3' && (
-                      <div className={`img_style3`}>
-                        <Image
-                          src={item.ImageC.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageC.filename).width}
-                          height={getImageDimension(item.ImageC.filename).height}
-                        />
-                      </div>
-                    )}
-                    {item?.ImageD?.filename && ImageLimit(item.Layout) == '4' && (
-                      <div className={`img_style4`}>
-                        <Image
-                          src={item.ImageD.filename}
-                          alt="Shape image"
-                          width={getImageDimension(item.ImageD.filename).width}
-                          height={getImageDimension(item.ImageD.filename).height}
-                        />
-                      </div>
-                    )}
+                      {item?.ImageB?.filename && ImageLimit(item?.Layout) >= '2' && (
+                        <div className={`img_style2`}>
+                          <Image
+                            src={item?.ImageB?.filename}
+                            alt='Shape image'
+                            width={getImageDimension(item?.ImageB?.filename).width}
+                            height={getImageDimension(item?.ImageB?.filename).height}
+                          />
+                        </div>
+                      )}
+                      {item?.ImageC?.filename && ImageLimit(item?.Layout) == '3' && (
+                        <div className={`img_style3`}>
+                          <Image
+                            src={item?.ImageC?.filename}
+                            alt='Shape image'
+                            width={getImageDimension(item?.ImageC?.filename).width}
+                            height={getImageDimension(item?.ImageC?.filename).height}
+                          />
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>
     </div>
   );
+};
+
+const OurGallery = ({ blok }) => {
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsReady(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return isReady && <OurGalleryComponent blok={blok} />;
 };
 
 export default OurGallery;

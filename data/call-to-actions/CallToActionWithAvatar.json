@@ -9,8 +9,32 @@
   "headingColor": "#000248",
   "descriptionColor": "#757589",
   "showTags":true,
-  "buttons": {
-    "label": "Book a discovery call",
-    "href": "https://calendly.com/jimmynarula/introductory-meeting"
-  }
+  "Button": [
+    {
+      "_uid": "cta-with-avatar-primary",
+      "component": "Button",
+      "Label": "Book a discovery call",
+      "ButtonColor": "",
+      "ButtonSize": "",
+      "Class": "",
+      "HideArrow": false,
+      "HideButtonLogo": true,
+      "ButtonLogo": {
+        "id": null,
+        "alt": null,
+        "name": "",
+        "focus": null,
+        "title": null,
+        "filename": ""
+      },
+      "Link": {
+        "id": "",
+        "url": "https://calendly.com/jimmynarula/introductory-meeting",
+        "cached_url": "https://calendly.com/jimmynarula/introductory-meeting",
+        "linktype": "url",
+        "target": "_blank",
+        "fieldtype": "multilink"
+      }
+    }
+  ]
 }
