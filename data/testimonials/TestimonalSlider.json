@@ -12,14 +12,14 @@
     {
       "Name": "John Doe",
       "Designation": "CEO, Example Co",
-      "ProfileImage": "https://a-us.storyblok.com/f/1016184/800x800/b10a5089da/fredrik-kristiansen.jpeg",
+      "ProfileImage": "/images/anupama_sharma.svg",
       "Description": "This company exceeded our expectations with its excellent service and attention to detail.",
       "SelectStars": 5
     },
     {
       "Name": "Jane Smith",
       "Designation": "Marketing Head, BrandX",
-      "ProfileImage": "/images/client2.jpg",
+      "ProfileImage": "/images/anupama_sharma.svg",
       "Description": "Highly professional and timely delivery. We loved working with them.",
       "SelectStars": 4
     }
@@ -28,7 +28,7 @@
     {
       "FirstName": "Alice Brown",
       "ContactPosition": "Project Manager, Startup Y",
-      "ClientImage": "/images/client3.jpg",
+      "ClientImage": "/images/anupama_sharma.svg",
       "Testimonial": "Great collaboration and quality work throughout our project.",
       "SelectRatingStars": 5
     }

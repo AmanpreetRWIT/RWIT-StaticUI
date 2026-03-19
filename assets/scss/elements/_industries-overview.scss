@@ -119,12 +119,6 @@
 .industriesTab {
   padding: 65px 0;
 
-  .axil-button {
-    .fa-external-link-alt {
-      margin-left: 20px;
-    }
-  }
-
   &__tabs {
     margin-top: 50px;
   }
@@ -139,12 +133,6 @@
     border: 1px solid rgba($secondary-color, 0.25);
     border-radius: 1rem;
     animation: tabFade 0.7s ease forwards;
-
-    &__left{
-      .i{
-        padding:100px;
-      }
-    }
   }
   @keyframes tabFade {
     0% {

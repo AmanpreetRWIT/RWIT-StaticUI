@@ -47,8 +47,8 @@ export default function App({ Component, pageProps }) {
     <>
       <style jsx global>{`
         :root {
-          --font-dm-sans: ${dmSans.variable};
-          --font-lato: ${lato.variable};
+          --font-dm-sans: ${dmSans.style.fontFamily};
+          --font-lato: ${lato.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />

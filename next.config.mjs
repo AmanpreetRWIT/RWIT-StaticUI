@@ -17,6 +17,9 @@ const nextConfig = {
       },
     ],
   },
+  sassOptions: {
+    silenceDeprecations: ['import'],
+  },
 };
 
 export default nextConfig;

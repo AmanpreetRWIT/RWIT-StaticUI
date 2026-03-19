@@ -65,8 +65,19 @@ a {
     aspect-ratio: 16 / 9;
     width: 100%;
   }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .modal-backdrop {
   z-index: 9999;
+}
+
+.modal-content {
+  width: fit-content;
+  margin: 0 auto;
+  border: none;
 }

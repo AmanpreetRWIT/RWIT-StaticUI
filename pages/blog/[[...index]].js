@@ -360,7 +360,19 @@ export async function getStaticProps({ params }) {
     const start = (pageIndex - 1) * perPage;
     const end = start + perPage;
 
-    const paginatedBlogs = allBlogs.slice(start, end);
+    const paginatedBlogs = allBlogs.slice(start, end).map(blog => ({
+      slug: blog.slug,
+      content: {
+        Title: blog.content?.Title,
+        Excerpt: blog.content?.Excerpt,
+        FeaturedImage: blog.content?.FeaturedImage,
+        IsFeatured: blog.content?.IsFeatured,
+        ArticleDate: blog.content?.ArticleDate,
+        Categories: blog.content?.Categories,
+        Author: blog.content?.Author,
+        ReadTime: blog.content?.ReadTime,
+      }
+    }));
 
     // 🔥 Adapt to your existing structure
     const BlogData = {

@@ -201,36 +201,49 @@ const CareersPage = ({
                             </button>
                           )}
 
-                          {showSocials && (
+                         {showSocials && (
                             <div className='share-options' ref={shareOptionsRef}>
                               <ul className='share-list'>
                                 <li>
                                   <Link
-                                    href={`https://www.facebook.com/sharer/sharer.php?u=${canonicalUrl}`}
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=${''}`}
                                     target='_blank'
+                                    rel='noreferrer'
                                   >
-                                    Facebook
+                                    <i className='fab fa-facebook-f' />
                                   </Link>
                                 </li>
-
                                 <li>
                                   <Link
-                                    href={`https://twitter.com/intent/tweet?url=${canonicalUrl}`}
+                                    href={`https://twitter.com/intent/tweet?url=${''}`}
                                     target='_blank'
+                                    rel='noreferrer'
                                   >
-                                    Twitter
+                                    <svg
+                                      width='16'
+                                      height='16'
+                                      viewBox='0 0 16 16'
+                                      fill='none'
+                                      xmlns='http://www.w3.org/2000/svg'
+                                    >
+                                      <path
+                                        fillRule='evenodd'
+                                        clipRule='evenodd'
+                                        d='M15.6953 15.9827L9.67676 7.21045L9.68703 7.21867L15.1136 0.931274H13.3002L8.87956 6.04876L5.36904 0.931274H0.613109L6.23196 9.12132L6.23128 9.12062L0.305176 15.9827H2.11859L7.03329 10.2892L10.9393 15.9827H15.6953ZM4.65052 2.29958L13.0949 14.6144H11.6578L3.20666 2.29958H4.65052Z'
+                                        fill='#050148'
+                                      />
+                                    </svg>
                                   </Link>
                                 </li>
-
                                 <li>
                                   <Link
-                                    href={`https://www.linkedin.com/shareArticle?url=${canonicalUrl}`}
+                                    href={`https://www.linkedin.com/shareArticle?mini=true&url=${''}`}
                                     target='_blank'
+                                    rel='noreferrer'
                                   >
-                                    LinkedIn
+                                    <i className='fab fa-linkedin-in' />
                                   </Link>
                                 </li>
-
                                 <li>
                                   <Link
                                     href={`/`}
@@ -239,7 +252,21 @@ const CareersPage = ({
                                       navigator.clipboard.writeText(window.location.href);
                                     }}
                                   >
-                                    Copy
+                                    <svg
+                                      width='24'
+                                      height='24'
+                                      viewBox='0 0 24 24'
+                                      fill='none'
+                                      xmlns='http://www.w3.org/2000/svg'
+                                      className='icon-xs'
+                                    >
+                                      <path
+                                        fillRule='evenodd'
+                                        clipRule='evenodd'
+                                        d='M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523   20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z'
+                                        fill='#050148'
+                                      ></path>
+                                    </svg>
                                   </Link>
                                 </li>
                               </ul>

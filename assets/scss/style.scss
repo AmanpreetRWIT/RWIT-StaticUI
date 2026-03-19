@@ -51,7 +51,6 @@
 	|	|___ case-study
 	|	|___ axil-slick
 	|	|___ pricingtable
-	|	|___ video
 	|	|___ cuntdown
 	|	|___ accordion
 	|
@@ -61,7 +60,6 @@
 	|	|___ banner
 	|	|___ breadcrumb
 	|	|___ featured
-	|	|___ aboutUs
 	|	|___ contact
 	|	|___ single-service
 	|	|___ team-details
@@ -127,8 +125,6 @@
 @import 'elements/axil-slick';
 @import 'elements/team';
 @import 'elements/pricingtable';
-@import 'elements/video';
-@import 'elements/video-testimonial';
 @import 'elements/cuntdown';
 @import 'elements/accordion';
 @import 'elements/switcher';
@@ -140,12 +136,14 @@
 @import 'elements/case-study-page';
 @import 'elements/job-listing';
 @import 'elements/apply-popup';
-@import 'elements/industries-overview';
-@import 'elements/awards-certifications';
-@import 'elements/team-spotlightCTA';
-@import 'elements/clients-multiple-testimonials';
-@import 'elements/founder-spotlightCTA';
 @import 'elements/client-feedback';
+@import 'elements/video';
+@import 'elements/video-testimonial';
+@import 'elements/awards-certifications';
+@import 'elements/clients-multiple-testimonials';
+@import 'elements/industries-overview';
+@import 'elements/founder-spotlightCTA';
+@import 'elements/team-spotlightCTA';
 
 /**************************************
 	Template Styles
@@ -153,7 +151,6 @@
 @import 'template/banner';
 @import 'template/breadcrumb';
 @import 'template/featured';
-@import 'template/aboutUs';
 @import 'template/contact';
 @import 'template/single-service';
 @import 'template/team-details';
@@ -165,7 +162,6 @@
 @import 'template/privacy-policy';
 @import 'template/preview';
 @import 'template/compare';
-@import 'template/partners';
 @import 'template/career-page';
 
 /**************************************

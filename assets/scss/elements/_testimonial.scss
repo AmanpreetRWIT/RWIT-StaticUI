@@ -299,7 +299,6 @@
 
   &-single {
     #slider-container-wrapper {
-
       .slider-dot {
         width: 8px;
         height: 8px;
@@ -610,7 +609,9 @@
   }
 
   .swiper-slide {
-    transition: opacity 0.8s ease-out, scale 0.75s linear;
+    transition:
+      opacity 0.8s ease-out,
+      scale 0.75s linear;
 
     &-prev,
     &-next {
@@ -641,7 +642,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-image: url('/images/quote-left.png');
       background-repeat: no-repeat;
@@ -667,7 +668,7 @@
       transform: translateX(-50%);
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         height: 20px;
         width: 70px;
