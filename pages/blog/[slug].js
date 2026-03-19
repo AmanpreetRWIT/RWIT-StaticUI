@@ -22,6 +22,7 @@ import Layout from "../../components/layouts/Layout";
 import NoticeData from "../../data/notice/Notice.json";
 import HeaderData from "../../data/layouts/Header.json";
 import FooterData from "../../data/layouts/Footer.json";
+import newsletterModal from "@/data/newsletter/NewsletterModal.json";
 import BlogContentTable from "../../components/blogs/BlogContentTable";
 import Faq from "@/components/faq/Faq";
 import LatestStories from "@/components/blogs/LatestStories";
@@ -34,8 +35,6 @@ const NewsletterModal = dynamic(
 const BlogDetails = ({
   Slug,
   Post,
-  headerMenus,
-  footerData,
   Settings,
   GetCategory,
   locale,
@@ -153,7 +152,11 @@ const BlogDetails = ({
       StickyFooter: true,
     },
     settings: { ...NoticeData },
+    NewsletterModal:{...newsletterModal}
+
   };
+
+  
 
   const trimmedFocusKeyword = trimKeywords(Post?.content?.FocusKeyword);
   const trimmedArticleKeywords = trimArticleKeywords(Post?.content?.keywords);
@@ -621,9 +624,9 @@ const BlogDetails = ({
         </main>
       </Layout>
 
-      {layoutSettings?.settings?.ShowORHide && (
-        <NewsletterModal layoutSettings={layoutSettings.settings} />
-      )}
+      {layoutSettings?.NewsletterModal?.ShowORHide && (
+  <NewsletterModal data={layoutSettings?.NewsletterModal} />
+)}
     </>
   );
 };

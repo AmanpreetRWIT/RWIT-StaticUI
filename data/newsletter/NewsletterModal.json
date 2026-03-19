@@ -1,9 +1,23 @@
 {
-    "Title": "Stay Connected for Expert Insights and Updates!",
-    "Desc": "Sign up for our newsletter to get the latest blogs, industry insights, and expert tips delivered straight to your inbox. Join our community of innovators and grow your business.",
-    "TitleColor": "#000248",
-    "ButtonName": "Subscribe Now",
-    "SuccessMessage": "Thank you for subscribing!",
-    "BgColor": "#f7f9fc"
-  }
-  
+  "Title": "Stay Connected for Expert Insights and Updates!",
+  "Desc": "Sign up for our newsletter to get the latest blogs, industry insights, and expert tips delivered straight to your inbox. Join our community of innovators and grow your business.",
+  "TitleColor": "#000248",
+  "ButtonName": "Subscribe Now",
+  "SuccessMessage": "Thank you for subscribing to our newsletter!",
+  "BgColor": "#EEF0FA",
+
+  "ShowORHide": true,                 
+  "ShowTitle": true,                 
+  "ShowDescription": true,          
+  "ShowButton": true,                 
+  "ShowSuccessMessage": true,         
+  "EnablePopup": true,              
+  "CloseOnSuccess": false,            
+  "EnableScrollTrigger": true,       
+  "EnableLocalStorage": true,         
+  "EnableMobileHide": true,           
+  "EnableEmailValidation": true,     
+  "EnableSubmitButtonDisable": true,  
+  "EnableAutoOpen": true,             
+  "EnableManualOpen": false           
+}

@@ -1,0 +1,3 @@
+export const RECAPTCHA_CONFIG = {
+  SCORE_THRESHOLD: 0.5,
+};

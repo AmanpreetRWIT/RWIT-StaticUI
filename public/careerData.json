@@ -20,30 +20,7 @@
           "og_description": "",
           "twitter_description": ""
         },
-        "Days": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "2 years",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+       "Days": "<ul><li>2 years</li></ul>",
         "Logo": {
           "id": 1430355,
           "alt": "",
@@ -468,44 +445,7 @@
             }
           }
         ],
-        "Hours": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "10:30 AM - 07:30 PM",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Weekly: 5 days",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+        "Hours": "<ul><li>10:30 AM - 07:30 PM</li><li>Weekly: 5 days</li></ul>",
         "Title": "Frontend Team Lead",
         "JobTag": [
           {
@@ -602,6 +542,7 @@
             }
           ]
         },
+        "careerdescription":false,
         "ExcludeFromSitemap": false,
         "DisableStickyFooter": false,
         "HideNavigationNotice": false
@@ -1052,44 +993,7 @@
             }
           }
         ],
-        "Hours": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "10:30 AM - 07:30 PM",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Weekly: 5 days",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+        "Hours": "<ul><li>10:30 AM - 07:30 PM</li><li>Weekly: 5 days</li></ul>",
         "Title": "UI/UX Designer",
         "JobTag": [
           {
@@ -1633,44 +1537,7 @@
             }
           }
         ],
-        "Hours": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "10:30 AM - 07:30 PM",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Weekly: 5 days",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+         "Hours": "<ul><li>10:30 AM - 07:30 PM</li><li>Weekly: 5 days</li></ul>",
         "Title": "Project Coordinator",
         "JobTag": [
           {
@@ -2286,44 +2153,7 @@
             }
           }
         ],
-        "Hours": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "10:30 AM - 07:30 PM",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Weekly: 5 days",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+         "Hours": "<ul><li>10:30 AM - 07:30 PM</li><li>Weekly: 5 days</li></ul>",
         "Title": "Frontend Development Intern",
         "JobTag": [
           {
@@ -2896,44 +2726,7 @@
             }
           }
         ],
-        "Hours": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "bullet_list",
-              "content": [
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "10:30 AM - 07:30 PM",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "list_item",
-                  "content": [
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Weekly: 5 days",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+         "Hours": "<ul><li>10:30 AM - 07:30 PM</li><li>Weekly: 5 days</li></ul>",
         "Title": "Business Development Executive",
         "JobTag": [
           {
