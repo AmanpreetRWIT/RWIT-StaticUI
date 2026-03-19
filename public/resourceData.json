@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "slug": "frontend-team-lead-guide",
+      "content": {
+        "Title": "Frontend Team Lead Guide",
+        "Excerpt": "A complete guide to becoming a successful frontend team lead.",
+        "Author": "Jaswinder Singh",
+        "ArticleDate": "2024-02-10",
+        "ReadTime": "8",
+        "SidebarTitle": "Table of Contents",
+
+        "FeaturedImage": {
+          "filename": "/images/blog/frontend.jpg",
+          "alt": "Frontend Guide"
+        },
+
+        "Seo": {
+          "title": "Frontend Team Lead Guide | RWIT",
+          "description": "Learn how to become a frontend team lead.",
+          "og_title": "Frontend Guide",
+          "og_description": "Complete frontend leadership guide",
+          "og_image": "/images/blog/frontend.jpg"
+        },
+
+        "FocusKeyword": "frontend team lead, react leadership",
+
+        "BlogContent": [
+          {
+            "html": "<h2>Job Summary</h2><p>We are looking for a Frontend Team Lead who can manage projects and teams effectively.</p>"
+          },
+          {
+            "html": "<h2>Responsibilities</h2><ul><li>Lead frontend team</li><li>Code review</li><li>Mentor developers</li></ul>"
+          },
+          {
+            "html": "<h2>Required Skills</h2><ul><li>React.js</li><li>Next.js</li><li>TypeScript</li></ul>"
+          }
+        ],
+
+        "BlogBottomContent": [
+          {
+            "html": "<h3>Conclusion</h3><p>This role is ideal for passionate frontend engineers who want to lead.</p>"
+          }
+        ],
+
+        "HideNavigationNotice": false
+      }
+    },
+
+    {
+      "slug": "react-performance-optimization",
+      "content": {
+        "Title": "React Performance Optimization",
+        "Excerpt": "Improve your React app performance with best practices.",
+        "Author": "Amanpreet Kaur",
+        "ArticleDate": "2024-03-15",
+        "ReadTime": "6",
+        "SidebarTitle": "Contents",
+
+        "FeaturedImage": {
+          "filename": "/images/blog/react.jpg",
+          "alt": "React Optimization"
+        },
+
+        "Seo": {
+          "title": "React Optimization Guide",
+          "description": "Best ways to optimize React apps",
+          "og_title": "React Optimization",
+          "og_description": "Improve performance in React",
+          "og_image": "/images/blog/react.jpg"
+        },
+
+        "FocusKeyword": "react performance, optimization",
+
+        "BlogContent": [
+          {
+            "html": "<h2>Introduction</h2><p>Performance is key in modern web apps.</p>"
+          },
+          {
+            "html": "<h2>Techniques</h2><ul><li>Memoization</li><li>Code splitting</li><li>Lazy loading</li></ul>"
+          }
+        ],
+
+        "BlogBottomContent": [
+          {
+            "html": "<p>Always measure performance before optimizing.</p>"
+          }
+        ],
+
+        "HideNavigationNotice": false
+      }
+    }
+  ]
+}
